@@ -2,11 +2,17 @@
 There are some questions that needs to be answered by any senior web developer anytime. You simply cannot fail on these.
 
 ## General
+
+### Encodings
  - What is ASCII?
  - What is UTF-8?
  - What is the max UTF-`...` available?
  - What is Unicode?
  - What is the difference between UTF-8 and Unicode?
+ 
+### Security
+ - What is the difference between authorization and authentication?
+ - What is the difference between authorization and ACL?
 
 ## Linux
  - What is the difference between `>` (redirect) and `|` (pipe) ?
