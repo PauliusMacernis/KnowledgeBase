@@ -23,6 +23,9 @@ There are some questions that needs to be answered by any senior web developer a
 ## Linux
  - What is the difference between `>` (redirect) and `|` (pipe) ?
 
+## SQL
+ - What is ODBC?
+
 ## MySQL
  - Are table and column names of the database case sensitive?
  - How do I enable case sesitive or case insensitive search within data?
