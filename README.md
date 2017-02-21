@@ -10,6 +10,9 @@ There are some questions that needs to be answered by any senior web developer a
  - What is Unicode?
  - What is the difference between UTF-8 and Unicode?
  
+## Regular expressions
+ - What is the difference between `[]` and `()`?
+ 
 ### Security
  - What is the difference between authorization and authentication?
  - What is the difference between authorization and ACL?
