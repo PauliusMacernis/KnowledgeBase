@@ -4,6 +4,7 @@ There are some questions that needs to be answered by any senior web developer a
 ## General
  - What is ASCII?
  - What is UTF-8?
+ - What is the max UTF-`...` available?
  - What is Unicode?
  - What is the difference between UTF-8 and Unicode?
 
@@ -12,6 +13,8 @@ There are some questions that needs to be answered by any senior web developer a
 
 ## MySQL
  - Are table and column names of the database case sensitive?
+ - How do I enable case sesitive or case insensitive search within data?
+ - What is the difference between `LIKE ''` and `= ''`?
  - What are collations for[?](A collation is a set of rules for comparing characters in a character set.)
  - What is the difference between collation and encoding?
  - What is character set[?](A character set is a set of symbols and encodings.)
