@@ -16,6 +16,9 @@ There are some questions that needs to be answered by any senior web developer a
 ### Security
  - What is the difference between authorization and authentication?
  - What is the difference between authorization and ACL?
+ 
+### HTML
+ - Is there any difference between `HTML5` and `HTML 5` (see the space in between)?
 
 ## Linux
  - What is the difference between `>` (redirect) and `|` (pipe) ?
