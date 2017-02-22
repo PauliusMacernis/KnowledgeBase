@@ -27,6 +27,7 @@ There are some questions that needs to be answered by any senior web developer a
  - What is ODBC?
  - What is unixODBC, iODBC, MS ODBC?
  - What are the functional differences between unixODBC, iODBC, MS ODBC[?](http://stackoverflow.com/questions/7548825/what-are-the-functional-differences-between-iodbc-and-unixodbc)
+ - What is Tabular Data Stream (TDS) about? Applies for SQL products of Microsoft and Sybase.
 
 ## MySQL
  - Are table and column names of the database case sensitive?
