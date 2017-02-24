@@ -2,6 +2,7 @@
 There are some questions that needs to be answered by any senior web developer anytime. You simply cannot fail on these.
 
 ## General
+- What is the difference between a library and a driver[?](Technically, they're the same thing: bodies of subroutines whose names are exported to a linker (static or runtime). By convention, a "library" is used directly by an application, whose programmer will require documentation and header files. A "driver", by contrast, is defined by a binary API and is used in some kind of framework, hence printer driver and video driver.)
 
 ### Encodings
  - What is ASCII?
