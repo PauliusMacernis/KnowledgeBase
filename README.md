@@ -33,7 +33,8 @@ There are some questions that needs to be answered by any senior web developer a
  - What is `ODBC-combined configuration` in terms of freeTDS [?](DB-Library and CT-Library configurations are stored in freetds.conf, odbc.ini points to freetds.conf too, - all that allows support for all three FreeTDS libraries in one file. Such configuration in one freetds.conf file is called ODBC-combined configuration. More recently, SQLDriverConnect was added to FreeTDS. This function allows the application to specify connection attributes with reference to either, or neither, configuration file.)
  - What is unixODBC, iODBC, MS ODBC?
  - What are the functional differences between unixODBC, iODBC, MS ODBC[?](http://stackoverflow.com/questions/7548825/what-are-the-functional-differences-between-iodbc-and-unixodbc)
- - How can you find out which configuration files unixODBC is using on your machine [?](Use odbcinst utility.)
+ - How to find out which configuration files (for example: `odbc.ini`) unixODBC is using [?](Use odbcinst utility.)
+ - How to find out which configuration files (for example: `freetds.conf`) freeTDS is using [?](Use tsql utility.)
  - What is so special about freeTDS version 8.0 and version 9.0 in the meaning of versioning[?](In the earlier days of FreeTDS, Microsoft did not release official specs for the TDS protocol. When MSSQL 2000 (product 8.0) was released, there was semi-official indications from the Microsoft community that the TDS protocol would be version 8.0. So the FreeTDS developers adopted that version for FreeTDS. Years later, when Microsoft started releasing official specs of the protocol, it became obvious that the TDS versions that FreeTDS had labeled 8.0 and 9.0 were actually versions 7.1 and 7.2 respectively. For compatibility reasons version 8.0 is still handled by FreeTDS but you should avoid using it as it could be removed in a future version of FreeTDS or it could clash with a future SQL server version.)
 
 ## MySQL
