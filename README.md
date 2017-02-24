@@ -25,7 +25,7 @@ There are some questions that needs to be answered by any senior web developer a
 
 ## SQL
  - What is ODBC?
- - Anything special about ODBC 3.0 ?
+ - Anything special about ODBC 3.0 [?](You had to use SQLConnect(DSN, UID, PWD) to connect to DB before ODBC 3.0, any and all information about the DSN was kept in odbc.ini; You have to use SQLDriverConnect since version 3.0, the connection attributes are provided as a single argument - a string of concatenated name-value pairs, the application can also specify which driver to use and so there is no need for having odbc.ini anymore.)
  - What is unixODBC, iODBC, MS ODBC?
  - What are the functional differences between unixODBC, iODBC, MS ODBC[?](http://stackoverflow.com/questions/7548825/what-are-the-functional-differences-between-iodbc-and-unixodbc)
  - What is Tabular Data Stream (TDS) about? Applies for SQL products of Microsoft and Sybase.
