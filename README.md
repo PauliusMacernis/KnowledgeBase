@@ -12,7 +12,7 @@ There are some questions that needs to be answered by any senior web developer a
  - What is the difference between UTF-8 and Unicode?
  - What is Byte order mark (BOM)?
  - What is the difference between little-endian and big-endian?
- - What is the default line ending (EOL) for each of the following: Windows, Linux, OSX, Unix, older Mac?
+ - What is the default end of line (EOL) for each of the following: Windows, Linux, OSX, Unix, older Mac?
  
 ## Regular expressions
  - What is the difference between `[]` and `()`?
