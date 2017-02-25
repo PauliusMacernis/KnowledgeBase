@@ -10,6 +10,9 @@ There are some questions that needs to be answered by any senior web developer a
  - What is the max UTF-`...` available?
  - What is Unicode?
  - What is the difference between UTF-8 and Unicode?
+ - What is Byte order mark (BOM)?
+ - What is the difference between little-endian and big-endian?
+ - What is the default line ending (EOL) for each of the following: Windows, Linux, OSX, Unix, older Mac?
  
 ## Regular expressions
  - What is the difference between `[]` and `()`?
@@ -22,6 +25,8 @@ There are some questions that needs to be answered by any senior web developer a
  - Is there any difference between `HTML5` and `HTML 5` (see the space in between)?
 
 ## Linux
+ - What is the difference between Unix and Linux?
+ - What is \*nix?
  - What is the difference between `>` (redirect) and `|` (pipe) ?
 
 ## SQL
