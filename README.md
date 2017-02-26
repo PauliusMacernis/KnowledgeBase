@@ -13,7 +13,7 @@ There are some questions that needs to be answered by any senior web developer a
  - What is the difference between UTF-8 and Unicode?
  - What is Byte order mark (BOM)?
  - What is the difference between little-endian and big-endian?
- - What is the difference between line feed `LF` and `\n`, or between carriage return `CR` and `\r`[?](CR and LF are ASCII and Unicode control characters while \\r and \\n are abstractions used in certain programming languages. In addition, \n doesn't mean the same thing in all programming languages.)
+ - What is the difference between line feed `LF` (0x0A) and `\n`, or between carriage return `CR` (0x0D) and `\r`[?](CR and LF are ASCII and Unicode control characters while \\r and \\n are abstractions used in certain programming languages. In addition, for example, \n doesn't mean the same thing in all programming languages.)
  - What is the default end of line (EOL) for each of the following: Windows, Linux, OSX, Unix, older Mac?
  
 ## Regular expressions
