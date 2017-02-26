@@ -60,3 +60,8 @@ There are some questions that needs to be answered by any senior web developer a
  - What is character set[?](A character set is a set of symbols and encodings.)
  - What is the difference between character set and encoding?
  
+# OOP
+- What is the difference between a function and a method?
+ 
+# PHP
+ - Lets say I make HTTPS request to PRODUCTION server. How can I find the most time-consuming code blocks within the project files I am interested in the most?
