@@ -14,7 +14,8 @@ There are some questions that needs to be answered by any senior web developer a
  - What is Byte order mark (BOM)?
  - What is the difference between little-endian and big-endian?
  - What is the difference between line feed `LF` (0x0A) and `\n`, or between carriage return `CR` (0x0D) and `\r`[?](CR and LF are ASCII and Unicode control characters while \\r and \\n are abstractions used in certain programming languages. In addition, for example, \n doesn't mean the same thing in all programming languages.)
- - What is the default end of line (EOL) for each of the following: Windows, Linux, OSX, Unix, older Mac?
+ - What is the difference between NEXT LINE (NEL) (U+0085) and End Of Line (EOL)?
+ - What is the default End Of Line (EOL) for each of the following: Windows, Linux, OSX, Unix, older Mac[?](LF - Unix and Unix-like systems (Linux, macOS, FreeBSD, Multics, AIX, Xenix, etc.), BeOS, Amiga, RISC OS; CR+LF - Microsoft Windows, DOS (MS-DOS, PC DOS, etc.), DEC TOPS-10, RT-11, CP/M, MP/M, Atari TOS, OS/2, Symbian OS, Palm OS, Amstrad CPC, and most other early non-Unix and non-IBM OSes; CR - Commodore 8-bit machines, Acorn BBC, ZX Spectrum, TRS-80, Apple II family, Oberon, the classic Mac OS up to version 9, MIT Lisp Machine and OS-9; RS - QNX pre-POSIX implementation; 0x9B - Atari 8-bit machines using ATASCII variant of ASCII (155 in decimal), LF+CR - Acorn BBC and RISC OS spooled text output.)
  
 ## Regular expressions
  - What is the difference between `[]` and `()`?
