@@ -51,9 +51,10 @@ There are some questions that needs to be answered by any senior web developer a
  - How to find out which configuration files (for example: `freetds.conf`) freeTDS is using [?](Use tsql utility.)
  - How to test if unixODBC setup is correct[?] (You should be able to connect and query a database by using unixODBC's isql utility)
  - How to test if freeTDS setup is correct[?] (You should be able to connect and query a database by using freeTDS's tsql utility)
+ - What is the difference between tsql and t-sql (Transact-SQL)[?](tsql - tool by freeTDS for work with freeTDS, for example by quering a database. t-sql, or Transact-SQL, is a set of programming extensions from Sybase and Microsoft that add several features to the Structured Query Language (SQL) including transaction control, exception and error handling, row processing, and declared variables. Microsoft\'s SQL Server and Sybase\'s SQL server support T-SQL statements.)
  - What is the difference between isql and tsql utilities[?](isql is tool by unixODBC for work with unixODBC, tsql - tool by freeTDS for work with freeTDS. Both can connect to servers, query databases, etc. Each uses own set of configuration set and so successfully queryng databases with both, unixODBC and freeTDS, means both have correct setups.)
  - What is the difference between isql and iusql[?](iusql - Unicode version of isql.)
- - What is so special about freeTDS version 8.0 and version 9.0 in the meaning of versioning[?](In the earlier days of FreeTDS, Microsoft did not release official specs for the TDS protocol. When MSSQL 2000 (product 8.0) was released, there was semi-official indications from the Microsoft community that the TDS protocol would be version 8.0. So the FreeTDS developers adopted that version for FreeTDS. Years later, when Microsoft started releasing official specs of the protocol, it became obvious that the TDS versions that FreeTDS had labeled 8.0 and 9.0 were actually versions 7.1 and 7.2 respectively. For compatibility reasons version 8.0 is still handled by FreeTDS but you should avoid using it as it could be removed in a future version of FreeTDS or it could clash with a future SQL server version.)
+ - What is so special about freeTDS version 8.0 and version 9.0 in the meaning of versioning [?](In the earlier days of FreeTDS, Microsoft did not release official specs for the TDS protocol. When MSSQL 2000 (product 8.0) was released, there was semi-official indications from the Microsoft community that the TDS protocol would be version 8.0. So the FreeTDS developers adopted that version for FreeTDS. Years later, when Microsoft started releasing official specs of the protocol, it became obvious that the TDS versions that FreeTDS had labeled 8.0 and 9.0 were actually versions 7.1 and 7.2 respectively. For compatibility reasons version 8.0 is still handled by FreeTDS but you should avoid using it as it could be removed in a future version of FreeTDS or it could clash with a future SQL server version.)
  - Is freeTDS a driver or a library, in case of use for ODBC [?](An ODBC driver is a hybrid. For the most part, an application relies on a driver manager to define manifest constants, and links to the library. But because the ODBC specification leaves behavior up to the driver, the application is forced to include the driver's header files, too, to exploit driver-specific functions.)
 
 ## MySQL
@@ -64,6 +65,9 @@ There are some questions that needs to be answered by any senior web developer a
  - What is the difference between collation and encoding?
  - What is character set[?](A character set is a set of symbols and encodings.)
  - What is the difference between character set and encoding?
+ 
+## Microsoft SQL
+ - What is the difference between MS SQL (Microsoft SQL) and T-SQL (Transact-SQL)?
  
 # OOP
 - What is the difference between a function and a method?
