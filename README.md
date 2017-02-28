@@ -35,6 +35,8 @@ There are some questions that needs to be answered by any senior web developer a
 ## Linux
  - What is the difference between Unix and Linux?
  - What is \*nix?
+ - What is `man` command for?
+ - Lets say we have all or some `man` pages missing. Can we get and load it, how?
  - What is the difference between `>` (redirect) and `|` (pipe) ?
 
 ## SQL
