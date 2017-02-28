@@ -12,6 +12,7 @@ There are some questions that needs to be answered by any senior web developer a
  - What is the difference between ASCII and Extended ASCII?
  - What is American National Standards Institute (ANSI)[?](The American National Standards Institute (ANSI) is a private non-profit organization that oversees the development of voluntary consensus standards for products, services, processes, systems, and personnel in the United States. The organization also coordinates U.S. standards with international standards so that American products can be used worldwide. American National Standards Institute or ANSI is the organization that developed ASCII. The organization was called American Standards Association's (ASA) back in 1960 when first meetings started. The formation of the organization dates back to 1918. There are around 125,000 companies and 3.5 million professionals as members in 2017.)
  - What is the differece between ASCII and ANSI?
+ - What is UCS-2?
  - What is UTF-8[?](UTF-8 is commonly used encoding that implements Unicode standard. UTF-8 uses one byte for any ASCII character, all of which have the same code values in both UTF-8 and ASCII encoding, and up to four bytes for other characters. In short: Variable length of a character, ASCII characters are still one byte.)
  - What is the max UTF-`...` available?
  - What is the difference between UTF-8 and Unicode?
