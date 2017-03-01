@@ -27,7 +27,7 @@ There are some questions that needs to be answered by any senior web developer a
  - What is UCS-2?
  
  - What is UTF-8[?]
- (UTF-8 is commonly used encoding that implements Unicode standard. UTF-8 uses one byte for any ASCII character, all of which have the same code values in both UTF-8 and ASCII encoding, and up to four bytes for other characters. In short: Variable length of a character, ASCII characters are still one byte.)
+ (UTF-8 is commonly used encoding that implements Unicode standard. UTF-8 uses one byte for any ASCII character, all of which have the same code values in both UTF-8 and ASCII encoding, and up to four bytes for other characters. In short: Variable length of a character, ASCII characters (the decent-official version of ASCII - range 0 to 127) are still one byte.)
  
  - What is the max UTF-`...` available?
  
