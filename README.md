@@ -115,6 +115,7 @@ There are some questions that needs to be answered by any senior web developer a
 - Explain Named Pipe-based SQL connection. What is it about?
 - What is Distributed Computing Environment / Remote Procedure Calls (DCE/RPC)?
 - What is Samba (software)?
+- What is the difference between `DNS domain` and so called `NT domain`?
  
 # PHP
  - Lets say I make HTTPS request to PRODUCTION server. How can I find the most time-consuming code blocks within the project files I am interested in the most?
