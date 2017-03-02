@@ -116,6 +116,7 @@ There are some questions that needs to be answered by any senior web developer a
 - What is Distributed Computing Environment / Remote Procedure Calls (DCE/RPC)?
 - What is Samba (software)?
 - What is the difference between `DNS domain` and so called `NT domain`[?](DNS domains are used for name resolution. NT domains are used for authentication. Authentication is done by the domain controller, often the Primary Domain Controller (PDC).)
+- What is the difference between Primary Domain Controller (PDC) and Backup Domain Controller (BDC)[?](A PDC is a Primary Domain Controller, and a BDC is a Backup Domain Controller. You must install a PDC before any other domain servers. The Primary Domain Controller maintains the master copy of the directory database and validates users. A Backup Domain Controller contains a copy of the directory database and can validate users. If the PDC fails then a BDC can be promoted to a PDC. Possible data loss is user changes that have not yet been replicated from the PDC to the BDC. A PDC can be demoted to a BDC if one of the BDC's is promoted to the PDC. Source: http://windowsitpro.com/systems-management/what-pdc-bdc )
  
 # PHP
  - Lets say I make HTTPS request to PRODUCTION server. How can I find the most time-consuming code blocks within the project files I am interested in the most?
