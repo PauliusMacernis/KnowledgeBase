@@ -4,6 +4,9 @@ There are some questions that needs to be answered by any senior web developer a
 ## General
 - What is the difference between a library and a driver[?](Technically, they're the same thing: bodies of subroutines whose names are exported to a linker (static or runtime). By convention, a "library" is used directly by an application, whose programmer will require documentation and header files. A "driver", by contrast, is defined by a binary API and is used in some kind of framework, hence printer driver and video driver.)
 
+## Licenses
+- ...
+
 ### Encodings
  - What is Unicode[?]
  (Unicode is a computing industry standard for the consistent encoding, representation, and handling of text expressed in most of the world's writing systems. Developed in conjunction with the Universal Coded Character Set (UCS) standard and published as The Unicode Standard. The standard consists of a set of code charts for visual reference, an encoding method and set of standard character encodings, a set of reference data files, and a number of related items, such as character properties, rules for normalization, decomposition, collation, rendering, and bidirectional display order (for the correct display of text containing both right-to-left scripts, such as Arabic and Hebrew, and left-to-right scripts). Unicode can be implemented by different character encodings. The most commonly used encodings are UTF-8, UTF-16 and the now-obsolete UCS-2. We often say "Unicode" when we mean "not ASCII", but that’s silly since of course all of ASCII is also included in Unicode.)
@@ -54,6 +57,10 @@ There are some questions that needs to be answered by any senior web developer a
 ### Security
  - What is the difference between authorization and authentication?
  - What is the difference between authorization and ACL?
+ - What is challenge-response authentication mechanism (CRAM)?
+ - What is Security Support Provider Interface (SSPI)
+ - What is Trusted Authentication?
+ - What is Kerberos (protocol) about?
  
 ### HTML
  - Is there any difference between `HTML5` and `HTML 5` (see the space in between)?
@@ -100,10 +107,14 @@ There are some questions that needs to be answered by any senior web developer a
 # OOP
 - What is the difference between a function and a method?
 
-# Internet
+# Networks, Internet
 - What is Internet Assigned Numbers Authority (IANA) for?
 - What is `example.org` website for?
 - What is Multipurpose Internet Mail Extensions (MIME)?
+- Explain TCP/IP network protocol. What is it all about?
+- Explain Named Pipe-based SQL connection. What is it about?
+- What is Distributed Computing Environment / Remote Procedure Calls (DCE/RPC)?
+- What is Samba (software)?
  
 # PHP
  - Lets say I make HTTPS request to PRODUCTION server. How can I find the most time-consuming code blocks within the project files I am interested in the most?
