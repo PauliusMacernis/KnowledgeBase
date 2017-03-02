@@ -120,3 +120,4 @@ There are some questions that needs to be answered by any senior web developer a
  
 # PHP
  - Lets say I make HTTPS request to PRODUCTION server. How can I find the most time-consuming code blocks within the project files I am interested in the most?
+ - What is thread safe or non-thread safe in PHP?
