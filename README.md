@@ -121,4 +121,11 @@ There are some questions that needs to be answered by any senior web developer a
  
 # PHP
  - Lets say I make HTTPS request to PRODUCTION server. How can I find the most time-consuming code blocks within the project files I am interested in the most?
- - What is thread safe or non-thread safe in PHP?
+ - What does the "&" mean in a URL[?](It separates data into pairs of key and value. Many pairs may exist in one URL.)
+ - What does the "+" mean in a URL[?](It is encoded space character.)
+ - What does the "=" mean in a URL[?](It is separator between key and value in pair of key and value. Within each pair, the key part is on the left of an equal sign (=), while the value is on the right.)
+ - What does the "%xx" mean in a URL[?](xx is the hexadecimal version of its ASCII value.)
+ - What is the difference between URL and URI?
+ - What is CGI (Common Gateway Interface) in PHP[?](CGI is the API (Application Programming Interface) for the web server. CGI is an interface which tells the webserver how to pass data to and from an application. More specifically, it describes how request information is passed in environment variables (such as request type, remote IP address), how the request body is passed in via standard input, and how the response is passed out via standard output. For example, the flow: user (client) request for page ---> webserver ---[CGI]----> Server side Program ---> MySQL Server. Most if not all, webservers can be configured to execute a program as a 'CGI'. This means that the webserver, upon receiving a request, will forward the data to a specific program, setting some environment variables and marshalling the parameters via standard input and standard output so the program can know where and what to look for. The main benefit is that you can run ANY executable code from the web, given that both the webserver and the program know how CGI works. That's why you could write web programs in C or Bash with a regular CGI-enabled webserver. That, and that most programming environments can easily use standard input, standard output and environment variables. Specific for PHP, means of communication between scripts and the webserver most of the time is an embedded interpreter called mod_php. More info: http://www.whizkidtech.redprince.net/cgi-bin/tutorial  AND  http://stackoverflow.com/questions/2089271/what-is-common-gateway-interface-cgi   AND   https://www.ietf.org/rfc/rfc3875.txt )
+ - What is ZTS (Zend Thread Safety) in PHP?
+ - What do "thread safe" and "non-thread safe" mean in PHP?
