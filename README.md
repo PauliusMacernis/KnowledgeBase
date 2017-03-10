@@ -209,6 +209,11 @@ You should be able to connect and query a database by using unixODBC's isql util
 You should be able to connect and query a database by using freeTDS's tsql utility.
 ">⌘</a>
 
+- What is TDS connection pooling in terms of FreeTDS?
+<a href="#" title="
+The FreeTDS connection pool is a server process; it emulates a SQL Server. Any program that can attach to a real SQL Server may instead elect to attach to the pool server. The pool in turn connects to the SQL Server and database you specify, and attempts to share these connections. The Connection Pooling server swims in the src/pool directory. See the src/pool/README for a more detailed description of its inner workings. The FreeTDS connection pool currently only supports TDS version 4.2. This restriction applies to both the client-to-pool and pool-to-server connections!
+">⌘</a>
+
 - What is the difference between tsql and t-sql (Transact-SQL)?
 <a href="#" title="
 tsql - tool by freeTDS for work with freeTDS, for example by quering a database. t-sql, or Transact-SQL, is a set of programming extensions from Sybase and Microsoft that add several features to the Structured Query Language (SQL) including transaction control, exception and error handling, row processing, and declared variables. Microsoft\'s SQL Server and Sybase\'s SQL server support T-SQL statements.
