@@ -120,6 +120,15 @@ CR and LF are ASCII and Unicode control characters while \\r and \\n are abstrac
 - What is Kerberos (protocol) about?
 <a href="#" title="
 ">⌘</a>
+
+- Explain what TLS is and how it is being used.
+<a href="#" title="
+">⌘</a>
+
+- Explain what SSL is and how it is being used.
+<a href="#" title="
+">⌘</a>
+
  
 ### HTML
 - Is there any difference between `HTML5` and `HTML 5` (see the space in between)?
