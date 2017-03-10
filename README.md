@@ -144,6 +144,10 @@ CR and LF are ASCII and Unicode control characters while \\r and \\n are abstrac
 <a href="#" title="
 ">⌘</a>
 
+- What is the difference between 'Public key' and 'Public key certificate'? Explain dow are they being used.
+<a href="#" title="
+">⌘</a>
+
  
 ### HTML
 - Is there any difference between `HTML5` and `HTML 5` (see the space in between)?
