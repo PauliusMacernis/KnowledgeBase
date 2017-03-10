@@ -13,6 +13,13 @@ Technically, they're the same thing: bodies of subroutines whose names are expor
 - ...
 
 
+## Organizations
+- What is SAP SE (Systeme, Anwendungen und Produkte in der Datenverarbeitung; "Systems, Applications & Products in Data Processing"), or just 'SAP'?
+<a href="#" title="
+SAP SE (/ɛseɪˈpi/) (Systeme, Anwendungen und Produkte in der Datenverarbeitung; 'Systems, Applications & Products in Data Processing') is a European multinational software corporation that makes enterprise software to manage business operations and customer relations. SAP is headquartered in Walldorf, Baden-Württemberg, with regional offices in 130 countries. The company has over 335,000 customers in 190 countries. The company is a component of the Euro Stoxx 50 stock market index. Founded in Weinheim, Germany (1972; 45 years ago). As of 2016, SAP is the world's third largest software and programming company. Notable products: 1) SAP ASE (Adaptive Server Enterprise), originally known as Sybase SQL Server, and also commonly known as Sybase DB or ASE, is a relational model database server product for businesses developed by Sybase Corporation which became part of SAP SE. 2) other
+ ">⌘</a>
+ 
+
 ### Encodings
 - What is Unicode?
 <a href="#" title="
@@ -129,6 +136,14 @@ CR and LF are ASCII and Unicode control characters while \\r and \\n are abstrac
 <a href="#" title="
 ">⌘</a>
 
+- Explain what OpenSSL is and how it is being used.
+<a href="#" title="
+">⌘</a>
+
+- Explain what Diffie–Hellman key exchange is and how it is being used.
+<a href="#" title="
+">⌘</a>
+
  
 ### HTML
 - Is there any difference between `HTML5` and `HTML 5` (see the space in between)?
@@ -205,7 +220,9 @@ Use odbcinst utility.
 
 - How to find out which configuration files (for example: `freetds.conf`) freeTDS is using?
 <a href="#" title="
-Use tsql utility.
+Use tsql utility. tsql is a diagnostic tool that uses the lowest level FreeTDS library, libtds, as a way to isolate potential bugs in the protocol implementation.
+
+
 ">⌘</a>
 
 - How to test if unixODBC setup is correct?
