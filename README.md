@@ -121,11 +121,11 @@ CR and LF are ASCII and Unicode control characters while \\r and \\n are abstrac
 <a href="#" title="
 ">⌘</a>
 
-- Explain what TLS is and how it is being used.
+- Explain what Transport Layer Security (TLS) is and how it is being used.
 <a href="#" title="
 ">⌘</a>
 
-- Explain what SSL is and how it is being used.
+- Explain what Secure Sockets Layer (SSL) is and how it is being used.
 <a href="#" title="
 ">⌘</a>
 
