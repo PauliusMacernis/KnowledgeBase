@@ -185,6 +185,11 @@ http://linuxgazette.net/105/pitcher.html
 http://linuxgazette.net/105/pitcher.html
 ">⌘</a>
 
+- What is the difference between two special files: '.' and '..'??
+<a href="#" title="
+http://linuxgazette.net/105/pitcher.html
+">⌘</a>
+
 
 ## SQL
 - What is Tabular Data Stream (TDS) about? Applies for SQL products of Microsoft and Sybase.
