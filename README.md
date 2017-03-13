@@ -175,7 +175,7 @@ CR and LF are ASCII and Unicode control characters while \\r and \\n are abstrac
 <a href="#" title="
 ">⌘</a>
 
-- What is the difference between a soft link and a hard link?
+- What is the difference between a hard link and a soft link (aka. symbolic link, symlink, etc.)?
 <a href="#" title="
 http://linuxgazette.net/105/pitcher.html
 ">⌘</a>
