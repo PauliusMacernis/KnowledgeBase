@@ -288,6 +288,13 @@ In the earlier days of FreeTDS, Microsoft did not release official specs for the
 An ODBC driver is a hybrid. For the most part, an application relies on a driver manager to define manifest constants, and links to the library. But because the ODBC specification leaves behavior up to the driver, the application is forced to include the driver's header files, too, to exploit driver-specific functions.
 ">⌘</a>
 
+- What is the difference between sqlsrv driver and mssql driver?
+<a href="#" title="
+mssql and sqlsrv drivers are not one and the same. People are often use mssql and sqlsrv interchangeably, and this is not right. The sqlsrv driver is built, maintained, and supported by Microsoft. The mssql driver is a community-built driver. Few years ago was updated or maintained as an official PHP extension, but as of the release of PHP 5.3, it is no longer available with PECL.
+The underlying technologies for the two drivers are different. The sqlsrv driver is built on ODBC, which is actively maintained by Microsoft and provides access to features in the latest releases of SQL Server. The mssql driver is built on DB Lib (i.e. it requires ntwdblib.dll) if you are running PHP on Windows. DB Lib is no longer supported by Microsoft. If you are running PHP on Linux, the mssql driver is built on FreeTDS.
+https://blogs.msdn.microsoft.com/brian_swan/2010/03/08/mssql-vs-sqlsrv-whats-the-difference-part-1/
+">⌘</a>
+
 
 ## MySQL
 - Are table and column names of the database case sensitive?
