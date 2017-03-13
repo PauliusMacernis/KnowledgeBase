@@ -312,7 +312,7 @@ Write locks also have a higher priority than read locks, so a request for a writ
 Although storage engines can manage their own locks, MySQL itself also uses a variety of locks that are effectively table-level for various purposes. For instance, the server uses a table-level lock for statements such as ALTER TABLE, regardless of the storage engine.
 Source: High Performance MySQL, 3rd Edition (the book)
 ">⌘</a>
-- What is the difference between table-level locking and row-level locking? What storage engines have to do with these lockings?
+- What is the difference between table-level locking and row-level locking? Storage engines should be mentioned.
 <a href="#" title="
 The most basic locking strategy available in MySQL, and the one with the lowest overhead, is table locks. Although storage engines can manage their own locks, MySQL itself also uses a variety of locks that are effectively table-level for various purposes. For instance, the server uses a table-level lock for statements such as ALTER TABLE, regardless of the storage engine.
 The locking style that offers the greatest concurrency (and carries the greatest overhead) is the use of row locks. Row-level locking, as this strategy is commonly known, is available in the InnoDB and XtraDB storage engines, among others. Row locks are implemented in the storage engine, not the server. The server is completely unaware of locks implemented in the storage engines, the storage engines all implement locking in their own ways.
