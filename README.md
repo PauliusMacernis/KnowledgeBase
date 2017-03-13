@@ -175,6 +175,17 @@ CR and LF are ASCII and Unicode control characters while \\r and \\n are abstrac
 <a href="#" title="
 ">⌘</a>
 
+- What is the difference between a soft link and a hard link?
+<a href="#" title="
+http://linuxgazette.net/105/pitcher.html
+">⌘</a>
+
+- What is inode?
+<a href="#" title="
+http://linuxgazette.net/105/pitcher.html
+">⌘</a>
+
+
 ## SQL
 - What is Tabular Data Stream (TDS) about? Applies for SQL products of Microsoft and Sybase.
 <a href="#" title="
