@@ -216,6 +216,7 @@ FreeTDS is a set of libraries for Unix and Linux that allows programs to nativel
 
 - What is ODBC?
 <a href="#" title="
+More info: https://github.com/Microsoft/ODBC-Specification
 ">⌘</a>
  
 - Anything special about ODBC 3.0?
