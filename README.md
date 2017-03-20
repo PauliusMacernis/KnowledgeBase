@@ -214,6 +214,11 @@ FreeTDS is a set of libraries for Unix and Linux that allows programs to nativel
 -`sqlsrv` (aka. PDO_SQLSRV, pdo-sqlsrv, MS SQL Server (PDO), etc.) - Microsoft's SQL Server Driver for PHP. Available since July of 2008.  Version 2+ gives the PDO functionality as well as the procedural style. Version 4.0+ supports PHP 7.0+ on Windows and Linux (it was Windows-only till 4.0). The SQLSRV extension provides a procedural interface while the PDO_SQLSRV extension implements PDO for accessing data in all editions of SQL Server 2005 and later (including Azure SQL DB). These drivers rely on the Microsoft ODBC. The sqlsrv driver is built, maintained, and supported by Microsoft. The sqlsrv driver is built on ODBC, which is actively maintained by Microsoft and provides access to features in the latest releases of SQL Server. More info: http://sqlsrvphp.codeplex.com/  (July 2008 - October 2013),  https://github.com/Microsoft/msphpsql (July 2008 - now),  https://pecl.php.net/package/sqlsrv  (June 2011 - now),  https://docs.microsoft.com/en-us/sql/connect/php/microsoft-php-driver-for-sql-server
 ">⌘</a>
 
+- What is DB-lib (aka. dblib) by Microsoft?
+<a href="#" title="
+
+">⌘</a>
+
 - What is ODBC?
 <a href="#" title="
 More info: https://github.com/Microsoft/ODBC-Specification
