@@ -216,7 +216,6 @@ FreeTDS is a set of libraries for Unix and Linux that allows programs to nativel
 
 - What is DB-lib (aka. dblib) by Microsoft?
 <a href="#" title="
-
 ">⌘</a>
 
 - What is ODBC?
