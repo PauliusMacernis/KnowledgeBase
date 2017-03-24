@@ -138,6 +138,30 @@ http://pubs.opengroup.org/onlinepubs/7908799/xsh/iconv.html
 - What is Trusted Authentication?
 <a href="#" title="
 ">⌘</a>
+
+- What is Basic Auth?
+<a href="#" title="
+">⌘</a>
+
+- What is Digest Auth?
+<a href="#" title="
+">⌘</a>
+
+- What is OAuth?
+<a href="#" title="
+">⌘</a>
+
+- What is Hawk Authentication?
+<a href="#" title="
+">⌘</a>
+
+- What is AWS Signature?
+<a href="#" title="
+">⌘</a>
+
+- What are differences between OAuth 1.0 and OAuth 2.0?
+<a href="#" title="
+">⌘</a>
   
 - What is Kerberos (protocol) about?
 <a href="#" title="
