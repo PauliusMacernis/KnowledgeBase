@@ -3,6 +3,11 @@ There are some questions that needs to be answered by every senior web developer
 
 
 ## General
+- What is the difference between a fat client and a thin client (for example: a zero client, a web client, etc.)?
+<a href="#" title="
+https://en.wikipedia.org/wiki/Thin_client
+ ">⌘</a>
+
 - What is the difference between a library and a driver?
 <a href="#" title="
 Technically, they're the same thing: bodies of subroutines whose names are exported to a linker (static or runtime). By convention, a 'library' is used directly by an application, whose programmer will require documentation and header files. A 'driver', by contrast, is defined by a binary API and is used in some kind of framework, hence printer driver and video driver.
@@ -102,6 +107,11 @@ CR and LF are ASCII and Unicode control characters while \\r and \\n are abstrac
 <a href="#" title="
  LF - Unix and Unix-like systems (Linux, macOS, FreeBSD, Multics, AIX, Xenix, etc.), BeOS, Amiga, RISC OS; CR+LF - Microsoft Windows, DOS (MS-DOS, PC DOS, etc.), DEC TOPS-10, RT-11, CP/M, MP/M, Atari TOS, OS/2, Symbian OS, Palm OS, Amstrad CPC, and most other early non-Unix and non-IBM OSes; CR - Commodore 8-bit machines, Acorn BBC, ZX Spectrum, TRS-80, Apple II family, Oberon, the classic Mac OS up to version 9, MIT Lisp Machine and OS-9; RS - QNX pre-POSIX implementation; 0x9B - Atari 8-bit machines using ATASCII variant of ASCII (155 in decimal), LF+CR - Acorn BBC and RISC OS spooled text output.
 ">⌘</a>
+
+- What is `iconv`?
+<a href="#" title="
+http://pubs.opengroup.org/onlinepubs/7908799/xsh/iconv.html
+">⌘</a>
  
 ## Regular expressions
 - What is the difference between `[]` and `()`?
@@ -153,6 +163,7 @@ CR and LF are ASCII and Unicode control characters while \\r and \\n are abstrac
 <a href="#" title="
 ">⌘</a>
 
+
  
 ### HTML
 - Is there any difference between `HTML5` and `HTML 5` (see the space in between)?
@@ -165,6 +176,10 @@ CR and LF are ASCII and Unicode control characters while \\r and \\n are abstrac
 ">⌘</a>
  
 - What is \*nix?
+<a href="#" title="
+">⌘</a>
+
+- What is X Window System?
 <a href="#" title="
 ">⌘</a>
 
@@ -220,7 +235,7 @@ FreeTDS is a set of libraries for Unix and Linux that allows programs to nativel
 
 - What is ODBC?
 <a href="#" title="
-More info: https://github.com/Microsoft/ODBC-Specification
+More info: https://github.com/Microsoft/ODBC-Specification , http://searchoracle.techtarget.com/definition/Open-Database-Connectivity
 ">⌘</a>
  
 - Anything special about ODBC 3.0?
@@ -421,6 +436,11 @@ A PDC is a Primary Domain Controller, and a BDC is a Backup Domain Controller. Y
 <a href="#" title="
 ">⌘</a>
 
+- What is `stunnel` open-source multi-platform application for?
+<a href="#" title="
+https://en.wikipedia.org/wiki/Stunnel , https://www.stunnel.org/index.html
+">⌘</a>
+
  
 # PHP
 - Lets say I make HTTPS request to PRODUCTION server. How can I find the most time-consuming code blocks within the project files I am interested in the most?
@@ -478,6 +498,7 @@ CGI specifies that one program instance will be launched per each request. This 
 
 - What is ZTS (Zend Thread Safety) in PHP?
 <a href="#" title="
+http://stackoverflow.com/questions/681081/is-php-thread-safe , https://gist.github.com/tegansnyder/ad32f2068e7e30d2692c06df32314ed4 , http://flylib.com/books/en/2.565.1.14/1/ , 
 ">⌘</a>
 
 - What do "thread safe" and "non-thread safe" mean in PHP?
