@@ -421,6 +421,10 @@ Source: High Performance MySQL, 3rd Edition (the book)
 <a href="#" title="
 ">⌘</a>
 
+- What is the JSON (JavaScript Object Notation)?
+<a href="#" title="
+">⌘</a>
+
 
 # Networks, Internet
 - What is Internet Assigned Numbers Authority (IANA) for?
