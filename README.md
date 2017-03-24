@@ -18,6 +18,11 @@ Technically, they're the same thing: bodies of subroutines whose names are expor
 More info: http://semver.org/
 ">⌘</a>
 
+- What is Multipurpose Internet Mail Extensions (MIME)?
+<a href="#" title="
+More info: https://en.wikipedia.org/wiki/MIME
+">⌘</a>
+
 
 ## Licenses
 - ...
