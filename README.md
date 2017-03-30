@@ -568,6 +568,13 @@ PDO ships with PHP 5.1, and is available as a PECL extension for PHP 5.0; PDO re
 ">⌘</a>
 
 
+## PHP (Laravel)
+- What's the difference between Commands and Events in the context of Laravel 5?
+<a href="#" title="
+http://stackoverflow.com/questions/28344009/whats-the-difference-between-commands-and-events-in-the-context-of-laravel-5
+ ">⌘</a>
+
+
 ## Android App Development
 
 - What is Android Studio?
