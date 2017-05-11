@@ -120,6 +120,11 @@ CR and LF are ASCII and Unicode control characters while \\r and \\n are abstrac
  LF - Unix and Unix-like systems (Linux, macOS, FreeBSD, Multics, AIX, Xenix, etc.), BeOS, Amiga, RISC OS; CR+LF - Microsoft Windows, DOS (MS-DOS, PC DOS, etc.), DEC TOPS-10, RT-11, CP/M, MP/M, Atari TOS, OS/2, Symbian OS, Palm OS, Amstrad CPC, and most other early non-Unix and non-IBM OSes; CR - Commodore 8-bit machines, Acorn BBC, ZX Spectrum, TRS-80, Apple II family, Oberon, the classic Mac OS up to version 9, MIT Lisp Machine and OS-9; RS - QNX pre-POSIX implementation; 0x9B - Atari 8-bit machines using ATASCII variant of ASCII (155 in decimal), LF+CR - Acorn BBC and RISC OS spooled text output.
 ">⌘</a>
 
+- What is the meaning of `full stop` (0x2E)?
+<a href="#" title="
+In punctuation, the full stop (British English) or period (Canadian and American English) is a punctuation mark placed at the end of a sentence. The stop glyph is sometimes called a baseline dot because, typographically, it is a dot on the baseline. This term distinguishes the baseline dot from the interpunct (a raised dot). In computing, the full stop is often used as a delimiter (commonly called a 'dot'), such as in DNS lookups, web addresses, and file names: www.wikipedia.org, document.txt, 192.168.0.1 More info: https://en.wikipedia.org/wiki/Full_stop
+">⌘</a>
+
 - What is `iconv`?
 <a href="#" title="
 http://pubs.opengroup.org/onlinepubs/7908799/xsh/iconv.html
