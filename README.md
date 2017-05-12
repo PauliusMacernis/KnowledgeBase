@@ -572,6 +572,11 @@ PDO provides a data-access abstraction layer, which means that, regardless of wh
 PDO ships with PHP 5.1, and is available as a PECL extension for PHP 5.0; PDO requires the new OO features in the core of PHP 5, and so will not run with earlier versions of PHP.
 ">⌘</a>
 
+- Are PHP function names case sensitive?
+<a href="#" title="
+PHP function names are case-insensitive. http://php.net/manual/en/functions.user-defined.php
+">⌘</a>
+
 
 ## PHP (Composer)
 - What's the difference between `composer update` and `composer install`?
