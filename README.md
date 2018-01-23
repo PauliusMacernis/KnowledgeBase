@@ -577,6 +577,16 @@ PDO ships with PHP 5.1, and is available as a PECL extension for PHP 5.0; PDO re
 PHP function names are case-insensitive. http://php.net/manual/en/functions.user-defined.php
 ">⌘</a>
 
+- What is the difference between "static::" and "self::" when using to reference a constant or static variable within a class?
+<a href="#" title="
+self:: is not inheritance-aware where static:: is (in PHP). When it comes to defining a bunch of constants within a class, if you want to override those constants in a subclass to change default ~behaviours~, it becomes necessary to use static:: so that a method on the parent class that references the constant, honours the ~override~. More info: https://stackoverflow.com/questions/13613594/overriding-class-constants-vs-properties
+">⌘</a>
+
+- What is the difference between "static::" and "$this::" when using to reference a constant or static variable within a class?
+<a href="#" title="
+It works the same (?). More info: https://stackoverflow.com/questions/13613594/overriding-class-constants-vs-properties
+">⌘</a>
+
 
 ## PHP (Composer)
 - What's the difference between `composer update` and `composer install`?
