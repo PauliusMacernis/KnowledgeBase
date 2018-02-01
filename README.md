@@ -587,6 +587,11 @@ self:: is not inheritance-aware where static:: is (in PHP). When it comes to def
 It works the same (?). More info: https://stackoverflow.com/questions/13613594/overriding-class-constants-vs-properties
 ">⌘</a>
 
+- What is the difference between serialization (e.g. serialize PHP function) and json encoding (e.g. json_encode PHP function)?
+<a href="#" title="
+...
+">⌘</a>
+
 
 ## PHP (Composer)
 - What's the difference between `composer update` and `composer install`?
