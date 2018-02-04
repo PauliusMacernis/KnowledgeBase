@@ -605,6 +605,11 @@ http://stackoverflow.com/questions/33052195/what-are-the-differences-between-com
 <a href="#" title="
 http://stackoverflow.com/questions/28344009/whats-the-difference-between-commands-and-events-in-the-context-of-laravel-5
  ">⌘</a>
+ 
+ 
+ ## PHP (Docker)
+- What is each of the following commands for: `docker`, `docker-compose`, `docker-machine`?
+<a href="#" title="...">⌘</a>
 
 
 ## Android App Development
