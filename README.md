@@ -251,6 +251,9 @@ http://linuxgazette.net/105/pitcher.html
 http://linuxgazette.net/105/pitcher.html
 ">⌘</a>
 
+- What is the difference between `*-client`, `*-server` and `*-common` types of packages? For example, there is a line in a team's project saying `Install mariadb via apt-get`. However, `apt-get` finds `mariadb-client`, `mariadb-server` and `mariadb-common` packages only. Which package to install in order to meet the requirement? There is no package called `mariadb` on `apt-get`.
+<a href="#" title="">⌘</a>
+
 
 ## Virtualization
 
