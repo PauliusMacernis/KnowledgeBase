@@ -1,6 +1,9 @@
 # Sass
 There are some questions that needs to be answered by every senior web developer anytime. 
 
+Main source of information:  
+https://sass-lang.com/guide
+
 
 ## General
 - What is Sass?
@@ -17,7 +20,7 @@ Yes, you need it. Before you start using Sass you will need to install Ruby. Rub
  <a href="#" title="Sass (CSS extension language) 3 introduces a new syntax known as SCSS which is fully compatible with the syntax of CSS, while still supporting the full power of Sass. This means that every valid CSS stylesheet is a valid SCSS file with the same meaning. In addition, SCSS understands most CSS hacks and vendor-specific syntax, such as IE's old filter syntax.
  ">⌘</a>
  
- - What is the comand `sass` for?
+ - What is the Sass comand `sass` for?
 <a href="#" title="
 Converts SCSS or Sass files to CSS. Usage: `sass [options] [INPUT] [OUTPUT]`
  ">⌘</a>
@@ -64,4 +67,13 @@ We can think of Sass mixins as functions for CSS. Some things in CSS are a bit t
 
  - What is the difference between `@import` and `@include` in Sass?  
  Sass `@import` is for importing files - Sass partials (for example: `@import 'reset'`). Sass `@include` is for using different "CSS-like functions" - Sass mixins (for example: `@include border-radius(10px);`). Worth visiting: https://github.com/madskristensen/WebEssentials2013/issues/1571
+
+ - What does "Sass Extend/Inheritance" mean?
+ <a href="#" title="
+Using `@extend` lets you share a set of CSS properties from one selector to another. It helps keep your Sass very DRY (DRY - Do not Repeat Yourself). A placeholder class (starting with `%`, for example: `%message-shared { padding: 10px; color: #333; }`) is a special type of class that only prints when it is extended (example of usage: `.success { @extend %message-shared; border-color: green; } .error { @extend %message-shared; border-color: red; }` compiles to `.success, .error { padding: 10px; color: #333; } .success { border-color: green; } .error { border-color: red; }`. As you see, the magic happens in the generated CSS, where each of classes will get the same CSS properties as `%message-shared`. This helps you avoid having to write multiple class names on HTML elements.
+">⌘</a>
+
+ - What types of "Sass operators" do you know? What is each of them for?  
+Sass has a math operators like `+`, `-`, `*`, `/`, and `%`. Example of usage: `.container { width: 100%; } article[role="main"] { float: left; width: 600px / 960px * 100%; } aside[role="complementary"] { float: right; width: 300px / 960px * 100%; }` translates to `.container { width: 100%; } article[role="main"] { float: left; width: 62.5%; } aside[role="complementary"] { float: right; width: 31.25%; }`.
+
 
