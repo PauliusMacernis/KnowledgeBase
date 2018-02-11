@@ -11,9 +11,9 @@ https://sass-lang.com/guide
  Sass is a CSS extension language. Sass lets you use features that don't exist in CSS yet like variables, nesting, mixins, inheritance, etc. Sass come into action by using special `sass` command line tool. The comand line tool is available on Windows, Linux, Mac. It is also possible to use Sass over special-made applications like: CodeKit, Compass.app, Ghostlab, Hammer, Koala, LiveReload, Prepros, Scout-App, etc.
  ">⌘</a>
 
-- Do you need Ruby for sass to work on your machine?
+- Do you need Ruby for `sass` command line tool to work on your machine?
 <a href="#" title="
-Yes, you need it. Before you start using Sass you will need to install Ruby. Ruby uses Gems to manage its various packages of code like Sass. However, can I hack somehow and install sass without Ruby???
+Yes, you need it. Before you start using `saas` you will need to install Ruby. Ruby uses Gems to manage its various packages of code like `saas`. However, can I hack somehow and install sass without Ruby???
  ">⌘</a>
  
  - What is the difference between `sass` and `scss`?
@@ -35,7 +35,7 @@ Sass preprocessing stands for translating (compiling) the code written in sass-c
 Adding flag `--watch` to sass command will compile on-the-fly, it is on the time you save the file (example: `sass --watch input.scss output.css` compiles `output.css` every time `input.scss` is saved). The compilation may be done on the directory level as well (example: `sass --watch app/sass:public/stylesheets` - sass would watch all files in the `app/sass` folder for changes, and compile CSS to the `public/stylesheets` folder).
  ">⌘</a>
  
- - Can we compile directory containing Saas files into CSS files on another directory without using `--watch` option?
+ - Can we compile directory containing Sass files into CSS files on another directory without using `--watch` option?
  <a href="#" title="
 The compilation IS NOT POSSIBLE on the directories level without a special option added (NOT WORKING example1: `sass app/sass:public/stylesheets`, NOT WORKING example2: `sass app/sass public/stylesheets` - sass would NOT compile on directory level these ways on Sass 3.5.5 (Bleeding Edge)). Adding `--watch` option may be the solution to compile files on a directory-level.
  ">⌘</a>
