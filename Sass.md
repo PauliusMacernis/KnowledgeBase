@@ -52,12 +52,12 @@ Sass will let you nest your CSS selectors in a way that follows the same visual 
 
  - What does "Sass partials" mean?
  <a href="#" title="
-You can create partial Sass files that contain little snippets of CSS that you can include in other Sass files. This is a great way to modularize your CSS and help keep things easier to maintain. A partial is simply a Sass file named with a leading underscore. You might name it something like `_partial.scss`. The underscore lets Sass know that the file is only a partial file and that it should not be generated into a CSS file. Sass partials are used with the `@import` directive.
+You can create partial Sass files that contain little snippets of CSS that you can include in other Sass files. This is a great way to modularize your CSS and help keep things easier to maintain. A partial is simply a Sass file named with a leading underscore. You might name it something like `_partial.scss`. The underscore lets Sass know that the file is only a partial file and that it should not be generated into a CSS file. Sass partials are used with the `@import` directive, for example: `@import 'partials';`. As you see, when you import a file over Sass import you don't need to include the file extension `.scss`. Sass will figure it out. 
 ">⌘</a>
 
  - What is the difference between "CSS import" and "Sass import"?
  <a href="#" title="
-CSS has an import option that lets you split your CSS into smaller, more maintainable portions. The only drawback is that each time you use `@import` in CSS it creates another HTTP request. Sass builds on top of the current CSS `@import` but instead of requiring an HTTP request, Sass will take the file that you want to import and combine it with the file you're importing into so you can serve a single CSS file to the web browser. When you import a file over Sass import you don't need to include the file extension `.scss`. Sass will figure it out. 
+CSS has an import option that lets you split your CSS into smaller, more maintainable portions. The only drawback is that each time you use `@import` in CSS it creates another HTTP request. Sass builds on top of the current CSS `@import` but instead of requiring an HTTP request, Sass will take the file that you want to import and combine it with the file you're importing into so you can serve a single CSS file to the web browser.
 ">⌘</a>
 
  - What does "Sass mixins" mean?
@@ -66,7 +66,7 @@ We can think of Sass mixins as functions for CSS. Some things in CSS are a bit t
 ">⌘</a>
 
  - What is the difference between `@import` and `@include` in Sass?  
- Sass `@import` is for importing files - Sass partials (for example: `@import 'reset'`). Sass `@include` is for using different "CSS-like functions" - Sass mixins (for example: `@include border-radius(10px);`). Worth visiting: https://github.com/madskristensen/WebEssentials2013/issues/1571
+ Sass `@import` is for importing files - Sass partials (for example: `@import 'reset'`). Sass `@include` is for using "CSS-like functions" - Sass mixins (for example: `@include border-radius(10px);`). Worth visiting: https://github.com/madskristensen/WebEssentials2013/issues/1571
 
  - What does "Sass Extend/Inheritance" mean?
  <a href="#" title="
