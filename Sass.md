@@ -1,4 +1,4 @@
-# Sass
+# Sass (Syntactically Awesome StyleSheets)
 There are some questions that needs to be answered by every senior web developer anytime. 
 
 Main source of information:  
