@@ -6,7 +6,8 @@ https://sass-lang.com/guide
 
 @TODO:  
 Details: https://sass-lang.com/documentation/file.SASS_REFERENCE.html#caching (and further)  
-Compass style library: http://compass-style.org/
+Compass style library: http://compass-style.org/  
+BEM Standard: http://getbem.com/introduction/  
 
 
 
