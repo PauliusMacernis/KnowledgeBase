@@ -8,7 +8,7 @@ https://sass-lang.com/guide
 ## General
 - What is Sass?
 <a href="#" title="
- Sass is a CSS extension language. Sass lets you use features that don't exist in CSS yet like variables, nesting, mixins, inheritance, etc.
+ Sass is a CSS extension language. Sass lets you use features that don't exist in CSS yet like variables, nesting, mixins, inheritance, etc. Sass come into action by using special `sass` command line tool. The comand line tool is available on Windows, Linux, Mac. It is also possible to use Sass over special-made applications like: CodeKit, Compass.app, Ghostlab, Hammer, Koala, LiveReload, Prepros, Scout-App, etc.
  ">⌘</a>
 
 - Do you need Ruby for sass to work on your machine?
