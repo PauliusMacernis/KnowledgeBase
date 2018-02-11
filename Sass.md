@@ -4,8 +4,13 @@ There are some questions that needs to be answered by every senior web developer
 Main source of information:  
 https://sass-lang.com/guide
 
+@TODO:  
+Details: https://sass-lang.com/documentation/file.SASS_REFERENCE.html#caching (and further)  
+Compass style library: http://compass-style.org/
 
-## General
+
+
+## Basics
 - What is Sass?
 <a href="#" title="
  Sass is a CSS extension language. Sass lets you use features that don't exist in CSS yet like variables, nesting, mixins, inheritance, etc. Sass come into action by using special `sass` command line tool. The comand line tool is available on Windows, Linux, Mac. It is also possible to use Sass over special-made applications like: CodeKit, Compass.app, Ghostlab, Hammer, Koala, LiveReload, Prepros, Scout-App, etc.
@@ -13,11 +18,11 @@ https://sass-lang.com/guide
 
 - Do you need Ruby for `sass` command line tool to work on your machine?
 <a href="#" title="
-Yes, you need it. Before you start using `saas` you will need to install Ruby. Ruby uses Gems to manage its various packages of code like `saas`. However, can I hack somehow and install sass without Ruby???
+Yes, you need it. Before you start using `saas` you will need to install Ruby. Ruby uses Gems to manage its various packages of code like `saas`. Sass can be used in three ways: as a command-line tool, as a standalone Ruby module, and as a plugin for any Rack-enabled framework, including Ruby on Rails and Merb. The first step for all of these is to install the Sass gem.
  ">⌘</a>
  
- - What is the difference between `sass` and `scss`?
- <a href="#" title="Sass (CSS extension language) 3 introduces a new syntax known as SCSS which is fully compatible with the syntax of CSS, while still supporting the full power of Sass. This means that every valid CSS stylesheet is a valid SCSS file with the same meaning. In addition, SCSS understands most CSS hacks and vendor-specific syntax, such as IE's old filter syntax.
+ - What is the difference between Sass (Syntactically Awesome StyleSheets) and Scss (Sassy CSS)?
+ <a href="#" title="There are two syntaxes of Sass (Syntactically Awesome StyleSheets): the new one (SCSS used in `*.scss` files) and the old one (indented syntax or sometimes called just 'Sass', used in `.sass` files). Sass 3 introduces a new syntax known as SCSS which is fully compatible with the syntax of CSS, while still supporting the full power of Sass. It means that every valid CSS stylesheet is a valid SCSS file with the same meaning. In addition, SCSS understands most CSS hacks and vendor-specific syntax, such as IE's old filter syntax.
  ">⌘</a>
  
  - What is the Sass comand `sass` for?
@@ -76,4 +81,12 @@ Using `@extend` lets you share a set of CSS properties from one selector to anot
  - What types of "Sass operators" do you know? What is each of them for?  
 Sass has a math operators like `+`, `-`, `*`, `/`, and `%`. Example of usage: `.container { width: 100%; } article[role="main"] { float: left; width: 600px / 960px * 100%; } aside[role="complementary"] { float: right; width: 300px / 960px * 100%; }` translates to `.container { width: 100%; } article[role="main"] { float: left; width: 62.5%; } aside[role="complementary"] { float: right; width: 31.25%; }`.
 
+ - What is `sass-convert` command line for?
+ <a href="#" title="
+The tool converts Sass to SCSS and vise versa. Usage: `sass-convert style.sass style.scss`, `sass-convert style.scss style.sass`. Note that `sass-convert` command does not generate CSS files. For that, use the sass command described elsewhere.
+">⌘</a>
 
+ - How to know all options available to pass to `sass` command line tool?
+ <a href="#" title="
+`sass --help`
+">⌘</a>
