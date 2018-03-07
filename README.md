@@ -13,6 +13,10 @@ https://en.wikipedia.org/wiki/Thin_client
 Technically, they're the same thing: bodies of subroutines whose names are exported to a linker (static or runtime). By convention, a 'library' is used directly by an application, whose programmer will require documentation and header files. A 'driver', by contrast, is defined by a binary API and is used in some kind of framework, hence printer driver and video driver.
  ">⌘</a>
  
+- What is the difference between a `folder` and a `directory` (a `dir`)?
+<a href="#" title="
+ ">⌘</a>
+ 
 - What is Semantic Versioning Specification (SemVer)?
 <a href="#" title="
 More info: http://semver.org/
