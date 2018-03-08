@@ -33,3 +33,13 @@
 SELECT * FROM users
 WHERE id = :id
 ```
+  - **What kind of flags exists within SQL templates by the HugSQL?**  
+  `:!` - the query is destructive (update, delete, insert)  
+  `:n` - the query returns the number of affected rows (update, delete, insert)  
+  `:?` - the query does a select  
+  `:*` - the query returns multiple rows  
+  `:1` - the query returns one row (@TODO: check if this is true)  
+  
+  - **...**
+  
+  
