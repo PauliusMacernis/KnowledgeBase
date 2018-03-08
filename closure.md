@@ -17,3 +17,11 @@
 2. Run `lein new luminus guestbook +h2` to create a new application by specifying luminus as the template name and guestbook as the project name, and add the +h2 parameter to indicate that we want to have an instance of the H2 embedded database initialized for us.  
 3. Run `lein run -p 8000` to start the application on port 8000. When you run the application, it may take a little while because Leiningen first has to retrieve all of its dependencies. Once downloaded, the dependencies are cached locally in the `~/.m2/repository` folder and will be available on subsequent runs.
 4. Open a web browser and check for `http://localhost:8000/`
+
+  - **How to create migration files (_datetime_-guestbook.up.sql & _datetime_-guestbook.down.sql) by using `lein`?**  
+  `lein migratus create guestbook`
+  
+  - **How to run migrations by using `lein`?**  
+  `lein run migrate`
+  
+  
