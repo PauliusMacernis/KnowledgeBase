@@ -1,0 +1,1 @@
+- `null > 0` results to `false`, `null < 0` results to `false`, `null == 0` results to `false`. Why `null >= 0` results to `true`?
