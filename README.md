@@ -630,6 +630,11 @@ http://stackoverflow.com/questions/28344009/whats-the-difference-between-command
 - What is the difference between using `docker run` and Docker compose?
 <a href="#" title="...">⌘</a>
 
+ 
+# PHP (testing with PHPUnit)
+- Explain how PHPUnit executes tests (when/how often creates test objects, when/how often invokes test methods).
+<a href="#" title="...">⌘</a>
+
 
 ## Android App Development
 
@@ -680,4 +685,6 @@ fast-forward-merge (all commit history made in `feature/my-fancy-feature` will r
 non-fast-forward-merge (all commit history made in `feature/my-fancy-feature` will be gone):  
 `git merge --no-ff`  
 
+- What is the difference between `revert` and `reset`?
+<a href="#" title="...">⌘</a>
 
