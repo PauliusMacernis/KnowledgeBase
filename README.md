@@ -438,6 +438,10 @@ The most basic locking strategy available in MySQL, and the one with the lowest 
 The locking style that offers the greatest concurrency (and carries the greatest overhead) is the use of row locks. Row-level locking, as this strategy is commonly known, is available in the InnoDB and XtraDB storage engines, among others. Row locks are implemented in the storage engine, not the server. The server is completely unaware of locks implemented in the storage engines, the storage engines all implement locking in their own ways.
 Source: High Performance MySQL, 3rd Edition (the book)
 ">⌘</a>
+- What are index prefixes?
+<a href="#" title="
+They are indexes build upon a prefix of the column's data. http://www.mysqldba.co.uk/articles/what-are-index-prefixes
+">⌘</a>
  
  
 ## Microsoft SQL
