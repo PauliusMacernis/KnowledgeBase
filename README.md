@@ -27,6 +27,11 @@ More info: http://semver.org/
 More info: https://en.wikipedia.org/wiki/MIME
 ">⌘</a>
 
+- What is Read–Eval–Print Loop (REPL)?
+<a href="#" title="
+More info: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop
+">⌘</a>
+
 
 ## Licenses
 - ...
