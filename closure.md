@@ -2,7 +2,9 @@
   It is community repository for open source Clojure libraries.
   
   - **What is Leiningen ( https://leiningen.org/ )?**  
-   Leiningen is the Clojure counterpart of Maven, a popular Java build tool. It uses a Maven-compatible dependency management system, and therefore it has access to large and well-maintained repositories of Java libraries. In addition, Clojure libraries are commonly found in the Clojars repository. This repository is enabled by default in Leiningen.
+   Leiningen is the Clojure counterpart of Maven, a popular Java build tool. It uses a Maven-compatible dependency management system, and therefore it has access to large and well-maintained repositories of Java libraries. In addition, Clojure libraries are commonly found in the Clojars repository. This repository is enabled by default in Leiningen.  
+In general, Leiningen is a tool for working with Clojure projects.  
+   
    - **What can be done with Leiningen's `lein` command?**  
 ```
 change              Rewrite project.clj by applying a function.
