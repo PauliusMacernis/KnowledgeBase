@@ -608,6 +608,11 @@ It works the same (?). More info: https://stackoverflow.com/questions/13613594/o
 Class constructors, destructors and clone methods may not declare return types (fatal error will rise if given). All other methods may have return types. All of this applies for PHP 7.0 and above. More info: https://wiki.php.net/rfc/return_types
 ">⌘</a>
 
+- What is PHPCR (PHP Content Repository)?
+<a href="#" title="
+http://phpcr.github.io/about/
+">⌘</a>
+
 
 ## PHP (Composer)
 - What's the difference between `composer update` and `composer install`?
