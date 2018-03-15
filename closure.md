@@ -46,15 +46,24 @@ WHERE id = :id
   - **What is `profiles.clj` file (luminus project) for ?**  
 The profiles.clj file contains information about the local environment that’s not meant to be checked into the shared code repository. Database connection parameters are an example of such environment variables.
 
-  - **What is `Mount library` (https://github.com/tolitius/mount) for**  
-  ???
+  - **What is `Mount library` (https://github.com/tolitius/mount) for?**  
+Mount library is for managing Clojure and ClojureScript app state since (reset).  
+If Clojure REPL (i.e. lein repl, boot repl) fired up instantly, the need to reload application state inside the REPL would go away. But at the moment, and for some time in the future, managing state by making it reloadable within the same REPL session is important to retain all the Clojure superpowers.
   
-  - **What is Lisp machine?**  
-  https://en.wikipedia.org/wiki/Lisp_machine
+  - **Are queries in `resources/sql/queries.sql` sanitized to prevent SQL injections if `:variable`-alike values are being used? (default luminus project)**  
+  Since the queries are parameterized, any variables we pass in are sanitized to prevent SQL injection.
+  
+  - **Is nREPL server being run on the dev server by default in the new luminus project**  
+  When the application starts in development mode, it automatically runs the nREPL server on port 7000. We can connect to this REPL and inspect the running application: `lein repl :connect 7000`
   
   
   
   
   
   
+  
+  - **Read more**  
+  https://en.wikipedia.org/wiki/Lisp_machine  
+  http://blog.ndk.io/clojure-bootstrapping.html  
+  https://mitpress.mit.edu/sicp/full-text/book/book.html  
   
