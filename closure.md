@@ -3,6 +3,41 @@
   
   - **What is Leiningen ( https://leiningen.org/ )?**  
    Leiningen is the Clojure counterpart of Maven, a popular Java build tool. It uses a Maven-compatible dependency management system, and therefore it has access to large and well-maintained repositories of Java libraries. In addition, Clojure libraries are commonly found in the Clojars repository. This repository is enabled by default in Leiningen.
+   - **What can be done with Leiningen's `lein` command?**  
+```
+change              Rewrite project.clj by applying a function.
+check               Check syntax and warn on reflection.
+classpath           Print the classpath of the current project.
+clean               Remove all files from project's target-path.
+compile             Compile Clojure source into .class files.
+deploy              Build and deploy jar to remote repository.
+deps                Download all dependencies.
+do                  Higher-order task to perform other tasks in succession.
+help                Display a list of tasks or help for a given task.
+immutant            Tasks for managing Immutant 2.x projects in a WildFly container.
+install             Install the current project to the local repository.
+jar                 Package up all the project's files into a jar file.
+javac               Compile Java source files.
+migratus            Maintain database migrations.
+new                 Generate project scaffolding based on a template.
+plugin              DEPRECATED. Please use the :user profile instead.
+pom                 Write a pom.xml file to disk for Maven interoperability.
+release             Perform :release-tasks.
+repl                Start a repl session either with the current project or standalone.
+retest              Run only the test namespaces which failed last time around.
+run                 Run a -main function with optional command-line arguments.
+search              Search Central and Clojars for published artifacts.
+show-profiles       List all available profiles or display one if given an argument.
+test                Run the project's tests.
+test-refresh        Autoruns clojure.test tests on source change or
+trampoline          Run a task without nesting the project's JVM inside Leiningen's.
+uberjar             Package up the project files and dependencies into a jar file.
+update-in           Perform arbitrary transformations on your project map.
+upgrade             Upgrade Leiningen to specified version or latest stable.
+vcs                 Interact with the version control system.
+version             Print version for Leiningen and the current JVM.
+with-profile        Apply the given task with the profile(s) specified.
+```
    
   - **What is Luminus ( http://www.luminusweb.net/ )?**  
   Luminus is a Clojure micro-framework based on a set of lightweight libraries.
