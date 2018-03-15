@@ -90,7 +90,14 @@ If Clojure REPL (i.e. lein repl, boot repl) fired up instantly, the need to relo
   - **Are queries in `resources/sql/queries.sql` sanitized to prevent SQL injections if `:variable`-alike values are being used? (default luminus project)**  
   Since the queries are parameterized, any variables we pass in are sanitized to prevent SQL injection.
   
-  - **Is nREPL server being run on the dev server by default in the new luminus project**  
+  - **What is network REPL (nREPL) server?**  
+  ~~nREPL stands for "network REPL", and while this may sound pretty similar to a "socket REPL", they are completely different animals.
+  The REPLs we've seen so far are stream based, they read lines from an input stream, and write the result (and any output from side effects) to an output stream. This makes them conceptually simple, but tedious to communicate with programmatically.
+  nREPL seeks to fix this by being message-based, putting program-to-program first through a client-server architecture, where the client is your editor or IDE, and the server is the nREPL "REPL".
+  The client initiates the interaction by sending a message to the server, and as a response the server will send one or more messages back to the client.
+  The easiest way to start an nREPL server is either through Leiningen (lein repl) or Boot (boot repl). In either case the first line of output will contain a port number that an nREPL client can connect to.
+    
+  - **Is nREPL server being run on the dev server by default in the new luminus project?**  
   When the application starts in development mode, it automatically runs the nREPL server on port 7000. We can connect to this REPL and inspect the running application: `lein repl :connect 7000`
   
   
@@ -102,5 +109,6 @@ If Clojure REPL (i.e. lein repl, boot repl) fired up instantly, the need to relo
   - **Read more**  
   https://en.wikipedia.org/wiki/Lisp_machine  
   http://blog.ndk.io/clojure-bootstrapping.html  
+  https://lambdaisland.com/guides/clojure-repls  
   https://mitpress.mit.edu/sicp/full-text/book/book.html  
   
