@@ -109,10 +109,10 @@ If Clojure REPL (i.e. lein repl, boot repl) fired up instantly, the need to relo
    - **How to run a query-template (SQL) without parameters involved in nREPL (in the new luminus project)?**  
    `(query-name)`
    
-   - **How to check the documentation of any query-template (SQL) in nREPL (in the new luminus project)?**
+   - **How to check the documentation of any query-template (SQL) in nREPL (in the new luminus project)?**  
    `(doc query-name)`
    
-   - **How to run a query-template (SQL) with parameters involved in nREPL (in the new luminus project)?**
+   - **How to run a query-template (SQL) with parameters involved in nREPL (in the new luminus project)?**  
    For example:
 ```
    (save-message! {:name "John Smith"
@@ -120,7 +120,11 @@ If Clojure REPL (i.e. lein repl, boot repl) fired up instantly, the need to relo
  	                :timestamp (java.util.Date.)})
 ```
   
+  **How to run tests via lein (in the new luminus project)?**
+  `lein test`
   
+  **What is Leiningen plugin called `lein-test-refresh` (https://github.com/jakemcc/lein-test-refresh) for?**
+  If we have some tests then we can use a Leiningen plugin called lein-test-refresh to run them automatically any time we update the code in the project. This plugin is part of the Luminus template. 
   
   
   
@@ -129,4 +133,5 @@ If Clojure REPL (i.e. lein repl, boot repl) fired up instantly, the need to relo
   http://blog.ndk.io/clojure-bootstrapping.html  
   https://lambdaisland.com/guides/clojure-repls  
   https://mitpress.mit.edu/sicp/full-text/book/book.html  
+  https://github.com/jakemcc/lein-test-refresh
   
