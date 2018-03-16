@@ -120,10 +120,10 @@ If Clojure REPL (i.e. lein repl, boot repl) fired up instantly, the need to relo
  	                :timestamp (java.util.Date.)})
 ```
   
-  **How to run tests via lein (in the new luminus project)?**
+  - **How to run tests via lein (in the new luminus project)?**  
   `lein test`
   
-  **What is Leiningen plugin called `lein-test-refresh` (https://github.com/jakemcc/lein-test-refresh) for?**
+  - **What is Leiningen plugin called `lein-test-refresh` (https://github.com/jakemcc/lein-test-refresh) for?**  
   If we have some tests then we can use a Leiningen plugin called lein-test-refresh to run them automatically any time we update the code in the project. This plugin is part of the Luminus template. 
   
   
