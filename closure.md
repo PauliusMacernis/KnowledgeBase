@@ -128,7 +128,7 @@ If Clojure REPL (i.e. lein repl, boot repl) fired up instantly, the need to relo
   
   - **Why a development with `lein test-refresh` running is better than Test-driven development (TDD) ?**  
    We can keep an eye on this terminal to make sure that all our tests are passing whenever we make changes to the code or add new tests. This provides us with an automated sanity check that everything is working as expected.  
-   Developing the functionality using the REPL and then generating the tests is a common workflow in Clojure. This approach provides a faster feedback loop than Test Driven Development (TDD) since we don’t have to constantly switch between tests and code while developing a feature. **Instead, the development can be done interactively using the REPL. Once the feature works as desired, then we can take the code from the REPL session and turn it into unit tests for this feature.(???)** 
+   Developing the functionality using the REPL and then generating the tests is a common workflow in Clojure. This approach provides a faster feedback loop than Test Driven Development (TDD) since we don’t have to constantly switch between tests and code while developing a feature. **Instead, the development can be done interactively using the REPL. Once the feature works as desired, then we can take the code from the REPL session and turn it into unit tests for this feature.(???)**  
    https://stackoverflow.com/questions/17891868/the-right-way-to-run-unit-tests-in-clojure
    
    - **??**
