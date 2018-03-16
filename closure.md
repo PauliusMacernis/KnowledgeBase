@@ -103,7 +103,22 @@ If Clojure REPL (i.e. lein repl, boot repl) fired up instantly, the need to relo
   - **What is the file `env/dev/clj/user.clj` for (in the new luminus project)?**  
   The REPL starts in the user namespace that’s found at the env/dev/clj/user.clj file. This namespace is reserved for any development code that we wouldn’t want to package in our application. It also provides a scratch pad where we can try things out. This namespace provides start and stop helper functions that allow us to control the state of the application.
   
-  - **???**
+  - **Is it neccessary to restart the application after each change (in the new luminus project)?**  
+   There are a few cases where we will need to restart the application. The most common reason is when we’re adding new dependencies to the project, as those can’t be loaded dynamically by the JVM. However, if we think our application has got in a bad state, then we may wish to restart it as well.  
+   
+   - **How to run a query-template (SQL) without parameters involved in nREPL (in the new luminus project)?**  
+   `(query-name)`
+   
+   - **How to check the documentation of any query-template (SQL) in nREPL (in the new luminus project)?**
+   `(doc query-name)`
+   
+   - **How to run a query-template (SQL) with parameters involved in nREPL (in the new luminus project)?**
+   For example:
+```
+   (save-message! {:name "John Smith"
+ 	                :email "info@example.com"
+ 	                :timestamp (java.util.Date.)})
+```
   
   
   
