@@ -140,19 +140,21 @@ If Clojure REPL (i.e. lein repl, boot repl) fired up instantly, the need to relo
   - **Which library is the default one handeling input validation in the new luminus project?**  
    Luminus defaults to using the Bouncer library ( https://github.com/leonardoborges/bouncer ) to handle input validation. The library provides a straightforward way to check that our parameter map contains the required values.  
    Bouncer uses `bouncer.core/validate` and `bouncer.core/valid?` functions for handling validation. These functions each accept a map containing the parameters followed by the validators. The former will validate the input and return error messages for any invalid fields, while the latter returns a Boolean value indicating whether the input is valid. 
+   The result of the validate function is a vector where the first element is either nil when the validation passes or it is a map of errors. The keys in the map are the parameters that failed validation and the values are the error messages.  
    
-   - **What is vector notation about in Clojure?**  
-   Vectors are sequential, indexed, heterogeneous collections. Indexing is 0-based.  
-   More info: https://clojure.org/reference/data_structures#Vectors  
-   An example of retrieving the value at index 1 in a vector of three values:  
+  - **What is vector notation about in Clojure?**  
+  Vectors are sequential, indexed, heterogeneous collections. Indexing is 0-based.  
+  More info: https://clojure.org/reference/data_structures#Vectors  
+  An example of retrieving the value at index 1 in a vector of three values:  
 ```
 user=> (get ["a" 13.7 :foo] 1)
 13.7
 ```
-  
-  
-   - **???**  
-   ***
+    
+  - **How to package an app (luminus-based project) into a runnable JAR?**  
+   `lein uberjar`  
+   The archive will be created in the `target` folder of an application, run it using the `java` command. 
+
 
    
   
