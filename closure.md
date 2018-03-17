@@ -159,6 +159,12 @@ user=> (get ["a" 13.7 :foo] 1)
     Since we're using a database, we also have to make sure that the connection is specified as an environment variable. When we ran our application in development mode, the connection variable was provided in the `profiles.clj` file. However, now that the application has been packaged for production, this variable is no longer available. Let's create a connection variable and then run our application as follows:  
     `export DATABASE_URL="jdbc:h2:./guestbook_dev.db"`  
     `java -jar target/uberjar/guestbook.jar -p 8000`
+    
+  - **Do you know any Clojure-aware IDE?**  
+    - Light Table ( http://lighttable.com/ )  
+    - Emacs ( https://www.gnu.org/software/emacs/ )  
+    - Cursive ( https://cursive-ide.com/ )  
+    - Counterclockwise ( https://github.com/ccw-ide )  
 
 
    
