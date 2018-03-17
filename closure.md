@@ -141,6 +141,20 @@ If Clojure REPL (i.e. lein repl, boot repl) fired up instantly, the need to relo
    Luminus defaults to using the Bouncer library ( https://github.com/leonardoborges/bouncer ) to handle input validation. The library provides a straightforward way to check that our parameter map contains the required values.  
    Bouncer uses `bouncer.core/validate` and `bouncer.core/valid?` functions for handling validation. These functions each accept a map containing the parameters followed by the validators. The former will validate the input and return error messages for any invalid fields, while the latter returns a Boolean value indicating whether the input is valid. 
    
+   - **What is vector notation about in Clojure?**  
+   Vectors are sequential, indexed, heterogeneous collections. Indexing is 0-based.  
+   More info: https://clojure.org/reference/data_structures#Vectors  
+   An example of retrieving the value at index 1 in a vector of three values:  
+```
+user=> (get ["a" 13.7 :foo] 1)
+13.7
+```
+  
+  
+   - **???**  
+   ***
+
+   
   
   
   - **Read more**  
