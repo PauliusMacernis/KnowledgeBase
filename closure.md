@@ -137,7 +137,9 @@ If Clojure REPL (i.e. lein repl, boot repl) fired up instantly, the need to relo
   - **Do we need to define routes for static assests we put to `resources/public` folder (the new luminus project)?**  
   Assets of this folder are served without the need to define routes for them.  
   
-  
+  - **Which library is the default one handeling input validation in the new luminus project?**  
+   Luminus defaults to using the Bouncer library ( https://github.com/leonardoborges/bouncer ) to handle input validation. The library provides a straightforward way to check that our parameter map contains the required values.  
+   Bouncer uses `bouncer.core/validate` and `bouncer.core/valid?` functions for handling validation. These functions each accept a map containing the parameters followed by the validators. The former will validate the input and return error messages for any invalid fields, while the latter returns a Boolean value indicating whether the input is valid. 
    
   
   
