@@ -132,7 +132,7 @@ If Clojure REPL (i.e. lein repl, boot repl) fired up instantly, the need to relo
    https://stackoverflow.com/questions/17891868/the-right-way-to-run-unit-tests-in-clojure
    
   - **Where are static assets like CSS put (the new luminus project)?**  
-  Static assets such as CSS, images, and JavaScript are found in the `resources/public` folder and are served without the need to define routes for them.  
+  Static assets such as CSS, images, and JavaScript are found in the `resources/public` folder.  
   
   - **Do we need to define routes for static assests we put to `resources/public` folder (the new luminus project)?**  
   Assets of this folder are served without the need to define routes for them.  
