@@ -153,7 +153,12 @@ user=> (get ["a" 13.7 :foo] 1)
     
   - **How to package an app (luminus-based project) into a runnable JAR?**  
    `lein uberjar`  
-   The archive will be created in the `target` folder of an application, run it using the `java` command. 
+   The archive will be created in the `target` folder of an application, run it using the `java` command.  
+   
+   - **How to package an app (luminus-based project) into a runnable JAR with DB support (environment variables set as needed)?**  
+    Since we're using a database, we also have to make sure that the connection is specified as an environment variable. When we ran our application in development mode, the connection variable was provided in the `profiles.clj` file. However, now that the application has been packaged for production, this variable is no longer available. Let's create a connection variable and then run our application as follows:  
+    `export DATABASE_URL="jdbc:h2:./guestbook_dev.db"`  
+    `java -jar target/uberjar/guestbook.jar`
 
 
    
