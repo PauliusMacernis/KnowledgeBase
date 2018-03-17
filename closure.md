@@ -131,7 +131,11 @@ If Clojure REPL (i.e. lein repl, boot repl) fired up instantly, the need to relo
    Developing the functionality using the REPL and then generating the tests is a common workflow in Clojure. This approach provides a faster feedback loop than Test Driven Development (TDD) since we don’t have to constantly switch between tests and code while developing a feature. **Instead, the development can be done interactively using the REPL. Once the feature works as desired, then we can take the code from the REPL session and turn it into unit tests for this feature.(???)**  
    https://stackoverflow.com/questions/17891868/the-right-way-to-run-unit-tests-in-clojure
    
-   - **??**
+  - **Where is static assets like CSS put (the new luminus project)?**  
+  Static assets such as CSS, images, and JavaScript are found in the resources/public folder and are served without the need to define routes for them.  
+  
+  - **???**  
+  ??
    
   
   
