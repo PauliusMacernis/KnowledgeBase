@@ -17,6 +17,10 @@ Technically, they're the same thing: bodies of subroutines whose names are expor
 <a href="#" title="
  ">⌘</a>
  
+ - What is the difference between arguments and options (programming)?
+<a href="#" title="
+ ">⌘</a>
+ 
 - What is Semantic Versioning Specification (SemVer)?
 <a href="#" title="
 More info: http://semver.org/
@@ -453,7 +457,14 @@ They are indexes build upon a prefix of the column's data. http://www.mysqldba.c
 - What is the difference between MS SQL (Microsoft SQL) and T-SQL (Transact-SQL)?
 <a href="#" title="
 ">⌘</a>
- 
+
+
+## SQL
+- What is the difference between Left, Right, Outer and Inner Joins?
+<a href="#" title="
+https://stackoverflow.com/questions/448023/what-is-the-difference-between-left-right-outer-and-inner-joins
+">⌘</a>
+
  
 # OOP
 - What is the difference between a function and a method?
