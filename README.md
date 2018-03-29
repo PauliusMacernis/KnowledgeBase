@@ -31,6 +31,11 @@ More info: http://semver.org/
 More info: https://en.wikipedia.org/wiki/MIME
 ">⌘</a>
 
+- Why do programmers use `Acme` as a package, namespace or directory name?
+<a href="#" title="
+More info: https://softwareengineering.stackexchange.com/questions/221953/why-do-programmers-use-acme-as-a-package-namespace-or-directory-name , https://en.wikipedia.org/wiki/Acme_Corporation
+">⌘</a>
+
 - What is Read–Eval–Print Loop (REPL)?
 <a href="#" title="
 More info: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop
