@@ -178,16 +178,17 @@ user=> (get ["a" 13.7 :foo] 1)
   
 - **How does `java -jar clojure-1.7.0.jar` run the REPL?**  
 Let’s look at `META-INF/MANIFEST.MF` in the JAR file. We find `Main-Class: clojure.main`. It looks like `clojure.main` is specified as the entry point. Where does this class come from? Well, have a look at `clojure/main.java` on [GitHub](https://github.com/clojure/clojure/blob/master/src/jvm/clojure/main.java). As you will see, the file defines a class named `main`. It belongs to the package `clojure` and defines a `public static main` method, and the JVM is completely happy to use it as an entry point. Seen this way, Clojure is a JVM program just like any other.  
-
+Read more:  
+https://www.braveclojure.com/java/  
 
 
    
   
   
-  - **Read more**  
-  https://en.wikipedia.org/wiki/Lisp_machine  
-  http://blog.ndk.io/clojure-bootstrapping.html  
-  https://lambdaisland.com/guides/clojure-repls  
-  https://mitpress.mit.edu/sicp/full-text/book/book.html  
-  https://github.com/jakemcc/lein-test-refresh
+- **Read more**  
+https://en.wikipedia.org/wiki/Lisp_machine  
+http://blog.ndk.io/clojure-bootstrapping.html  
+https://lambdaisland.com/guides/clojure-repls  
+https://mitpress.mit.edu/sicp/full-text/book/book.html  
+https://github.com/jakemcc/lein-test-refresh
   
