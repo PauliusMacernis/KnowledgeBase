@@ -14,5 +14,6 @@ https://stackoverflow.com/questions/2812549/what-is-the-difference-between-the-j
 
 - **What does `java -classpath /tmp` do?**  
 When we run `java PiratePhrases`, the JVM first looks at a classpath for a class named PiratePhrases (`PiratePhrases.class`). The classpath is the list of filesystem paths that the JVM searches to find a file that defines a class. By default, the classpath includes the directory we’re in when we run java. Try running `java -classpath /tmp PiratePhrases` and you’ll get an error, even though `PiratePhrases.class` is right there in the current directory.  
+In Java, we’re allowed only one public class per file, and the filename must match the class name. This is how `java` knows to try looking in `PiratePhrases.class` for the `PiratePhrases` class’s bytecode. After `java` found the bytecode for the `PiratePhrases` class, it executed that class’s `main` method. Java’s similar to C in that whenever you say “run something, and use this class as your entry point,” it will always run that class’s `main` method; therefore, that method must be `public`.  
 
 
