@@ -39,7 +39,7 @@ More info: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop
 
 - **What is the difference between bytecode of Virtual machine (e.g. Java virtual machine (JVM) of Java, Zend engine of PHP, Common Language Runtime (CLR) of Common Language Infrastructure (CLI) languages like C#, etc.) and machine code?**  
 Bytecode is a "temporary code". This "temporary code" is being called `.class` files (or simply Java ARchive (JAR) package containing .class files plus some extra files like text, images, etc.) on JVM, opcodes on Zend engine, CIL code on CLR, etc. A process known as just-in-time compilation converts compiled code into machine instructions which the computer's CPU then executes. 
-Ultimately, programs and so bytecode must be translated into instructions that a CPU will understand, and the CPU doesn’t care which programming language you use to produce those instructions.  
+Ultimately, programs and so bytecode must be translated into instructions that a CPU will understand, and the CPU doesn’t care which programming language you use to produce those instructions. And just like how a CPU doesn’t care which programming language you use to generate machine instructions, the virtual machine doesn’t care how you create bytecode. It doesn’t care if you use Scala, JRuby, Clojure, or even Java to create the bytecode of, for example Java.  
 Read more:  
 https://www.braveclojure.com/java/  
 https://stackoverflow.com/questions/3380581/does-php-have-a-virtual-machine-like-java  
