@@ -3,4 +3,6 @@
 Read more:  
 https://teamtreehouse.com/community/difference-between-java-and-javac  
 
-- ****
+- **What is the difference between the Java runtime environment (JRE) and Java virtual machine (JVM)?**  
+Java Runtime Environment contains JVM, class libraries, and other supporting files. It does not contain any development tools such as compiler, debugger, etc. Actually JVM runs the program, and it uses the class libraries, and other supporting files provided in JRE.  
+
