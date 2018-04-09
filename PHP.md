@@ -116,6 +116,13 @@ Phpng is the codename for PHP virtual machine - Zend Engine III.
 - **What is Zend engine used for?**  
 Zend Engine is used internally by PHP as a compiler and runtime engine (aka. virtual machine of PHP). PHP Scripts are loaded into memory and compiled into Zend opcodes. These opcodes are executed and the HTML generated is sent to the client.  
 To implement a Web script interpreter, three parts are needed: 1) The interpreter part analyzes the input code, translates it, and executes it. 2) The functionality part implements the functionality of the language (its functions, etc.). 3) The interface part talks to the Web server, etc.  
-Zend takes part 1 completely and a bit of part 2; PHP takes parts 2 and 3.
+Zend takes part 1 completely and a bit of part 2; PHP takes parts 2 and 3.  
+Read more: 
+https://en.wikipedia.org/wiki/Zend_Engine  
+https://en.wikipedia.org/wiki/PHP#NG  
+
+
+
+
 
 
