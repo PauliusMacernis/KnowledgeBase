@@ -97,3 +97,15 @@ Class constructors, destructors and clone methods may not declare return types (
 <a href="#" title="
 http://phpcr.github.io/about/
 ">⌘</a>
+
+- **What are options for PHP virtual machine?**  
+  - Facebook’s HipHop ( https://hhvm.com/ )  
+  HipHop takes normal PHP code and transforms it into C++, which is then compiled in machine code.  
+  - IBM’s WebSphere sMash ( https://www.ibm.com/developerworks/websphere/library/techarticles/0809_phillips/0809_phillips.html )  WebSphere sMash is a Java implementation of a PHP runtime environment. The PHP code is compiled into Java bytecode which runs on the Java Virtual Machine.  
+  - Caucho’s Quercus ( http://quercus.caucho.com/ )  
+  Quercus is another Java implementation of a PHP runtime environment. 
+  - Phalanger ( https://github.com/DEVSENSE/Phalanger )  
+  Phalanger is a strange creature. It is sort of like PHP.NET. It takes your normal PHP code and compiles it into MSIL, which can then be run by .NET or Mono. The major advantage to using Phalanger is that it makes it possible to access .NET classes in PHP (for example, VB.NET or C#).  
+  Read more:  
+  https://www.jacoballred.com/web-dev/zend-alternatives/  
+  
