@@ -12,4 +12,7 @@ JVM contains (class loader & byte code verifier) and the Execution engine (inter
 Read more:  
 https://stackoverflow.com/questions/2812549/what-is-the-difference-between-the-jre-and-jvm  
 
-- 
+- **What does `java -classpath /tmp` do?**  
+When we run `java PiratePhrases`, the JVM first looks at a classpath for a class named PiratePhrases (`PiratePhrases.class`). The classpath is the list of filesystem paths that the JVM searches to find a file that defines a class. By default, the classpath includes the directory we’re in when we run java. Try running `java -classpath /tmp PiratePhrases` and you’ll get an error, even though `PiratePhrases.class` is right there in the current directory.  
+
+
