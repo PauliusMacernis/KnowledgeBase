@@ -37,3 +37,7 @@ More info: https://softwareengineering.stackexchange.com/questions/221953/why-do
 More info: https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop
 ">⌘</a>
 
+- **What is just-in-time (JIT) compuilation? For example, used by virtual machines like: JVM (Java), Zend Engine (PHP), Common Language Runtime (CLR) (.NET languages).**  
+A running virtual machine executes bytecode by translating it on the fly into machine code that its host will understand, a process called just-in-time compilation.  
+
+
