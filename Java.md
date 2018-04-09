@@ -43,7 +43,7 @@ Native launchers can be created on most platforms. For instance, Microsoft Windo
 Read more:  
 https://en.wikipedia.org/wiki/JAR_(file_format)  
 
-- **What is JAR (Java ARchive) manifest file for?**  
+- **What is JAR (Java ARchive) manifest file (`META-INF/MANIFEST.MF`) for?**  
 A manifest file is a metadata file contained within a JAR. It defines extension and package-related data. It contains name-value pairs organized in sections. If a JAR file is intended to be used as an executable file, the manifest file specifies the main class of the application. The manifest file is named `MANIFEST.MF`. The manifest directory has to be the first entry of the compressed archive. The manifest appears at the canonical location `META-INF/MANIFEST.MF`. There can be only one manifest file in an archive and it must be at that location.  
 Manifest file may be used for: Package Sealing (all classes defined in the chosen package are archived in the same JAR file), Package Versioning (several manifest headers hold versioning information, one set of headers can be assigned to each package), Dependencies (to specify all the classes that must be loaded for an application to be able to run), etc.  
 Read more: https://en.wikipedia.org/wiki/JAR_(file_format)  
