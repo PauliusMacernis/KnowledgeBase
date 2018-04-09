@@ -15,5 +15,40 @@ https://stackoverflow.com/questions/2812549/what-is-the-difference-between-the-j
 - **What does `java -classpath /tmp` do?**  
 When we run `java PiratePhrases`, the JVM first looks at a classpath for a class named PiratePhrases (`PiratePhrases.class`). The classpath is the list of filesystem paths that the JVM searches to find a file that defines a class. By default, the classpath includes the directory we’re in when we run java. Try running `java -classpath /tmp PiratePhrases` and you’ll get an error, even though `PiratePhrases.class` is right there in the current directory.  
 In Java, we’re allowed only one public class per file, and the filename must match the class name. This is how `java` knows to try looking in `PiratePhrases.class` for the `PiratePhrases` class’s bytecode. After `java` found the bytecode for the `PiratePhrases` class, it executed that class’s `main` method. Java’s similar to C in that whenever you say “run something, and use this class as your entry point,” it will always run that class’s `main` method; therefore, that method must be `public`.  
+Read more:  
+https://www.braveclojure.com/java/  
+
+- **What is `package`? For example, `package com.shapemaster`.**  
+Packages (similar to Clojure’s or PHP's namespaces) provide code organization. Packages contain classes, and package names correspond to filesystem directories. If a file has the line `package com.shapemaster` in it, the directory `com/shapemaster` must exist somewhere on your classpath. Within that directory will be files defining classes.  
+Read more:  
+https://www.braveclojure.com/java/  
+
+- **What is `import`? For example, `import com.shapemaster.Square;` or `import com.shapemaster.*;`.**  
+Java allows us to import classes, which basically means that we can refer to them without using their namespace prefix. So if we have a class in `com.shapemaster` named `Square`, we could write `import com.shapemaster.Square;` or `import com.shapemaster.*;` at the top of a `.java` file to use `Square` in our code instead of `com.shapemaster.Square`.  
+Read more:  
+https://www.braveclojure.com/java/  
+
+- **What does `jar cvfe conversation.jar PirateConversation PirateConversation.class pirate_phrases/*.class` do?**  
+We bundle all the class files into `conversation.jar`. Using the `e` flag, we also indicate that the `PirateConversation` class is the entry point. The entry point is the class that contains the `main` method that should be executed when the JAR as a whole runs, and jar stores this information in the file `META-INF/MANIFEST.MF` within the JAR file. If we were to read that file, it would contain this line: `Main-Class: PirateConversation`.  
+Read more:  
+https://www.braveclojure.com/java/  
+
+- **What is JAR (Java ARchive) file for?**  
+A JAR (Java ARchive) is a package file format typically used to aggregate many Java class files and associated metadata and resources (text, images, etc.) into one file for distribution.  
+JAR files are archive files that include a Java-specific manifest file. They are built on the ZIP format and typically have a `.jar` file extension.  
+The contents of a JAR file may be extracted using any standard decompression software, or the jar command line utility: `jar -xf foo.jar`.  
+Developers can digitally sign JAR files. In that case, the signature information becomes part of the embedded manifest file. The JAR itself is not signed, but instead every file inside the archive is listed along with its checksum; it is these checksums that are signed. Multiple entities may sign the JAR file, changing the JAR file itself with each signing, although the signed files themselves remain valid.  
+The typical invocation is `java -jar foo.jar` from a command line.  
+Native launchers can be created on most platforms. For instance, Microsoft Windows users who prefer having Windows EXE files can use tools such as JSmooth, Launch4J, WinRun4J or Nullsoft Scriptable Install System to wrap single JAR files into executables.  
+Read more:  
+https://en.wikipedia.org/wiki/JAR_(file_format)  
+
+- **What is JAR (Java ARchive) manifest file for?**  
+A manifest file is a metadata file contained within a JAR. It defines extension and package-related data. It contains name-value pairs organized in sections. If a JAR file is intended to be used as an executable file, the manifest file specifies the main class of the application. The manifest file is named `MANIFEST.MF`. The manifest directory has to be the first entry of the compressed archive. The manifest appears at the canonical location `META-INF/MANIFEST.MF`. There can be only one manifest file in an archive and it must be at that location.  
+Manifest file may be used for: Package Sealing (all classes defined in the chosen package are archived in the same JAR file), Package Versioning (several manifest headers hold versioning information, one set of headers can be assigned to each package), Dependencies (to specify all the classes that must be loaded for an application to be able to run), etc.  
+Read more: https://en.wikipedia.org/wiki/JAR_(file_format)  
+
+
+
 
 
