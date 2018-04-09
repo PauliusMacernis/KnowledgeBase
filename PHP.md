@@ -100,7 +100,7 @@ http://phpcr.github.io/about/
 
 - **What are options for PHP virtual machine?**  
   - Zend engine ( http://www.zend.com/products/zend_engine/in_depth , https://en.wikipedia.org/wiki/Zend_Engine ) - comes by default
-  - Facebook’s HipHop ( https://hhvm.com/ )  
+  - Facebook’s HipHop virtual machine (HHVM) ( https://hhvm.com/ )  
   HipHop takes normal PHP code and transforms it into C++, which is then compiled in machine code.  
   - IBM’s WebSphere sMash ( https://www.ibm.com/developerworks/websphere/library/techarticles/0809_phillips/0809_phillips.html )  WebSphere sMash is a Java implementation of a PHP runtime environment. The PHP code is compiled into Java bytecode which runs on the Java Virtual Machine.  
   - Caucho’s Quercus ( http://quercus.caucho.com/ )  
