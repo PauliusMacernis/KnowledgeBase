@@ -8,6 +8,9 @@ Lisp was invented by John McCarthy in 1958 while he was at the Massachusetts Ins
 - **What is Clojars ( https://clojars.org/ ) for?**  
   It is community repository for open source Clojure libraries.
   
+- **How does `java -jar clojure-1.7.0.jar` run the REPL?**  
+Let’s look at `META-INF/MANIFEST.MF` in the JAR file. We find `Main-Class: clojure.main`. It looks like `clojure.main` is specified as the entry point. Where does this class come from? Well, have a look at `clojure/main.java` on [GitHub](https://github.com/clojure/clojure/blob/master/src/jvm/clojure/main.java). As you will see, the file defines a class named `main`. It belongs to the package `clojure` and defines a `public static main` method, and the JVM is completely happy to use it as an entry point. Seen this way, Clojure is a JVM program just like any other.  
+  
 - **What is Leiningen ( https://leiningen.org/ )?**  
    Leiningen is the Clojure counterpart of Maven, a popular Java build tool. It uses a Maven-compatible dependency management system, and therefore it has access to large and well-maintained repositories of Java libraries. In addition, Clojure libraries are commonly found in the Clojars repository. This repository is enabled by default in Leiningen.  
 In general, Leiningen is a tool for working with Clojure projects.  
