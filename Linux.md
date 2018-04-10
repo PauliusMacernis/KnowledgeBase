@@ -43,4 +43,8 @@ http://linuxgazette.net/105/pitcher.html
 
 - **What is `systemd` or `upstart` for?**  
 Most current Linux distributions (RHEL, CentOS, Fedora, Ubuntu 16.04 and higher) use `systemd` to manage which services start when the system boots. Ubuntu 14.10 and below use `upstart`.  
+For example,  
+`sudo systemctl enable docker` starts docker service on system boot,  
+`sudo systemctl disable docker` removes docker service from system boot  
+
 
