@@ -28,9 +28,13 @@ Read more:
 https://docs.docker.com/storage/storagedriver/#container-and-layers  
 
 - **What is the difference between `overlay2` and `aufs` storage engines?**  
-`AUFS` is a `union` filesystem. The `aufs` storage driver was previously the default storage driver used for managing images and layers on Docker for Ubuntu, and for Debian versions prior to Stretch. If the installed Linux kernel is version 4.0 or higher, and we use Docker CE, consider using the newer `overlay2`, which has potential performance advantages over the `aufs` storage driver.  
+`AUFS` is a `union` filesystem. The `aufs` storage driver was previously the default storage driver used for managing images and layers on Docker for Ubuntu, and for Debian versions prior to Stretch.  
 `AUFS` is not supported on some distributions and Docker editions.  
+If the installed Linux kernel is version 4.0 or higher, and we use Docker CE, consider using the newer `overlay2`, which has potential performance advantages over the `aufs` storage driver. For version 3 of the Linux kernel, aufs is supported because `overlay` or `overlay2` drivers are not supported by that kernel version.  
 Read more:  
-https://docs.docker.com/storage/storagedriver/select-storage-driver/
+https://docs.docker.com/storage/storagedriver/select-storage-driver/  
+https://docs.docker.com/storage/storagedriver/aufs-driver/  
+
+- 
 
 - 
