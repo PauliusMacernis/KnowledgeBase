@@ -3,6 +3,19 @@
 Read more:  
 https://teamtreehouse.com/community/difference-between-java-and-javac  
 
+- **What is the difference between Oracle JDK and Open JDK?**  
+Both openjdk and oracle jdk are created and maintained currently by Oracle only.  
+openjdk and oracle jdk are implementations of same Java specification passed the TCK(Java Technology Certification Kit).  
+The openjdk project is mostly based on hotspot source code donated by Sun. Most of the vendors of JDK are written on top of openjdk by doing few tweaks to \[Mostly to replace licensed proprietary parts / replace with more performant items that only work on specific OS] components without breaking the TCK compatibility.  
+Many vendors implemented Java specification and got TCK passed. For example IBM J9 , Azul Zulu , Azul Zing , Oracle JDK.  
+Almost every existing JDK is derived from openjdk.  
+As suggested by many, licensing is a change between JDK's.  
+The build process for Oracle JDK releases builds on OpenJDK 7 by adding just a couple of pieces, like the deployment code, which includes Oracle's implementation of the Java Plugin and Java WebStart, as well as some closed source third party components like a graphics rasterizer, some open source third party components, like Rhino, and a few bits and pieces here and there, like additional documentation or third party fonts. Moving forward, Oracle's intent is to open source all pieces of the Oracle JDK except those that Oracle consider commercial features such as JRockit Mission Control (not yet available in Oracle JDK), and replace encumbered third party components with open source alternatives to achieve closer parity between the code bases. 
+Read more:  
+https://stackoverflow.com/questions/22358071/differences-between-oracle-jdk-and-open-jdk  
+https://en.wikipedia.org/wiki/List_of_Java_virtual_machines#Proprietary_implementations  
+
+
 - **What is the differece between Java development kit (JDK) and Java runtime environment (JRE)?**  
 JDK contains JRE + development tools.  
 
