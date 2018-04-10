@@ -35,6 +35,7 @@ Read more:
 https://docs.docker.com/storage/storagedriver/select-storage-driver/  
 https://docs.docker.com/storage/storagedriver/aufs-driver/  
 
-- 
+- **What does `sudo docker run hello-world` command do?**  
+This command downloads a test image and runs it in a container. When the container runs, it prints an informational message and exits.  
 
 - 
