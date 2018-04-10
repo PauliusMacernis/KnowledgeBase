@@ -38,4 +38,13 @@ https://docs.docker.com/storage/storagedriver/aufs-driver/
 - **What does `sudo docker run hello-world` command do?**  
 This command downloads a test image and runs it in a container. When the container runs, it prints an informational message and exits.  
 
-- 
+- **What does `sudo dockerd` command do?**  
+It manualy runs Docker daemon. When you start Docker this way, it runs in the foreground and sends its logs directly to your terminal. `Ctrl`+`C` will stop the deamon.  
+Most often Docker deamon is configured to start automatically at system boot but starting it manualy is also the option.  
+
+- **What does `dockerd --help` do?**  
+Thsi will show more info (help) on Docker deamon. The list of all Docker deamon configuration options may be found in the output of the command.
+
+
+
+
