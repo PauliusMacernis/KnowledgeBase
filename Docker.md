@@ -75,8 +75,22 @@ This command downloads a test image and runs it in a container. When the contain
 It manualy runs Docker daemon. When you start Docker this way, it runs in the foreground and sends its logs directly to your terminal. `Ctrl`+`C` will stop the deamon.  
 Most often Docker deamon is configured to start automatically at system boot but starting it manualy is also the option.  
 
-- **What does `dockerd --help` do?**  
+- **What does `dockerd --help` command do?**  
 Thsi will show more info (help) on Docker deamon. The list of all Docker deamon configuration options may be found in the output of the command.
+
+- **What does `docker images` command do?**  
+Lists local images.  
+The default `docker images` will show all top level images, their repository and tags, and their size.  
+Docker images have intermediate layers that increase reusability, decrease disk usage, and speed up docker build by allowing each step to be cached. These intermediate layers are not shown by default.  
+The SIZE is the cumulative space taken up by the image and all its parent images. This is also the disk space used by the contents of the Tar file created when you docker save an image.  
+An image will be listed more than once if it has multiple repository names or tags. This single image (identifiable by its matching IMAGE ID) uses up the SIZE listed only once.
+Usage: `docker images [OPTIONS] [REPOSITORY[:TAG]]`  
+
+- **What does `docker rmi` command do?**  
+Remove one or more local images.  
+Usage: `docker rmi [OPTIONS] IMAGE [IMAGE...]`,  
+Another example: `docker rmi <hash>` where `<hash>` is the `IMAGE ID` from the result of `docker images`.
+
 
 
 
