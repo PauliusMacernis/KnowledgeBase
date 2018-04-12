@@ -243,8 +243,71 @@ Options:
 
 ```
 
-- 
+- **Explain `docker-compose stop`**  
+Stops running containers without removing them. They can be started again with `docker-compose start`.  
+```
+Usage: stop [options] [SERVICE...]
 
+Options:
+-t, --timeout TIMEOUT      Specify a shutdown timeout in seconds (default: 10).
+```
+
+- **Explain `docker-compose stop && docker-compose rm`**  
+Remove stopped containers.  
+
+- **Explain `docker-compose ps`**  
+List running containers that Docker Compose is managing.  
+https://docs.docker.com/compose/reference/ps/
+```
+Usage: ps [options] [SERVICE...]
+
+Options:
+-q    Only display IDs
+```
+
+- **Explain `docker-compose restart`**  
+Restarts all stopped and running containers (services).  
+If you make changes to your `docker-compose.yml` configuration these changes are not reflected after running this command.  
+For example, changes to environment variables (which are added after a container is built, but before the container’s command is executed) are not updated after restarting.  
+```
+Usage: restart [options] [SERVICE...]
+
+Options:
+-t, --timeout TIMEOUT      Specify a shutdown timeout in seconds. (default: 10)
+```
+
+- **Explain `docker-compose restart phpinfo`**  
+Restart a specific container matching the service key in `docker-compose.yml`.  
+
+
+- **Explain `docker-compose down`**  
+Stops containers and removes containers, networks, volumes, and images created by `up`.  
+By default, the only things removed are: 
+    - Containers for services defined in the Compose file  
+    - Networks defined in the networks section of the Compose file  
+    - The default network, if one is used  
+
+Networks and volumes defined as external are never removed.  
+More info: https://docs.docker.com/compose/reference/down/
+```
+Usage: down [options]
+
+Options:
+    --rmi type              Remove images. Type must be one of:
+                              'all': Remove all images used by any service.
+                              'local': Remove only images that don't have a
+                              custom tag set by the `image` field.
+    -v, --volumes           Remove named volumes declared in the `volumes`
+                            section of the Compose file and anonymous volumes
+                            attached to containers.
+    --remove-orphans        Remove containers for services not defined in the
+                            Compose file
+    -t, --timeout TIMEOUT   Specify a shutdown timeout in seconds.
+                            (default: 10)
+```
+
+- **Explain `docker-compose down --volumes`**  
+Remove named volumes.  
 
 
 
