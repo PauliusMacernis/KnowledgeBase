@@ -146,7 +146,7 @@ Options:
 It is the place in where Docker images are listed in the form of official repositories. For example, PHP official repository - https://hub.docker.com/_/php/  
 
 - **What is `Dockerfile`?**  
-This file is a set of instructions that define building images, each step creating a new layer on top of the previous.  
+This file is a set of instructions that define building images, each step creating a new layer on top of the previous. The new layers are created for the same and for the different instructions, for example, `RUN touch /tmp/foo` and `RUN touch /tmp/bar` would create not one but two different layers while `RUN touch /tmp/foo && touch /tmp/bar` would create one only.
 Docker can build images automatically by reading the instructions from a `Dockerfile`. A `Dockerfile` is a text document that contains all the commands a user could call on the command line to assemble an image. Using `docker build` users can create an automated build that executes several command-line instructions in succession.  
 Read more:  
 https://docs.docker.com/engine/reference/builder/  
