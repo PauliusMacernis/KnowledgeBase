@@ -85,21 +85,62 @@ Docker images have intermediate layers that increase reusability, decrease disk 
 The SIZE is the cumulative space taken up by the image and all its parent images. This is also the disk space used by the contents of the Tar file created when you docker save an image.  
 An image will be listed more than once if it has multiple repository names or tags. This single image (identifiable by its matching IMAGE ID) uses up the SIZE listed only once.
 Usage: `docker images [OPTIONS] [REPOSITORY[:TAG]]`  
+```
+Options:
+  -a, --all             Show all images (default hides intermediate images)
+      --digests         Show digests
+  -f, --filter filter   Filter output based on conditions provided
+      --format string   Pretty-print images using a Go template
+      --no-trunc        Don't truncate output
+  -q, --quiet           Only show numeric IDs
+```
 
 - **What does `docker rmi` command do?**  
-Remove one or more local images.  
+Remove one or more images.  
 Usage: `docker rmi [OPTIONS] IMAGE [IMAGE...]`,  
 Another example: `docker rmi <hash>` where `<hash>` is the `IMAGE ID` from the result of `docker images`.  
 It is also possible to remove images by name:tag, for example: `docker rmi php:latest`.  
+```
+Options:
+  -f, --force      Force removal of the image
+      --no-prune   Do not delete untagged parents
+```
+
+- **What does `docker rm` command do?**  
+Remove one or more containers.  
+Usage: `docker rm [OPTIONS] CONTAINER [CONTAINER...]`,  
+Another example: `docker rm <hash>` where `<hash>` is the `CONTAINER ID` from the result of `docker ps -a`.  
+```
+Options:
+  -f, --force     Force the removal of a running container (uses SIGKILL)
+  -l, --link      Remove the specified link
+  -v, --volumes   Remove the volumes associated with the container
+```
 
 - **Can a Docker image be removed if it is being used by the stopped Docker container?**  
 No. The image cannot be removed while it is being used by container. At first we need to remove the container (`docker rmi <container_hash>`) then the image may be removed.  
 
 - **What does `docker ps -a` command do?**  
 It lists running Docker containers. Option `-a` tells to list all containers - both currently running and stopped.  
+```
+Options:
+  -a, --all             Show all containers (default shows just running)
+  -f, --filter filter   Filter output based on conditions provided
+      --format string   Pretty-print containers using a Go template
+  -n, --last int        Show n last created containers (includes all
+                        states) (default -1)
+  -l, --latest          Show the latest created container (includes all
+                        states)
+      --no-trunc        Don't truncate output
+  -q, --quiet           Only display numeric IDs
+  -s, --size            Display total file sizes
+```
 
 - **What is the difference between `docker images` as `docker ps -a`?**  
 `docker images` is for all Docker images to list, `docker ps -a` is for all Docker containers to list.  
+
+- **Which command should be used to remove the container and which to remove the image?**  
+`docker rm <hash>` will remove the container, `docker rmi <hash>` will remove an image. Image cannot be removed while any containers using the image exist.  
 
 
 
