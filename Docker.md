@@ -359,4 +359,10 @@ Use `COPY` inside of `Dockerfile` to tell which file (or directory) in local mac
 Read more:  
 https://docs.docker.com/engine/reference/builder/#copy  
 
+- **Do we need to run `docker build` each time we update the content specified in volumes of `docker-compose.yml` file?**  
+No. Volumes allow us to avoid running `docker build` (which copies the files into the container) every time we make a file changes, for example source code change while developing.  
+Read more:  
+https://docs.docker.com/storage/volumes/  
+
+
 
