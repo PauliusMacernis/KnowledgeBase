@@ -166,8 +166,30 @@ The `-p` flag maps port `8080` on the local machine to port `80` in the containe
 The `--name` flag assigns a name to the running container that we can use to issue further commands, like `docker stop my-phpinfo`. If we don't provide a name, Docker creates a random auto-generated name for us.  
 The `-d` flag (detach) is used to run the container in the background. Without the `-d` flag Docker runs in the foreground.  
 
+- **Explain `docker start [OPTIONS] CONTAINER [CONTAINER...]`**  
+The command starts one or more stopped containers.  
+Read more: https://docs.docker.com/engine/reference/commandline/start/  
+```
+Options:
+Name             shorthand  Description
+--attach         -a         Attach STDOUT/STDERR and forward signals
+--checkpoint                experimental (daemon) Restore from this checkpoint
+--checkpoint-dir            experimental (daemon) Use a custom checkpoint storage directory
+--detach-keys               Override the key sequence for detaching a container
+--interactive    -i         Attach container’s STDIN
+```
 
+- **Explain `docker stop [OPTIONS] CONTAINER [CONTAINER...]`**  
+The command stops one or more running containers.  
+Read more: https://docs.docker.com/engine/reference/commandline/stop/  
+```
+Options:
+Name,    shorthand  Default  Description
+--time   -t         10       Seconds to wait for stop before killing it
+```
 
+- **...**  
+....
 
 
 
