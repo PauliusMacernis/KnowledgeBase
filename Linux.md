@@ -63,3 +63,16 @@ Why may ssh print `[ - ]` even though it's still running?
 `ssh` is controlled by upstart in Ubuntu (13.10).  
 Running `/etc/init.d/ssh` status will produce no output and a return code of `1`.  
 
+- **What is TeleTYpewriter (tty)?**  
+In computing, `tty` is a command in Unix and Unix-like operating systems to print the file name of the terminal connected to standard input. Given below is a sample output when the command is run.  
+```
+$ tty
+/dev/pts/10
+```
+Early user terminals connected to computers were electromechanical teleprinters or teletypewriters (TeleTYpewriter, TTY), and since then TTY has continued to be used as the name for the text-only console although now this text-only console is a virtual console not a physical console.  
+There are 6 virtual consoles in Ubuntu accessed by the keyboard shortcuts `Ctrl`+`Alt`+`F1` to `Ctrl`+`Alt`+`F6`. You can move away from a virtual console (move the console to the background) by using the keyboard shortcut `Ctrl`+`Alt`+`F7`.  
+In Ubuntu 17.10 the login screen now uses virtual terminal `1`. In Ubuntu 17.10 press `Ctrl`+`Alt`+`F3` up to `Ctrl`+`Alt`+`F7` for accessing a virtual console and press `Ctrl`+`Alt`+`F2` to go back to the desktop environment.  
+Read more:  
+https://askubuntu.com/questions/481906/what-does-tty-stand-for  
+https://en.wikipedia.org/wiki/Tty_(unix)  
+
