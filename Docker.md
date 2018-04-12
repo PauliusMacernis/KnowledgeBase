@@ -161,7 +161,7 @@ https://docs.docker.com/engine/reference/builder/
 The `build` command has a `-t` flag, which tags the image as `phpinfo`, and the last argument (`.`) is the path where Docker will look for our files.  
 
 - **Explain `docker run -p 8080:80 -d --name=my-phpinfo phpinfo`**  
-The `run` command runs a container with the tagged `phpinfo` image.
+The `run` command runs a container with the tagged `phpinfo` image.  
 The `-p` flag maps port `8080` on the local machine to port `80` in the container, which means that we'll use port `8080` locally to access our application.  
 The `--name` flag assigns a name to the running container that we can use to issue further commands, like `docker stop my-phpinfo`. If we don't provide a name, Docker creates a random auto-generated name for us.  
 The `-d` flag (detach) is used to run the container in the background. Without the `-d` flag Docker runs in the foreground.  
