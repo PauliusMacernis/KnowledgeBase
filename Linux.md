@@ -76,4 +76,7 @@ Read more:
 https://askubuntu.com/questions/481906/what-does-tty-stand-for  
 https://en.wikipedia.org/wiki/Tty_(unix)  
 
+- **Explain `echo "date.timezone = Europe/Vilnius" >> docker/php/php.ini`**  
+The command echos (prints) the string between `""` (and redirects the output) to a file `docker/php/php.ini`.  
+
 
