@@ -309,5 +309,19 @@ Options:
 - **Explain `docker-compose down --volumes`**  
 Remove named volumes.  
 
-
+- **Explain `docker exec -it c9a517f6f751 bash`**  
+Runs a command in a running container.  
+Usage: `docker exec [OPTIONS] CONTAINER COMMAND [ARG...]`  
+```
+Options
+Name          shorthand  Default  Description
+--detach      -d                  Detached mode: run command in the background
+--detach-keys                     Override the key sequence for detaching a container
+--env         -e                  API 1.25+: Set environment variables
+--interactive -i                  Keep STDIN open even if not attached
+--privileged                      Give extended privileges to the command
+--tty         -t                  Allocate a pseudo-TTY. (tty - return user's terminal name)
+--user        -u                  Username or UID (format: <name|uid>[:<group|gid>])
+--workdir     -w                  API 1.35+: Working directory inside the container
+```
 
