@@ -188,9 +188,62 @@ Name,    shorthand  Default  Description
 --time   -t         10       Seconds to wait for stop before killing it
 ```
 
-- **...**  
-....
+- **Explain the following content of docker-compose.yml:**  
+```
+version: "3"
+services:
+  phpinfo:
+    build: .
+    ports:
+      - "8080:80"
+```
 
+The `services` key defines one service called `phpinfo`.  
+Inside the `phpinfo` service, the `build` key references a dot (`.`), which means we expect the `Dockerfile` in the current path (`.`). Lastly, the `ports` key contains an array of port maps from the host server, just like `docker run -p 8080:80`. The port format is: `<host_port>:<container_port>`, which in our case means that port `8080` on the local machine will map to port `80` inside the container.  
+We are using version `3` (https://docs.docker.com/compose/compose-file/), which is the recommended version at the time of writing.  
+
+- **Explain `docker-compose up -d --build`**  
+The command builds, (re)creates, starts, and attaches to containers for a service.  
+Unless they are already running, this command also starts any linked services.  
+The `docker-compose up` command aggregates the output of each container (essentially running `docker-compose logs -f`). When the command exits, all containers are stopped. Running `docker-compose up -d` starts the containers in the background and leaves them running.  
+The `--build` option is for building images before starting containers.  
+More info: https://docs.docker.com/compose/reference/up/  
+```
+Usage: up [options] [--scale SERVICE=NUM...] [SERVICE...]
+
+Options:
+    -d, --detach               Detached mode: Run containers in the background,
+                               print new container names. Incompatible with
+                               --abort-on-container-exit.
+    --no-color                 Produce monochrome output.
+    --quiet-pull               Pull without printing progress information
+    --no-deps                  Don't start linked services.
+    --force-recreate           Recreate containers even if their configuration
+                               and image haven't changed.
+    --always-recreate-deps     Recreate dependent containers.
+                               Incompatible with --no-recreate.
+    --no-recreate              If containers already exist, don't recreate
+                               them. Incompatible with --force-recreate and -V.
+    --no-build                 Don't build an image, even if it's missing.
+    --no-start                 Don't start the services after creating them.
+    --build                    Build images before starting containers.
+    --abort-on-container-exit  Stops all containers if any container was
+                               stopped. Incompatible with -d.
+    -t, --timeout TIMEOUT      Use this timeout in seconds for container
+                               shutdown when attached or when containers are
+                               already running. (default: 10)
+    -V, --renew-anon-volumes   Recreate anonymous volumes instead of retrieving
+                               data from the previous containers.
+    --remove-orphans           Remove containers for services not defined
+                               in the Compose file.
+    --exit-code-from SERVICE   Return the exit code of the selected service
+                               container. Implies --abort-on-container-exit.
+    --scale SERVICE=NUM        Scale SERVICE to NUM instances. Overrides the
+                               `scale` setting in the Compose file if present.
+
+```
+
+- 
 
 
 
