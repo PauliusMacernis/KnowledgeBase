@@ -141,12 +141,6 @@ Options:
 
 - **Which command should be used to remove the container and which to remove the image?**  
 `docker rm <hash>` will remove the container, `docker rmi <hash>` will remove an image. Image cannot be removed while any containers using the image exist.  
-
-- **How to build image?**  
-  
-- **How to start container?**  
-  
-- **How to copy files into container?**  
   
 - **What is https://hub.docker.com for?**  
 It is the place in where Docker images are listed in the form of official repositories. For example, PHP official repository - https://hub.docker.com/_/php/  
