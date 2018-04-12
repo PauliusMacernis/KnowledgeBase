@@ -47,4 +47,10 @@ For example,
 `sudo systemctl enable docker` starts docker service on system boot,  
 `sudo systemctl disable docker` removes docker service from system boot  
 
+- **How can I search the bash history and rerun a command?**  
+Type `Ctrl` `R` at the command line and start typing the previous command. Once a result appears keep hitting `Ctrl` `R` to see other matches. When the command you want appears, simply press `Enter`.  
+Read more:  
+https://superuser.com/questions/7414/how-can-i-search-the-bash-history-and-rerun-a-command  
+https://www.gnu.org/software/bash/manual/bashref.html#Commands-For-History  
+
 
