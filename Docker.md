@@ -45,8 +45,8 @@ FROM ubuntu:15.04
 COPY . /app
 RUN make /app
 CMD python /app/app.py
-
 ```
+
 This Dockerfile contains four commands, each of which creates a layer.  
 Each layer is only a set of differences from the layer before it. The layers are stacked on top of each other. When we create a new container, we add a new writable layer on top of the underlying layers. This layer is often called the “container layer”. All changes made to the running container, such as writing new files, modifying existing files, and deleting files, are written to this thin writable container layer.  
 A storage driver handles the details about the way these layers interact with each other. Different storage drivers are available, which have advantages and disadvantages in different situations.  
@@ -89,7 +89,17 @@ Usage: `docker images [OPTIONS] [REPOSITORY[:TAG]]`
 - **What does `docker rmi` command do?**  
 Remove one or more local images.  
 Usage: `docker rmi [OPTIONS] IMAGE [IMAGE...]`,  
-Another example: `docker rmi <hash>` where `<hash>` is the `IMAGE ID` from the result of `docker images`.
+Another example: `docker rmi <hash>` where `<hash>` is the `IMAGE ID` from the result of `docker images`.  
+It is also possible to remove images by name:tag, for example: `docker rmi php:latest`.  
+
+- **Can a Docker image be removed if it is being used by the stopped Docker container?**  
+No. The image cannot be removed while it is being used by container. At first we need to remove the container (`docker rmi <container_hash>`) then the image may be removed.  
+
+- **What does `docker ps -a` command do?**  
+It lists running Docker containers. Option `-a` tells to list all containers - both currently running and stopped.  
+
+- **What is the difference between `docker images` as `docker ps -a`?**  
+`docker images` is for all Docker images to list, `docker ps -a` is for all Docker containers to list.  
 
 
 
