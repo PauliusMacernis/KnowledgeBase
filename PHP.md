@@ -121,6 +121,13 @@ Read more:
 https://en.wikipedia.org/wiki/Zend_Engine  
 https://en.wikipedia.org/wiki/PHP#NG  
 
+- **What does `php --ini` command do?**  
+At first, PHP will load all files in `/etc/php.d/*.ini` as configuration files.  
+Then, within each directory, PHP will scan all files ending in `.ini` in alphabetical order.  
+A list of the files that were loaded, and in what order, is available by calling `php_ini_scanned_files()`, or by running PHP with the `--ini` option.  
+Read more: http://php.net/manual/en/configuration.file.php  
+
+
 
 
 
