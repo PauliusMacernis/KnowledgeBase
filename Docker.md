@@ -325,3 +325,44 @@ Name          shorthand  Default  Description
 --workdir     -w                  API 1.35+: Working directory inside the container
 ```
 
+- **How to extend an existing Docker image?**  
+.. Use `Dockerfile` for this. Add `FROM <image-name>` (e.g. `FROM php:5.6-apache`) to specify which image you are about to extend. Any other line in the `Dockerfile` will add a new layer on top of the existing `FROM` image.  
+.. `docker-compose.yml` may also be used "to extend" the existing Docker image.  
+Read more:  
+https://docs.docker.com/engine/reference/builder/#from  
+https://docs.docker.com/compose/compose-file/  
+
+- **How to build a custom Docker image?**  
+Use `docker build` command relating to `Dockerfile`, for example: `docker build -t phpinfo .`  
+Or Docker Compose command `docker-compose up` with the option `--build`, for example: `docker-compose up -d --build`  
+Read more:  
+https://docs.docker.com/engine/reference/commandline/build/  
+https://docs.docker.com/compose/reference/up/  
+
+- **How to run Docker images?**  
+Use Docker for that, for example: `docker run -p 8080:80 -d --name=my-phpinfo phpinfo`  
+Or Docker Compose, for example: `docker-compose up -d --build`  
+If images are already built into containers, the following will also work: `docker start [OPTIONS] CONTAINER [CONTAINER...]`, for example: `docker start my-phpinfo`  
+Read more:  
+https://docs.docker.com/engine/reference/run/  
+https://docs.docker.com/compose/reference/up/  
+https://docs.docker.com/engine/reference/commandline/start/  
+
+- **How to use Docker Compose to automate running containers?**  
+Use `docker-compose` tool together with the `docker-compose.yml` file in order to reach the automation. Write the `docker-compose.yml` file so others will be able to build, start and configure command easily by running `docker-compose` command later.  
+Read more:  
+https://docs.docker.com/compose/reference/  
+https://docs.docker.com/compose/compose-file/  
+https://docs.docker.com/compose/  
+
+- **How to execute a bash shell in a running container?**  
+Use `docker exec`, for example: `docker exec -it c9a517f6f751 bash`  
+Read more:  
+https://docs.docker.com/engine/reference/commandline/exec/  
+
+- **How to copy files into container?**  
+Use `COPY` inside of `Dockerfile` to tell which file (or directory) in local machine needs to be copyied to which directory in the container of which the `Dockerfile` is.  
+Read more:  
+https://docs.docker.com/engine/reference/builder/#copy  
+
+
