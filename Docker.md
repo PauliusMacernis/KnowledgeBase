@@ -142,6 +142,33 @@ Options:
 - **Which command should be used to remove the container and which to remove the image?**  
 `docker rm <hash>` will remove the container, `docker rmi <hash>` will remove an image. Image cannot be removed while any containers using the image exist.  
 
+- **How to build image?**  
+  
+- **How to start container?**  
+  
+- **How to copy files into container?**  
+  
+- **What is https://hub.docker.com for?**  
+It is the place in where Docker images are listed in the form of official repositories. For example, PHP official repository - https://hub.docker.com/_/php/  
+
+- **What is `Dockerfile`?**  
+This file is a set of instructions that define building images, each step creating a new layer on top of the previous.  
+Docker can build images automatically by reading the instructions from a `Dockerfile`. A `Dockerfile` is a text document that contains all the commands a user could call on the command line to assemble an image. Using `docker build` users can create an automated build that executes several command-line instructions in succession.  
+Read more:  
+https://docs.docker.com/engine/reference/builder/  
+
+- **Explain `docker build -t phpinfo .`**  
+The `build` command has a `-t` flag, which tags the image as `phpinfo`, and the last argument (`.`) is the path where Docker will look for our files.  
+
+- **Explain `docker run -p 8080:80 -d --name=my-phpinfo phpinfo`**  
+The `run` command runs a container with the tagged `phpinfo` image.
+The `-p` flag maps port `8080` on the local machine to port `80` in the container, which means that we'll use port `8080` locally to access our application.  
+The `--name` flag assigns a name to the running container that we can use to issue further commands, like `docker stop my-phpinfo`. If we don't provide a name, Docker creates a random auto-generated name for us.  
+The `-d` flag (detach) is used to run the container in the background. Without the `-d` flag Docker runs in the foreground.  
+
+
+
+
 
 
 
