@@ -79,4 +79,9 @@ https://en.wikipedia.org/wiki/Tty_(unix)
 - **Explain `echo "date.timezone = Europe/Vilnius" >> docker/php/php.ini`**  
 The command echos (prints) the string between `""` (and redirects the output) to a file `docker/php/php.ini`.  
 
+- **Explain `mkdir -p .docker/{php,apache}`**  
+This will make the directory `.docker` and two subdirectories within: `php` and `apache`.  
+The `-p` flag (or alternative: `--parent`) stands for "no error if existing, make parent directories as needed".  
+
+
 
