@@ -5,7 +5,17 @@ http://stackoverflow.com/questions/33052195/what-are-the-differences-between-com
  ">⌘</a>
  
  - **Explain `composer create-project --prefer-dist laravel/lumen docker-lamp`**  
- This is the equivalent of doing a `git clone/svn checkout` followed by a `composer install` of the vendors.  
+ `composer create-project --prefer-dist` is the equivalent of doing a `git clone/svn checkout` followed by a `composer install` of the vendors.  
+ `laravel/lumen` is the name of the project within the Composer repository (Packagist: https://packagist.org/ ).  
+ `docker-lamp` is the directory to which all files will be placed.  
+It is also allowed to provide a version (e.g. `composer create-project doctrine/orm path 2.2.*`) as third argument (e.g. `2.2.*`), otherwise the latest version is used.  
+Read more:  
+https://getcomposer.org/doc/03-cli.md#create-project  
+https://getcomposer.org/doc/articles/versions.md  
+https://packagist.org/  
+https://git-scm.com/docs/git-clone  
+http://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.checkout.html  
+ 
  ```
  Options
 
