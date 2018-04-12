@@ -53,4 +53,13 @@ Read more:
 https://superuser.com/questions/7414/how-can-i-search-the-bash-history-and-rerun-a-command  
 https://www.gnu.org/software/bash/manual/bashref.html#Commands-For-History  
 
+- **What `service --status-all` does?**  
+The `service --status-all` command tries to figure out for every init script in `/etc/init.d` if it supports a `status` command (by grepping the script for `status`).  
+If it doesn't find that string it will print `[ ? ]` for that service.  
+Otherwise it will run `/etc/init.d/$application status`.  
+If the return code is `0` it prints `[ + ]`.  
+If it's not `0` it prints `[ - ]`.  
+Why may ssh print `[ - ]` even though it's still running?  
+`ssh` is controlled by upstart in Ubuntu (13.10).  
+Running `/etc/init.d/ssh` status will produce no output and a return code of `1`.  
 
