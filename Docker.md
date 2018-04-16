@@ -464,5 +464,23 @@ It's correct.
 Read more:  
 https://docs.docker.com/compose/environment-variables/#configure-compose-using-environment-variables  
 
+- **What the `links` key mean in a `docker-compose.yml` file?**  
+The `links` format specifies the name and a link alias (`<service>:<alias>`), which enables you to use the alias to communicate with the container.  
+While links are not required for containers to communicate — they can reach each other using the service name — it's important to understand that defining the `link` as `- mariadb` is shorthand for `- mariadb:mariadb`. If you want to define an alias for the
+service, use the links key with something like `- mariadb:db`, and then you would use `db` as the hostname to communicate with `mariadb` from the app container.  
+Read more:  
+https://docs.docker.com/compose/compose-file/#links
 
+- **What are the alternatives of using `links` key mean in a `docker-compose.yml` file?**  
+Use user-defined networks to facilitate communication between two containers instead of using `--link`. One feature that user-defined networks do not support that you can do with `--link` is sharing environmental variables between containers.  
+Read more:  
+https://docs.docker.com/compose/compose-file/#links  
+https://docs.docker.com/network/  
+
+
+- **What is the alternative of sharing environmental variables between containers by using `links` key in a `docker-compose.yml`?**  
+You can use other mechanisms such as `volumes` to share environment variables between containers in a more controlled way.  
+Read more:  
+https://docs.docker.com/compose/compose-file/#links  
+https://docs.docker.com/network/  
 
