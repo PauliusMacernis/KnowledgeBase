@@ -82,9 +82,14 @@ The command echos (prints) the string between `""` (and redirects the output) to
 - **Explain `mkdir -p .docker/{php,apache}`**  
 This will make the directory `.docker` and two subdirectories within: `php` and `apache`.  
 The `-p` flag (or alternative: `--parent`) stands for "no error if existing, make parent directories as needed".  
+https://ss64.com/bash/mkdir.html  
 
 - **Explain `find . -type f -print | grep php | wc -l`**  
 This will find all files in the current directory (`.`). The list will be given to a `grep` command to look for the pattern (`php`). At the very end, lines matching `php` pattern will be given to `wc` utility which will print the newline counts (`-l`).  
+Read more:  
+https://ss64.com/bash/find.html  
+https://ss64.com/bash/grep.html  
+
 
 
 
