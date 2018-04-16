@@ -1,3 +1,7 @@
+Resources:  
+https://www.scalingphpbook.com/  
+
+
 # PHP
 - Lets say I make HTTPS request to PRODUCTION server. How can I find the most time-consuming code blocks within the project files I am interested in the most?
 <a href="#" title="
@@ -137,8 +141,6 @@ It is a PHP utility (CLI) that shows compiled in PHP modules (`-m`) and sends th
 Read more:  
 http://php.net/manual/en/features.commandline.options.php  
 http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_04_02.html  
-
-
 
 
 
