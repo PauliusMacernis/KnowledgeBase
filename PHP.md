@@ -127,6 +127,11 @@ Then, within each directory, PHP will scan all files ending in `.ini` in alphabe
 A list of the files that were loaded, and in what order, is available by calling `php_ini_scanned_files()`, or by running PHP with the `--ini` option.  
 Read more: http://php.net/manual/en/configuration.file.php  
 
+- **What is PHP OPcache?**  
+OPcache improves PHP performance by storing precompiled script bytecode in shared memory, thereby removing the need for PHP to load and parse scripts on each request.  
+Read more:  
+http://php.net/manual/en/book.opcache.php  
+
 
 
 
