@@ -390,6 +390,8 @@ https://docs.docker.com/compose/environment-variables/
 
 
 - **Where environment variable values could be taken from in case we want to pass it to the container via `docker-compose.yml`?**  
+Read more:  
+https://docs.docker.com/compose/environment-variables/  
 It’s possible to use environment variables in your shell to populate values inside a Compose file:  
 ```
 web:
@@ -453,8 +455,14 @@ Options:
     1. Compose file,
     2. Environment file,
     3. Dockerfile,
-    4. Variable is not defined.
+    4. Variable is not defined.  
+Read more:  
+https://docs.docker.com/compose/environment-variables/#configure-compose-using-environment-variables  
 
 - **Is it correct that values of environment variables in the shell take precedence over those specified in the .env file?**  
 It's correct.  
+Read more:  
+https://docs.docker.com/compose/environment-variables/#configure-compose-using-environment-variables  
+
+
 
