@@ -132,6 +132,9 @@ OPcache improves PHP performance by storing precompiled script bytecode in share
 Read more:  
 http://php.net/manual/en/book.opcache.php  
 
+- **Explain `php -m | grep opcache`**  
+It is a PHP utility (CLI) that shows compiled in PHP modules (`-m`) and sends the list (text) to the `grep` utility. `grep`, which stands for "global regular expression print," processes text line by line and prints any lines which match a specified pattern (`opcache`).  
+
 
 
 
