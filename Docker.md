@@ -484,3 +484,6 @@ Read more:
 https://docs.docker.com/compose/compose-file/#links  
 https://docs.docker.com/network/  
 
+- **Explain `docker-compose rm -v`**  
+By default, anonymous volumes attached to containers are not removed. We can override this with `-v`.  
+
