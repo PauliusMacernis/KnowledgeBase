@@ -484,6 +484,26 @@ Read more:
 https://docs.docker.com/compose/compose-file/#links  
 https://docs.docker.com/network/  
 
+
+- **There are three types of volumes: host, anonymous, and named. Where do they differ?**  
+There are three types of volumes: host, anonymous, and named:  
+1.  A host volume lives on the Docker host's filesystem and can be accessed from within the container. To create a host volume:
+```
+   docker run -v /path/on/host:/path/in/container ...
+```  
+2. An anonymous volume is useful for when you would rather have Docker handle where the files are stored. It can be difficult, however, to refer to the same volume over time when it is an anonymous volumes. To create an anonymous volume:
+```
+   docker run -v /path/in/container ...
+```  
+3. A named volume is similar to an anonymous volume. Docker manages where on disk the volume is created, but you give it a volume name. To create a named volume:
+```
+   docker volume create somevolumename
+   docker run -v name:/path/in/container ...
+```  
+Read more:  
+https://success.docker.com/article/different-types-of-volumes  
+https://docs.docker.com/storage/volumes/  
+  
+
 - **Explain `docker-compose rm -v`**  
 By default, anonymous volumes attached to containers are not removed. We can override this with `-v`.  
-
