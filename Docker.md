@@ -364,5 +364,97 @@ No. Volumes allow us to avoid running `docker build` (which copies the files int
 Read more:  
 https://docs.docker.com/storage/volumes/  
 
+- **What the `image` key mean in a `docker-compose.yml` file, for example: `image: mariadb:10.1.21`?**  
+The `mariadb` service introduces the `image` key, which points to version `10.1.21` of the MariaDB Docker Hub image (https://hub.docker.com/_/mariadb/). The `image` format is just like the `Dockerfile` format: `<name>:<tag>` (some other formats exists too). If you provide `image: mariadb` with no tag, Docker Compose will use the "latest" tag.  
+Providing a tag version is a good practice to avoid unexpected changes to the application's environment without explicit control. Using latest should be used with caution on a real project.  
+Read more:  
+https://docs.docker.com/compose/compose-file/#image  
+https://docs.docker.com/engine/reference/builder/#from  
+ 
+- **What the `ports` key mean in a `docker-compose.yml` file?**  
+Expose ports.  
+Read more:  
+https://docs.docker.com/compose/compose-file/#ports  
+https://docs.docker.com/compose/compose-file/#long-syntax-1  
+```
+services:
+   <service_name>:
+       ports:
+           - "<local_port>:<container_port>"
+```
 
+- **What the `environment` key mean in a `docker-compose.yml` file?**  
+The `environment` key defines environment variables for the container.  
+Read more:  
+https://docs.docker.com/compose/environment-variables/  
+
+
+- **Where environment variable values could be taken from in case we want to pass it to the container via `docker-compose.yml`?**  
+It’s possible to use environment variables in your shell to populate values inside a Compose file:  
+```
+web:
+  image: "webapp:${TAG}"
+```
+You can set environment variables in a service’s containers with the `environment` key, just like with `docker run -e VARIABLE=VALUE ...`:
+```
+web:
+  environment:
+    - DEBUG=1
+```
+You can pass environment variables from your shell straight through to a service’s containers with the `environment` key by not giving them a value, just like with `docker run -e VARIABLE ...`, the value of the `DEBUG` variable in the container is taken from the value for the same variable in the shell in which Compose is run:  
+```
+web:
+  environment:
+    - DEBUG
+```
+You can pass multiple environment variables from an external file through to a service’s containers with the `env_file` option, just like with `docker run --env-file=FILE ...`:  
+```
+web:
+  env_file:
+    - web-variables.env
+```
+Just like with `docker run -e`, you can set environment variables on a one-off container with `docker-compose run -e`:  
+```
+docker-compose run -e DEBUG=1 web python console.py
+```
+You can also pass a variable through from the shell by not giving it a value:  
+```
+docker-compose run -e DEBUG web python console.py
+```
+You can set default values for any environment variables referenced in the Compose file, or used to configure Compose, in an environment file named `.env`:
+```
+$ cat .env
+TAG=v1.5
+
+$ cat docker-compose.yml
+version: '3'
+services:
+  web:
+    image: "webapp:${TAG}"
+
+```
+
+- **Explain `docker-compose config`**  
+Validates and shows the Compose file.  
+More info:  
+https://docs.docker.com/compose/reference/config/  
+```
+Usage: config [options]
+
+Options:
+    --resolve-image-digests  Pin image tags to digests.
+    -q, --quiet              Only validate the configuration, don't print
+                             anything.
+    --services               Print the service names, one per line.
+    --volumes                Print the volume names, one per line.
+```
+
+- **When you set the same environment variable in multiple files, what is the priority used by Compose to choose which value to use (Compose file, Environment file, or Dockerfile)?**  
+    1. Compose file,
+    2. Environment file,
+    3. Dockerfile,
+    4. Variable is not defined.
+
+- **Is it correct that values of environment variables in the shell take precedence over those specified in the .env file?**  
+It's correct.  
 
