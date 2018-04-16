@@ -19,6 +19,11 @@
 <a href="#" title="
 ">⌘</a>
 
+- **What is the difference between `>` and `>>` redirects?**  
+Both redirect stdout to file. `ls > list` - if file exists it'll be replaced. `ls >> list` - if file not exists it'll be created, if it exists, it'll be appended to the end of file.  
+Read more:  
+http://www.tldp.org/LDP/abs/html/io-redirection.html
+
 - What is the difference between `>` (redirect) and `|` (pipe)?
 <a href="#" title="
 ">⌘</a>
