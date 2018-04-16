@@ -95,6 +95,12 @@ Read more:
 https://ss64.com/bash/find.html  
 https://ss64.com/bash/grep.html  
 
+- **Explain `chmod -R o+rw bootstrap/ storage/`**  
+Read more:  
+https://ss64.com/bash/chmod.html  
+
+
+
 
 
 
