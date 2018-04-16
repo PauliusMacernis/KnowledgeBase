@@ -137,11 +137,17 @@ Read more:
 http://php.net/manual/en/book.opcache.php  
 
 - **Explain `php -m | grep opcache`**  
-It is a PHP utility (CLI) that shows compiled in PHP modules (`-m`) and sends the list (text) to the `grep` utility. `grep`, which stands for "global regular expression print," processes text line by line and prints any lines which match a specified pattern (`opcache`).  
+It is a PHP utility (CLI) that shows compiled in PHP modules (`-m`) and sends the list (text) to the `grep` utility. `grep`, which stands for "global regular expression print," processes text line by line and prints any lines which match a specified pattern (`opcache`). It is actually being used for finding if any PHP module matching the string `opcache` exist.  
 Read more:  
 http://php.net/manual/en/features.commandline.options.php  
 http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_04_02.html  
 
+- **Explain `php -i | grep ^extension_dir`**  
+It is a PHP utility (CLI) that shows PHP information (`-i`) and sends the list (text) to the `grep` utility. `grep`, which stands for "global regular expression print," processes text line by line and prints any lines which match a specified pattern (`^extension_dir`). It is actually being used for finding the extensions dir for PHP. "Extensions" - dynamically loadable extensions to load when PHP starts up.  
+Read more:  
+http://php.net/manual/en/features.commandline.options.php  
+http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_04_02.html  
+http://php.net/manual/en/ini.core.php#ini.extension-dir  
 
 
 
