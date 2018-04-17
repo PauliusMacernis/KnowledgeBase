@@ -555,6 +555,14 @@ https://codefresh.io/docker-tutorial/not-ignore-dockerignore/
 1. Copy an SSH key into the Docker image from a build machine  
 2. Install Composer dependencies on a credentialed machine and then copy the `vendor/` folder into the image during a build  
 3. Use an OAuth token with a Composer config file during a `docker build`  
+
+The example for the 3rd option:
+1. Create a private git project on Bitbucket.org
+2. Create a read-only OAuth consumer on Bitbucket.org ( https://getcomposer.org/doc/06-config.md#bitbucket-oauth , https://confluence.atlassian.com/bitbucket/oauth-on-bitbucket-cloud-238027431.html , https://getcomposer.org/doc/05-repositories.md#bitbucket-driver-configuration )
+3. Generate a unversioned `auth.json` config in our project ( `chmod u+x auth-setup.sh`, `export BITBUCKET_CONSUMER_KEY=my-key`, `export BITBUCKET_CONSUMER_SECRET=my-secret`, `./auth-setup.sh`, `echo "auth.json" >> app/.gitignore` )
+4. Define the private Composer dependency as a required package
+5. Run our existing docker build command (e.g. `docker build --no-cache -t ch05-composer .` )
+
 Read more:  
 https://github.com/moby/moby/issues/13490  
 
