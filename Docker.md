@@ -545,6 +545,13 @@ The `WORKDIR` instruction can be used multiple times in a `Dockerfile`. If a rel
 Read more:  
 https://docs.docker.com/engine/reference/builder/#workdir  
 
+- **What is `.dockerignore`? For example, `echo "app/vendor/" >> .dockerignore`?**  
+The `.dockerignore` file resides in the same directory as the `Dockerfile` file and works similarly to a `.gitignore` file in `git`, ensuring that unintended files are left out during a `COPY` or `ADD` instruction.  
+Read more:  
+https://docs.docker.com/engine/reference/builder/#dockerignore-file  
+https://codefresh.io/docker-tutorial/not-ignore-dockerignore/  
+
+
 
 
 
