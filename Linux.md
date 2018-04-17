@@ -111,7 +111,14 @@ https://ss64.com/bash/export.html
 Read more:  
 https://ss64.com/bash/less.html  
 
-
+- **What does `chmod +x <filename>` do and how do I use it?**  
+`chmod +x` on a file only means, that you'll make it executable.  
+The `man` page of `chmod` covers that: `u` stands for user, `g` stands for group, `o` stands for others, `a` stands for all.  
+That means that `chmod u+x somefile` will grant only the owner of that file execution permissions whereas `chmod +x somefile` is the same as `chmod a+x somefile`.  
+Read more:  
+https://askubuntu.com/questions/443789/what-does-chmod-x-filename-do-and-how-do-i-use-it  
+https://askubuntu.com/questions/29589/chmod-ux-versus-chmod-x  
+https://ss64.com/bash/chmod.html  
 
 
 
