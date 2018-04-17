@@ -99,6 +99,11 @@ https://ss64.com/bash/grep.html
 Read more:  
 https://ss64.com/bash/chmod.html  
 
+- **Explain `export PHP_INI_SCAN_DIR=/usr/local/etc/php/conf.d-dev`**  
+Sets an environment variable (`PHP_INI_SCAN_DIR` to value `/usr/local/etc/php/conf.d-dev`). Marks each name (e.g. `PHP_INI_SCAN_DIR`) to be passed to child processes in the environment.  
+Read more:  
+https://ss64.com/bash/export.html  
+
 
 
 
