@@ -149,6 +149,8 @@ http://php.net/manual/en/features.commandline.options.php
 http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_04_02.html  
 http://php.net/manual/en/ini.core.php#ini.extension-dir  
 
-
-
+- **What is the environment variable `PHP_INI_SCAN_DIR` for?**  
+The `PHP_INI_SCAN_DIR` environment variable can be set to override the scan directory of PHP settings (`*.ini` files) set via the configure script. Available since PHP 5.2.0.  
+Read more:  
+http://php.net/manual/en/configuration.file.php  
 
