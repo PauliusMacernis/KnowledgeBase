@@ -104,6 +104,13 @@ Sets an environment variable (`PHP_INI_SCAN_DIR` to value `/usr/local/etc/php/co
 Read more:  
 https://ss64.com/bash/export.html  
 
+- **How to make a search in `less`?**  
+`/` - type to start writting a pattern  
+`n` - for next result  
+`N` - for previous result  
+Read more:  
+https://ss64.com/bash/less.html  
+
 
 
 
