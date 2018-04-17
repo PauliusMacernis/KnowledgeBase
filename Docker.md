@@ -555,6 +555,9 @@ https://codefresh.io/docker-tutorial/not-ignore-dockerignore/
 1. Copy an SSH key into the Docker image from a build machine  
 2. Install Composer dependencies on a credentialed machine and then copy the `vendor/` folder into the image during a build  
 3. Use an OAuth token with a Composer config file during a `docker build`  
+Read more:  
+https://github.com/moby/moby/issues/13490  
+
 
 
 
