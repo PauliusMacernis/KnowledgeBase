@@ -539,6 +539,12 @@ https://docs.docker.com/engine/reference/builder/#copy
 https://stackoverflow.com/questions/24958140/what-is-the-difference-between-the-copy-and-add-commands-in-a-dockerfile  
 https://docs.docker.com/develop/develop-images/dockerfile_best-practices/  
 
+- **What is the `WORKDIR /var/www/html` for in case this line is in a `Dockerfile`?**  
+The `WORKDIR` instruction sets the working directory for any `RUN`, `CMD`, `ENTRYPOINT`, `COPY` and `ADD` instructions that follow it in the `Dockerfile`. If the `WORKDIR` doesn’t exist, it will be created even if it’s not used in any subsequent `Dockerfile` instruction.  
+The `WORKDIR` instruction can be used multiple times in a `Dockerfile`. If a relative path is provided, it will be relative to the path of the previous `WORKDIR` instruction.  
+Read more:  
+https://docs.docker.com/engine/reference/builder/#workdir  
+
 
 
 
