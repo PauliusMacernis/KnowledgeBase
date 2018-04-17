@@ -515,4 +515,9 @@ https://docs.docker.com/compose/reference/overview/#command-options-overview-and
 https://docs.docker.com/compose/reference/build/  
 https://docs.docker.com/compose/reference/up/  
 
+- **What happens when a host machine (your development machine) mounts a host directory (volume) on an existing path in the container (e.g. `/srv/app`)?**  
+It overrides the existing files in that path. The mount overlays but does not remove the pre-existing content. Once the mount is removed, the content is accessible again.  
+Read more:  
+https://docs.docker.com/storage/volumes/  
+
 
