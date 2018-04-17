@@ -551,6 +551,11 @@ Read more:
 https://docs.docker.com/engine/reference/builder/#dockerignore-file  
 https://codefresh.io/docker-tutorial/not-ignore-dockerignore/  
 
+- **What are the ways of installing private Composer packages in Docker?** (relates to Composer - PHP dependency manager)  
+1. Copy an SSH key into the Docker image from a build machine  
+2. Install Composer dependencies on a credentialed machine and then copy the `vendor/` folder into the image during a build  
+3. Use an OAuth token with a Composer config file during a `docker build`  
+
 
 
 
