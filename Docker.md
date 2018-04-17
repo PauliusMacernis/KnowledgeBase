@@ -530,5 +530,15 @@ This runs a command `/usr/local/bin/composer --version` inside of the container 
 Read more:  
 https://docs.docker.com/engine/reference/commandline/run/  
 
+- **What is the difference between `ADD` and `COPY` inside a `Dockerfile`?**  
+The major difference is that `ADD` can do more than `COPY`. `ADD` allows `<src>` to be an URL. If the `<src>` parameter of `ADD` is an archive in a recognised compression format, it will be unpacked.  
+The Best practices for writing `Dockerfile`s suggests using `COPY` where the magic of `ADD` is not required. Otherwise you are likely to get surprised someday when you mean to copy `keep_this_archive_intact.tar.gz` into your container, but instead you spray the contents onto your filesystem.  
+Read more:  
+https://docs.docker.com/engine/reference/builder/#add  
+https://docs.docker.com/engine/reference/builder/#copy  
+https://stackoverflow.com/questions/24958140/what-is-the-difference-between-the-copy-and-add-commands-in-a-dockerfile  
+https://docs.docker.com/develop/develop-images/dockerfile_best-practices/  
+
+
 
 
