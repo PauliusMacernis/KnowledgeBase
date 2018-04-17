@@ -509,8 +509,10 @@ https://docs.docker.com/storage/volumes/
 By default, anonymous volumes attached to containers are not removed. We can override this with `-v`.  
 
 - **Explain `docker-compose --file=docker-compose.prod.yml build` followed by `docker-compose --file=docker-compose.prod.yml up -d`**  
-This will build and up the container based on the `docker-compose.prod.yml` settings of Docker Compose.  
+This will build and up the container based on the `docker-compose.prod.yml` settings of Docker Compose. By default, Docker Compose looks for a `docker-compose.yml` file, but by using the `docker-compose --file`, you can use an alternate Docker Compose file.  
 Read more:  
 https://docs.docker.com/compose/reference/overview/#command-options-overview-and-help  
 https://docs.docker.com/compose/reference/build/  
 https://docs.docker.com/compose/reference/up/  
+
+
