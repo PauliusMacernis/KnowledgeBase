@@ -520,4 +520,15 @@ It overrides the existing files in that path. The mount overlays but does not re
 Read more:  
 https://docs.docker.com/storage/volumes/  
 
+- **Explain: `docker build -t ch05-composer .`**   
+This builds docker image with the tag `ch05-composer` from the `Dockerfile` in a current directory (`.`).  
+Read more:  
+https://docs.docker.com/engine/reference/commandline/build/  
+
+- **Explain: `docker run --rm ch05-composer /usr/local/bin/composer --version`**  
+This runs a command `/usr/local/bin/composer --version` inside of the container tagged as `ch05-composer`. The `--rm` flag automatically removes the container on exit, which means it does not show up when you run `docker ps -a`.  
+Read more:  
+https://docs.docker.com/engine/reference/commandline/run/  
+
+
 
