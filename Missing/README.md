@@ -1,2 +1,4 @@
 - CI
+- HTTP/2
+- Caddy server
 - 
