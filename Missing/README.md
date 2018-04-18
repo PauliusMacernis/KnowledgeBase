@@ -1,4 +1,5 @@
 - CI
 - HTTP/2
 - Caddy server
+- Slim PHP Framework (https://www.slimframework.com/)
 - 
