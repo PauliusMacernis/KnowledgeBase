@@ -593,6 +593,16 @@ Read more:
 https://docs.docker.com/engine/reference/commandline/rm/  
 https://docs.docker.com/engine/reference/commandline/ps/  
 
+- **Explain: `docker cp nginx-container:/etc/nginx/nginx.conf .docker/nginx/nginx.conf`**  
+Copy files/folders between a container and the local filesystem.  
+In this case, file `/etc/nginx/nginx.conf` from the container named `nginx-container` will be copied to `.docker/nginx/nginx.conf` in a local filesystem.  
+Read more:  
+https://docs.docker.com/engine/reference/commandline/cp/  
+Usage:  
+```
+docker cp [OPTIONS] CONTAINER:SRC_PATH DEST_PATH|-
+docker cp [OPTIONS] SRC_PATH|- CONTAINER:DEST_PATH
+```
 
 
 
