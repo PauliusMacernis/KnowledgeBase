@@ -129,7 +129,7 @@ A single command can be specified as the first argument to `sed`. Multiple comma
 `sed` - writes output to standard output.  
 `-i` - to edit files in-place instead of printing to standard output.  
 `-e script` or `--expression=script` - add the commands in script to the set of commands to be run while processing the input.  
-`"s/%consumer-key%/$BITBUCKET_CONSUMER_KEY/"` - sed-comaptible command replacing all occurrences of `%consumer-key%` to `$BITBUCKET_CONSUMER_KEY` (this is the environment variable in this case).  
+`"s/%consumer-key%/$BITBUCKET_CONSUMER_KEY/"` - sed-comaptible command replacing all occurrences of `%consumer-key%` to `$BITBUCKET_CONSUMER_KEY` (this is the environment variable so the value of the variable will be used).  
 `app/auth.json` - the input file to work on.  
 Read more:  
 https://www.gnu.org/software/sed/manual/sed.html  
