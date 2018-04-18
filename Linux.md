@@ -135,6 +135,12 @@ Read more:
 https://www.gnu.org/software/sed/manual/sed.html  
 https://stackoverflow.com/questions/18527365/what-does-sed-i-option-do  
 
+- **Explain: `chmod -R o+rw the/folder/`**  
+Change access permissions, **ch**ange **mod**e of `the/folder/`.  
+`-R` (or `--recursive`) - change files and directories recursively.  
+`o+rw` - make a file readable and writable by others.   
+Read more:  
+https://ss64.com/bash/chmod.html  
 
 Read more:  
 https://ss64.com/bash/  
