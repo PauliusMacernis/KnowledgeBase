@@ -124,14 +124,15 @@ https://ss64.com/bash/chmod.html
 The full format for invoking sed is: `sed OPTIONS... [SCRIPT] [INPUTFILE...]`  
 SED is a stream editor. A stream editor is used to perform basic text transformations on an input stream (a file or input from a pipeline).  
 While in some ways similar to an editor which permits scripted edits, SED works by making only one pass over the input(s), and is consequently more efficient. But it is SED's ability to filter text in a pipeline which particularly distinguishes it from other types of editors.  
-A single command can be specified as the first argument to `sed`. Multiple commands can be specified by using the `-e` or `-f` options. All commands are applied to the input in the order they are specified regardless of their origin.   
+A single command can be specified as the first argument to `sed`. Multiple commands can be specified by using the `-e` or `-f` options. All commands are applied to the input in the order they are specified regardless of their origin.  
+...  
 `sed` - writes output to standard output.  
 `-i` - to edit files in-place instead of printing to standard output.  
-`-e script` or `--expression=script` - add the commands in script to the set of commands to be run while processing the input.
+`-e script` or `--expression=script` - add the commands in script to the set of commands to be run while processing the input.  
 `"s/%consumer-key%/$BITBUCKET_CONSUMER_KEY/"` - sed-comaptible command replacing all occurrences of `%consumer-key%` to `$BITBUCKET_CONSUMER_KEY` (this is the environment variable in this case).  
 `app/auth.json` - the input file to work on.  
 Read more:  
-https://www.gnu.org/software/sed/manual/sed.html
+https://www.gnu.org/software/sed/manual/sed.html  
 https://stackoverflow.com/questions/18527365/what-does-sed-i-option-do  
 
 
