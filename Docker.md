@@ -569,6 +569,15 @@ Usage: `docker build [OPTIONS] PATH | URL | -`
 Read more:  
 https://docs.docker.com/engine/reference/commandline/build/  
 
+- **Explain: `docker run --name nginx-container -p 8080:80 -d nginx:1.12`**  
+Run Docker container FROM `nginx:1.12` image ( https://hub.docker.com/_/nginx/ ).  
+`--name nginx-container` - assign the name `nginx-container` to the container.  
+`-p 8080:80` - map a container᾿s port `80` to host's port `8080`.  
+`-d` - to start a container in detached mode (in a foreground).  
+Read more:  
+https://docs.docker.com/engine/reference/run/  
+https://hub.docker.com/_/nginx/  
+
 
 
 Read more:  
