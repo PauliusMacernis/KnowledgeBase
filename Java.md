@@ -61,6 +61,13 @@ A manifest file is a metadata file contained within a JAR. It defines extension 
 Manifest file may be used for: Package Sealing (all classes defined in the chosen package are archived in the same JAR file), Package Versioning (several manifest headers hold versioning information, one set of headers can be assigned to each package), Dependencies (to specify all the classes that must be loaded for an application to be able to run), etc.  
 Read more: https://en.wikipedia.org/wiki/JAR_(file_format)  
 
+- **What is the difference between Software Development Kit (SDK) and Java Development Kit (JDK)?**  
+JDK is the SDK for Java. 
+SDK stands for 'Software Development Kit',  a developers tools that enables one to write the code with more more ease, effectiveness and efficiency.  
+SDKs come for various languages. They provide a lot of APIs (Application Programming Interfaces) that makes the programmer's work easy.  
+The SDK for Java is called as JDK, the Java Development Kit. 
+So by saying SDK for Java you are actually referring to the JDK.  
+
 
 
 
