@@ -563,6 +563,14 @@ The example for the 3rd option:
 4. Define the private Composer dependency as a required package
 5. Run our existing docker build command (e.g. `docker build --no-cache -t ch05-composer .` )
 
+- **Explain: `docker build --no-cache`**  
+Do not use cache when building the image (including do not cache the outcome of each layer of `Dockerfile`).  
+Usage: `docker build [OPTIONS] PATH | URL | -`  
+Read more:  
+https://docs.docker.com/engine/reference/commandline/build/  
+
+
+
 Read more:  
 https://github.com/moby/moby/issues/13490  
 
