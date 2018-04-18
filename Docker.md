@@ -578,6 +578,22 @@ Read more:
 https://docs.docker.com/engine/reference/run/  
 https://hub.docker.com/_/nginx/  
 
+- **Explain: `docker stop $(docker ps -q)`**  
+Stops all running containers.  
+`-q` stands for `--quite` and is for "Only display numeric IDs"  
+Read more:  
+https://docs.docker.com/engine/reference/commandline/stop/  
+https://docs.docker.com/engine/reference/commandline/ps/  
+
+- **Explain: `docker rm $(docker ps -aq)`**  
+Remove all containers.
+`-q` stands for `--quite` and is for "Only display numeric IDs"  
+`-a` stands for `--all` and is for "Show all containers, including stopped ones (default, without `-a`, shows just running)"  
+Read more:  
+https://docs.docker.com/engine/reference/commandline/rm/  
+https://docs.docker.com/engine/reference/commandline/ps/  
+
+
 
 
 Read more:  
