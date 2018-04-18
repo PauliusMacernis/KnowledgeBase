@@ -604,6 +604,54 @@ docker cp [OPTIONS] CONTAINER:SRC_PATH DEST_PATH|-
 docker cp [OPTIONS] SRC_PATH|- CONTAINER:DEST_PATH
 ```
 
+- **Explain the following found in `docker-compose.yml`:**  
+```
+version: "3"
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: .docker/nginx/Dockerfile
+```
+`version: "3"` - version 3 of the Compose file format.  
+`services:` - lists services (containers) available.  
+`nginx:` - the name given to the service (container).  
+`build:` - configuration options that are applied at build time.  
+`context: .`  
+Either a path to a directory containing a Dockerfile, or a url to a git repository.  
+When the value supplied is a relative path, it is interpreted as relative to the location of the Compose file. This directory is also the build context that is sent to the Docker daemon.  
+Compose builds and tags it with a generated name, and use that image thereafter.  
+`dockerfile: .docker/nginx/Dockerfile`  
+Alternate Dockerfile. Compose uses an alternate file to build with. A build path must also be specified.  
+In the example, the `context` and `dockerfile` keys are equivalent to `docker build -f .doker/php/Dockerfile -t <the-tag> .`, the last dot being the current folder (`context`).  
+Read more:  
+https://docs.docker.com/compose/compose-file/  
+
+
+- **Explain the following found in `docker-compose.yml`:**  
+```
+version: "3"
+networks:
+  app-tier:
+    driver: bridge
+services:
+  app:
+    networks:
+      - app-tier
+  nginx:
+    networks:
+      - app-tier
+```
+`version: "3"` - version 3 of the Compose file format.  
+`services:` - lists services (containers) available.  
+`app:`, `nginx:` - the names given to the services (containers).  
+`networks` keys under services - networks to join, referencing entries under the top-level `networks` key.  
+Read more:  
+https://docs.docker.com/compose/compose-file/  
+https://docs.docker.com/compose/compose-file/#networks  
+https://docs.docker.com/compose/networking/  
+https://github.com/docker/labs/blob/master/networking/README.md  
+https://github.com/docker/labs/blob/master/README.md  
 
 
 Read more:  
