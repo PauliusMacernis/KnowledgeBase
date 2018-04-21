@@ -653,6 +653,24 @@ https://docs.docker.com/compose/networking/
 https://github.com/docker/labs/blob/master/networking/README.md  
 https://github.com/docker/labs/blob/master/README.md  
 
+- **Explain: `CMD ["/usr/bin/caddy", "--conf", "/etc/Caddyfile", "--log", "stdout"]` forund in `Dockerfile`**  
+The CMD instruction has three forms:  
+```
+    CMD ["executable","param1","param2"] (exec form, this is the preferred form)
+    CMD ["param1","param2"] (as default parameters to ENTRYPOINT)
+    CMD command param1 param2 (shell form)
+```
+There can only be one `CMD` instruction in a `Dockerfile`. If you list more than one `CMD` then only the last `CMD` will take effect.  
+The example given is `CMD` with `/usr/bin/caddy` as executable and the rest (`--conf`, `/etc/Caddyfile`, `--log`, `stdout`) as parameters.  
+`--conf` - The `Caddyfile` to use to configure Caddy. Must be a valid path to the file, either relative or absolute. Can be a glob string as well, to load all matching files as if they were imported into a single configuration. In the case of the example, the file is `/etc/Caddyfile`.  
+`--log` - Enable the process log. The value must be either the path to a log file, `stdout`, or `stderr`. Caddy will create the log file if it does not already exist. This file will be used to log information and errors that occur during runtime. The log file is rotated when it gets large, so it is safe to use for long-running processes. In the case of example, log is set to be `stdout`.  
+Read more:  
+https://docs.docker.com/engine/reference/builder/#cmd  
+https://caddyserver.com/docs/cli  
+https://stackoverflow.com/questions/3385201/confused-about-stdin-stdout-and-stderr  
+
+
+
 
 Read more:  
 https://github.com/moby/moby/issues/13490  
