@@ -142,5 +142,50 @@ Change access permissions, **ch**ange **mod**e of `the/folder/`.
 Read more:  
 https://ss64.com/bash/chmod.html  
 
+- **Explain the following:**  
+```
+curl --silent --show-error --fail --location \
+    --header "Accept: application/tar+gzip, application/x-gzip, application/octet-stream" -o - \
+    "https://caddyserver.com/download/linux/amd64?plugins=http.expires,http.realip&license=personal" \
+    | tar --no-same-owner -C /usr/bin/ -xz caddy \
+    && chmod 0755 /usr/bin/caddy \
+    && /usr/bin/caddy -version
+```
+**`curl`** is a tool to transfer data from or to a server, using one of the supported protocols (DICT, FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S, RTMP, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET and TFTP). The command is designed to work without user interaction.  
+`curl` offers a busload of useful tricks like proxy support, user authentication, FTP upload, HTTP post, SSL connections, cookies, file transfer resume, Metalink, and more. (To transfer multiple files use wget or FTP.).  
+**`--silent`** or `-s` - Silent or quiet mode. Don't show progress meter or error messages. Makes Curl mute. It will still output the data you ask for, potentially even to the terminal/stdout unless you redirect it.  
+**`--show-error`** or `-S` - When used with `-s`, `--silent`, it makes `curl` show an error message if it fails.  
+**`--fail`** or `-f` - (HTTP) Fail silently (no output at all) on server errors. This is mostly done to better enable scripts etc to better deal with failed attempts. In normal cases when an HTTP server fails to deliver a document, it returns an HTML document stating so (which often also describes why and more). This flag will prevent curl from outputting that and return error 22.  
+This method is not fail-safe and there are occasions where non-successful response codes will slip through, especially when authentication is involved (response codes 401 and 407).  
+**`--location`** or `-L` - (HTTP) If the server reports that the requested page has moved to a different location (indicated with a Location: header and a 3XX response code), this option will make `curl` redo the request on the new place. If used together with `-i`, `--include` or `-I`, `--head`, headers from all requested pages will be shown. When authentication is used, `curl` only sends its credentials to the initial host. If a redirect takes `curl` to a different host, it won't be able to intercept the user+password. See also `--location-trusted` on how to change this. You can limit the amount of redirects to follow by using the `--max-redirs option`.  
+When `curl` follows a redirect and the request is not a plain GET (for example POST or PUT), it will do the following request with a GET if the HTTP response was 301, 302, or 303. If the response code was any other 3xx code, curl will re-send the following request using the same unmodified method.  
+You can tell `curl` to not change the non-GET request method to GET after a 30x response by using the dedicated options for that: `--post301`, `--post302` and `--post303`.  
+**`--header <header/@file>` (e.g. `--header "Accept: application/tar+gzip, application/x-gzip, application/octet-stream"`)** or `-H` - (HTTP) Extra header to include in the request when sending HTTP to a server. You may specify any number of extra headers. Note that if you should add a custom header that has the same name as one of the internal ones curl would use, your externally set header will be used instead of the internal one. This allows you to make even trickier stuff than `curl` would normally do. You should not replace internally set headers without knowing perfectly well what you're doing. Remove an internal header by giving a replacement without content on the right side of the colon, as in: `-H "Host:"`. If you send the custom header with no-value then its header must be terminated with a semicolon, such as `-H "X-Custom-Header;"` to send "`X-Custom-Header:"`.  
+`curl` will make sure that each header you add/replace is sent with the proper end-of-line marker, you should thus not add that as a part of the header content: do not add newlines or carriage returns, they will only mess things up for you.  
+Starting in 7.55.0, this option can take an argument in `@filename` style, which then adds a header for each line in the input file. Using `@`- will make curl read the header file from stdin.  
+See also the `-A`, `--user-agent` and `-e`, `--referer options`.  
+Starting in 7.37.0, you need `--proxy-header` to send custom headers intended for a proxy.  
+Example: `curl -H "X-First-Name: Joe" http://example.com/`  
+WARNING: headers set with this option will be set in all requests - even after redirects are followed, like when told with `-L`, `--location`. This can lead to the header being sent to other hosts than the original host, so sensitive headers should be used with caution combined with following redirects.  
+This option can be used multiple times to add/replace/remove multiple headers.  
+**`-o` or `--output <file>`** - Write output to `<file>` instead of `stdout`. If you are using `{}` or `[]` to fetch multiple documents, you can use `#` followed by a number in the `<file>` specifier. That variable will be replaced with the current string for the URL being fetched. Like in: `curl http://{one,two}.example.com -o "file_#1.txt"` or use several variables like: `curl http://{site,host}.host[1-5].com -o "#1_#2"`. You may use this option as many times as the number of URLs you have. For example, if you specify two URLs on the same command line, you can use it like this: `curl -o aa example.com -o bb example.net` and the order of the `-o` options and the URLs doesn't matter, just that the first `-o` is for the first URL and so on, so the above command line can also be written as `curl example.com example.net -o aa -o bb` See also the `--create-dirs` option to create the local directories dynamically.  
+**Specifying the output as `-` (a single dash)** - will force the output to be done to stdout. See also `-O`, `--remote-name` and `--remote-name-all` and `-J`, `--remote-header-name`.  
+**`tar`** - Store, list or extract files in an archive (originally on tape - Tape ARchiver).  
+**`--no-same-owner`** - extract files as yourself (default for ordinary users).  
+**`-C /usr/bin/`** or `--directory=DIR` - change to directory DIR.  
+**`-xz caddy`** - `-x`, `--extract`, `--get`  - extract files from an archive.  
+**`-xz caddy`** - `-z` or `--gzip` - filter the archive through gzip.  
+**`chmod 0755 /usr/bin/caddy`** - make file `/usr/bin/caddy` permissions like that: user (execute, write, read), group (execute, read), other (execute, read).  
+**`/usr/bin/caddy -version`** - Print the version of Caddy (HTTP/2 web server with automatic HTTPS). It also prints build information if not from a tagged release. Caddy will terminate after printing; it does not serve sites if this option is used.  
+Read more:  
+https://curl.haxx.se/docs/manpage.html  
+https://ss64.com/bash/curl.html  
+https://linux.die.net/man/1/tar  
+https://ss64.com/bash/tar.html  
+https://ss64.com/bash/chmod.html  
+https://caddyserver.com/docs/cli  
+
+
+
 Read more:  
 https://ss64.com/bash/  
