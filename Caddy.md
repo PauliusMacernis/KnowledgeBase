@@ -18,7 +18,7 @@ on startup php-fpm --nodaemonize
 ```
 The first line defines the site address of our application, which is `0.0.0.0`, or `localhost`. We can use this line to specify the site address, which can take many forms. To learn
 more, you should check out the HTTP Caddyfile (https://caddyserver.com/docs/http-caddyfile) documentation.  
-The next line, gzip, is known as a Caddy directive. We configure the gzip directive to use the defaults, but you could customize the configuration with a block:
+The next line, `gzip`, is known as a Caddy directive. We configure the `gzip` directive to use the defaults, but you could customize the configuration with a block:
 ```
 gzip {
   ext
