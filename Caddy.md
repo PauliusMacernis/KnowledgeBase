@@ -1,4 +1,4 @@
-- **Explain the following code find in Caddyfile (configuration file of Caddy):**  
+- **Explain the following code found in Caddyfile (configuration file of Caddy):**  
 ```
 0.0.0.0
 root /srv/app/public
