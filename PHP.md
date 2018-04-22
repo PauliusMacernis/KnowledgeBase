@@ -154,3 +154,9 @@ The `PHP_INI_SCAN_DIR` environment variable can be set to override the scan dire
 Read more:  
 http://php.net/manual/en/configuration.file.php  
 
+- **What is Suhosin?**  
+Suhosin (pronounced 'su-ho-shin') is an advanced protection system for PHP installations. It was designed to protect servers and users from known and unknown flaws in PHP applications and the PHP core. Suhosin comes in two independent parts, that can be used separately or in combination. The first part is a small patch against the PHP core, that implements a few low-level protections against buffer overflows or format string vulnerabilities and the second part is a powerful PHP extension that implements numerous other protections.  
+Read more:  
+https://suhosin.org/stories/index.html  
+https://raw.githubusercontent.com/sektioneins/suhosin/master/Changelog  
+
