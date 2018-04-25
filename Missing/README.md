@@ -4,4 +4,5 @@
 - Slim PHP Framework (https://www.slimframework.com/)
 - GZip (e.g. http://nginx.org/en/docs/http/ngx_http_gzip_module.html )
 - AWS
+- PHP Internationalization Functions (intl) ( http://php.net/manual/en/book.intl.php )
 - 
