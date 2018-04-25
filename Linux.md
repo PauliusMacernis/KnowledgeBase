@@ -194,6 +194,18 @@ https://www.youtube.com/watch?v=fmMg6cyww14
 https://ss64.com/bash/scp.html  
 https://linux.die.net/man/1/scp  
 
+- **Explain `curl -LOk https://github.com/cakephp/cakephp/archive/2.6.0.zip && unzip 2.6.0.zip -d ./ && rm 2.6.0.zip`**  
+This downloads the archive ( https://github.com/cakephp/cakephp/archive/2.6.0.zip && unzip 2.6.0.zip ) by using curl. Then the archive is extracted to the same directory ( `./` ) and the original archive file is removed ( `rm 2.6.0.zip` ).  
+`curl` is used with three parameters:  
+`-L` or `--location` - Follow redirects if the server reports that the requested page has moved (indicated with a Location: header and a 3XX response code).  
+`o` or `--output` - Write output to file instead of stdout. If you are using `{}` or `[]` to fetch multiple documents, you can use `#` followed by a number in the file specifier. That variable will be replaced with the current string for the URL being fetched. Like in: `curl https://{one,two}.site.com -o "file_#1.txt"` or use several variables like: `curl https://{site,host}.host[1-5].com -o "#1_#2"`. You may use this option as many times as the number of URLs you have. See also `--create-dirs` option to create the local directories dynamically. Specify `-` to force the output to stdout.  
+`k` or `--insecure` - This option explicitly allows curl to perform  "insecure" SSL connections and transfers. All SSL connections are attempted in secure mode using the CA certificate  bundle  installed by  default. This  makes  all connections considered "insecure" fail unless `-k`, `--insecure` is used.(SSL).  
+Read more:  
+https://ss64.com/bash/curl.html  
+https://linux.die.net/man/1/unzip  
+https://linux.die.net/man/1/rm  
+
+
 
 Read more:  
 https://ss64.com/bash/  
