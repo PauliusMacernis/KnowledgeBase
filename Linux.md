@@ -187,6 +187,12 @@ https://ss64.com/bash/chmod.html
 https://caddyserver.com/docs/cli  
 https://caddyserver.com/download  
 
+- **Explain `scp -r -P 20021 -i /home/paulius/.ssh/ uname@example.com:/etc/php5 /home/paulius/dev/example-config/`**  
+This will use Secure CoPy command to copy the content of the directory (`/etc/php5`) inside remote machine (`example.com`) to the directory (`/home/paulius/dev/example-config/`) inside the local machine. All files within the directory (`-r`) will be copied by connecting to the remote with the username (`uname`) and public ssh key (`-i`) where the valid public key is about to be found in `/home/paulius/.ssh/` local directory.  
+Read more:  
+https://www.youtube.com/watch?v=fmMg6cyww14  
+https://ss64.com/bash/scp.html  
+https://linux.die.net/man/1/scp  
 
 
 Read more:  
