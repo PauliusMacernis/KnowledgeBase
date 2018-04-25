@@ -10,3 +10,5 @@
     - https://ma.ttias.be/chrome-force-dev-domains-https-via-preloaded-hsts/
     - https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-nginx-in-ubuntu-16-04
 - CakePHP (https://book.cakephp.org/2.0/en/index.html)
+- Building PHP from source
+- 
