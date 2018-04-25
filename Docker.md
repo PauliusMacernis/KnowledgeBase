@@ -669,6 +669,12 @@ https://docs.docker.com/engine/reference/builder/#cmd
 https://caddyserver.com/docs/cli  
 https://stackoverflow.com/questions/3385201/confused-about-stdin-stdout-and-stderr  
 
+- **What are ways to use old PHP version (older than supported by https://hub.docker.com/_/php/) with Docker?**  
+ 1. we can use a PHP package from an older Linux version
+ 2. we can build PHP (and the required modules) from source
+
+- **000?**  
+
 
 
 
