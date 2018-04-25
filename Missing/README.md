@@ -6,4 +6,5 @@
 - AWS
 - PHP Internationalization Functions (intl) ( http://php.net/manual/en/book.intl.php )
 - Wireshark
+- Self-signed SSL for `.dev` domains on Ubuntu ( https://ma.ttias.be/chrome-force-dev-domains-https-via-preloaded-hsts/ , https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-nginx-in-ubuntu-16-04 )
 - 
