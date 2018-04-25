@@ -205,6 +205,24 @@ https://ss64.com/bash/curl.html
 https://linux.die.net/man/1/unzip  
 https://linux.die.net/man/1/rm  
 
+- **Explain `set -eu` in a bash script**  
+Set both `-e` and `-u` so that the script will exit on an Error or if an Unset variable is referenced.  
+This is good practice when writing and debugging shell scripts.  
+Change the value of a shell option and set the positional parameters, or display the names and values of shell variables.  
+If no options or arguments are supplied, set displays the names and values of all shell variables and functions, sorted according to the current locale, in a format that can be reused as input. When options are supplied, they set or unset shell attributes.  
+Options: Using `+` rather than `-` will cause the option to be turned off.  
+Read more:  
+https://ss64.com/bash/set.html  
+
+- **Explain `openssl rand -base64 40`**  
+openssl-rand, rand - generate pseudo-random bytes.  
+Synopsis: `openssl rand [-help] [-out file] [-rand file...] [-writerand file] [-base64] [-hex] num`  
+The rand command outputs num pseudo-random bytes after seeding the random number generator once. As in other openssl command line tools, PRNG seeding uses the file `$HOME/.rnd` or `.rnd` in addition to the files given in the `-rand` option. A new `$HOME/.rnd` or `.rnd` file will be written back if enough seeding was obtained from these sources.  
+`-base64` - Perform base64 encoding on the output.  
+Read more:  
+https://www.openssl.org/docs/manmaster/man1/openssl-rand.html  
+https://en.wikipedia.org/wiki/Base64  
+
 
 
 Read more:  
