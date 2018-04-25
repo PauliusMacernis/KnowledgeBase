@@ -673,7 +673,37 @@ https://stackoverflow.com/questions/3385201/confused-about-stdin-stdout-and-stde
  1. we can use a PHP package from an older Linux version
  2. we can build PHP (and the required modules) from source
 
-- **000?**  
+- **What is the meaning of `entrypoint` in `docker-compose.yml` file**?  
+For example:
+```
+version: "3"
+services:
+  app:
+    image: cakephp-app
+    container_name: cakephp-app
+    build:
+      context: .
+      dockerfile: .docker/Dockerfile
+    ports:
+      - 8888:80
+    volumes:
+      - .:/srv/cakephp
+  cake:
+    image: cakephp-app
+    container_name: cakephp-console
+    volumes:
+      - .:/srv/cakephp
+    entrypoint: [
+      "/srv/cakephp/app/Console/cake",
+      "-app", "/srv/cakephp/app"
+    ]
+```
+Override the default entrypoint. Setting entrypoint both overrides any default entrypoint set on the service’s image with the ENTRYPOINT `Dockerfile` instruction, and clears out any default command on the image - meaning that if there’s a `CMD` instruction in the `Dockerfile`, it is ignored.
+
+Read more:  
+https://docs.docker.com/compose/compose-file/#entrypoint  
+
+
 
 
 
