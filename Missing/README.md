@@ -12,3 +12,4 @@
 - CakePHP (https://book.cakephp.org/2.0/en/index.html)
 - Building PHP from source
 - Ansible
+- POSIX, POSIX signals
