@@ -13,3 +13,5 @@
 - Building PHP from source
 - Ansible
 - POSIX, POSIX signals
+- CLI program Confd (https://github.com/kelseyhightower/confd)
+- 
