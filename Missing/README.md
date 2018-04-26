@@ -18,4 +18,5 @@
 - Etcd (https://github.com/coreos/etcd)
 - Redis (https://redis.io/)
 - TOML (https://github.com/toml-lang/toml)
-- 
+- GO (https://golang.org/)
+
