@@ -14,4 +14,7 @@
 - Ansible
 - POSIX, POSIX signals
 - CLI program Confd (https://github.com/kelseyhightower/confd)
-- 
+- Consul (https://www.consul.io/)
+- Etcd (https://github.com/coreos/etcd)
+- Redis (https://redis.io/)
+
