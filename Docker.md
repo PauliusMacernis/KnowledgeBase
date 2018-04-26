@@ -699,9 +699,45 @@ services:
     ]
 ```
 Override the default entrypoint. Setting entrypoint both overrides any default entrypoint set on the service’s image with the ENTRYPOINT `Dockerfile` instruction, and clears out any default command on the image - meaning that if there’s a `CMD` instruction in the `Dockerfile`, it is ignored.
-
 Read more:  
 https://docs.docker.com/compose/compose-file/#entrypoint  
+
+- **Can `entrypoint` and `CMD` be used together in the same `Dockerfile` or in the `docker-compose.yml` service block "extending" the same `Dockerfile`?**  
+Setting `entrypoint` both overrides any default `entrypoint` set on the service’s image with the `ENTRYPOINT` `Dockerfile` instruction, and clears out any default command on the image - meaning that if there’s a `CMD` instruction in the `Dockerfile`, it is ignored.  
+The main purpose of a `CMD` is to provide defaults for an executing container. These defaults can include an executable, or they can omit the executable, in which case you must specify an `ENTRYPOINT` instruction as well.  
+Given how much easier it is to override the `CMD`, the recommendation is use `CMD` in your `Dockerfile` when you want the user of your image to have the flexibility to run whichever executable they choose when starting the container. For example, maybe you have a general Ruby image that will start-up an interactive irb session by default (`CMD irb`) but you also want to give the user the option to run an arbitrary Ruby script (`docker run ruby ruby -e 'puts "Hello"'`).  
+In contrast, `ENTRYPOINT` should be used in scenarios where you want the container to behave exclusively as if it were the executable it's wrapping. That is, when you don't want or expect the user to override the executable you've specified.  
+Most of the time you can achieve the same thing with `CMD` as with `ENTRYPOINT`, but the use of `ENTRYPOINT` sends a strong message that this container is only intended to run this one command.  
+Both the `ENTRYPOINT` and `CMD` instructions support two different forms: the shell form and the exec form.  
+When using the shell form, the specified binary is executed with an invocation of the shell using `/bin/sh -c`. You can see this clearly if you run a container and then look at the docker ps output.  
+When the `exec` form of the `CMD` instruction is used the command will be executed without a shell. For example: `CMD ["/bin/ping","localhost"]`. In the example case, `/bin/ping` is being run directly without the intervening shell process (and, as a result, will end up as PID 1 inside the container). Whether you're using `ENTRYPOINT` or `CMD` (or both) the recommendation is to always use the `exec` form so that's it's obvious which command is running as PID 1 inside your container.  
+Combining `ENTRYPOINT` and `CMD` allows you to specify the default executable for your image while also providing default arguments to that executable which may be overridden by the user. For example, `ENTRYPOINT ["/bin/ping","-c","3"]` and the later `CMD ["localhost"]` in one file.  
+When using `ENTRYPOINT` and `CMD` together it's important that you always use the exec form of both instructions. Trying to use the shell form, or mixing-and-matching the shell and exec forms will almost never give you the result you want.  
+For example:
+```
+Dockerfile    Command
+ENTRYPOINT /bin/ping -c 3
+CMD localhost    
+/bin/sh -c '/bin/ping -c 3' /bin/sh -c localhost
+
+ENTRYPOINT ["/bin/ping","-c","3"]
+CMD localhost    
+/bin/ping -c 3 /bin/sh -c localhost
+
+ENTRYPOINT /bin/ping -c 3
+CMD ["localhost"]"    
+/bin/sh -c '/bin/ping -c 3' localhost
+
+ENTRYPOINT ["/bin/ping","-c","3"]
+CMD ["localhost"]    
+/bin/ping -c 3 localhost
+```
+The only one of these that results in a valid command string is when the `ENTRYPOINT` and `CMD` are both specified using the exec form.  
+If you want your image to actually do anything when it is run, you should definitely configure some sort of `ENTRYPOINT` or `CMD` in you `Dockerfile`. However, remember that they aren't mutually exclusive. In many cases you can improve the user experience of your image by using them in combination.  
+Read more:  
+https://www.ctl.io/developers/blog/post/dockerfile-entrypoint-vs-cmd/  
+https://docs.docker.com/engine/reference/builder/#cmd  
+https://docs.docker.com/engine/reference/builder/#entrypoint  
 
 
 
