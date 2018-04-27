@@ -223,6 +223,15 @@ Read more:
 https://www.openssl.org/docs/manmaster/man1/openssl-rand.html  
 https://en.wikipedia.org/wiki/Base64  
 
+- **Explain `trap : TERM INT; sleep infinity & wait` found at the end of bash script**  
+There might be situations when you don't want users of your scripts to exit untimely using keyboard abort sequences, for example because input has to be provided or cleanup has to be done. The `trap` statement catches these sequences and can be programmed to execute a list of commands upon catching those signals.  
+The syntax for the `trap` statement is straightforward: `trap [COMMANDS] [SIGNALS]`  
+Read more:  
+https://explainshell.com/explain?cmd=trap+%3A+TERM+INT%3B+sleep+infinity+%26+wait  
+http://www.tldp.org/LDP/Bash-Beginners-Guide/html/sect_12_02.html  
+https://bash.cyberciti.biz/guide/Trap_statement  
+https://ss64.com/bash/trap.html  
+
 
 
 Read more:  
