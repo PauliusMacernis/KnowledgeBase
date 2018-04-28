@@ -1,4 +1,20 @@
 ## Linux
+- **What is Linux?**  
+Linux is a clone of the operating system Unix, written from scratch by Linus Torvalds with assistance from a loosely-knit team of hackers across the Net. It aims towards POSIX and Single UNIX Specification compliance.  
+It has all the features you would expect in a modern fully-fledged Unix, including true multitasking, virtual memory, shared libraries, demand loading, shared copy-on-write executables, proper memory management, and multistack networking including IPv4 and IPv6.  
+Although originally developed first for 32-bit x86-based PCs (386 or higher), today Linux also runs on a multitude of other processor architectures, in both 32- and 64-bit variants.  
+Read more:  
+https://www.kernel.org/linux.html  
+
+- **What is Portable Operating System Interface (POSIX)?**  
+Read more:  
+https://en.wikipedia.org/wiki/POSIX  
+
+- **What is Single UNIX Specification?**  
+Read more:  
+http://opengroup.org/unix  
+https://blog.opengroup.org/2012/05/17/unix-is-still-as-relevant-as-ever/  
+
 - What is the difference between Unix and Linux?
 <a href="#" title="
 ">⌘</a>
@@ -14,6 +30,11 @@
 - What is `man` command for?
 <a href="#" title="
 ">⌘</a>
+
+- **Explain `mandb` command. What is it for?**  
+`mandb` is used to initialise or manually update index database caches that are usually maintained by `man`. The caches contain information relevant to the current state of the manual page system and the information stored within them is used by the man-db utilities to enhance their speed and functionality.  
+Read more:  
+http://man7.org/linux/man-pages/man8/mandb.8.html  
 
 - Lets say we have all or some `man` pages missing. Can we get and load it, how?
 <a href="#" title="
@@ -281,6 +302,13 @@ Signals can be viewed as a mean of communication between the OS kernel and OS pr
 Read more:  
 https://stackoverflow.com/questions/13341870/signals-and-interrupts-a-comparison  
 
+- **Explain `man -k signal`**  
+`man` - an interface to the on-line reference manuals.  
+`-k` - Equivalent to `apropos`. `apropos` - Each manual page has a short description available within it. `apropos` searches the manual page names and descriptions for instances of keyword.  
+`signal` - keyword to search for. It is usually a regular expression, as if (`-r`) was used, or may contain wildcards (`-w`), or match the exact keyword (`-e`). Using these options, it may be necessary to quote the keyword or escape (`\`) the special characters to stop the shell from interpreting them. The standard matching rules allow matches to be made against the page name and word boundaries in the description.  
+Read more:  
+https://ss64.com/bash/man.html  
+http://man7.org/linux/man-pages/man1/apropos.1.html  
 
 - **Explain `trap : TERM INT; sleep infinity & wait` found at the end of bash script**  
 In short:  
@@ -290,9 +318,17 @@ There might be situations when you don't want users of your scripts to exit unti
 The syntax for the `trap` statement is straightforward: `trap [COMMANDS] [SIGNALS]`  
 In the case of our example, all goes like this:  
 `trap` - catches the `[SIGNALS]` and runs the `[COMMANDS]` after.  
-`:` - equivalent to `true`. Which does nothing except return an exit status of `0`, meaning "success". It can be used as a place holder in shell scripts where a successful command is needed. Although the shell built-in command `:` (colon) does the same thing faster.  
-`TERM` - equivalent to `SIGTERM` (sygnal with the value of `15`) meaning Termination signal.  
-
+`:` - a command to execute on signals catch. `:` is equivalent to `true`. Which does nothing except return an exit status of `0`, meaning "success". It can be used as a place holder in shell scripts where a successful command is needed. Although the shell built-in command `:` (colon) does the same thing faster.  
+`TERM` - a signal name without `SIG` prefix equivalent to `SIGTERM` and `15` (signal int value). This is Termination signal. The default behavior is to terminate the process, but it also can be caught or ignored. The intention is to kill the process, gracefully or not, but to first allow it a chance to cleanup. The `SIGTERM` signal is a generic signal used to cause program termination. Unlike `SIGKILL`, this signal can be blocked, handled, and ignored. It is the normal way to politely ask a program to terminate. The shell command `kill` generates `SIGTERM` by default.  
+`INT` - a signal name without `SIG` prefix equivalent to `SIGINT` and `15` (signal int value). The `SIGINT` (“program interrupt”) signal is sent when the user types the `INTR` character (normally `C`-`c`, most shells bind `Ctrl` + `C` to "send a SIGINT signal to the program that currently runs in the foreground".).  
+`;` - When the shell sees a semicolon (`;`) on a command line, it's treated as a command separator -- basically like pressing the ENTER key to execute a command.  
+`sleep infinity` - delay for a specified amount of time which is specified as "infinity". TL;DR: `sleep infinity` actually sleeps the maximum time allowed, which is finite.  
+`&` - A single ampersand `&` can delimit a list of commands to be run asynchronously. For example, `./script.py & ./script2.py & ./script3.py & `, - all 3 python scripts are run at the same time, in separate sub-shells. Their stdout will still be attached to the parent shell, so if running this from a Linux terminal, you will still see the outputs. This can also be used as a quick hack to take advantage of multiple cores with shell scripts, but be warned, it is a hack!  
+`wait` - await process completion.  
+When an asynchronous list is started by the shell, the process ID of the last command in each element of the asynchronous list shall become known in the current shell execution environment.  
+If the `wait` utility is invoked with no operands, it shall wait until all process IDs known to the invoking shell have terminated and exit with a zero exit status.  
+If one or more pid operands are specified that represent known process IDs, the `wait` utility shall wait until all of them have terminated. If one or more pid operands are specified that represent unknown process IDs, `wait` shall treat them as if they were known process IDs that exited with exit status `127`. The exit status returned by the `wait` utility shall be the exit status of the process requested by the last pid operand.  
+The known process IDs are applicable only for invocations of wait in the current shell execution environment.  
 Read more:  
 https://explainshell.com/explain?cmd=trap+%3A+TERM+INT%3B+sleep+infinity+%26+wait  
 http://www.tldp.org/LDP/Bash-Beginners-Guide/html/sect_12_02.html  
@@ -301,17 +337,15 @@ https://ss64.com/bash/trap.html
 https://stackoverflow.com/questions/13341870/signals-and-interrupts-a-comparison  
 https://ss64.com/bash/true.html  
 https://linux.die.net/Bash-Beginners-Guide/sect_12_01.html  
+https://www.quora.com/What-is-the-difference-between-the-SIGINT-and-SIGTERM-signals-in-Linux-What%E2%80%99s-the-difference-between-the-SIGKILL-and-SIGSTOP-signals  
+https://www.gnu.org/software/libc/manual/html_node/Termination-Signals.html  
+https://www.gnu.org/software/libc/manual/html_node/Special-Characters.html#Special-Characters  
+https://www.gnu.org/software/libc/manual/html_node/Signal-Characters.html  
+https://man.cx/signal(7)  
+https://superuser.com/questions/243460/what-to-do-when-ctrl-c-cant-kill-a-process  
+https://docstore.mik.ua/orelly/unix3/upt/ch28_16.htm  
+https://stackoverflow.com/questions/2935183/bash-infinite-sleep-infinite-blocking  
+https://github.com/coreutils/coreutils/blob/master/src/sleep.c  
+http://bashitout.com/2013/05/18/Ampersands-on-the-command-line.html  
+https://man.cx/wait  
 
-- **Explain `man -k signal`**  
-`man` - an interface to the on-line reference manuals.  
-`-k` - Equivalent to `apropos`. `apropos` - Each manual page has a short description available within it. `apropos` searches the manual page names and descriptions for instances of keyword.  
-`signal` - keyword to search for. It is usually a regular expression, as if (`-r`) was used, or may contain wildcards (`-w`), or match the exact keyword (`-e`). Using these options, it may be necessary to quote the keyword or escape (`\`) the special characters to stop the shell from interpreting them. The standard matching rules allow matches to be made against the page name and word boundaries in the description.  
-Read more:  
-https://ss64.com/bash/man.html  
-http://man7.org/linux/man-pages/man1/apropos.1.html  
-
-
-
-
-Read more:  
-https://ss64.com/bash/  
