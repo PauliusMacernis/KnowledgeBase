@@ -349,3 +349,7 @@ https://github.com/coreutils/coreutils/blob/master/src/sleep.c
 http://bashitout.com/2013/05/18/Ampersands-on-the-command-line.html  
 https://man.cx/wait  
 
+- **Does the `exec` command of Bash replace the current process without forking a new process?**  
+Yes, it does.  
+
+
