@@ -223,6 +223,56 @@ Read more:
 https://www.openssl.org/docs/manmaster/man1/openssl-rand.html  
 https://en.wikipedia.org/wiki/Base64  
 
+- **What is so common about `true` and `:` in Bourne shells (bash)**?  
+Historically, Bourne shells didn't have `true` as built-in command. `true` was instead simply aliased to `:`.  
+`:` is slightly better than `true` for portability to ancient Bourne-derived shells. As a simple example, consider having neither the `!` pipeline operator nor the `||` list operator (as was the case for some ancient Bourne shells). This leaves the `else` clause of the `if` statement as the only means for branching based on exit status:  
+`if command; then :; else ...; fi`  
+Since `if` requires a non-empty `then` clause and comments don't count as non-empty, `:` serves as a no-op.  
+Nowadays (that is: in a modern context) you can usually use either `:` or `true`. Both are specified by POSIX, and some find `true` easier to read. However there is one interesting difference: `:` is a so-called POSIX ***special built-in***, whereas `true` is a ***regular built-in***.  
+  - *Special built-ins* are required to be built into the shell; *Regular built-ins* are only "typically" built in, but it isn't strictly guaranteed. There usually shouldn't be a regular program named `:` with the function of `true` in `PATH` of most systems.
+  - Probably the most crucial difference is that with *special built-ins*, any variable set by the built-in - even in the environment during simple command evaluation - persists after the command completes, as demonstrated here using ksh93:
+     ```
+    $ unset x; ( x=hi :; echo "$x" )
+    hi
+    $ ( x=hi true; echo "$x" )
+
+    $
+    ```
+  - Note that Zsh ignores this requirement, as does GNU Bash except when operating in POSIX compatibility mode, but all other major "POSIX sh derived" shells observe this including dash, ksh93, and mksh.
+  - Another difference is that *regular built-ins* must be compatible with `exec` - demonstrated here using Bash:
+    ```
+    $ ( exec : )
+    -bash: exec: :: not found
+    $ ( exec true )
+    $
+    ``` 
+  - POSIX also explicitly notes that `:` may be faster than `true`, though this is of course an implementation-specific detail.
+  
+Read more:  
+https://stackoverflow.com/questions/3224878/what-is-the-purpose-of-the-colon-gnu-bash-builtin  
+
+- **What is so common about `false` and `let 0` in Bourne shells (bash)?**  
+Historically, Bourne shells didn't have `false` as built-in command. `false` was instead simply aliased to something like `let 0`.  
+Read more:  
+https://stackoverflow.com/questions/3224878/what-is-the-purpose-of-the-colon-gnu-bash-builtin  
+
+- ?? **What is the difference between quoted and not quoted code blocks in bash?**  
+Just for example, `:` can also be for block comment (similar to `/* */` in C language). Let say, if you want to skip a block of code in your script, you can do this:  
+```
+: << SKIP
+your code block here
+SKIP
+```
+However, this way command substitutions inside the here document are still processed.  
+Anyways, variable resolution/substitution in here docs can be avoided by single-quoting the delimiter:  
+```
+: << 'SKIP'
+your code block here
+SKIP
+```
+Read more:  
+https://stackoverflow.com/a/18929997/2026314  
+
 - **Explain `trap : TERM INT; sleep infinity & wait` found at the end of bash script**  
 In short:  
 We are running sleep infinitely and then exiting on an interrupt signal.  
