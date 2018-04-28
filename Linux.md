@@ -273,18 +273,43 @@ SKIP
 Read more:  
 https://stackoverflow.com/a/18929997/2026314  
 
+- **What is the difference between Interrupts and Signals on OS like Linux?**  
+Interrupts can be viewed as a mean of communication between the CPU and the OS kernel.  
+Signals can be viewed as a mean of communication between the OS kernel and OS processes.  
+*Interrupts* may be initiated by the CPU (exceptions - e.g.: divide by zero, page fault), devices (hardware interrupts - e.g: input available), or by a CPU instruction (traps - e.g: syscalls, breakpoints). They are eventually managed by the CPU, which "interrupts" the current task, and invokes an OS-kernel provided ISR/interrupt handler.  
+*Signals* may be initiated by the OS kernel (e.g: SIGFPE, SIGSEGV, SIGIO), or by a process(kill()). They are eventually managed by the OS kernel, which delivers them to the target thread/process, invoking either a generic action (ignore, terminate, terminate and dump core) or a process-provided signal handler.  
+Read more:  
+https://stackoverflow.com/questions/13341870/signals-and-interrupts-a-comparison  
+
+
 - **Explain `trap : TERM INT; sleep infinity & wait` found at the end of bash script**  
 In short:  
 We are running sleep infinitely and then exiting on an interrupt signal.  
 In details:  
 There might be situations when you don't want users of your scripts to exit untimely using keyboard abort sequences, for example because input has to be provided or cleanup has to be done. The `trap` statement catches these sequences and can be programmed to execute a list of commands upon catching those signals.  
 The syntax for the `trap` statement is straightforward: `trap [COMMANDS] [SIGNALS]`  
+In the case of our example, all goes like this:  
+`trap` - catches the `[SIGNALS]` and runs the `[COMMANDS]` after.  
+`:` - equivalent to `true`. Which does nothing except return an exit status of `0`, meaning "success". It can be used as a place holder in shell scripts where a successful command is needed. Although the shell built-in command `:` (colon) does the same thing faster.  
+`TERM` - equivalent to `SIGTERM` (sygnal with the value of `15`) meaning Termination signal.  
+
 Read more:  
 https://explainshell.com/explain?cmd=trap+%3A+TERM+INT%3B+sleep+infinity+%26+wait  
 http://www.tldp.org/LDP/Bash-Beginners-Guide/html/sect_12_02.html  
 https://bash.cyberciti.biz/guide/Trap_statement  
 https://ss64.com/bash/trap.html  
 https://stackoverflow.com/questions/13341870/signals-and-interrupts-a-comparison  
+https://ss64.com/bash/true.html  
+https://linux.die.net/Bash-Beginners-Guide/sect_12_01.html  
+
+- **Explain `man -k signal`**  
+`man` - an interface to the on-line reference manuals.  
+`-k` - Equivalent to `apropos`. `apropos` - Each manual page has a short description available within it. `apropos` searches the manual page names and descriptions for instances of keyword.  
+`signal` - keyword to search for. It is usually a regular expression, as if (`-r`) was used, or may contain wildcards (`-w`), or match the exact keyword (`-e`). Using these options, it may be necessary to quote the keyword or escape (`\`) the special characters to stop the shell from interpreting them. The standard matching rules allow matches to be made against the page name and word boundaries in the description.  
+Read more:  
+https://ss64.com/bash/man.html  
+http://man7.org/linux/man-pages/man1/apropos.1.html  
+
 
 
 
