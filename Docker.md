@@ -761,6 +761,14 @@ https://www.ctl.io/developers/blog/post/dockerfile-entrypoint-vs-cmd/
 https://docs.docker.com/engine/reference/builder/#cmd  
 https://docs.docker.com/engine/reference/builder/#entrypoint  
 
+- **What is Docker registry?**  
+At a basic level, a Docker registry is a storage and content delivery system, holding named Docker images, available in different tagged versions.  
+There are many Docker repositories our there dealing with Docker registry, such as Quay, Google Container, Registry, Amazon EC2 Container Registry, and GitLab, to name a few. The default one for the Docker is the Official Docker Hub (docker.io).  
+Image names as used in typical docker commands reflect their origin:  
+- `docker pull ubuntu` instructs docker to pull an image named `ubuntu` from the official Docker Hub. This is simply a shortcut for the longer `docker pull docker.io/library/ubuntu command`
+- `docker pull myregistrydomain:port/foo/bar` instructs docker to contact the registry located at `myregistrydomain:port` to find the image `foo/bar`  
+Read more:  
+https://docs.docker.com/registry/introduction/  
 
 
 
