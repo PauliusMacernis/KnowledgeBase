@@ -38,7 +38,7 @@ https://caddyserver.com/docs/http-caddyfile
 https://caddyserver.com/docs/rewrite  
 
 - **Do we need to restart Caddy in order to get the updated configuration from the `Caddyfile`?**  
-??? Yes. You need to restart Caddy server in order for Caddyfile configuration changes to take effect.  
+Yes. You need to restart Caddy server in order for Caddyfile configuration changes to take effect.  
 However, sending the signal `USR1` (for example: `pkill -USR1 caddy`) reloads the Caddy configuration file and then gracefully restarts the Caddy server. If there is an error with the new configuration, the error is logged and the configuration rolls back with zero downtime.  
 Read more:  
 https://caddyserver.com/docs/cli#usr1  
