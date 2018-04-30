@@ -370,6 +370,17 @@ Providing a tag version is a good practice to avoid unexpected changes to the ap
 Read more:  
 https://docs.docker.com/compose/compose-file/#image  
 https://docs.docker.com/engine/reference/builder/#from  
+
+- **What the `expose` key mean in a `docker-compose.yml` file?**  
+Expose ports without publishing them to the host machine - they’ll only be accessible to linked services. Only the internal port can be specified.  
+For example:
+```
+expose:
+ - "3000"
+ - "8000"
+``` 
+Read more:  
+https://docs.docker.com/compose/compose-file/#expose  
  
 - **What the `ports` key mean in a `docker-compose.yml` file?**  
 Expose ports.  
