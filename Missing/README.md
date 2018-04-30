@@ -1,4 +1,7 @@
-- CI (e.g.: https://gitlab.com/gitlab-org/gitlab-ci-yml/blob/master/Docker.gitlab-ci.yml )
+- CI 
+    - Gitlab:
+        - https://docs.gitlab.com/ee/ci
+        - https://gitlab.com/gitlab-org/gitlab-ci-yml/blob/master/Docker.gitlab-ci.yml
 - HTTP/2
 - Caddy server (https://caddyserver.com/)
 - Slim PHP Framework (https://www.slimframework.com/)
