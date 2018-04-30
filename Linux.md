@@ -400,4 +400,10 @@ Read more:
 https://unix.stackexchange.com/questions/85021/in-bash-scripting-whats-the-meaning-of  
 https://linux.die.net/man/1/bash  
 
+**What does it mean when a command ends with `&`, for example: `php-fpm &`?**  
+If a command is terminated by the control operator `&`, the shell executes the command in the background in a subshell. The shell does not wait for the command to finish, and the return status is `0`. Commands separated by a `;` are executed sequentially; the shell waits for each command to terminate in turn. The return status is the exit status of the last command executed.  
+Read more:  
+https://linux.die.net/man/1/bash  
+
+
 
