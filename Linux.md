@@ -391,6 +391,13 @@ https://www.consul.io/docs/index.html
 http://www.linfo.org/echo.html  
 https://man.cx/sleep  
 
-
+**In Bash scripting, what's the meaning of `$!`?**  
+The shell treats several parameters specially. These parameters may only be referenced; assignment to them is not allowed. `$` and `!` are a few of these paramters:  
+`$` - Expands to the process ID of the shell. In a () subshell, it expands to the process ID of the current shell, not the subshell.  
+`!` - Expands to the process ID of the most recently executed background (asynchronous) command.  
+So, `$!` contains the process ID of the most recently executed background pipeline.  
+Read more:  
+https://unix.stackexchange.com/questions/85021/in-bash-scripting-whats-the-meaning-of  
+https://linux.die.net/man/1/bash  
 
 
