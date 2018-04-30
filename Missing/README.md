@@ -14,7 +14,7 @@
 - Ansible
 - POSIX, POSIX signals
 - CLI program Confd (https://github.com/kelseyhightower/confd)
-- Consul (https://www.consul.io/)
+- Consul (https://www.consul.io/ , manage key/values: http://localhost:8500/ui/#/dc1/kv/example.com/hostname/edit )
 - Etcd (https://github.com/coreos/etcd)
 - Redis (https://redis.io/)
 - TOML (https://github.com/toml-lang/toml)
