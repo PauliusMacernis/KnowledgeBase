@@ -377,13 +377,12 @@ In general, a node is a basic unit used in computer science. Nodes are devices o
 The `;` may be replaced with one or more newlines wherever it appears. The semicolon is needed only when the end of line is missing.  
 **`do`**  
 This is the part of `until` construction.  
-**`echo "Waiting for the initial confd configuration"`** 
+**`echo "Waiting for the initial confd configuration"`**  
 `echo` is a built-in command in the bash and C shells that writes its arguments to standard output.  
 **`sleep 5`**  
 Delay for 5 seconds.  
 **`done`**  
 This is the part of `until` construction.  
-
 Read more:  
 http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_09_03.html  
 https://github.com/kelseyhightower/confd  
