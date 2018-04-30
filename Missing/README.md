@@ -21,4 +21,5 @@
 - GO (https://golang.org/)
 - POSIX
 - The Linux Kernel Organization
+- ? Registry (https://cloud.docker.com/)
 - 
