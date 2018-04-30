@@ -10,3 +10,14 @@ https://github.com/kelseyhightower/confd/blob/master/docs/quick-start-guide.md
 Read more:  
 https://github.com/kelseyhightower/confd  
 https://github.com/kelseyhightower/confd/blob/master/docs/quick-start-guide.md  
+
+- **Explain `confd -interval 10 -backend consul -node consul:8500`**  
+`confd` - Confd is a lightweight configuration management tool that allows you to keep configuration files up to date from data stored in backends like environment variables, Consul (https://www.consul.io/), Etcd (https://github.com/coreos/etcd), Redis (https://redis.io/), and others. You can also reload applications to pick up changes during runtime without restarting the container. With Confd, we can separate our configuration management from infrastructure code.  
+`-interval 10` - interval (int) - The backend polling interval in seconds. (600 replaced with `10`)  
+`-backend consul` - backend (string) - The backend to use. ("etcd" replaced with `consul`)  
+`-node consul:8500` - the backend node to get data from. The data is from `consul` service running on the exposed port number `8500` in this case.  
+Read more:  
+https://github.com/kelseyhightower/confd/blob/master/docs/configuration-guide.md  
+
+
+
