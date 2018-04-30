@@ -383,6 +383,17 @@ services:
            - "<local_port>:<container_port>"
 ```
 
+- **What the `EXPOSE` key mean in a `Dockerfile`?**  
+Usage: `EXPOSE <port> [<port>/<protocol>...]`  
+The `EXPOSE` instruction informs Docker that the container listens on the specified network ports at runtime. You can specify whether the port listens on TCP or UDP, and the default is TCP if the protocol is not specified.  
+*The `EXPOSE` instruction does not actually publish the port.* It functions as a type of documentation between the person who builds the image and the person who runs the container, about which ports are intended to be published. To actually publish the port when running the container, use the `-p` flag on docker run to publish and map one or more ports, or the `-P` flag to publish all exposed ports and map them to high-order ports.  
+By default, `EXPOSE` assumes TCP. You can also specify UDP.  
+To expose on both TCP and UDP, include two lines.  
+To set up port redirection on the host system, see using the `-P` flag. The `docker network` command supports creating networks for communication among containers without the need to expose or publish specific ports, because the containers connected to the network can communicate with each other over any port.  
+Read more:  
+https://docs.docker.com/engine/reference/builder/#expose  
+
+
 - **What the `environment` key mean in a `docker-compose.yml` file?**  
 The `environment` key defines environment variables for the container.  
 Read more:  
