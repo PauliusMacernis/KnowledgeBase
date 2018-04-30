@@ -352,4 +352,46 @@ https://man.cx/wait
 - **Does the `exec` command of Bash replace the current process without forking a new process?**  
 Yes, it does.  
 
+- **Explain:**  
+```
+until confd -onetime -backend consul -node consul:8500; do
+    echo "Waiting for the initial confd configuration"
+    sleep 5
+done
+```
+**`until`**  
+The `until` loop is very similar to the `while` loop, except that the loop executes until the `TEST-COMMAND` executes successfully. As long as this command fails, the loop continues. The syntax is the same as for the `while` loop:  
+`until TEST-COMMAND; do CONSEQUENT-COMMANDS; done`  
+The return status is the exit status of the last command executed in the `CONSEQUENT-COMMANDS` list, or zero if none was executed. `TEST-COMMAND` can, again, be any command that can exit with a success or failure status, and `CONSEQUENT-COMMANDS` can be any UNIX command, script or shell construct.  
+**`confd`**  
+`confd` is a lightweight configuration management tool that allows you to keep configuration files up to date from data stored in backends like environment variables, Consul (https://www.consul.io/), Etcd (https://github.com/coreos/etcd), Redis (https://redis.io/), and others. You can also reload applications to pick up changes during runtime without restarting the container. With Confd, we can separate our configuration management from infrastructure code.  
+**`-onetime`**  
+`confd` supports two modes of operation `daemon` and `onetime`. In `daemon` mode `confd` polls a backend for changes and updates destination configuration files if necessary.  
+**`-backend consul`**  
+we pick `consul` (https://www.consul.io/) as the backend for this case. `confd` supports the following backends: `etcd`, `consul`, `vault`, `env` (environment variables), `redis`, `zookeeper`, `dynamodb`, `rancher`, `ssm` (AWS Simple Systems Manager Parameter Store), etc.  
+Consul has multiple components, but as a whole, it is a tool for discovering and configuring services in your infrastructure. It provides several key features: Service Discovery, Health Checking, KV Store (key/value storage), Multi Datacenter.  
+**`--node consul:8500`**  
+In general, a node is a basic unit used in computer science. Nodes are devices or data points on a larger network. Devices such as a personal computer, cell phone, or printer are nodes. When defining nodes on the internet, a node is anything that has an IP address. Nodes are individual parts of a larger data structure, such as linked lists and tree data structures. Nodes contain data and also may link to other nodes. Links between nodes are often implemented by pointers.  
+??? `--node consul:8500` simply points to the Consul service running on exposed port number 8500.  
+**`;`**  
+The `;` may be replaced with one or more newlines wherever it appears. The semicolon is needed only when the end of line is missing.  
+**`do`**  
+This is the part of `until` construction.  
+**`echo "Waiting for the initial confd configuration"`** 
+`echo` is a built-in command in the bash and C shells that writes its arguments to standard output.  
+**`sleep 5`**  
+Delay for 5 seconds.  
+**`done`**  
+This is the part of `until` construction.  
+
+Read more:  
+http://tldp.org/LDP/Bash-Beginners-Guide/html/sect_09_03.html  
+https://github.com/kelseyhightower/confd  
+https://github.com/kelseyhightower/confd/blob/master/docs/quick-start-guide.md  
+https://www.consul.io/docs/index.html  
+http://www.linfo.org/echo.html  
+https://man.cx/sleep  
+
+
+
 
