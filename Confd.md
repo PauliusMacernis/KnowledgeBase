@@ -18,6 +18,7 @@ https://github.com/kelseyhightower/confd/blob/master/docs/quick-start-guide.md
 `-node consul:8500` - the backend node to get data from. The data is from `consul` service running on the exposed port number `8500` in this case.  
 Read more:  
 https://github.com/kelseyhightower/confd/blob/master/docs/configuration-guide.md  
+https://github.com/kelseyhightower/confd/blob/master/docs/command-line-flags.md  
 
 
 
