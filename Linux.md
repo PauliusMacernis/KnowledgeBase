@@ -424,6 +424,12 @@ Read more:
 https://man.cx/man  
 https://man.cx/ssh_config  
 
+- **Explain `ufw allow 4500/udp`**  
+`ufw` − program for managing a netfilter firewall.  
+`allow` - add allow rule. To any address on this host.  
+`4500/udp` - port `4500` of `udp`.  
+Read more:  
+https://man.cx/ufw  
 
   
 
