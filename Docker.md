@@ -777,7 +777,7 @@ https://docs.docker.com/registry/introduction/
 **`-d`** - Start a container in detached mode (in a background).  
 **`--restart=`** - Using the `--restart` flag on Docker run you can specify a restart policy for how a container should or should not be restarted on exit. When a restart policy is active on a container, it will be shown as either `Up` or `Restarting` in `docker ps`.  
 **`unless-stopped`** - Always restart the container regardless of the exit status, including on daemon startup, except if the container was put into a stopped state before the Docker daemon was stopped.  
-In short, `--restart=unless-stopped` is a restart policy that restarts the container unless we manually stop it.  
+In short, `--restart=unless-stopped` is a restart policy that restarts the container unless we manually stop it. Even if we reboot our droplet (e.g. on DigitalOcean), the container will restart afterward.  
 **`-p 8080:8080`** - Publish a container᾿s port `8080` to the host. The exposed port is accessible on the host and the ports are available to any client that can reach the host. Format: `hostPort:containerPort`  
 **`rancher/server`** - Docker images are the basis of containers. An Image is an ordered collection of root filesystem changes and the corresponding execution parameters for use within a container runtime. An image typically contains a union of layered filesystems stacked on top of each other. An image does not have state and it never changes. In this case, the image used is `rancher/server` found in the default Docker containers registry (docker.io). 
 Read more:  
@@ -789,7 +789,7 @@ https://docs.docker.com/engine/reference/run/#restart-policies---restart
 https://docs.docker.com/engine/reference/run/#expose-incoming-ports  
 https://docs.docker.com/glossary/?term=image  
 https://hub.docker.com/r/rancher/server/  
-
+https://www.digitalocean.com/products/droplets/  
 
 
 
