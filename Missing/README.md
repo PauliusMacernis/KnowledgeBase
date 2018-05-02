@@ -26,5 +26,5 @@
 - The Linux Kernel Organization
 - ? Registry (https://cloud.docker.com/)
 - Kubernetes
-- Rancher
+- Rancher (http://rancher.com/)
 - Docker Swarm
