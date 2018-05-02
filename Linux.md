@@ -431,6 +431,11 @@ https://man.cx/ssh_config
 Read more:  
 https://man.cx/ufw  
 
-  
+- **Explain `ssh -p 7822 uname@nlss1.a2hosting.com -L 3306:localhost:3306`**  
+SSH (`ssh`) into `nlss1.a2hosting.com` server by using port 7822 (`-p 7822`) and username `uname`. Forward connection via port 3306 (`-L 3306:localhost:3306`).  
+Read more:  
+https://man.cx/ssh  
+
+
 
 
