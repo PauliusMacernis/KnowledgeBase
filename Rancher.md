@@ -18,8 +18,8 @@ https://rancher.com/docs/rancher/latest/en/cattle/rancher-compose/
 
 - **What are the two main Rancher components?**  
 Rancher has two primary components:  
-- Rancher server
-- Rancher host
+  - Rancher server
+  - Rancher host
 
 As outlined in the Rancher Overview, the server component provides infrastructure orchestration, container orchestration, an application catalog, and authentication control.   
 Read more:  
