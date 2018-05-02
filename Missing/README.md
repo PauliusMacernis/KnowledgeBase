@@ -6,7 +6,7 @@
 - Caddy server (https://caddyserver.com/)
 - Slim PHP Framework (https://www.slimframework.com/)
 - GZip (e.g. http://nginx.org/en/docs/http/ngx_http_gzip_module.html )
-- AWS
+- AWS (S3, others)
 - PHP Internationalization Functions (intl) ( http://php.net/manual/en/book.intl.php )
 - Wireshark
 - Self-signed SSL for `.dev` domains on Ubuntu:
@@ -26,3 +26,5 @@
 - The Linux Kernel Organization
 - ? Registry (https://cloud.docker.com/)
 - Kubernetes
+- Rancher
+- Docker Swarm
