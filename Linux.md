@@ -425,11 +425,14 @@ https://man.cx/man
 https://man.cx/ssh_config  
 
 - **Explain `ufw allow 4500/udp`**  
-`ufw` − program for managing a netfilter firewall.  
+`ufw` − Uncomplicated Firewall (UFW) is a program for managing a netfilter firewall.  
 `allow` - add allow rule. To any address on this host.  
 `4500/udp` - port `4500` of `udp`.  
 Read more:  
 https://man.cx/ufw  
+https://en.wikipedia.org/wiki/Uncomplicated_Firewall  
+https://wiki.ubuntu.com/UncomplicatedFirewall?action=show&redirect=UbuntuFirewall  
+
 
 - **Explain `ssh -p 7822 uname@nlss1.a2hosting.com -L 3306:localhost:3306`**  
 SSH (`ssh`) into `nlss1.a2hosting.com` server by using port 7822 (`-p 7822`) and username `uname`. Forward connection via port 3306 (`-L 3306:localhost:3306`).  
