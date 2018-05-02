@@ -13,6 +13,24 @@ Rancher provides a nice `UI` that you can use to deploy containers in the Cloud 
 `Rancher Server` also takes care of issues like networking and load balancing.  
 You can also automate your infrastructure deployments with the `Rancher compose CLI`, giving you lots of automation options to truly optimize your deployments.  
 Read more:   
-https://rancher.com/docs/rancher/v1.6/en/  
-https://rancher.com/docs/rancher/v1.6/en/cattle/rancher-compose/  
+https://rancher.com/docs/rancher/latest/en/  
+https://rancher.com/docs/rancher/latest/en/cattle/rancher-compose/  
+
+- **What are the two main Rancher components?**  
+Rancher has two primary components:  
+- Rancher server
+- Rancher host
+
+As outlined in the Rancher Overview, the server component provides infrastructure orchestration, container orchestration, an application catalog, and authentication control.   
+Read more:  
+https://rancher.com/docs/rancher/latest/en/  
+https://rancher.com/docs/rancher/latest/en/installing-rancher/installing-server/  
+https://rancher.com/docs/rancher/latest/en/hosts/  
+
+- **How do Rancher server and host comunicate?**  
+The server works with Rancher hosts that run an agent and communicate with the Rancher server over HTTP. You can create a new host from within the Rancher server UI in your cloud provider of choice, or by running the Rancher agent image with docker run on a server.  
+Rancher doesn't care if your servers running the agent are virtual or physical as long as they meet the requirements outlined in the documentation.  
+Read more:  
+https://rancher.com/docs/rancher/latest/en/hosts/  
+
 
