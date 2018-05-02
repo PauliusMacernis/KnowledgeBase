@@ -391,7 +391,7 @@ https://www.consul.io/docs/index.html
 http://www.linfo.org/echo.html  
 https://man.cx/sleep  
 
-**In Bash scripting, what's the meaning of `$!`?**  
+- **In Bash scripting, what's the meaning of `$!`?**  
 The shell treats several parameters specially. These parameters may only be referenced; assignment to them is not allowed. `$` and `!` are a few of these paramters:  
 `$` - Expands to the process ID of the shell. In a () subshell, it expands to the process ID of the current shell, not the subshell.  
 `!` - Expands to the process ID of the most recently executed background (asynchronous) command.  
@@ -400,10 +400,13 @@ Read more:
 https://unix.stackexchange.com/questions/85021/in-bash-scripting-whats-the-meaning-of  
 https://linux.die.net/man/1/bash  
 
-**What does it mean when a command ends with `&`, for example: `php-fpm &`?**  
+- **What does it mean when a command ends with `&`, for example: `php-fpm &`?**  
 If a command is terminated by the control operator `&`, the shell executes the command in the background in a subshell. The shell does not wait for the command to finish, and the return status is `0`. Commands separated by a `;` are executed sequentially; the shell waits for each command to terminate in turn. The return status is the exit status of the last command executed.  
 Read more:  
 https://linux.die.net/man/1/bash  
+
+- **How to create the new folder on Ubuntu 17.10 (hotkey)?**  
+`Ctrl` + `Shift` + `N`  
 
 
 
