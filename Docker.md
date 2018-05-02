@@ -770,6 +770,24 @@ Image names as used in typical docker commands reflect their origin:
 Read more:  
 https://docs.docker.com/registry/introduction/  
 
+- **Explain `sudo docker run -d --restart=unless-stopped -p 8080:8080 rancher/server`**  
+`sudo` - allows a permitted user to execute a command as the superuser.  
+`docker` - Docker software in action.  
+`run` - Docker runs processes in isolated containers. A container is a process which runs on a host. The host may be local or remote. When an operator executes `docker run`, the container process that runs is isolated in that it has its own file system, its own networking, and its own isolated process tree separate from the host.  
+`-d` - Start a container in detached mode (in a background).  
+`--restart=` - Using the `--restart` flag on Docker run you can specify a restart policy for how a container should or should not be restarted on exit. When a restart policy is active on a container, it will be shown as either `Up` or `Restarting` in `docker ps`.  
+`unless-stopped` - Always restart the container regardless of the exit status, including on daemon startup, except if the container was put into a stopped state before the Docker daemon was stopped.  
+`-p 8080:8080` - Publish a container᾿s port `8080` to the host. The exposed port is accessible on the host and the ports are available to any client that can reach the host. Format: `hostPort:containerPort`  
+`rancher/server` - Docker images are the basis of containers. An Image is an ordered collection of root filesystem changes and the corresponding execution parameters for use within a container runtime. An image typically contains a union of layered filesystems stacked on top of each other. An image does not have state and it never changes. In this case, the image used is `rancher/server` found in the default Docker containers registry (docker.io). 
+Read more:  
+https://man.cx/sudo  
+https://docs.docker.com/engine/reference/commandline/cli/  
+https://docs.docker.com/engine/reference/run/  
+https://docs.docker.com/engine/reference/run/#detached--d  
+https://docs.docker.com/engine/reference/run/#restart-policies---restart  
+https://docs.docker.com/engine/reference/run/#expose-incoming-ports  
+https://docs.docker.com/glossary/?term=image  
+https://hub.docker.com/r/rancher/server/  
 
 
 
