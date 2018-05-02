@@ -407,6 +407,24 @@ https://linux.die.net/man/1/bash
 
 - **How to create the new folder on Ubuntu 17.10 (hotkey)?**  
 `Ctrl` + `Shift` + `N`  
+Read more:  
+https://ubuntuforums.org/showthread.php?t=1559684  
 
+- **In what order `ssh` obtains configuration data?**  
+  1. command-line options
+  2. user's configuration file (`~/.ssh/config`)
+  3. system-wide configuration file (`/etc/ssh/ssh_config`)
+
+Read more:  
+https://man.cx/ssh_config  
+  
+- **How can I check the keywoards I may use for my `ssh` config file (e.g. `~/.ssh/config`)?**  
+`man ssh_config`  
+Read more:  
+https://man.cx/man  
+https://man.cx/ssh_config  
+
+
+  
 
 
