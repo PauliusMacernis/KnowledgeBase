@@ -25,6 +25,13 @@
 - POSIX
 - The Linux Kernel Organization
 - ? Registry (https://cloud.docker.com/)
-- Kubernetes
+- Kubernetes (https://kubernetes.io/ , https://cloud.google.com/kubernetes-engine/docs/tutorials/guestbook, https://cloud.google.com/php/tutorials/bookshelf-on-kubernetes-engine)
 - Rancher (http://rancher.com/)
-- Docker Swarm
+- Docker Swarm (https://docs.docker.com/engine/swarm/)
+- DNS records (e.g. DNS A record)
+- HAProxy (http://www.haproxy.org/)
+- Jenkins
+- High performance web (amount of queries, DDOS, etc.)
+- Vessel (https://vessel.shippingdocker.com/), a simple Docker development environment for Laravel
+- Google Cloud (https://cloud.google.com)
+- The Twelve-Factor App (https://12factor.net/)
