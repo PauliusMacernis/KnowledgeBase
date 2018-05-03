@@ -33,4 +33,39 @@ Rancher doesn't care if your servers running the agent are virtual or physical a
 Read more:  
 https://rancher.com/docs/rancher/latest/en/hosts/  
 
+- **What is Stacks for?**  
+Rancher provides a bunch of automated software called "stacks" that you can install with the click of a button.  
+Read more:  
+https://rancher.com/docs/rancher/latest/en/cattle/stacks/  
 
+- **What is Rancher Compose?**  
+The Rancher Compose tool is a multi-host version of Docker Compose.  
+We can automate the creating of stacks through a repeatable rancher-compose YAML file in our project.  
+Rancher Compose operates within the scope of a stack in the Rancher UI, which belongs to one environment and has many hosts. The containers started by Rancher Compose will be deployed on any of the hosts in the environment that satisfy the scheduling rules. If there are no scheduling rules, then the containers of the service are launched on the hosts with the fewest containers. These containers are launched just as if you had started a service in the UI as Rancher Compose is making the same API calls.  
+Read more:  
+https://rancher.com/docs/rancher/v1.6/en/cattle/rancher-compose/  
+
+- **What is the version of Docker Compose Rancher Compose is compatible with?**  
+At the moment (2nd of May, 2018), The Rancher Compose tool works just like the popular Docker Compose and supports the V1 and V2 versions of `docker-compose.yml`. v3 is not supported (yet).  
+Read more:  
+https://rancher.com/docs/rancher/v1.6/en/cattle/rancher-compose/  
+
+- **Explain the following:**  
+```
+rancher-compose \
+    -f docker-compose.$ENVIRONMENT.yml \
+    -r rancher-compose.$ENVIRONMENT.yml \
+    --url=$RANCHER_URL \
+    --access-key=$ACCESS_KEY \
+    --secret-key=$SECRET_KEY \
+    --project-name=rancher-laravel-demo \
+    up --upgrade --pull --confirm-upgrade -d
+```
+
+`-f` specify an alternate Docker compose file (default is `docker-compose.yml`)  
+`-r` specify an alternate Rancher compose file (default is `rancher-compose.yml`)  
+`--url` the Rancher API endpoint URL  
+`--project-name` customize the project name seen in Rancher  
+
+Read more:  
+`rancher-compose --help`  
