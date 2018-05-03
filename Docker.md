@@ -796,8 +796,12 @@ https://www.digitalocean.com/products/droplets/
 
 
 Read more:  
-https://github.com/moby/moby/issues/13490  
-
+- https://github.com/moby/moby/issues/13490  
+- Docker (https://docs.docker.com/)  
+- Docker labs and tutorials (https://github.com/docker/labs)  
+- Docker Up and Running (http://shop.oreilly.com/product/0636920036142.do) is a book by Karl Matthias and Sean Kane  
+- Docker screencasts online (https://serversforhackers.com/t/containers)  
+- Shipping Docker (https://serversforhackers.com/shipping-docker)  
 
 
 
