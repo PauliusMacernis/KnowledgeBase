@@ -433,12 +433,13 @@ https://man.cx/ufw
 https://en.wikipedia.org/wiki/Uncomplicated_Firewall  
 https://wiki.ubuntu.com/UncomplicatedFirewall?action=show&redirect=UbuntuFirewall  
 
-
 - **Explain `ssh -p 7822 uname@nlss1.a2hosting.com -L 3306:localhost:3306`**  
 SSH (`ssh`) into `nlss1.a2hosting.com` server by using port 7822 (`-p 7822`) and username `uname`. Forward connection via port 3306 (`-L 3306:localhost:3306`).  
 Read more:  
 https://man.cx/ssh  
 
+- **Explain: `tag=${1:-latest}` line found in a bash script**  
 
+- **Explain `ACCESS_KEY=$1` line found in a bash script**  
 
 
