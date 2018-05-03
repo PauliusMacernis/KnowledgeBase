@@ -791,6 +791,8 @@ https://docs.docker.com/glossary/?term=image
 https://hub.docker.com/r/rancher/server/  
 https://www.digitalocean.com/products/droplets/  
 
+- **Explain `docker build -f docker/Dockerfile -t registry.gitlab.com/sugalvojau/projectname:$tag .`**  
+
 
 
 Read more:  
