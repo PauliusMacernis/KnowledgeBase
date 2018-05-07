@@ -36,3 +36,14 @@
 - Vessel (https://vessel.shippingdocker.com/), a simple Docker development environment for Laravel
 - Google Cloud (https://cloud.google.com)
 - The Twelve-Factor App (https://12factor.net/)
+- ***
+- PHP 7.1
+- Symfony 4
+- Webpack
+- Yarn
+- Node JS
+- MySQL 5.7
+- ElasticSearch 5.5.3
+- (Adobe XD)
+- (General Data Protection Regulation)
+- ***
