@@ -1,3 +1,4 @@
 - cumbersome
 - absence
 - J, for example: "Have a lovely weekendJ" in the email
+- revival
