@@ -1,21 +1,31 @@
+# Topics missing
+
+- Wireshark
+- Symfony 4
+- The Twelve-Factor App (https://12factor.net/)
 - SonarQube (https://www.sonarqube.org/)
 - CI 
+    - Jenkins (https://jenkins.io/)
+    - Travis CI (https://travis-ci.org/)
     - Gitlab:
         - https://docs.gitlab.com/ee/ci
         - https://gitlab.com/gitlab-org/gitlab-ci-yml/blob/master/Docker.gitlab-ci.yml
+- Kubernetes (https://kubernetes.io/ , https://cloud.google.com/kubernetes-engine/docs/tutorials/guestbook, https://cloud.google.com/php/tutorials/bookshelf-on-kubernetes-engine)
+- Ansible
 - HTTP/2
 - Caddy server (https://caddyserver.com/)
 - Slim PHP Framework (https://www.slimframework.com/)
 - GZip (e.g. http://nginx.org/en/docs/http/ngx_http_gzip_module.html )
-- AWS (S3, others)
+- AWS:
+    - Amazon S3 (https://aws.amazon.com/s3/)
+    - AWS Elastic Beanstalk (https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html)
+    - others
 - PHP Internationalization Functions (intl) ( http://php.net/manual/en/book.intl.php )
-- Wireshark
 - Self-signed SSL for `.dev` domains on Ubuntu:
     - https://ma.ttias.be/chrome-force-dev-domains-https-via-preloaded-hsts/
     - https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-nginx-in-ubuntu-16-04
 - CakePHP (https://book.cakephp.org/2.0/en/index.html)
 - Building PHP from source
-- Ansible
 - POSIX, POSIX signals
 - CLI program Confd (https://github.com/kelseyhightower/confd)
 - Consul (https://www.consul.io/ , manage key/values: http://localhost:8500/ui/#/dc1/kv/example.com/hostname/edit )
@@ -26,24 +36,31 @@
 - POSIX
 - The Linux Kernel Organization
 - ? Registry (https://cloud.docker.com/)
-- Kubernetes (https://kubernetes.io/ , https://cloud.google.com/kubernetes-engine/docs/tutorials/guestbook, https://cloud.google.com/php/tutorials/bookshelf-on-kubernetes-engine)
 - Rancher (http://rancher.com/)
 - Docker Swarm (https://docs.docker.com/engine/swarm/)
 - DNS records (e.g. DNS A record)
 - HAProxy (http://www.haproxy.org/)
-- Jenkins
 - High performance web (amount of queries, DDOS, etc.)
 - Vessel (https://vessel.shippingdocker.com/), a simple Docker development environment for Laravel
 - Google Cloud (https://cloud.google.com)
-- The Twelve-Factor App (https://12factor.net/)
+- Swagger
+- OpenAPI
+- IDE:
+    - PHPStorm
 - ***
 - PHP 7.1
-- Symfony 4
 - Webpack
 - Yarn
 - Node JS
 - MySQL 5.7
 - ElasticSearch 5.5.3
+- InRiver (https://www.inriver.com/)
 - (Adobe XD)
 - (General Data Protection Regulation)
 - ***
+- rkt (https://coreos.com/rkt/)
+
+# Certifications missing
+
+- Symfony: https://certification.symfony.com/
+- Akeneo PIM: https://www.akeneo.com/certification/
