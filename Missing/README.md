@@ -1,5 +1,6 @@
 # Topics missing
 
+- Semantic Versioning (https://semver.org/, https://github.com/semantic-release/semantic-release)
 - Git flow (http://nvie.com/posts/a-successful-git-branching-model/)
 - Wireshark
 - Symfony 4
