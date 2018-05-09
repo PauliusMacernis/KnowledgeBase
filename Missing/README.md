@@ -1,5 +1,6 @@
 # Topics missing
 
+- Git flow (http://nvie.com/posts/a-successful-git-branching-model/)
 - Wireshark
 - Symfony 4
 - The Twelve-Factor App (https://12factor.net/)
