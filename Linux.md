@@ -442,4 +442,6 @@ https://man.cx/ssh
 
 - **Explain `ACCESS_KEY=$1` line found in a bash script**  
 
-- **Explain `VBoxManage convertdd dd-image.raw sda.vdi --format VDI --variant Fixed`
+- **Explain `VBoxManage convertdd dd-image.raw sda.vdi --format VDI --variant Fixed`  
+Read more:  
+https://www.agix.com.au/use-a-dd-image-as-a-disk-for-a-virtualbox-guest/
