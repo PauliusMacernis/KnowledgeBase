@@ -442,4 +442,4 @@ https://man.cx/ssh
 
 - **Explain `ACCESS_KEY=$1` line found in a bash script**  
 
-
+- **Explain `VBoxManage convertdd dd-image.raw sda.vdi --format VDI --variant Fixed`
