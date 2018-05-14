@@ -445,3 +445,10 @@ https://man.cx/ssh
 - **Explain `VBoxManage convertdd dd-image.raw sda.vdi --format VDI --variant Fixed`**  
 Read more:  
 https://www.agix.com.au/use-a-dd-image-as-a-disk-for-a-virtualbox-guest/
+
+- **Explain `man hier`***
+Outputs description of the filesystem hierarchy.  
+Read more:  
+https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard  
+https://man.cx/hier  
+
