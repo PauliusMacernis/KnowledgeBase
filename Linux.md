@@ -446,7 +446,7 @@ https://man.cx/ssh
 Read more:  
 https://www.agix.com.au/use-a-dd-image-as-a-disk-for-a-virtualbox-guest/
 
-- **Explain `man hier`***
+- **Explain `man hier`**  
 Outputs description of the filesystem hierarchy.  
 Read more:  
 https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard  
