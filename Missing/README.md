@@ -5,6 +5,7 @@
 - Wireshark
 - Symfony 4
 - The Twelve-Factor App (https://12factor.net/)
+- HATEOAS (https://en.wikipedia.org/wiki/HATEOAS)
 - SonarQube (https://www.sonarqube.org/)
 - CI 
     - Jenkins (https://jenkins.io/)
@@ -12,6 +13,12 @@
     - Gitlab:
         - https://docs.gitlab.com/ee/ci
         - https://gitlab.com/gitlab-org/gitlab-ci-yml/blob/master/Docker.gitlab-ci.yml
+- Testing
+    - PHPSpec - Intuitive unit testing with mocking 
+    - Behat - Functional testing
+    - Jmeter (https://jmeter.apache.org) - for thorough testing. Main tool.
+    - SIege (https://github.com/JoeDog/siege) - for quick load testing
+    - Bees with Machine Guns (https://github.com/newsapps/beeswithmachineguns) - for AWS testing.
 - Kubernetes (https://kubernetes.io/ , https://cloud.google.com/kubernetes-engine/docs/tutorials/guestbook, https://cloud.google.com/php/tutorials/bookshelf-on-kubernetes-engine)
 - Ansible
 - HTTP/2
