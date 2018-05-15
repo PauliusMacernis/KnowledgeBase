@@ -452,3 +452,16 @@ Read more:
 https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard  
 https://man.cx/hier  
 
+- **What is the difference between `apt` and `apt-get` on Ubuntu OS?**  
+They are very similar command line tools available in Trusty. `apt-get` and `apt-cache`'s most commonly used commands are available in `apt`.  
+`apt-get` may be considered as lower-level and "back-end", and support other APT-based tools. `apt` is designed for end-users (human) and its output may be changed between versions.  
+Currently the `apt` binary supports the following commands:
+  - `list`: which is similar to `dpkg list` and can be used with flags like `--installed` or `--upgradable`.
+  - `search`: works just like `apt-cache search` but sorted alphabetically.
+  - `show`: works like `apt-cache show` but hide some details that people are less likely to care about (like the hashes). The full record is still available via `apt-cache show` of course.
+  - `update`: just like the regular `apt-get update` with color output enabled.
+  - `install`,`remove`: adds progress output during the dpkg run.
+  - `upgrade`: the same as `apt-get upgrade --with-new-pkgs`.*
+  - `full-upgrade`: a more meaningful name for `dist-upgrade`.
+  - `edit-sources`: edit `sources.list` using `$EDITOR`.
+ May be worth mentioning that starting in 16.04 by default apt does not save the downloaded packages while apt-get does.
