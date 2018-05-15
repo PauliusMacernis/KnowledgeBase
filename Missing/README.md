@@ -19,6 +19,7 @@
     - Jmeter (https://jmeter.apache.org) - for thorough testing. Main tool.
     - SIege (https://github.com/JoeDog/siege) - for quick load testing
     - Bees with Machine Guns (https://github.com/newsapps/beeswithmachineguns) - for AWS testing.
+    - JMeter (https://jmeter.apache.org/)
 - Kubernetes (https://kubernetes.io/ , https://cloud.google.com/kubernetes-engine/docs/tutorials/guestbook, https://cloud.google.com/php/tutorials/bookshelf-on-kubernetes-engine)
 - Ansible
 - HTTP/2
