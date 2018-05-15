@@ -21,6 +21,8 @@
     - Bees with Machine Guns (https://github.com/newsapps/beeswithmachineguns) - for AWS testing.
     - JMeter (https://jmeter.apache.org/)
 - Kubernetes (https://kubernetes.io/ , https://cloud.google.com/kubernetes-engine/docs/tutorials/guestbook, https://cloud.google.com/php/tutorials/bookshelf-on-kubernetes-engine)
+- Rocketeer (https://github.com/rocketeers/rocketeer)
+- Capistrano
 - Ansible
 - HTTP/2
 - Postman (https://www.getpostman.com/)
