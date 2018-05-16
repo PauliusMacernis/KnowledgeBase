@@ -41,6 +41,9 @@
     - Amazon S3 (https://aws.amazon.com/s3/)
     - AWS Elastic Beanstalk (https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html)
     - others
+- Time/task tracking:
+    - Pomodoro (https://en.wikipedia.org/wiki/Pomodoro_Technique)
+    - Toggl (https://toggl.com/)
 - PHP Internationalization Functions (intl) ( http://php.net/manual/en/book.intl.php )
 - Self-signed SSL for `.dev` domains on Ubuntu:
     - https://ma.ttias.be/chrome-force-dev-domains-https-via-preloaded-hsts/
