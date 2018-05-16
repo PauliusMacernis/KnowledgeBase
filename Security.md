@@ -19,6 +19,10 @@
 <a href="#" title="
 ">⌘</a>
 
+- What is Bearer Token?
+<a href="#" title="
+">⌘</a>
+
 - What is Basic Auth?
 <a href="#" title="
 ">⌘</a>
@@ -36,6 +40,10 @@
 ">⌘</a>
 
 - What is AWS Signature?
+<a href="#" title="
+">⌘</a>
+
+- What is NTLM Authentication?
 <a href="#" title="
 ">⌘</a>
 
