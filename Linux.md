@@ -465,3 +465,19 @@ Currently the `apt` binary supports the following commands:
   - `full-upgrade`: a more meaningful name for `dist-upgrade`.
   - `edit-sources`: edit `sources.list` using `$EDITOR`.
  May be worth mentioning that starting in 16.04 by default apt does not save the downloaded packages while apt-get does.
+ 
+- **Explain `sudo dpkg -i libgstreamer*.deb`**  
+`sudo` - execute a command as another user (super user).  
+`dpkg` - package manager for Debian. `dpkg` is a tool to install, build, remove and manage Debian packages. The primary and more user-friendly front-end for `dpkg` is `aptitude`. `dpkg` itself is controlled entirely via command line parameters, which consist of exactly one action and zero or more options. The action-parameter tells `dpkg` what to do and options control the behavior of the action in some way.  
+`-i`, `−−install` - Install the package. If `−−recursive` or `−R` option is speciﬁed, package−ﬁle must refer to adirectory instead.  
+`libgstreamer*.deb` - package−ﬁle (matching the given pattern) to install.  
+Installation consists of the following steps:  
+  1. Extract the control files of the new package.  
+  2. If another version of the same package was installed before the new installation, execute `prerm` script of the old package.  
+  3. Run `preinst` script, if provided by the package.  
+  4. Unpack the new files, and at the same time back up the old files, so that if something goes wrong, they can be restored.  
+  5. If another version of the same package was installed before the new installation, execute the `postrm` script of the old package. Note that this script is executed after the `preinst` script of the new package, because new files are written at the same time old files are removed.  
+  6. Configure the package. See `−−configure` for detailed information about how this is done.  
+Read more:  
+https://man.cx/sudo  
+https://man.cx/dpkg  
