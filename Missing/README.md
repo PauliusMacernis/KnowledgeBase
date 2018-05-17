@@ -4,6 +4,9 @@
 - Git flow (http://nvie.com/posts/a-successful-git-branching-model/)
 - Wireshark
 - Symfony 4
+- ORM
+    - Doctrine (https://www.doctrine-project.org/)
+    - Eloquent (https://laravel.com/docs/5.6/eloquent)
 - The Twelve-Factor App (https://12factor.net/)
 - HATEOAS (https://en.wikipedia.org/wiki/HATEOAS)
 - SonarQube (https://www.sonarqube.org/)
