@@ -108,6 +108,8 @@
         - Improving Peer Selection in Peer-to-peer Applications: Myths vs. Reality (http://www.rfc-editor.org/info/rfc6821)
     - DNS?
         - Clarifications and Implementation Notes for DNS Security (DNSSEC) (https://www.rfc-editor.org/info/rfc6840)
+    - HTTP Tests???
+    - Proxy???
     - All other RFCs
         - (lowest priority) https://www.rfc-editor.org/search/rfc_search_detail.php?pubstatus%5B%5D=Any&pub_date_type=any
         - (low priority) All other HTTP-related RFCs: https://www.rfc-editor.org/search/rfc_search_detail.php?sortkey=Number&sorting=ASC&page=All&title=HTTP
