@@ -1,4 +1,8 @@
 ### Security
+- What is the difference between identification and authentication?
+<a href="#" title="
+">⌘</a>
+  
 - What is the difference between authorization and authentication?
 <a href="#" title="
 ">⌘</a>
@@ -72,5 +76,9 @@
 ">⌘</a>
 
 - What is the difference between 'Public key' and 'Public key certificate'? Explain dow are they being used.
+<a href="#" title="
+">⌘</a>
+
+- (HTTP) Do I need to authenticate by username and password before I can authenticate by using access token?
 <a href="#" title="
 ">⌘</a>
