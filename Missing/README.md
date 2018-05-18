@@ -58,7 +58,8 @@
     - Private/Public:
         - Public key vs. Public key certificate
         - Diffie–Hellman key exchange???
-    - Authentication & Authorization
+    - Identification & Authentication & Authorization
+        - Difference between identification and authentication
         - Challenge-response authentication mechanism (CRAM) (https://en.wikipedia.org/wiki/Challenge%E2%80%93response_authentication)
         - Understanding the Three Factors of Authentication: http://www.pearsonitcertification.com/articles/article.aspx?p=1718488
         - Security Support Provider Interface (SSPI): 
