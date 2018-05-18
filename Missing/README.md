@@ -71,6 +71,7 @@
             - https://www.youtube.com/watch?v=bSrw4o1Jy5E
             - https://en.wikipedia.org/wiki/3-D_Secure
         - The 'Basic' HTTP Authentication Scheme (Basic Auth)
+            - https://www.ibm.com/support/knowledgecenter/en/SSGMCP_5.1.0/com.ibm.cics.ts.internet.doc/topics/dfhtl2a.html
             - Basic Password Exchange within the Flexible Authentication via Secure Tunneling Extensible Authentication Protocol (EAP-FAST): https://www.rfc-editor.org/info/rfc5421
             - https://www.rfc-editor.org/info/rfc7617
         - Digest Auth
