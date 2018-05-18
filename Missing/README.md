@@ -5,12 +5,17 @@
 - Wireshark
 - IANA (https://www.ietf.org/standards/iana/)
 - HTTP
+    - Client / Server interaction
+        - https://en.wikipedia.org/wiki/Client%E2%80%93server_model
+        - (historical) Host Software, April 1969: https://www.rfc-editor.org/info/rfc0001
+        - (historical) Host software, April 1969: https://www.rfc-editor.org/info/rfc0001
     - HTTP 
         - HTTP (https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
         - Application layer (https://en.wikipedia.org/wiki/Application_layer)
         - https://httpwg.org/
         - https://httpwg.org/specs/
-    - HTTP 1.1
+        - https://developer.mozilla.org/en-US/docs/Web/HTTP
+    - HTTP 1.1, Status codes, HTTP request, HTTP response, HTTP methods, Cookies, Caching, Content negotiation
         - Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing (https://www.rfc-editor.org/info/rfc7230)
         - Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content (https://www.rfc-editor.org/info/rfc7231)
         - Hypertext Transfer Protocol (HTTP/1.1): Conditional Requests (https://www.rfc-editor.org/info/rfc7232)
@@ -21,12 +26,41 @@
         - Initial Hypertext Transfer Protocol (HTTP) Method Registrations (https://www.rfc-editor.org/info/rfc7237)
         - The Hypertext Transfer Protocol Status Code 308 (Permanent Redirect) (https://www.rfc-editor.org/info/rfc7238)
         - Forwarded HTTP Extension (https://www.rfc-editor.org/info/rfc7239)
-    - HTTP/2
+    - HTTP/2, Status codes, HTTP request, HTTP response, HTTP methods, Cookies
+        - https://developers.google.com/web/fundamentals/performance/http2/
+        - https://en.wikipedia.org/wiki/HTTP/2
         - https://http2.github.io/
+        - https://www.rfc-editor.org/info/rfc7540
+        - https://http2.github.io/faq/
+    - Cookies
+        - https://en.wikipedia.org/wiki/HTTP_cookie
+        - HTTP State Management Mechanism (https://www.rfc-editor.org/info/rfc6265)
+        - Domain Name System (DNS) Cookies (http://www.rfc-editor.org/info/rfc7873)
+        - EU cookie directive (http://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32009L0136)
+    - Caching
+        - Internet Web Replication and Caching Taxonomy (http://www.rfc-editor.org/info/rfc3040)
+        - Known HTTP Proxy/Caching Problems, June 2001 (http://www.rfc-editor.org/info/rfc3143)
+    - Content negotiation
+        - https://en.wikipedia.org/wiki/Content_negotiation
+        - (Experimental) Transparent Content Negotiation in HTTP (http://www.rfc-editor.org/info/rfc2295)
+        - (Experimental) HTTP Remote Variant Selection Algorithm -- RVSA/1.0 (http://www.rfc-editor.org/info/rfc2296)
+        - Protocol-independent Content Negotiation Framework (http://www.rfc-editor.org/info/rfc2703)
+        - (?)  Content Negotiation for Messaging Services based on Email (http://www.rfc-editor.org/info/rfc3297)
+        - HTTP Framework for Time-Based Access to Resource States -- Memento (http://www.rfc-editor.org/info/rfc7089)
+        - Open source PHP content negotiation library (supports wildcards and q values) (http://ptlis.net/source/php/content-negotiation/)
+    - Language detection
+        - Content Language Headers (https://www.rfc-editor.org/info/rfc3282)
+        - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Language
+        - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Language
+        - https://stackoverflow.com/questions/36943441/how-to-handle-accept-language-fallback
     - Security in general
         - E-Commerce (https://www.geotrust.com/au/resources/whitepapers/pdfs/geotrust_e-commerce_guide.pdf)
-    - Salted Challenge Response Authentication Mechanism (SCRAM)
-        - https://www.rfc-editor.org/info/rfc7804
+    - Authentication & Authorization
+        - OAuth
+            - The OAuth 2.0 Authorization Framework (https://oauth.net/2/)
+            - https://www.rfc-editor.org/info/rfc6749
+        - Salted Challenge Response Authentication Mechanism (SCRAM) (https://www.rfc-editor.org/info/rfc7804)
+        - https://github.com/sugalvojau/Knowledge-base/blob/master/Security.md
     - API
         - Problem Details for HTTP APIs (https://www.rfc-editor.org/info/rfc7807)
     - SSL
@@ -36,6 +70,19 @@
         - Application-Layer Protocol Negotiation (ALPN) (https://en.wikipedia.org/wiki/Application-Layer_Protocol_Negotiation)
     - HTTPS
         - HTTP Strict Transport Security (HSTS) ( https://ma.ttias.be/chrome-force-dev-domains-https-via-preloaded-hsts/, https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security , https://tools.ietf.org/html/rfc6797 )
+    - Security in more details
+        - SCS: KoanLogic's Secure Cookie Sessions for HTTP (http://www.rfc-editor.org/info/rfc6896)
+        - TCP SYN Flooding Attacks and Common Mitigations (http://www.rfc-editor.org/info/rfc4987)
+    - Streaming?
+        - Models for HTTP-Adaptive-Streaming-Aware Content Distribution Network Interconnection (CDNI) (http://www.rfc-editor.org/info/rfc6983)
+        - HTTP Live Streaming (https://www.rfc-editor.org/info/rfc8216)
+    - Peer-to-peer (P2P)?
+        - Improving Peer Selection in Peer-to-peer Applications: Myths vs. Reality (http://www.rfc-editor.org/info/rfc6821)
+    - DNS?
+        - Clarifications and Implementation Notes for DNS Security (DNSSEC) (https://www.rfc-editor.org/info/rfc6840)
+    - All other RFCs
+        - (lowest priority) https://www.rfc-editor.org/search/rfc_search_detail.php?pubstatus%5B%5D=Any&pub_date_type=any
+        - (low priority) All other HTTP-related RFCs: https://www.rfc-editor.org/search/rfc_search_detail.php?sortkey=Number&sorting=ASC&page=All&title=HTTP
 - Symfony 4
 - ORM
     - Doctrine (https://www.doctrine-project.org/)
@@ -56,6 +103,7 @@
     - SIege (https://github.com/JoeDog/siege) - for quick load testing
     - Bees with Machine Guns (https://github.com/newsapps/beeswithmachineguns) - for AWS testing.
     - JMeter (https://jmeter.apache.org/)
+    - Codeception (https://codeception.com/)
 - Big O notation (https://en.wikipedia.org/wiki/Big_O_notation)
 - Kubernetes (https://kubernetes.io/ , https://cloud.google.com/kubernetes-engine/docs/tutorials/guestbook, https://cloud.google.com/php/tutorials/bookshelf-on-kubernetes-engine)
 - Rocketeer (https://github.com/rocketeers/rocketeer)
