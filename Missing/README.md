@@ -55,12 +55,35 @@
         - https://stackoverflow.com/questions/36943441/how-to-handle-accept-language-fallback
     - Security in general
         - E-Commerce (https://www.geotrust.com/au/resources/whitepapers/pdfs/geotrust_e-commerce_guide.pdf)
+    - Private/Public:
+        - Public key vs. Public key certificate
+        - Diffie–Hellman key exchange???
     - Authentication & Authorization
-        - OAuth
+        - Challenge-response authentication mechanism (CRAM) (https://en.wikipedia.org/wiki/Challenge%E2%80%93response_authentication)
+        - Understanding the Three Factors of Authentication: http://www.pearsonitcertification.com/articles/article.aspx?p=1718488
+        - Security Support Provider Interface (SSPI): 
+            - https://en.wikipedia.org/wiki/Security_Support_Provider_Interface
+            - http://www.dupuis.me/node/22
+        - Trusted Authentication
+            - https://en.wikipedia.org/wiki/Trusted_system
+            - https://onlinehelp.tableau.com/current/server/en-us/trusted_auth.htm
+        - 3D Secure:
+            - https://www.youtube.com/watch?v=bSrw4o1Jy5E
+            - https://en.wikipedia.org/wiki/3-D_Secure
+        - The 'Basic' HTTP Authentication Scheme (Basic Auth)
+            - Basic Password Exchange within the Flexible Authentication via Secure Tunneling Extensible Authentication Protocol (EAP-FAST): https://www.rfc-editor.org/info/rfc5421
+            - https://www.rfc-editor.org/info/rfc7617
+        - Digest Auth
+            - HTTP Digest Access Authentication (https://www.rfc-editor.org/info/rfc7616)
+        - OAuth (1.0, 2.0, differences between OAuth 1.0 and OAuth 2.0), Bearer Token
             - The OAuth 2.0 Authorization Framework (https://oauth.net/2/)
             - https://www.rfc-editor.org/info/rfc6749
+            - https://www.rfc-editor.org/info/rfc6750
+        - Hawk Authentication???
+        - AWS Signature???
+        - NTLM Authentication???
+        - Kerberos (protocol)???
         - Salted Challenge Response Authentication Mechanism (SCRAM) (https://www.rfc-editor.org/info/rfc7804)
-        - https://github.com/sugalvojau/Knowledge-base/blob/master/Security.md
     - API
         - Problem Details for HTTP APIs (https://www.rfc-editor.org/info/rfc7807)
     - SSL
@@ -70,6 +93,7 @@
         - Application-Layer Protocol Negotiation (ALPN) (https://en.wikipedia.org/wiki/Application-Layer_Protocol_Negotiation)
     - HTTPS
         - HTTP Strict Transport Security (HSTS) ( https://ma.ttias.be/chrome-force-dev-domains-https-via-preloaded-hsts/, https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security , https://tools.ietf.org/html/rfc6797 )
+    - OpenSSL???
     - Security in more details
         - SCS: KoanLogic's Secure Cookie Sessions for HTTP (http://www.rfc-editor.org/info/rfc6896)
         - TCP SYN Flooding Attacks and Common Mitigations (http://www.rfc-editor.org/info/rfc4987)
