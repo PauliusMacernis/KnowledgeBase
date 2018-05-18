@@ -88,6 +88,8 @@
         - Salted Challenge Response Authentication Mechanism (SCRAM) (https://www.rfc-editor.org/info/rfc7804)
     - API
         - Problem Details for HTTP APIs (https://www.rfc-editor.org/info/rfc7807)
+        - HATEOAS (https://en.wikipedia.org/wiki/HATEOAS)
+        - OpenAPI
     - SSL
         - Secure Sockets Layer (SSL) (https://www.geotrust.com/au/resources/whitepapers/pdfs/SSL_101_guide.pdf, )
     - TLS
@@ -114,7 +116,6 @@
     - Doctrine (https://www.doctrine-project.org/)
     - Eloquent (https://laravel.com/docs/5.6/eloquent)
 - The Twelve-Factor App (https://12factor.net/)
-- HATEOAS (https://en.wikipedia.org/wiki/HATEOAS)
 - SonarQube (https://www.sonarqube.org/)
 - CI 
     - Jenkins (https://jenkins.io/)
@@ -181,7 +182,6 @@
 - Vessel (https://vessel.shippingdocker.com/), a simple Docker development environment for Laravel
 - Google Cloud (https://cloud.google.com)
 - Swagger
-- OpenAPI
 - IDE:
     - PHPStorm
 - ***
