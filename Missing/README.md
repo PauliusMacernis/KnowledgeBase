@@ -25,6 +25,10 @@
         - https://http2.github.io/
     - Security in general
         - E-Commerce (https://www.geotrust.com/au/resources/whitepapers/pdfs/geotrust_e-commerce_guide.pdf)
+    - Salted Challenge Response Authentication Mechanism (SCRAM)
+        - https://www.rfc-editor.org/info/rfc7804
+    - API
+        - Problem Details for HTTP APIs (https://www.rfc-editor.org/info/rfc7807)
     - SSL
         - Secure Sockets Layer (SSL) (https://www.geotrust.com/au/resources/whitepapers/pdfs/SSL_101_guide.pdf, )
     - TLS
@@ -61,6 +65,9 @@
 - Java
     - Spring (https://spring.io/)
 - PHPDoc (https://www.phpdoc.org/), e.g.:
+- Internet Standards
+    - https://www.rfc-editor.org/search/rfc_search_detail.php?sortkey=Number&sorting=DESC&page=All&pubstatus%5B%5D=Standards%20Track&std_trk=Internet%20Standard
+    - Official Internet Protocol Standards (https://www.rfc-editor.org/standards)
 ```
 /**
  * {@inheritdoc}
