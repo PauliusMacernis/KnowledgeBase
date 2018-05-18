@@ -3,6 +3,35 @@
 - Semantic Versioning (https://semver.org/, https://github.com/semantic-release/semantic-release)
 - Git flow (http://nvie.com/posts/a-successful-git-branching-model/)
 - Wireshark
+- IANA (https://www.ietf.org/standards/iana/)
+- HTTP
+    - HTTP 
+        - HTTP (https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
+        - Application layer (https://en.wikipedia.org/wiki/Application_layer)
+        - https://httpwg.org/
+        - https://httpwg.org/specs/
+    - HTTP 1.1
+        - Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and Routing (https://www.rfc-editor.org/info/rfc7230)
+        - Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content (https://www.rfc-editor.org/info/rfc7231)
+        - Hypertext Transfer Protocol (HTTP/1.1): Conditional Requests (https://www.rfc-editor.org/info/rfc7232)
+        - Hypertext Transfer Protocol (HTTP/1.1): Range Requests (https://www.rfc-editor.org/info/rfc7233)
+        - Hypertext Transfer Protocol (HTTP/1.1): Caching (https://www.rfc-editor.org/info/rfc7234)
+        - Hypertext Transfer Protocol (HTTP/1.1): Authentication (https://www.rfc-editor.org/info/rfc7235)
+        - Initial Hypertext Transfer Protocol (HTTP) Authentication Scheme Registrations (https://www.rfc-editor.org/info/rfc7236)
+        - Initial Hypertext Transfer Protocol (HTTP) Method Registrations (https://www.rfc-editor.org/info/rfc7237)
+        - The Hypertext Transfer Protocol Status Code 308 (Permanent Redirect) (https://www.rfc-editor.org/info/rfc7238)
+        - Forwarded HTTP Extension (https://www.rfc-editor.org/info/rfc7239)
+    - HTTP/2
+        - https://http2.github.io/
+    - Security in general
+        - E-Commerce (https://www.geotrust.com/au/resources/whitepapers/pdfs/geotrust_e-commerce_guide.pdf)
+    - SSL
+        - Secure Sockets Layer (SSL) (https://www.geotrust.com/au/resources/whitepapers/pdfs/SSL_101_guide.pdf, )
+    - TLS
+        - Transport Layer Security (TLS) (https://en.wikipedia.org/wiki/Transport_Layer_Security)
+        - Application-Layer Protocol Negotiation (ALPN) (https://en.wikipedia.org/wiki/Application-Layer_Protocol_Negotiation)
+    - HTTPS
+        - HTTP Strict Transport Security (HSTS) ( https://ma.ttias.be/chrome-force-dev-domains-https-via-preloaded-hsts/, https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security , https://tools.ietf.org/html/rfc6797 )
 - Symfony 4
 - ORM
     - Doctrine (https://www.doctrine-project.org/)
@@ -28,7 +57,6 @@
 - Rocketeer (https://github.com/rocketeers/rocketeer)
 - Capistrano
 - Ansible
-- HTTP/2
 - Postman (https://www.getpostman.com/)
 - Java
     - Spring (https://spring.io/)
