@@ -135,6 +135,7 @@
     - Codeception (https://codeception.com/)
 - Big O notation (https://en.wikipedia.org/wiki/Big_O_notation)
 - Kubernetes (https://kubernetes.io/ , https://cloud.google.com/kubernetes-engine/docs/tutorials/guestbook, https://cloud.google.com/php/tutorials/bookshelf-on-kubernetes-engine)
+- Writing Linux Device Driver (https://www.apriorit.com/dev-blog/195-simple-driver-for-linux-os , etc.)
 - Rocketeer (https://github.com/rocketeers/rocketeer)
 - Capistrano
 - Ansible
