@@ -152,8 +152,9 @@
  */
 ```
 - Learning
+    - Mind maps by Tony Buzan (https://en.wikipedia.org/wiki/Mind_map)
     - Leitner Flashcard System (https://en.wikipedia.org/wiki/Leitner_system)
-    - Spaced repetition
+    - Spaced repetition:
         - Richard Feynman learning technique: https://www.quora.com/What-is-the-Feynman-technique-in-detail , etc.
         - Neural networks based: https://en.wikipedia.org/wiki/Artificial_neural_network
 - Caddy server (https://caddyserver.com/)
