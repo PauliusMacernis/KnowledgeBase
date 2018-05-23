@@ -108,6 +108,13 @@
     - Streaming?
         - Models for HTTP-Adaptive-Streaming-Aware Content Distribution Network Interconnection (CDNI) (http://www.rfc-editor.org/info/rfc6983)
         - HTTP Live Streaming (https://www.rfc-editor.org/info/rfc8216)
+    - PSR:
+        - PSR-7: HTTP Message Interface: https://www.php-fig.org/psr/psr-7
+        - PSR-13: Link definition interfaces: https://www.php-fig.org/psr/psr-13/
+        - PSR-15: HTTP Server Request Handlers: https://www.php-fig.org/psr/psr-15/
+    - PSR (drafts):
+        - PSR-17: HTTP Factories: https://github.com/php-fig/fig-standards/tree/master/proposed/http-factory/
+        - PSR-18: HTTP Client: https://github.com/php-fig/fig-standards/tree/master/proposed/http-client/
     - Peer-to-peer (P2P)?
         - Improving Peer Selection in Peer-to-peer Applications: Myths vs. Reality (http://www.rfc-editor.org/info/rfc6821)
     - DNS?
