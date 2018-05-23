@@ -109,6 +109,7 @@
         - Models for HTTP-Adaptive-Streaming-Aware Content Distribution Network Interconnection (CDNI) (http://www.rfc-editor.org/info/rfc6983)
         - HTTP Live Streaming (https://www.rfc-editor.org/info/rfc8216)
     - PSR:
+        - https://inviqa.com/blog/introduction-psr-7-symfony
         - PSR-7: HTTP Message Interface: https://www.php-fig.org/psr/psr-7
         - PSR-13: Link definition interfaces: https://www.php-fig.org/psr/psr-13/
         - PSR-15: HTTP Server Request Handlers: https://www.php-fig.org/psr/psr-15/
