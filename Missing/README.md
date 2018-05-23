@@ -9,6 +9,10 @@
         - https://en.wikipedia.org/wiki/Client%E2%80%93server_model
         - (historical) Host Software, April 1969: https://www.rfc-editor.org/info/rfc0001
         - (historical) Host software, April 1969: https://www.rfc-editor.org/info/rfc0001
+    - URI
+        - Uniform Resource Identifier (URI): Generic Syntax (Internet standard): https://www.rfc-editor.org/info/rfc3986
+        - Internationalized Resource Identifiers (IRIs) (Proposed standard): https://www.rfc-editor.org/info/rfc3987
+        - URI Design and Ownership (Best current practice): https://www.rfc-editor.org/info/rfc7320
     - HTTP 
         - HTTP (https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
         - Application layer (https://en.wikipedia.org/wiki/Application_layer)
