@@ -146,6 +146,12 @@
     - Codeception (https://codeception.com/)
 - Big O notation (https://en.wikipedia.org/wiki/Big_O_notation)
 - Kubernetes (https://kubernetes.io/ , https://cloud.google.com/kubernetes-engine/docs/tutorials/guestbook, https://cloud.google.com/php/tutorials/bookshelf-on-kubernetes-engine)
+- Monitoring:
+    - Zabbix (https://www.zabbix.com/)
+    - New Relic (https://newrelic.com/)
+    - CACTI (https://www.cacti.net/)
+    - Datadog (https://www.datadoghq.com/)
+    - Nagios (https://www.nagios.org/)
 - Writing Linux Device Driver (https://www.apriorit.com/dev-blog/195-simple-driver-for-linux-os , etc.)
 - Rocketeer (https://github.com/rocketeers/rocketeer)
 - Capistrano
