@@ -124,6 +124,18 @@
     - All other RFCs
         - (lowest priority) https://www.rfc-editor.org/search/rfc_search_detail.php?pubstatus%5B%5D=Any&pub_date_type=any
         - (low priority) All other HTTP-related RFCs: https://www.rfc-editor.org/search/rfc_search_detail.php?sortkey=Number&sorting=ASC&page=All&title=HTTP
+    - JSON:
+        - The JavaScript Object Notation (JSON) Data Interchange Format: https://www.rfc-editor.org/info/rfc8259
+        - ECMA-404 The JSON Data Interchange Standard: http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf
+    - PHP:
+        - Superglobals: http://php.net/manual/en/language.variables.superglobals.php
+        - header: http://php.net/manual/en/function.header.php
+        - Streams: http://php.net/manual/en/book.stream.php
+        - Network functions: http://php.net/manual/en/ref.network.php
+        - URLs: http://php.net/manual/en/book.url.php
+        - JSON: http://php.net/manual/en/book.json.php
+    - Symfony:
+        - HttpFoundation (https://symfony.com/doc/current/components/http_foundation.html)
 - Symfony 4
 - ORM
     - Doctrine (https://www.doctrine-project.org/)
