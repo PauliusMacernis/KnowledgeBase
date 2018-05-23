@@ -152,6 +152,7 @@
     - CACTI (https://www.cacti.net/)
     - Datadog (https://www.datadoghq.com/)
     - Nagios (https://www.nagios.org/)
+    - Amazon CloudWatch (https://aws.amazon.com/cloudwatch/)
 - Writing Linux Device Driver (https://www.apriorit.com/dev-blog/195-simple-driver-for-linux-os , etc.)
 - Rocketeer (https://github.com/rocketeers/rocketeer)
 - Capistrano
