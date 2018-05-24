@@ -160,3 +160,20 @@ Read more:
 https://suhosin.org/stories/index.html  
 https://raw.githubusercontent.com/sektioneins/suhosin/master/Changelog  
 
+- **What is Server Application Programming Interface (SAPI)?**  
+In computing, Server Application Programming Interface (SAPI) is the direct module interface to web servers such as the Apache HTTP Server, Microsoft IIS, and Oracle iPlanet Web Server. In other words, SAPI is an application programming interface (API) provided by the web server to help other developers in extending the web server capabilities.  
+Read more:  
+https://en.wikipedia.org/wiki/Server_Application_Programming_Interface  
+
+- **What is the difference between Application Programming Interface (SAPI), Internet Server Application Programming Interface (ISAPI), Netscape Server Application Programming Interface (NSAPI)?**  
+Microsoft uses the term Internet Server Application Programming Interface (***ISAPI***), and the defunct Netscape web server used the term Netscape Server Application Programming Interface (***NSAPI***) for the same purpose.  
+Read more:  
+https://en.wikipedia.org/wiki/Server_Application_Programming_Interface
+
+- **What versions of SAPI PHP has?**  
+PHP has a direct module interface called SAPI for different web servers; in the case of PHP 5 and Apache 2.0 on Windows, it is provided in the form of a DLL file called php5apache2.dll, which is a module that, among other functions, provides an interface between PHP and the web server, implemented in a form that the server understands. This form is what is known as a SAPI.  
+Different kinds of SAPIs exist for various web-server extensions. For example, in addition to those listed above, other SAPIs for the PHP language include the ***Common Gateway Interface (CGI)*** and ***command-line interface (CLI)*** .  
+What about`APache eXtenSion tool` (`apxs`)? `apxs` is a tool for building and installing extension modules for the Apache HyperText Transfer Protocol (HTTP) server. This is achieved by building a dynamic shared object (DSO) from one or more source or object files which then can be loaded into the Apache server under runtime via the LoadModule directive from mod_so.  
+Read more:  
+https://en.wikipedia.org/wiki/Server_Application_Programming_Interface  
+https://httpd.apache.org/docs/current/programs/apxs.html  
