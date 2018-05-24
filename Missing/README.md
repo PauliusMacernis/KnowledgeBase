@@ -178,6 +178,7 @@
         - Amazon MQ
         - AWS Elastic Beanstalk (https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html)
         - others
+    - Microsoft Azure (https://azure.microsoft.com)
 - Capistrano
 - Ansible
 - Postman (https://www.getpostman.com/)
