@@ -188,6 +188,9 @@
     - Spaced repetition:
         - Richard Feynman learning technique: https://www.quora.com/What-is-the-Feynman-technique-in-detail , etc.
         - Neural networks based: https://en.wikipedia.org/wiki/Artificial_neural_network
+    - Socratic method (https://en.wikipedia.org/wiki/Socratic_method , https://www.youtube.com/watch?v=_CPLu3qCbSU):
+        - Socratic questioning (https://en.wikipedia.org/wiki/Socratic_questioning)
+        - Socratic Circles (https://en.wikipedia.org/wiki/Socratic_method#Socratic_Circles)        
 - Caddy server (https://caddyserver.com/)
 - Slim PHP Framework (https://www.slimframework.com/)
 - GZip (e.g. http://nginx.org/en/docs/http/ngx_http_gzip_module.html )
