@@ -158,7 +158,14 @@
     - JMeter (https://jmeter.apache.org/)
     - Codeception (https://codeception.com/)
 - Big O notation (https://en.wikipedia.org/wiki/Big_O_notation)
-- PHP productivity tools. Covert Code to Diagrams, Graphs, etc:
+- ??? PHP productivity tools. Covert Code to Diagrams, Graphs, etc:
+    - phUML
+        - `sudo apt install graphviz`
+        - `git clone https://github.com/jakobwesthoff/phuml`
+        - `cd phuml/src/app/`
+        - `./phuml -h`
+        - `./phuml -l`
+        - `./phuml -r /var/www/php_app_folder -graphviz -createAssociations false -neato output_image.png`
     - UML Diagrams in PhpStorm (https://blog.jetbrains.com/phpstorm/2017/09/uml-diagrams-in-phpstorm-2017-2/)
     - PhpDependencyAnalysis (https://github.com/mamuz/PhpDependencyAnalysis)
     - ??? Bouml (https://www.bouml.fr)
