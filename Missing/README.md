@@ -158,6 +158,9 @@
     - JMeter (https://jmeter.apache.org/)
     - Codeception (https://codeception.com/)
 - Big O notation (https://en.wikipedia.org/wiki/Big_O_notation)
+- PHP productivity tools. Covert Code to Diagrams, Graphs, etc:
+    - UML Diagrams in PhpStorm (https://blog.jetbrains.com/phpstorm/2017/09/uml-diagrams-in-phpstorm-2017-2/)
+    - PhpDependencyAnalysis (https://github.com/mamuz/PhpDependencyAnalysis)
 - Kubernetes (https://kubernetes.io/ , https://cloud.google.com/kubernetes-engine/docs/tutorials/guestbook, https://cloud.google.com/php/tutorials/bookshelf-on-kubernetes-engine)
 - Monitoring:
     - Zabbix (https://www.zabbix.com/)
@@ -248,6 +251,7 @@
 - (General Data Protection Regulation)
 - ***
 - rkt (https://coreos.com/rkt/)
+- Graphviz (http://www.graphviz.org/)
 
 # Certifications missing
 
