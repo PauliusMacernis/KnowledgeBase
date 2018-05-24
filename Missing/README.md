@@ -182,6 +182,7 @@
 - Capistrano
 - Ansible
 - Postman (https://www.getpostman.com/)
+- Supervisor (http://supervisord.org)
 - Java
     - Spring (https://spring.io/)
 - PHPDoc (https://www.phpdoc.org/), e.g.:
