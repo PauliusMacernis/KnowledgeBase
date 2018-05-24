@@ -168,20 +168,31 @@
     - Amazon CloudWatch (https://aws.amazon.com/cloudwatch/)
 - Writing Linux Device Driver (https://www.apriorit.com/dev-blog/195-simple-driver-for-linux-os , etc.)
 - Rocketeer (https://github.com/rocketeers/rocketeer)
+- IaaS
+    - serverless (https://serverless.com/)
+    - AWS:
+        - Amazon S3 (https://aws.amazon.com/s3/)
+        - Amazon Simple Queue Service (SQS) 
+        - Amazon Simple Notification Service (SNS)
+        - Amazon Kinesis (Streams)
+        - Amazon MQ
+        - AWS Elastic Beanstalk (https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html)
+        - others
 - Capistrano
 - Ansible
 - Postman (https://www.getpostman.com/)
 - Java
     - Spring (https://spring.io/)
 - PHPDoc (https://www.phpdoc.org/), e.g.:
-- Internet Standards
-    - https://www.rfc-editor.org/search/rfc_search_detail.php?sortkey=Number&sorting=DESC&page=All&pubstatus%5B%5D=Standards%20Track&std_trk=Internet%20Standard
-    - Official Internet Protocol Standards (https://www.rfc-editor.org/standards)
 ```
 /**
  * {@inheritdoc}
  */
 ```
+- Internet Standards
+    - https://www.rfc-editor.org/search/rfc_search_detail.php?sortkey=Number&sorting=DESC&page=All&pubstatus%5B%5D=Standards%20Track&std_trk=Internet%20Standard
+    - Official Internet Protocol Standards (https://www.rfc-editor.org/standards)
+
 - Learning
     - Mind maps by Tony Buzan (https://en.wikipedia.org/wiki/Mind_map)
     - Leitner Flashcard System (https://en.wikipedia.org/wiki/Leitner_system)
@@ -194,10 +205,6 @@
 - Caddy server (https://caddyserver.com/)
 - Slim PHP Framework (https://www.slimframework.com/)
 - GZip (e.g. http://nginx.org/en/docs/http/ngx_http_gzip_module.html )
-- AWS:
-    - Amazon S3 (https://aws.amazon.com/s3/)
-    - AWS Elastic Beanstalk (https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html)
-    - others
 - Time/task tracking:
     - Pomodoro (https://en.wikipedia.org/wiki/Pomodoro_Technique)
     - Toggl (https://toggl.com/)
