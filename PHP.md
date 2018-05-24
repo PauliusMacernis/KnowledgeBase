@@ -177,3 +177,8 @@ What about`APache eXtenSion tool` (`apxs`)? `apxs` is a tool for building and in
 Read more:  
 https://en.wikipedia.org/wiki/Server_Application_Programming_Interface  
 https://httpd.apache.org/docs/current/programs/apxs.html  
+
+- **What are Name resolution rules in PHP?**  
+Read more:  
+http://php.net/manual/en/language.namespaces.rules.php  
+
