@@ -481,3 +481,14 @@ Installation consists of the following steps:
 Read more:  
 https://man.cx/sudo  
 https://man.cx/dpkg  
+
+- **What is the `Alt` + `F2` combination for?**  
+Run an application by typing its name in the box which appears.  
+Read more:  
+https://help.ubuntu.com/community/KeyboardShortcuts  
+
+- **What is Magic SysRq key?**  
+The magic SysRq key is a key combination understood by the Linux kernel, which allows the user to perform various low-level commands regardless of the system's state. It is often used to recover from freezes, or to reboot a computer without corrupting the filesystem. Its effect is similar to the computer's hardware reset button (or power switch) but with many more options and much more control.  
+Read more:  
+https://en.wikipedia.org/wiki/Magic_SysRq_key  
+
