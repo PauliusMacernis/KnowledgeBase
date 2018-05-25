@@ -82,3 +82,14 @@
 - (HTTP) Do I need to authenticate by username and password before I can authenticate by using access token?
 <a href="#" title="
 ">⌘</a>
+
+- **What is .crt and .key files and how to generate them?**  
+These are the public (.crt) and private (.key) parts of an SSL certificate.  
+The following will generate:  
+`openssl genrsa 1024 > host.key`  
+`chmod 400 host.key`  
+`openssl req -new -x509 -nodes -sha1 -days 365 -key host.key -out host.cert`  
+Note that with self-signed certificates your browser will warn you that the certificate is not "trusted" because it hasn't been signed by a certification authority that is in the trust list of your browser.  
+From there onwards you can either generate your own chain of trust by making your CA or buy a certificate from a company like Verisign or Thawte.  
+Read more:  
+https://serverfault.com/questions/224122/what-is-crt-and-key-files-and-how-to-generate-them  
