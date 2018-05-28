@@ -207,7 +207,6 @@
 - Internet Standards
     - https://www.rfc-editor.org/search/rfc_search_detail.php?sortkey=Number&sorting=DESC&page=All&pubstatus%5B%5D=Standards%20Track&std_trk=Internet%20Standard
     - Official Internet Protocol Standards (https://www.rfc-editor.org/standards)
-
 - Learning
     - Mind maps by Tony Buzan (https://en.wikipedia.org/wiki/Mind_map)
     - Leitner Flashcard System (https://en.wikipedia.org/wiki/Leitner_system , https://ankiweb.net)
@@ -217,6 +216,8 @@
     - Socratic method (https://en.wikipedia.org/wiki/Socratic_method , https://www.youtube.com/watch?v=_CPLu3qCbSU):
         - Socratic questioning (https://en.wikipedia.org/wiki/Socratic_questioning)
         - Socratic Circles (https://en.wikipedia.org/wiki/Socratic_method#Socratic_Circles)      
+    - Filling 30 minutes spot, presenting it to the person X (person X presents its 30 mins), 
+- Node Package Manager (NPM)
 - cmake (https://cmake.org/)
 - Caddy server (https://caddyserver.com/)
 - Slim PHP Framework (https://www.slimframework.com/)
