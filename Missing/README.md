@@ -4,6 +4,11 @@
 - Git flow (http://nvie.com/posts/a-successful-git-branching-model/)
 - Wireshark
 - IANA (https://www.ietf.org/standards/iana/)
+- PIM
+    - Akeneo PIM (https://www.akeneo.com/)
+    - inRiver PIM (https://www.inriver.com/)
+    - Pimcore PIM (https://pimcore.com/en)
+- AS/400
 - HTTP
     - Client / Server interaction
         - https://en.wikipedia.org/wiki/Client%E2%80%93server_model
@@ -128,6 +133,7 @@
     - JSON:
         - The JavaScript Object Notation (JSON) Data Interchange Format: https://www.rfc-editor.org/info/rfc8259
         - ECMA-404 The JSON Data Interchange Standard: http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf
+        - JSON Schema (http://json-schema.org/)
     - PHP:
         - Superglobals: http://php.net/manual/en/language.variables.superglobals.php
         - header: http://php.net/manual/en/function.header.php
