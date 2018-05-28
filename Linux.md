@@ -492,3 +492,17 @@ The magic SysRq key is a key combination understood by the Linux kernel, which a
 Read more:  
 https://en.wikipedia.org/wiki/Magic_SysRq_key  
 
+- **Explain `docker rm -f angular || true`**  
+We try to remove the Docker container. Since the container may not exist, we are using pipes to force true and prevent failure regardless of the scenario.  
+`docker` - a computer program that performs operating-system-level virtualization also known as containerization.  
+`rm` - remove one or more containers.  
+`-f` or `--force` - force the removal of a running container (uses SIGKILL).  
+`angular` - the container name.
+`||` -  if the command `docker rm -f angular` has a non-zero exit status, the double pipe OR (`||`) kicks in, and tries to execute the command.
+`true` - the command to execute in case the command `docker rm -f angular` has a non-zero exit status. `true` − do nothing, successfully. Exit with a status code indicating success.
+Read more:
+https://www.thepolyglotdeveloper.com/2017/04/continuous-deployment-of-web-application-containers-with-jenkins-and-docker/  
+https://docs.docker.com/engine/reference/commandline/rm/  
+https://stackoverflow.com/questions/41625521/bash-which-or-operator-to-use-pipe-v-double-pipe  
+https://man.cx/true  
+
