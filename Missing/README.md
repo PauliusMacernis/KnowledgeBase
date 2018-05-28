@@ -218,6 +218,8 @@
         - Socratic Circles (https://en.wikipedia.org/wiki/Socratic_method#Socratic_Circles)      
     - Filling 30 minutes spot, presenting it to the person X (person X presents its 30 mins), 
 - Node Package Manager (NPM)
+- Google Taxonomy (https://www.google.com/basepages/producttype/taxonomy.en-US.txt), (https://feedonomics.com/google-shopping-category-taxonomy/)
+- IBM WebSphere MQ (https://en.wikipedia.org/wiki/IBM_WebSphere_MQ)
 - cmake (https://cmake.org/)
 - Caddy server (https://caddyserver.com/)
 - Slim PHP Framework (https://www.slimframework.com/)
