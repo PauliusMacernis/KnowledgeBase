@@ -277,3 +277,11 @@
 
 - Symfony: https://certification.symfony.com/
 - Akeneo PIM: https://www.akeneo.com/certification/
+- OMG Certified UML Professional 2™ (OCUP 2™): 
+    - Foundation Level (http://www.omg.org/ocup-2/coveragemap-found.htm)
+    - Intermediate Level (http://www.omg.org/ocup-2/coveragemap-intermed.htm)
+    - Advanced Level (http://www.omg.org/ocup-2/coveragemap-advanced.htm)
+- Amazon AWS (https://aws.amazon.com/certification/)
+- Docker Certification (https://success.docker.com/certification)
+- Laravel: https://laravel.com/certification/prepare/
+
