@@ -274,7 +274,20 @@
 - Graphviz (http://www.graphviz.org/)
 
 # Certifications missing
-
+- CompTIA
+    - A+ (https://certification.comptia.org/certifications/a)
+    - Cloud Essentials (https://certification.comptia.org/certifications/cloud-essentials)
+    - Network+
+    - Linux+/LPIC-1
+    - Cloud+
+    - Server+ ???
+    - Security+
+    - CySA+ ??? 
+    - CASP ???
+    - PenTest+ ???
+    - Project+ ???
+    - CTT+ ???
+    - ...
 - Symfony: https://certification.symfony.com/
 - Akeneo PIM: https://www.akeneo.com/certification/
 - OMG Certified UML Professional 2™ (OCUP 2™): 
@@ -284,4 +297,11 @@
 - Amazon AWS (https://aws.amazon.com/certification/)
 - Docker Certification (https://success.docker.com/certification)
 - Laravel: https://laravel.com/certification/prepare/
-
+- MangoDB: 
+    - MongoDB Certified Developer Associate ???
+-  LPI
+    - LPIC-2
+    - LPIC-3
+- Oracle
+    - MySQL
+    - Java
