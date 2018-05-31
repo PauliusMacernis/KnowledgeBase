@@ -274,6 +274,12 @@
 - rkt (https://coreos.com/rkt/)
 - Graphviz (http://www.graphviz.org/)
 
+# Categorization
+| Knowledge     | Processes     | Skills        | Tools                | Techniques   |
+| ------------- |:-------------:|:-------------:|:--------------------:| ------------:|
+| TBD           | TBD           | TBD           | [Enterprise Architect](http://sparxsystems.com/products/ea/) |          TBD |
+
+
 # Certifications missing
 - CompTIA
     - A+ (https://certification.comptia.org/certifications/a)
