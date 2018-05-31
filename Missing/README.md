@@ -9,6 +9,7 @@
     - inRiver PIM (https://www.inriver.com/)
     - Pimcore PIM (https://pimcore.com/en)
 - AS/400
+- IEEE 754 standard (https://ieeexplore.ieee.org/document/4610935/)
 - HTTP
     - Client / Server interaction
         - https://en.wikipedia.org/wiki/Client%E2%80%93server_model
