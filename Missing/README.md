@@ -1,5 +1,6 @@
 # Topics missing
 
+- The Annotated Turing (https://en.wikipedia.org/wiki/The_Annotated_Turing)
 - SGML (https://en.wikipedia.org/wiki/Standard_Generalized_Markup_Language , https://stackoverflow.com/questions/4053917/where-is-the-html5-document-type-definition)
     - For example, there is no SGML way to capture the HTML5 rule that any attribute name that starts with “data-” and complies with certain general rules is valid. In SGML, attributes need to be listed individually, so a DTD would need to be infinite.
 - Semantic Versioning (https://semver.org/, https://github.com/semantic-release/semantic-release)
