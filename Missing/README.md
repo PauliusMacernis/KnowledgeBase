@@ -1,9 +1,17 @@
 # Topics missing
 
 - The Annotated Turing (https://en.wikipedia.org/wiki/The_Annotated_Turing)
+- Backus–Naur form (BNF)
+    - General info (https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form) and variants available
+    - Extended Backus–Naur form (EBNF), ISO/IEC 14977 : 1996(E) (https://www.iso.org/standard/26153.html , https://www.cl.cam.ac.uk/~mgk25/iso-14977.pdf) 
+    - Augmented BNF for Syntax Specifications: ABNF, 2008 (https://tools.ietf.org/html/rfc5234), Case-Sensitive String Support in ABNF, 2014 (https://tools.ietf.org/html/rfc7405)
+    - Routing Backus-Naur Form (RBNF): A Syntax Used to Form Encoding Rules in Various Routing Protocol Specifications, 2009 (https://tools.ietf.org/html/rfc5511)
+    - A translational BNF grammar notation (TBNF), ( https://en.wikipedia.org/wiki/Translational_Backus%E2%80%93Naur_form , https://dl.acm.org/citation.cfm?id=1147218 )
 - SGML (https://en.wikipedia.org/wiki/Standard_Generalized_Markup_Language , https://stackoverflow.com/questions/4053917/where-is-the-html5-document-type-definition)
     - For example, there is no SGML way to capture the HTML5 rule that any attribute name that starts with “data-” and complies with certain general rules is valid. In SGML, attributes need to be listed individually, so a DTD would need to be infinite.
+    - Document type definition (DTD) ( https://en.wikipedia.org/wiki/Document_type_definition , https://stackoverflow.com/questions/21566680/what-is-the-meaning-of-dtd-and-sgml-in-html )
 - Semantic Versioning (https://semver.org/, https://github.com/semantic-release/semantic-release)
+- Regular expressions
 - Git flow (http://nvie.com/posts/a-successful-git-branching-model/)
 - Wireshark
 - IANA (https://www.ietf.org/standards/iana/)
