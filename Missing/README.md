@@ -20,7 +20,9 @@
     - inRiver PIM (https://www.inriver.com/)
     - Pimcore PIM (https://pimcore.com/en)
 - AS/400
-- IEEE 754 standard (https://ieeexplore.ieee.org/document/4610935/)
+- Standard for Floating-Point Arithmetic:
+    - IEEE 754 standard (https://ieeexplore.ieee.org/document/4610935/)
+    - ISO/IEC/IEEE 60559:2011 (https://www.iso.org/standard/57469.html)
 - HTTP
     - Client / Server interaction
         - https://en.wikipedia.org/wiki/Client%E2%80%93server_model
