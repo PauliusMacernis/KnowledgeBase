@@ -286,6 +286,10 @@
 - (Adobe XD)
 - (General Data Protection Regulation)
 - ***
+- Pingdom (https://www.pingdom.com/)
+- Rollbar (https://rollbar.com/)
+- LastPass (https://www.lastpass.com/)
+- ***
 - rkt (https://coreos.com/rkt/)
 - Graphviz (http://www.graphviz.org/)
 
