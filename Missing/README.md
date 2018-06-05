@@ -193,6 +193,7 @@
     - ??? Bouml (https://www.bouml.fr)
     - Doxygen (http://www.stack.nl/~dimitri/doxygen/)
     - Docblox (https://github.com/dzuelke/Docblox)
+    - For Laravel: https://stimpack.io/
 - Kubernetes (https://kubernetes.io/ , https://cloud.google.com/kubernetes-engine/docs/tutorials/guestbook, https://cloud.google.com/php/tutorials/bookshelf-on-kubernetes-engine)
 - Monitoring:
     - Zabbix (https://www.zabbix.com/)
