@@ -1,4 +1,4 @@
-(work in progress)  
+(work in progress, priority - Symfony now)  
 
 ### Laravel (v5.5)
 https://laravel.com/certification/  
