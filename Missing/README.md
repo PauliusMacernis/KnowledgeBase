@@ -293,12 +293,60 @@
 - ***
 - rkt (https://coreos.com/rkt/)
 - Graphviz (http://www.graphviz.org/)
+- Design patterns
+    - The eight books in the Center for Environmental Structure Series by Christopher Alexander and/or others:
+        - The Timeless Way of Building (volume 1)
+        - A Pattern Language: Towns, Buildings, Construction (volume 2) (https://en.wikipedia.org/wiki/A_Pattern_Language)
+        - The Oregon Experiment (volume 3) (https://en.wikipedia.org/wiki/The_Oregon_Experiment)
+        - The Production of Houses (volume 4)
+        - The Linz Café (volume 5)
+        - A New Theory of Urban Design (volume 6)
+        - A Foreshadowing of 21st Century Art (volume 7)
+        - The Mary Rose Museum (volume 8)
+    - A Pattern Language: Towns, Buildings, Construction by Christopher Alexander, Sara Ishikawa, Murray Silverstein 
+    - The Oregon Experiment by Christopher Alexander (https://en.wikipedia.org/wiki/The_Oregon_Experiment)
+    - Kent Beck and Ward Cunningham (http://c2.com/doc/index.html)
+    - Gang of Four (GoF): Design Patterns: Elements of Reusable Object-Oriented Software (https://www.oreilly.com/library/view/design-patterns-elements/0201633612/)
+    - Pattern-Oriented Software Architecture Volume 1: A System of Patterns (POSA) Books (https://www.amazon.com/gp/product/0471958697)
+    - Pattern Languages of Program Design 5 (PLOD 5) (http://www.amazon.com/gp/product/0321321944/)
+    - ...
+    
 
 # Categorization
-| Knowledge     | Processes     | Skills        | Tools                | Techniques   |
-| ------------- |:-------------:|:-------------:|:--------------------:| ------------:|
-| TBD           | TBD           | TBD           | [Enterprise Architect](http://sparxsystems.com/products/ea/) |          TBD |
+...
 
+## 1. Knowledge
+...
+
+## 2. Processes
+...
+
+## 3. Skills
+- Attention to Detail
+- Logical and Structured Thinking
+- Thinking "out of the box"?
+- The ability to concentrate for long periods of time
+- An awareness and respect for confidentiality and data protection issues
+- The ability to thrive under pressure
+- The ability to work to tight deadlines (time-cost-scope - project management triangle)
+- The ability to explain complicated processes in non-technical language
+- Good team working abilities
+- A good understanding of customer care
+- Excellent communication skills, both written and verbal
+- ...
+
+## 4. Tools
+- [Enterprise Architect](http://sparxsystems.com/products/ea/)
+- ...
+
+## 5. Techniques
+...
+
+# Podcasts
+- http://www.se-radio.net
+
+# Conferences
+- Pattern Languages of Programs (http://www.europlop.net/), (http://hillside.net/conferences/europlop)
 
 # Certifications missing
 - CompTIA
