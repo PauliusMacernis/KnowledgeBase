@@ -1,6 +1,7 @@
 # Topics missing
 
-- The Annotated Turing (https://en.wikipedia.org/wiki/The_Annotated_Turing)
+- Computation theory / computability
+    - The Annotated Turing (https://en.wikipedia.org/wiki/The_Annotated_Turing)
 - Text-based formats:
     - CSV (all the quirks with this, especialy when importing/exporting, like escape chars, etc.)
 - Backus–Naur form (BNF)
