@@ -506,3 +506,11 @@ https://docs.docker.com/engine/reference/commandline/rm/
 https://stackoverflow.com/questions/41625521/bash-which-or-operator-to-use-pipe-v-double-pipe  
 https://man.cx/true  
 
+- **Explain the following:**  
+```
+$ sed ': loop; n; n; n; n; n; n; n; n; n; a GO
+n; b loop' < bigfile.sql > bigfile2.sql
+```
+That inserts a GO every 10 lines (the number of times n appears in the sed script).
+Read more:  
+https://stackoverflow.com/questions/24665757/sqlcmd-scripting-error  
