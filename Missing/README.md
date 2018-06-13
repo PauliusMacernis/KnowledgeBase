@@ -162,6 +162,7 @@
         - JSON: http://php.net/manual/en/book.json.php
     - Symfony:
         - HttpFoundation (https://symfony.com/doc/current/components/http_foundation.html)
+- nmap (https://man.cx/nmap , https://nmap.org/download.html)
 - Symfony 4
 - ORM
     - Doctrine (https://www.doctrine-project.org/)
