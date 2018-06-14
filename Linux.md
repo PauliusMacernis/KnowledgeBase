@@ -514,3 +514,10 @@ n; b loop' < bigfile.sql > bigfile2.sql
 That inserts a GO every 10 lines (the number of times n appears in the sed script).
 Read more:  
 https://stackoverflow.com/questions/24665757/sqlcmd-scripting-error  
+
+- **Explain `which sqlcmd`**  
+Returns the pathnames of the files (or links) which would be executed in the current environment, had its arguments been given as commands in a strictly POSIX-conformant shell. It does this by searching the PATH for executable files matching the names of the arguments. It does not canonicalize path names.  
+Command prompt (Windows OS) alternative would be `where <command-name>`.  
+Read more:  
+https://man.cx/which  
+https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/where_1  
