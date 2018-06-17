@@ -4,6 +4,7 @@
     - The Annotated Turing (https://en.wikipedia.org/wiki/The_Annotated_Turing)
 - Text-based formats:
     - CSV (all the quirks with this, especialy when importing/exporting, like escape chars, etc.)
+    - YAML (.yaml, .yml)
 - Backus–Naur form (BNF)
     - General info (https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form) and variants available
     - Extended Backus–Naur form (EBNF), ISO/IEC 14977 : 1996(E) (https://www.iso.org/standard/26153.html , https://www.cl.cam.ac.uk/~mgk25/iso-14977.pdf) 
