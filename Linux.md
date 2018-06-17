@@ -523,3 +523,23 @@ Command prompt (Windows OS) alternative would be `where <command-name>`.
 Read more:  
 https://man.cx/which  
 https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/where_1  
+
+- **What is the difference between semicolon (;) and double ampersand (&&)? For example:**  
+`echo "Hello " ; echo "world"`  
+and  
+`echo "Hello " && echo "world"`  
+The ansswer is... `echo "Hello " ; echo "world"` means run `echo "world"` no matter what the exit status of the previous command `echo "Hello"` is i.e. `echo "world"` will run irrespective of success or failure of the command `echo "Hello"`.  
+Whereas in case of `echo "Hello " && echo "world"`, `echo "world"` will only run if the first command (`echo "Hello"`) is a success (i.e. exit status 0).  
+The following commands give an example of how the shell handles commands chaining using the different operators:  
+<pre><code>$ false ; echo "OK"
+OK
+$ true ; echo "OK"
+OK
+$ false && echo "OK"
+$ true && echo "OK"
+OK
+$ false || echo "OK"
+OK
+$ true || echo "OK"
+$
+</code></pre>
