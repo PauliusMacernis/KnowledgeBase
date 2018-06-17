@@ -543,3 +543,6 @@ OK
 $ true || echo "OK"
 $
 </code></pre>
+Read more:  
+https://unix.stackexchange.com/questions/187145/whats-the-difference-between-semicolon-and-double-ampersand  
+
