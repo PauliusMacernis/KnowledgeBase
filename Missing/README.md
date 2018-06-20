@@ -18,6 +18,9 @@
     - Git flow (http://nvie.com/posts/a-successful-git-branching-model/)
     - Semantic Versioning (https://semver.org/, https://github.com/semantic-release/semantic-release)
     - Romantic Versioning (http://blog.legacyteam.info/2015/12/romver-romantic-versioning/), e.g. Laravel uses it?
+- CSS naming
+    - BEM
+    - SUIT CSS
 - Regular expressions
 - Wireshark
 - IANA (https://www.ietf.org/standards/iana/)
