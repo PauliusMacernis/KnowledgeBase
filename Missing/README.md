@@ -301,6 +301,9 @@
 - ***
 - rkt (https://coreos.com/rkt/)
 - Graphviz (http://www.graphviz.org/)
+- Portable Operating System Interface (POSIX(R)): 
+    - http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/contents.html
+    - http://standards.ieee.org/findstds/standard/1003.1-2017.html
 - Design patterns
     - The eight books in the Center for Environmental Structure Series by Christopher Alexander and/or others:
         - The Timeless Way of Building (volume 1)
