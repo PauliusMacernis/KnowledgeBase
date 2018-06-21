@@ -284,6 +284,12 @@
 - Swagger
 - IDE:
     - PHPStorm
+- Debugging:
+    - XDebug Debuging
+        - PHPStorm
+    - XDebug Profiling
+        - KCachegrind
+        - PHPStorm
 - ***
 - PHP 7.1
 - Webpack
