@@ -15,7 +15,8 @@
     - For example, there is no SGML way to capture the HTML5 rule that any attribute name that starts with “data-” and complies with certain general rules is valid. In SGML, attributes need to be listed individually, so a DTD would need to be infinite.
     - Document type definition (DTD) ( https://en.wikipedia.org/wiki/Document_type_definition , https://stackoverflow.com/questions/21566680/what-is-the-meaning-of-dtd-and-sgml-in-html )
 - Versioning
-    - Git flow (http://nvie.com/posts/a-successful-git-branching-model/)
+    - Git
+        - Git flow (http://nvie.com/posts/a-successful-git-branching-model/)
     - Semantic Versioning (https://semver.org/, https://github.com/semantic-release/semantic-release)
     - Romantic Versioning (http://blog.legacyteam.info/2015/12/romver-romantic-versioning/), e.g. Laravel uses it?
 - CSS naming
@@ -157,7 +158,7 @@
         - The JavaScript Object Notation (JSON) Data Interchange Format: https://www.rfc-editor.org/info/rfc8259
         - ECMA-404 The JSON Data Interchange Standard: http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf
         - JSON Schema (http://json-schema.org/)
-    - PHP:
+    - PHP (5,7):
         - Superglobals: http://php.net/manual/en/language.variables.superglobals.php
         - header: http://php.net/manual/en/function.header.php
         - Streams: http://php.net/manual/en/book.stream.php
@@ -173,9 +174,13 @@
     - Eloquent (https://laravel.com/docs/5.6/eloquent)
 - The Twelve-Factor App (https://12factor.net/)
 - SonarQube (https://www.sonarqube.org/)
-- CI 
+- DevOps/CI 
     - Jenkins (https://jenkins.io/)
     - Travis CI (https://travis-ci.org/)
+    - Ansible
+    - Chef
+    - Puppet
+    - Docker
     - Gitlab:
         - https://docs.gitlab.com/ee/ci
         - https://gitlab.com/gitlab-org/gitlab-ci-yml/blob/master/Docker.gitlab-ci.yml
@@ -224,7 +229,6 @@
         - others
     - Microsoft Azure (https://azure.microsoft.com)
 - Capistrano
-- Ansible
 - Postman (https://www.getpostman.com/)
 - Supervisor (http://supervisord.org)
 - Java
@@ -301,6 +305,17 @@
 - (Adobe XD)
 - (General Data Protection Regulation)
 - ***
+- Databases
+    - PostgreSQL
+    - Aerospike
+- PHP
+    - Twig
+    - Silex
+    - Composer
+    - Zend Framework
+- Queues:
+    - RabbitMQ
+- ***
 - Pingdom (https://www.pingdom.com/)
 - Rollbar (https://rollbar.com/)
 - LastPass (https://www.lastpass.com/)
@@ -336,9 +351,10 @@
 ...
 
 ## 2. Processes
+- ?analyse & improve processes and systems in a multitude of successful multinational corporations as well as start-ups
 ...
 
-## 3. Skills
+## 3. Skills (soft & hard?)
 - Attention to Detail
 - Logical and Structured Thinking
 - Thinking "out of the box"?
@@ -349,7 +365,9 @@
 - The ability to explain complicated processes in non-technical language
 - Good team working abilities
 - A good understanding of customer care
-- Excellent communication skills, both written and verbal
+- Excellent communication skills, both written and verbal: English
+- Public speaking: on conferences, teaching sessions, etc.
+- Initiative and willingness to learn new technologies and skills
 - ...
 
 ## 4. Tools
