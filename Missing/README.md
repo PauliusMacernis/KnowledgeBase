@@ -24,7 +24,11 @@
     - SUIT CSS
 - Regular expressions
 - Wireshark
-- IANA (https://www.ietf.org/standards/iana/)
+- General terminology:
+    - SaaS
+    - Data Engineers 
+- Organizations:
+    - IANA (https://www.ietf.org/standards/iana/)
 - PIM
     - Akeneo PIM (https://www.akeneo.com/)
     - inRiver PIM (https://www.inriver.com/)
@@ -175,6 +179,7 @@
 - The Twelve-Factor App (https://12factor.net/)
 - SonarQube (https://www.sonarqube.org/)
 - DevOps/CI 
+    - Vagrant
     - Jenkins (https://jenkins.io/)
     - Travis CI (https://travis-ci.org/)
     - Ansible
@@ -325,7 +330,9 @@
 - Portable Operating System Interface (POSIX(R)): 
     - http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/contents.html
     - http://standards.ieee.org/findstds/standard/1003.1-2017.html
-- Design patterns
+- *-driven-development:
+    - DDD
+- Design patterns & principles
     - The eight books in the Center for Environmental Structure Series by Christopher Alexander and/or others:
         - The Timeless Way of Building (volume 1)
         - A Pattern Language: Towns, Buildings, Construction (volume 2) (https://en.wikipedia.org/wiki/A_Pattern_Language)
@@ -341,7 +348,11 @@
     - Gang of Four (GoF): Design Patterns: Elements of Reusable Object-Oriented Software (https://www.oreilly.com/library/view/design-patterns-elements/0201633612/)
     - Pattern-Oriented Software Architecture Volume 1: A System of Patterns (POSA) Books (https://www.amazon.com/gp/product/0471958697)
     - Pattern Languages of Program Design 5 (PLOD 5) (http://www.amazon.com/gp/product/0321321944/)
+    - SOLID
     - ...
+- Languages:
+    - JavaScript
+    - 
     
 
 # Categorization
@@ -352,6 +363,9 @@
 
 ## 2. Processes
 - ?analyse & improve processes and systems in a multitude of successful multinational corporations as well as start-ups
+- ?work in multinational company with lots of remote communication
+- ?scaling their teams up quite rapidly due to increased workload (e.g. "2017-18 they went from a workforce of 64 to 140")
+- ?expansion into Europe
 ...
 
 ## 3. Skills (soft & hard?)
@@ -376,6 +390,7 @@
 - ...
 
 ## 5. Techniques
+- ?SCRUM
 ...
 
 # Podcasts
