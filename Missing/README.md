@@ -322,11 +322,6 @@
 - Databases
     - PostgreSQL
     - Aerospike
-- PHP
-    - Twig
-    - Silex
-    - Composer
-    - Zend Framework
 - Queues:
     - RabbitMQ
 - Cache/etc.
@@ -370,6 +365,12 @@
         - React
         - React Native
         - Redux
+    - PHP
+        - Twig
+        - Silex
+        - Composer
+        - Zend Framework
+        - Wordpress
     - SQL
         - On PHP:
             - ORM
