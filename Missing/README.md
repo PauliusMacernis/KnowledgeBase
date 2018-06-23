@@ -434,6 +434,10 @@
 # Conferences
 - Pattern Languages of Programs (http://www.europlop.net/), (http://hillside.net/conferences/europlop)
 
+# Day and activities planning:
+- https://valentinathoerner.com/blog/agenda-think/
+- https://m.signalvnoise.com/whats-the-best-use-of-a-leader-s-time-758c10a69228
+
 # Certifications missing
 - CompTIA
     - A+ (https://certification.comptia.org/certifications/a)
