@@ -376,10 +376,11 @@
                 - Eloquent (https://laravel.com/docs/5.6/eloquent)
         - MySQL 5.7
     - ...
-- Social Media
+- Social Media & Marketting
     - Facebook
     - Twitter
-    
+    - Google
+        - Google AdWords
 
 # Categorization
 ...
