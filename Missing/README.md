@@ -2,6 +2,7 @@
 
 - Computation theory / computability
     - The Annotated Turing (https://en.wikipedia.org/wiki/The_Annotated_Turing)
+    - ETL applications
 - Text-based formats:
     - CSV (all the quirks with this, especialy when importing/exporting, like escape chars, etc.)
     - YAML (.yaml, .yml)
@@ -26,7 +27,11 @@
 - Wireshark
 - General terminology:
     - SaaS
+    - API:
+        - SOAP
+        - REST
     - Data Engineers 
+    - Google Taxonomy (https://www.google.com/basepages/producttype/taxonomy.en-US.txt), (https://feedonomics.com/google-shopping-category-taxonomy/)
 - Organizations:
     - IANA (https://www.ietf.org/standards/iana/)
 - PIM
@@ -173,23 +178,22 @@
         - HttpFoundation (https://symfony.com/doc/current/components/http_foundation.html)
 - nmap (https://man.cx/nmap , https://nmap.org/download.html)
 - Symfony 4
-- ORM
-    - Doctrine (https://www.doctrine-project.org/)
-    - Eloquent (https://laravel.com/docs/5.6/eloquent)
 - The Twelve-Factor App (https://12factor.net/)
-- SonarQube (https://www.sonarqube.org/)
-- DevOps/CI 
+- DevOps/CI/CD
     - Vagrant
     - Jenkins (https://jenkins.io/)
     - Travis CI (https://travis-ci.org/)
+    - Capistrano
     - Ansible
     - Chef
     - Puppet
     - Docker
+        - Registry (https://cloud.docker.com/ and others)
+        - Kubernetes (https://kubernetes.io/ , https://cloud.google.com/kubernetes-engine/docs/tutorials/guestbook, https://cloud.google.com/php/tutorials/bookshelf-on-kubernetes-engine)
     - Gitlab:
         - https://docs.gitlab.com/ee/ci
         - https://gitlab.com/gitlab-org/gitlab-ci-yml/blob/master/Docker.gitlab-ci.yml
-- Testing
+- QA/Testing
     - PHPSpec - Intuitive unit testing with mocking 
     - Behat - Functional testing
     - Jmeter (https://jmeter.apache.org) - for thorough testing. Main tool.
@@ -197,6 +201,9 @@
     - Bees with Machine Guns (https://github.com/newsapps/beeswithmachineguns) - for AWS testing.
     - JMeter (https://jmeter.apache.org/)
     - Codeception (https://codeception.com/)
+    - Selenium
+    - SonarQube (https://www.sonarqube.org/)
+    - Code reviews
 - Big O notation (https://en.wikipedia.org/wiki/Big_O_notation)
 - ??? PHP productivity tools. Covert Code to Diagrams, Graphs, other type of documentation:
     - phUML
@@ -212,7 +219,6 @@
     - Doxygen (http://www.stack.nl/~dimitri/doxygen/)
     - Docblox (https://github.com/dzuelke/Docblox)
     - For Laravel: https://stimpack.io/
-- Kubernetes (https://kubernetes.io/ , https://cloud.google.com/kubernetes-engine/docs/tutorials/guestbook, https://cloud.google.com/php/tutorials/bookshelf-on-kubernetes-engine)
 - Monitoring:
     - Zabbix (https://www.zabbix.com/)
     - New Relic (https://newrelic.com/)
@@ -233,7 +239,6 @@
         - AWS Elastic Beanstalk (https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html)
         - others
     - Microsoft Azure (https://azure.microsoft.com)
-- Capistrano
 - Postman (https://www.getpostman.com/)
 - Supervisor (http://supervisord.org)
 - Java
@@ -258,7 +263,6 @@
         - Socratic Circles (https://en.wikipedia.org/wiki/Socratic_method#Socratic_Circles)      
     - Filling 30 minutes spot, presenting it to the person X (person X presents its 30 mins), 
 - Node Package Manager (NPM)
-- Google Taxonomy (https://www.google.com/basepages/producttype/taxonomy.en-US.txt), (https://feedonomics.com/google-shopping-category-taxonomy/)
 - IBM WebSphere MQ (https://en.wikipedia.org/wiki/IBM_WebSphere_MQ)
 - cmake (https://cmake.org/)
 - Caddy server (https://caddyserver.com/)
@@ -282,7 +286,6 @@
 - GO (https://golang.org/)
 - POSIX
 - The Linux Kernel Organization
-- ? Registry (https://cloud.docker.com/)
 - Rancher (http://rancher.com/)
 - Docker Swarm (https://docs.docker.com/engine/swarm/)
 - DNS records (e.g. DNS A record)
@@ -300,11 +303,9 @@
         - KCachegrind
         - PHPStorm
 - ***
-- PHP 7.1
+- PHP 7.1, 7.2
 - Webpack
 - Yarn
-- Node JS
-- MySQL 5.7
 - ElasticSearch 5.5.3
 - InRiver (https://www.inriver.com/)
 - (Adobe XD)
@@ -320,6 +321,9 @@
     - Zend Framework
 - Queues:
     - RabbitMQ
+- Cache/etc.
+    - MemCache
+    - Varnish
 - ***
 - Pingdom (https://www.pingdom.com/)
 - Rollbar (https://rollbar.com/)
@@ -332,6 +336,7 @@
     - http://standards.ieee.org/findstds/standard/1003.1-2017.html
 - *-driven-development:
     - DDD
+    - TDD
 - Design patterns & principles
     - The eight books in the Center for Environmental Structure Series by Christopher Alexander and/or others:
         - The Timeless Way of Building (volume 1)
@@ -352,13 +357,28 @@
     - ...
 - Languages:
     - JavaScript
-    - 
+        - Node JS
+        - Vue.js
+        - React
+        - React Native
+        - Redux
+    - SQL
+        - On PHP:
+            - ORM
+                - Doctrine (https://www.doctrine-project.org/)
+                - Eloquent (https://laravel.com/docs/5.6/eloquent)
+        - MySQL 5.7
+    - ...
+- Social Media
+    - Facebook
+    - Twitter
     
 
 # Categorization
 ...
 
 ## 1. Knowledge
+- know-how
 ...
 
 ## 2. Processes
@@ -366,6 +386,13 @@
 - ?work in multinational company with lots of remote communication
 - ?scaling their teams up quite rapidly due to increased workload (e.g. "2017-18 they went from a workforce of 64 to 140")
 - ?expansion into Europe
+- ?complex problems solving
+- ?fail fast to innovate faster
+- ?collaboration
+- ?dev academy sessions
+- ?dev wiki
+- ?conferences
+- ?meetups
 ...
 
 ## 3. Skills (soft & hard?)
