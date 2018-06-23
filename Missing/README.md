@@ -6,6 +6,8 @@
 - Text-based formats:
     - CSV (all the quirks with this, especialy when importing/exporting, like escape chars, etc.)
     - YAML (.yaml, .yml)
+    - XML
+        - SVG
 - Backus–Naur form (BNF)
     - General info (https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form) and variants available
     - Extended Backus–Naur form (EBNF), ISO/IEC 14977 : 1996(E) (https://www.iso.org/standard/26153.html , https://www.cl.cam.ac.uk/~mgk25/iso-14977.pdf) 
@@ -30,6 +32,7 @@
     - API:
         - SOAP
         - REST
+        - Web Push API (https://developer.mozilla.org/en-US/docs/Web/API/Push_API/Best_Practices)
     - Data Engineers 
     - Google Taxonomy (https://www.google.com/basepages/producttype/taxonomy.en-US.txt), (https://feedonomics.com/google-shopping-category-taxonomy/)
 - Organizations:
