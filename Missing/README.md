@@ -10,6 +10,11 @@
         - SVG
     - HTML
     - CSS
+        - CSS Box Alignment (https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Alignment)
+            - block layout
+            - table layout
+            - flex layout
+            - grid layout
         - Bootstrap
 - Backus–Naur form (BNF)
     - General info (https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form) and variants available
@@ -213,6 +218,7 @@
     - SonarQube (https://www.sonarqube.org/)
     - Code reviews
 - Big O notation (https://en.wikipedia.org/wiki/Big_O_notation)
+- WebAssembly
 - ??? PHP productivity tools. Covert Code to Diagrams, Graphs, other type of documentation:
     - phUML
         - `sudo apt install graphviz`
