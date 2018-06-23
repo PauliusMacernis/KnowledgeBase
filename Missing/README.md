@@ -218,7 +218,7 @@
     - SonarQube (https://www.sonarqube.org/)
     - Code reviews
 - Big O notation (https://en.wikipedia.org/wiki/Big_O_notation)
-- WebAssembly
+- WebAssembly (https://webassembly.org/)
 - ??? PHP productivity tools. Covert Code to Diagrams, Graphs, other type of documentation:
     - phUML
         - `sudo apt install graphviz`
