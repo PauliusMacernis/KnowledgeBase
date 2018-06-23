@@ -380,7 +380,7 @@
     - Facebook
     - Twitter
     - Google
-        - Google AdWords
+        - Google Analytics & Google AdWords
 
 # Categorization
 ...
