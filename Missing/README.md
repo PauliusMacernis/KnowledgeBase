@@ -33,6 +33,7 @@
         - SOAP
         - REST
         - Web Push API (https://developer.mozilla.org/en-US/docs/Web/API/Push_API/Best_Practices)
+        - WebRTC API (https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API)
     - Data Engineers 
     - Google Taxonomy (https://www.google.com/basepages/producttype/taxonomy.en-US.txt), (https://feedonomics.com/google-shopping-category-taxonomy/)
 - Organizations:
@@ -425,6 +426,7 @@
 
 # Podcasts
 - http://www.se-radio.net
+- ("Soft skills", not technical, not sure if this should be here..) https://samharris.org/podcasts/127-freedom-known/
 
 # Conferences
 - Pattern Languages of Programs (http://www.europlop.net/), (http://hillside.net/conferences/europlop)
