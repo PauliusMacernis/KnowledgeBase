@@ -16,6 +16,7 @@
             - flex layout
             - grid layout
         - Bootstrap
+            - Font Awesome
 - Backus–Naur form (BNF)
     - General info (https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form) and variants available
     - Extended Backus–Naur form (EBNF), ISO/IEC 14977 : 1996(E) (https://www.iso.org/standard/26153.html , https://www.cl.cam.ac.uk/~mgk25/iso-14977.pdf) 
