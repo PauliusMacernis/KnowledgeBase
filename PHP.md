@@ -182,3 +182,85 @@ https://httpd.apache.org/docs/current/programs/apxs.html
 Read more:  
 http://php.net/manual/en/language.namespaces.rules.php  
 
+- **How do PEAR, PEAR2, GitHub, Packagist, Pyrus, Composer relate with each other?**  
+(The ansswer is the ~article I was about to write in 2014. You may find several errors in the answer so pay attention to what you read. This is simply copy>paste from the archives of mine of 2014. So lets dive into it...)  
+
+***At first, there are major places where projects of PHP reside. Such places are:***  
+PEAR ([http://pear.php.net/][1]) - part of PHP,  
+PEAR2 ([http://pear2.php.net/][2]) - part of PHP,  
+GitHub ([https://github.com/][3]) - not part of PHP.  
+Packagist ([https://packagist.org/][4]) - not part of PHP  
+
+***Then, there are manual ways to include the project into the newly building local application. Such ways are:***  
+PEAR: Download the source (as zip, tgz, etc.) by using web browser, manually include it to the own project (for example, via "require_once('path to the main file of the downloaded project')", manually add dependencies (other projects related to) and the downloaded project will start working as part of own application.  
+  
+PEAR2: The same way as PEAR. I am actually not so sure about downloading project files from PEAR2 website, but it seems it is possible. It seems not so easy as to download from PEAR website, but downloading from PEAR2 website is also possible as we can browse inside of PEAR2 project files, so we can download them. Am I right? This is not the recommended way (as I understand it) to download code, but I would like to say that in case of emergency downloading code from PEAR2 website is possible...  
+  
+GitHub: The same way as PEAR.  
+  
+Packagist: You cannot download packages from Packagist by using web browser.  
+
+***Then, there are (semi-)automatic ways to include the project into the newly building application. Such ways are:***  
+PEAR: uses PEAR (the same name as repository!) package manager to download and install project files. PEAR package manager downloads project files into directory we set in configuration of PEAR package manager. Such directory for downloads are usually set as one of include_path's in PHP configuration, so we have to write shorter path to include the downloaded project files into our own project.  
+  
+PEAR2: the package manager is called Pyrus. Works almost the same as PEAR package manager, just more flexible. As I understand, the best part of Pyrus is that it allows to have Pyrus installed on the project (local) rather than on the machine (system) only. The PEAR was one per machine (one PEAR per one PHP interpreter to be exact) which means that all projects were having the same installation set of PEAR projects. PEAR was not good in case we had a need for two different sets of PEAR projects (or two different versions of the same project?) on the one and the same machine.  
+  
+GitHub: uses Git. Git works on OS level.  
+  
+Packagist: uses Composer. Composer works on project level.  
+  
+***Whatever we decide to use (PEAR, Pyrus, Git or Composer) we must get those managers from somewhere, properly install. Because there are none of them at our systems usually.***  
+PEAR: You get the PEAR installer at first. Then You use PEAR installer to install PEAR package manager. It is confusing (I think so), but it is like it is.. So, You get PEAR installer from here:  
+[http://pear.php.net/go-pear][5]  
+You download this go-pear script file and run it with PHP. The script file will then install PEAR package manager. After that You will have to make some modifications on Your system to have fully working PEAR packet manager (for example, You would need to add instructions on where to download packages and so on).  
+  
+Pyrus: there is no such installer for Pyrus as it was for PEAR. Just download the file from here:
+[http://pear2.php.net/pyrus.phar][6]  
+The file pyrus.phar is the package manager.  
+  
+Git: download the version which suits Your OS: [http://git-scm.com/downloads][7].  
+  
+Composer: download the installer from here:  
+[https://getcomposer.org/installer][8]  
+Run the installer by using PHP and the Composer will be installed. More instructions on how to download could be found here:
+[https://getcomposer.org/download/][9]  
+  
+***Dependency management***  
+Some projects depends on others. For example, PEAR project "words_numbers" includes PEAR project "Math_BigInteger" to itself. The "word_numbers" would not work without "Math_BigInteger". The problem here is that both projects are separate and separately changes their own versions in time. The project which includes another project must know which exact version of all available to use.  
+  
+PEAR: downloading via PEAR package manager (not manually via web browser!) will solve problems associated with dependencies - dependencies will be automatically downloaded together with the project You download. Please let me know if I am wrong here, but it seems to me that few versions of the same project cannot be installed via PEAR. I mean, You cannot install version X of the PEAR project as just to use and then install Y version of the same PEAR project as of dependency case. It will not work, right? There will be some kind of conflict, right?  
+  
+Pyrus: no problems with dependencies. Pyrus, as in PEAR case, will automatically download required dependencies. It means that You may get few PEAR2 projects instead of one just because of existing dependencies. The same PEAR question applies to Pyrus (can few versions of the same PEAR2 project could be used on one local environment?).  
+  
+Git: I would say that git does not support such thing as dependency management.  
+  
+Composer: manages dependencies on the project basis. You make the file (composer.json) in which You describe Your project dependencies and composer will automatically download projects Your project depends on. Each downloadable project may have own dependencies, so Composer will download them as well. Few versions of the same project are allowed.  
+Composer: download the installer from here:  
+[https://getcomposer.org/installer][10]  
+Run the installer by using PHP and the composer will be installed.  
+Composer is used per project basis, so it is not kind of PEAR (used per machine). Pyrus and Composer have some similarities and differences as managers, but this is already described here:  
+[http://stackoverflow.com/questions/15087502/what-is-the-difference-between-pyrus-and-composer][11]  
+  
+***Few more things to mention:***  
+  
+PEAR: You can use PEAR manager to download packages from PEAR only.  
+  
+Pyrus: You can use Pyrus to download packages from PEAR2 only.  
+  
+Git: You can use git to get packages from any git repository available to You (GitHub is one of many choices).  
+  
+Composer: You can use Composer to download packages from Packagist only.  
+  
+***P.s.***  
+It would be nice to include info on PECL somewhere above as I think it must be served in the same plate...  
+  [1]: http://pear.php.net/  
+  [2]: http://pear2.php.net/  
+  [3]: https://github.com/  
+  [4]: https://packagist.org/  
+  [5]: http://pear.php.net/go-pear  
+  [6]: http://pear2.php.net/pyrus.phar  
+  [7]: http://git-scm.com/downloads  
+  [8]: https://getcomposer.org/installer  
+  [9]: https://getcomposer.org/download/  
+  [10]: https://getcomposer.org/installer  
+  [11]: http://stackoverflow.com/questions/15087502/what-is-the-difference-between-pyrus-and-composer  
