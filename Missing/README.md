@@ -30,6 +30,12 @@
         - Git flow (http://nvie.com/posts/a-successful-git-branching-model/)
     - Semantic Versioning (https://semver.org/, https://github.com/semantic-release/semantic-release)
     - Romantic Versioning (http://blog.legacyteam.info/2015/12/romver-romantic-versioning/), e.g. Laravel uses it?
+- Repositories and dependencies management:
+    - PHP
+        - PEAR (http://pear.php.net/) and PEAR manager (PEAR manager installer: http://pear.php.net/go-pear)
+        - PEAR2 (http://pear2.php.net/) and Pyrus manager (http://pear2.php.net/pyrus.phar)
+        - GitHub (https://github.com/) and Git (Installer: http://git-scm.com/downloads)
+        - Packagist (https://packagist.org/) and Composer (Installer: https://getcomposer.org/installer)
 - CSS naming
     - BEM
     - SUIT CSS
