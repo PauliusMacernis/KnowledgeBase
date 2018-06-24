@@ -546,3 +546,12 @@ $
 Read more:  
 https://unix.stackexchange.com/questions/187145/whats-the-difference-between-semicolon-and-double-ampersand  
 
+- **What is the difference between cron and crontab?**  
+**cron** is the general name for the service that runs scheduled actions.  
+**crond** is the name of the daemon that runs in the background and reads **crontab** files.  
+A **crontab** is a file containing jobs in the format `minute hour day-of-month month day-of-week	command` crontabs are normally stored by the system in `/var/spool/<username>/crontab`. These files are not meant to be edited directly. You can use the **`crontab`** command to invoke a text editor (what you have defined for the EDITOR env variable) to modify a crontab file.  
+There are various implementations of **cron**. Commonly there will be per-user crontab files (accessed with the command `crontab -e`) as well as system crontabs in `/etc/cron.daily`, `/etc/cron.hourly`, etc.  
+In your first example you are scheduling a job via a crontab. In your second example you're using the `at` command to queue a job for later execution.  
+Read more:  
+https://stackoverflow.com/questions/21789148/difference-between-cron-and-crontab  
+
