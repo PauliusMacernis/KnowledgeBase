@@ -224,6 +224,8 @@
     - Selenium
     - SonarQube (https://www.sonarqube.org/)
     - Code reviews
+    - Acceptance tests:
+        - https://codeception.com/
 - Big O notation (https://en.wikipedia.org/wiki/Big_O_notation)
 - WebAssembly (https://webassembly.org/)
 - ??? PHP productivity tools. Covert Code to Diagrams, Graphs, other type of documentation:
