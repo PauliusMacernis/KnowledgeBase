@@ -371,6 +371,9 @@
     - Pattern Languages of Program Design 5 (PLOD 5) (http://www.amazon.com/gp/product/0321321944/)
     - SOLID
     - ...
+- Agile
+    - Pair programming
+        - https://floobits.com/active    
 - Languages:
     - JavaScript
         - Node JS
