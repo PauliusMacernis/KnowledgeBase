@@ -1,7 +1,10 @@
 # OOP
-- What is the difference between a function and a method?
-<a href="#" title="
-">⌘</a>
+- **What is the difference between a function and a method?**  
+A method is similar to a function, but is part of a class. The term method is used almost exclusively in object-oriented programming.  
+In other words, functions are stateless methods.  
+Read more:  
+https://softwareengineering.stackexchange.com/questions/20909/method-vs-function-vs-procedure  
+https://www.infoq.com/presentations/Simple-Made-Easy  
 
 - What is the JSON (JavaScript Object Notation)?
 <a href="#" title="
