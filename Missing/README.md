@@ -344,9 +344,12 @@
     - Varnish
 - ***
 - Pingdom (https://www.pingdom.com/)
-- Rollbar (https://rollbar.com/)
 - LastPass (https://www.lastpass.com/)
 - ***
+- Issue tracking, system health analyzis+:
+    - Rollbar (https://rollbar.com/)
+    - Dynatrace (https://www.dynatrace.com/solutions/)
+    - Elastic products (https://www.elastic.co/products): logstash, kibana, etc.
 - rkt (https://coreos.com/rkt/)
 - Graphviz (http://www.graphviz.org/)
 - Portable Operating System Interface (POSIX(R)): 
