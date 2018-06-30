@@ -3,6 +3,8 @@
 - Computation theory / computability
     - The Annotated Turing (https://en.wikipedia.org/wiki/The_Annotated_Turing)
     - ETL applications
+- Encodings, encoding/decoding:
+    - https://www.w3.org/International/questions/qa-what-is-encoding
 - Text-based formats:
     - CSV (all the quirks with this, especialy when importing/exporting, like escape chars, etc.)
     - YAML (.yaml, .yml)
