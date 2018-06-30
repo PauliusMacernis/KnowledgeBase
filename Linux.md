@@ -555,3 +555,11 @@ In your first example you are scheduling a job via a crontab. In your second exa
 Read more:  
 https://stackoverflow.com/questions/21789148/difference-between-cron-and-crontab  
 
+- **Explain `sudo nautlius`**  
+`nautilus` is a file manager in Ubuntu.  
+`sudo` is declaring that you are a root (it is something like an adminstrator in Windows).  
+So, when you type the command `sudo nautilus`, you are entering the file manager as a root. Being root gives you some extra abilities that normal user doesn't have.  
+Read more:  
+https://askubuntu.com/questions/658058/what-is-sudo-nautilus-what-does-it-do-when-do-i-use-it  
+
+
