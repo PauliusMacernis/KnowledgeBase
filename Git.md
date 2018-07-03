@@ -9,3 +9,8 @@ non-fast-forward-merge (all commit history made in `feature/my-fancy-feature` wi
 
 - What is the difference between `revert` and `reset`?
 <a href="#" title="...">⌘</a>
+
+- **Explain: `git rm -r --cached . && git add . && git commit -am "Remove ignored files"`** 
+Remove all of the items from the Git Index (not from the working directory or local repo), and then update the Git Index, while respecting git ignores. PS. Index = Cache  
+Read more:  
+https://stackoverflow.com/questions/1274057/how-to-make-git-forget-about-a-file-that-was-tracked-but-is-now-in-gitignore  
