@@ -568,4 +568,11 @@ Both creates symlink. However, `ln -s /path/to/file /path/to/symlink` is for cre
 `−f`, `−−force` - remove existing destination files.  
 Read more:  
 https://stackoverflow.com/questions/1951742/how-to-symlink-a-file-in-linux  
+https://man.cx/ln  
 
+- **How to create a symlink shown as `/home/aukok/www -> /var/www/aukok` at the time of listing (`ls -al`)?**  
+`mkdir -p /home/aukok` - create the parent directory (required).  
+`ln -sf /var/www/aukok /home/aukok/www` - make a symlink (`-f` is optional because we just created the new empty parent directory).  
+Read more:  
+https://stackoverflow.com/questions/1951742/how-to-symlink-a-file-in-linux   
+https://man.cx/ln  
