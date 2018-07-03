@@ -562,4 +562,10 @@ So, when you type the command `sudo nautilus`, you are entering the file manager
 Read more:  
 https://askubuntu.com/questions/658058/what-is-sudo-nautilus-what-does-it-do-when-do-i-use-it  
 
+- **What is the difference between `ln -s /path/to/file /path/to/symlink` and `ln -sf /path/to/file /path/to/symlink`?**  
+Both creates symlink. However, `ln -s /path/to/file /path/to/symlink` is for creating the new one (will fail if symlink exists already) while `ln -sf /path/to/file /path/to/symlink` is for create or update symlink.  
+`−s`, `−−symbolic` - make symbolic links instead of hard links.  
+`−f`, `−−force` - remove existing destination files.  
+Read more:  
+https://stackoverflow.com/questions/1951742/how-to-symlink-a-file-in-linux  
 
