@@ -4,6 +4,7 @@
     - The Annotated Turing (https://en.wikipedia.org/wiki/The_Annotated_Turing)
     - Stateful vs. stateless (e.g. https://whatis.techtarget.com/definition/stateless)
     - Partial-order planning vs. total-order planning (e.g. https://en.wikipedia.org/wiki/Partial-order_planning)
+    - Von Neumann architecture (https://en.wikipedia.org/wiki/Von_Neumann_architecture)
     - ETL applications
 - Encodings, encoding/decoding:
     - https://www.w3.org/International/questions/qa-what-is-encoding
