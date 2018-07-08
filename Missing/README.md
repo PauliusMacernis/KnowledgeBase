@@ -342,7 +342,7 @@
 - Databases
     - PostgreSQL
     - Aerospike
-    - Google Visualization API Query Language
+    - Google Visualization API Query Language (https://developers.google.com/chart/interactive/docs/querylanguage)
 - Queues:
     - RabbitMQ
 - Cache/etc.
