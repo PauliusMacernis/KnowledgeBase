@@ -586,4 +586,11 @@ https://www.gnu.org/software/bash/manual/bash.html#Special-Parameters
 https://www.gnu.org/software/bash/manual/bash.html#Shell-Scripts  
 https://www.gnu.org/software/bash/manual/bash.html#Invoking-Bash  
 
+-**Explain `whoami`**  
+Print the user name associated with the current effective user ID. Same as `id −un`.  
+Simply saying, it prints the username.  
+Read more:  
+https://man.cx/whoami  
+
+
 
