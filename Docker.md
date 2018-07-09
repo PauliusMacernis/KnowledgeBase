@@ -802,6 +802,11 @@ https://docs.docker.com/engine/reference/builder/#run
 Read more:  
 https://docs.docker.com/engine/reference/builder/#cmd   
 
+- **Explain `docker run -d alpine sh -c 'while sleep 3600; do :; done'`**  
+Read more:  
+???
+
+
 
 
 Read more:  
