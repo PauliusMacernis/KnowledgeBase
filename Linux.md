@@ -576,3 +576,12 @@ https://man.cx/ln
 Read more:  
 https://stackoverflow.com/questions/1951742/how-to-symlink-a-file-in-linux   
 https://man.cx/ln  
+
+- **Explain: `echo $0`**  
+This will tell which shell is being used on the Linux box.  
+The shell treats several parameters specially. These parameters may only be referenced; assignment to them is not allowed.  
+($0) Expands to the name of the shell or shell script. This is set at shell initialization. If Bash is invoked with a file of commands (see Shell Scripts), $0 is set to the name of that file. If Bash is started with the -c option (see Invoking Bash), then $0 is set to the first argument after the string to be executed, if one is present. Otherwise, it is set to the filename used to invoke Bash, as given by argument zero.  
+Read more:  
+https://www.gnu.org/software/bash/manual/bash.html#Special-Parameters  
+
+
