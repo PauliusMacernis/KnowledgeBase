@@ -792,6 +792,15 @@ https://hub.docker.com/r/rancher/server/
 https://www.digitalocean.com/products/droplets/  
 
 - **Explain `docker build -f docker/Dockerfile -t registry.gitlab.com/sugalvojau/projectname:$tag .`**  
+???  
+
+- **What is the difference between `RUN <command>` and `RUN ["<command>"]` in `Dockerfile`?**  
+Read more:  
+https://docs.docker.com/engine/reference/builder/#run  
+
+- **What is the difference between `CMD <command>` and `CMD ["<command>"]` in `Dockerfile`?**  
+Read more:  
+https://docs.docker.com/engine/reference/builder/#cmd   
 
 
 
