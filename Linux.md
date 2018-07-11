@@ -586,11 +586,16 @@ https://www.gnu.org/software/bash/manual/bash.html#Special-Parameters
 https://www.gnu.org/software/bash/manual/bash.html#Shell-Scripts  
 https://www.gnu.org/software/bash/manual/bash.html#Invoking-Bash  
 
--**Explain `whoami`**  
+- **Explain `whoami`**  
 Print the user name associated with the current effective user ID. Same as `id −un`.  
 Simply saying, it prints the username.  
 Read more:  
 https://man.cx/whoami  
+
+- **What kind of variable types do bash support?**  
+Unlike many other programming languages, Bash does not segregate its variables by "type." Essentially, Bash variables are character strings, but, depending on context, Bash permits arithmetic operations and comparisons on variables. The determining factor is whether the value of a variable contains only digits.  
+Read more:  
+http://tldp.org/LDP/abs/html/untyped.html  
 
 
 
