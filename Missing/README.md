@@ -32,7 +32,7 @@
     - For example, there is no SGML way to capture the HTML5 rule that any attribute name that starts with “data-” and complies with certain general rules is valid. In SGML, attributes need to be listed individually, so a DTD would need to be infinite.
     - Document type definition (DTD) ( https://en.wikipedia.org/wiki/Document_type_definition , https://stackoverflow.com/questions/21566680/what-is-the-meaning-of-dtd-and-sgml-in-html )
 - Versioning
-    - Git
+    - Git (https://git-scm.com/ , https://services.github.com/on-demand/)
         - Git flow (http://nvie.com/posts/a-successful-git-branching-model/)
         - Gource (http://gource.io/)
         - GitWeb (`git instaweb --httpd=webrick`, `git instaweb --httpd=webrick --stop`, https://git-scm.com/book/en/v2/Git-on-the-Server-GitWeb )
