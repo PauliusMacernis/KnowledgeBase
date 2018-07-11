@@ -56,6 +56,7 @@
         - REST
         - Web Push API (https://developer.mozilla.org/en-US/docs/Web/API/Push_API/Best_Practices)
         - WebRTC API (https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API)
+        - GraphQL (https://services.github.com/on-demand/graphql/)
     - Data Engineers 
     - Google Taxonomy (https://www.google.com/basepages/producttype/taxonomy.en-US.txt), (https://feedonomics.com/google-shopping-category-taxonomy/)
     - How the internet really works: https://www.safaribooksonline.com/live-training/courses/how-the-internet-really-works/0636920172864/
