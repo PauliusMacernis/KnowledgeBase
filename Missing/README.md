@@ -34,6 +34,8 @@
 - Versioning
     - Git
         - Git flow (http://nvie.com/posts/a-successful-git-branching-model/)
+        - Gource (http://gource.io/)
+        - GitWeb (`git instaweb --httpd=webrick`, `git instaweb --httpd=webrick --stop`, https://git-scm.com/book/en/v2/Git-on-the-Server-GitWeb )
     - Semantic Versioning (https://semver.org/, https://github.com/semantic-release/semantic-release)
     - Romantic Versioning (http://blog.legacyteam.info/2015/12/romver-romantic-versioning/), e.g. Laravel uses it?
 - Repositories and dependencies management:
