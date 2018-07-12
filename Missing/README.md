@@ -9,19 +9,7 @@
 - Encodings, encoding/decoding:
     - https://www.w3.org/International/questions/qa-what-is-encoding
 - Text-based formats:
-    - CSV (all the quirks with this, especialy when importing/exporting, like escape chars, etc.)
-    - YAML (.yaml, .yml)
-    - XML
-        - SVG
-    - HTML
-    - CSS
-        - CSS Box Alignment (https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Alignment)
-            - block layout
-            - table layout
-            - flex layout
-            - grid layout
-        - Bootstrap
-            - Font Awesome
+    - TXT
 - Backus–Naur form (BNF)
     - General info (https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form) and variants available
     - Extended Backus–Naur form (EBNF), ISO/IEC 14977 : 1996(E) (https://www.iso.org/standard/26153.html , https://www.cl.cam.ac.uk/~mgk25/iso-14977.pdf) 
@@ -31,6 +19,24 @@
 - SGML (https://en.wikipedia.org/wiki/Standard_Generalized_Markup_Language , https://stackoverflow.com/questions/4053917/where-is-the-html5-document-type-definition)
     - For example, there is no SGML way to capture the HTML5 rule that any attribute name that starts with “data-” and complies with certain general rules is valid. In SGML, attributes need to be listed individually, so a DTD would need to be infinite.
     - Document type definition (DTD) ( https://en.wikipedia.org/wiki/Document_type_definition , https://stackoverflow.com/questions/21566680/what-is-the-meaning-of-dtd-and-sgml-in-html )
+- Regular expressions
+- Data serialization languages / markup languages:
+    - CSV (all the quirks with this, especialy when importing/exporting, like escape chars, etc.)
+    - YAML (.yaml, .yml)
+    - XML
+        - SVG
+    - HTML
+    - CSS
+        - CSS naming
+            - BEM
+            - SUIT CSS
+        - CSS Box Alignment (https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Alignment)
+            - block layout
+            - table layout
+            - flex layout
+            - grid layout
+        - Bootstrap
+            - Font Awesome
 - Versioning
     - Git (https://git-scm.com/ , https://services.github.com/on-demand/)
         - Git flow (http://nvie.com/posts/a-successful-git-branching-model/)
@@ -53,10 +59,6 @@
      */
     ```
     - ...
-- CSS naming
-    - BEM
-    - SUIT CSS
-- Regular expressions
 - Wireshark
 - General terminology:
     - SaaS
