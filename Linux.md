@@ -597,5 +597,11 @@ Unlike many other programming languages, Bash does not segregate its variables b
 Read more:  
 http://tldp.org/LDP/abs/html/untyped.html  
 
+- **Which of the following is correct: `if [ $MY_VARIABLE = 1 ];` or `if [$MY_VARIABLE = 1];` while bash scripting?**  
+First obvious thing is you should provide spaces between the arguments of `[`, `test` or `[[`.  
+Read more:  
+https://unix.stackexchange.com/questions/149203/why-is-the-if-1-1-branch-always-selected-even-if-1-is-not-1  
+
+
 
 
