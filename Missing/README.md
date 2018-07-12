@@ -17,8 +17,11 @@
         - PascalCase
         - camelCase
         - snake_case
-        - kebab-case (http://wiki.c2.com/?KebabCase , https://lodash.com/docs#kebabCase), lisp-case, caterpillar-case, spinal-case, dash-case, hyphen-case, ...
-        - Train-Case
+        - SCREAMING_SNAKE_CASE (https://github.com/qerub/camel-snake-kebab)
+        - Camel_Snake_Case (https://github.com/qerub/camel-snake-kebab)
+        - hyphenated (http://www.dictionary.com/browse/hyphenated):
+            - kebab-case (http://wiki.c2.com/?KebabCase , https://lodash.com/docs#kebabCase), lisp-case, caterpillar-case, spinal-case, dash-case, hyphen-case, ...
+            - Train-Case
 - Backus–Naur form (BNF)
     - General info (https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form) and variants available
     - Extended Backus–Naur form (EBNF), ISO/IEC 14977 : 1996(E) (https://www.iso.org/standard/26153.html , https://www.cl.cam.ac.uk/~mgk25/iso-14977.pdf) 
