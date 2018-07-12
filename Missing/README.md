@@ -44,6 +44,15 @@
         - PEAR2 (http://pear2.php.net/) and Pyrus manager (http://pear2.php.net/pyrus.phar)
         - GitHub (https://github.com/) and Git (Installer: http://git-scm.com/downloads)
         - Packagist (https://packagist.org/) and Composer (Installer: https://getcomposer.org/installer)
+- Documentation
+    - reStructuredText (sometimes abbreviated as RST, ReST, or reST) (https://en.wikipedia.org/wiki/ReStructuredText)
+    - PHPDoc (https://www.phpdoc.org/), e.g.:
+    ```
+    /**
+     * {@inheritdoc}
+     */
+    ```
+    - ...
 - CSS naming
     - BEM
     - SUIT CSS
@@ -274,12 +283,6 @@
 - Supervisor (http://supervisord.org)
 - Java
     - Spring (https://spring.io/)
-- PHPDoc (https://www.phpdoc.org/), e.g.:
-```
-/**
- * {@inheritdoc}
- */
-```
 - Internet Standards
     - https://www.rfc-editor.org/search/rfc_search_detail.php?sortkey=Number&sorting=DESC&page=All&pubstatus%5B%5D=Standards%20Track&std_trk=Internet%20Standard
     - Official Internet Protocol Standards (https://www.rfc-editor.org/standards)
