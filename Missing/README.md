@@ -13,6 +13,14 @@
     - https://www.w3.org/International/questions/qa-what-is-encoding
 - Text-based formats:
     - TXT
+    - Text/Source code editor (https://en.wikipedia.org/wiki/Comparison_of_text_editors , https://en.wikipedia.org/wiki/Source_code_editor):
+        - Notepad (https://en.wikipedia.org/wiki/Microsoft_Notepad)
+        - Notepad++ (https://notepad-plus-plus.org/)
+    - IDE (https://en.wikipedia.org/wiki/Integrated_development_environment):
+        - PHPStorm (https://www.jetbrains.com/phpstorm/)
+        - NetBeans (https://netbeans.org/)
+        - Visual Studio (https://visualstudio.microsoft.com/vs/)
+        - ...
     - Cases
         - PascalCase
         - camelCase
@@ -340,8 +348,6 @@
 - Vessel (https://vessel.shippingdocker.com/), a simple Docker development environment for Laravel
 - Google Cloud (https://cloud.google.com)
 - Swagger
-- IDE:
-    - PHPStorm
 - Debugging:
     - XDebug Debuging
         - PHPStorm
