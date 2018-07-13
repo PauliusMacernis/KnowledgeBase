@@ -11,6 +11,8 @@ https://standards.ieee.org/findstds/standard/1178-1990.html
 - Amongthe programs we write, some (but never enough) perform a precise mathematical function such as sorting or finding the maximum of a sequence of numbers, determining primality, or finding the square root. We call such programs algorithms, and a great deal is known of their optimal behavior, particularly with respect to the two important parameters of execution time and data storage requirements. A programmer should acquire good algorithms and idioms. Even though some programs resist precise specifications, it is the responsibility of the programmer to estimate, and always to attempt to improve, their performance.
 - [...] and we have rewritten all the program examples to ensure that any Scheme implementation conforming to the IEEE Scheme standard (IEEE 1990) will be able to run the code.
 - http://mitpress.mit.edu/sicp provides support for users of this book. This includes programs from the book, sample programming assignments, supplementary materials, and downloadable implementations of the Scheme dialect of Lisp.
+- MIT Core Curriculum (GIRs) / common core curriculum: https://mitadmissions.desk.com/customer/portal/articles/1283021-mit-core-curriculum-girs-
+
 
 
 
