@@ -12,8 +12,11 @@ https://standards.ieee.org/findstds/standard/1178-1990.html
 - [...] and we have rewritten all the program examples to ensure that any Scheme implementation conforming to the IEEE Scheme standard (IEEE 1990) will be able to run the code.
 - http://mitpress.mit.edu/sicp provides support for users of this book. This includes programs from the book, sample programming assignments, supplementary materials, and downloadable implementations of the Scheme dialect of Lisp.
 - MIT Core Curriculum (GIRs) / common core curriculum: https://mitadmissions.desk.com/customer/portal/articles/1283021-mit-core-curriculum-girs-
-
-
+- The list, Lisp’s native data structure [...]
+- It is better to have 100 functions operate on one data structure than to have 10 functions operate on 10 data structures. As a
+result the pyramid [aka. Pascal language] must stand unchanged for a millennium; the organism [aka. Lisp language] must evolve or perish.
+- No Lisp program of any size beyond a few lines can be written without being saturated with discretionary functions. Invent
+and fit; have fits and reinvent! We toast the Lisp programmer who pens his thoughts within nests of parentheses.
 
 
 
