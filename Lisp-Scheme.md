@@ -44,3 +44,20 @@ large software systems.
 - The Lisp 1 Programmer’s Manual appeared in 1960, and the Lisp 1.5 Programmer’s Manual (McCarthy et al. 1965) was published in 1962. The early history of Lisp is described in McCarthy 1978.
 - A Lisp interpreter is a machine that carries out processes described in the Lisp language.
 - **Lisp, whose name is an acronym for LISt Processing**, was designed to provide symbol-manipulating capabilities for attacking programming problems such as the symbolic differentiation and integration of algebraic expressions. It included for this purpose new data objects known as atoms and lists, which most strikingly set it apart from all other languages of the period.
+- The Lisp dialect used in this book, called Scheme (Steele and Sussman 1975), was invented in 1975 by Guy Lewis Steele Jr. and Gerald Jay Sussman of the MIT Artificial Intelligence Laboratory and later reimplemented for instructional use at MIT. Scheme became an IEEE standard in 1990 (IEEE 1990). The Common Lisp dialect (Steele 1982, Steele 1990) was developed by the Lisp community to combine features from the earlier Lisp dialects to make an industrial standard for Lisp. Common Lisp became an IEEE standard in 1994 (ANSI 1994).
+- Although Lisp has not yet overcome its old reputation as hopelessly inefficient, Lisp is now used in many applications where efficiency is not the central concern. For example, Lisp has become a language of choice for operating-system shell languages and for extension languages for editors and computer-aided design systems.
+- The most significant of these features is the fact that Lisp descriptions of processes, called procedures , can themselves be represented and manipulated as Lisp data. The importance of this is that there are powerful program-design techniques that rely on the ability to blur the traditional distinction between “passive” data and “active” processes.
+
+## 1.1 The Elements of Programming
+- Every powerful language has three mechanisms for combining simple ideas to form more complex ideas:
+  - **primitive expressions** , which represent the simplest entities the language is concerned with,
+  - **means of combination** , by which compound elements are built from simpler ones, and
+  - **means of abstraction** , by which compound elements can be named and manipulated as units.
+- In programming, we deal with two kinds of elements: procedures and data. (Later we will discover that they are really not so distinct.). Thus, any powerful programming language should be able to describe primitive data and primitive procedures and should have methods for combining and abstracting procedures and data.
+
+### 1.1.1 Expressions
+- One kind of primitive expression you might type is a number. (More precisely, the expression that you type consists of the numerals that represent the number in base 10.)
+- science of numerical analysis
+- Expressions such as these (for example: `(+ 2.7 10)`, `(/ 10 5)`, `(* 5 99)`, `(- 1000 334)`, `(+ 137 349)`), formed by delimiting a list of expressions within parentheses in order to denote procedure application, are called **combinations** . The leftmost element in the list is called the **operator** , and the other elements are called **operands** . The value of a combination is obtained by **applying the procedure specified by the operator to the arguments that are the values of the operands**.
+- 
+
