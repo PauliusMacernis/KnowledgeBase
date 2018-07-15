@@ -39,5 +39,8 @@ large software systems.
 - We also strongly agree with Alan Perlis that programming is lots of fun and we had better be careful to support the joy of programming. Part of this joy derives from observing great masters at work.
 
 # Building Abstractions with Procedures
-
-
+- Well-designed computational systems, like well-designed automobiles or nuclear reactors, are designed in a modular manner, so that the parts can be constructed, replaced, and debugged separately.
+- Lisp was invented in the late 1950s as a formalism for reasoning about the use of certain kinds of logical expressions, called recursion equations , as a model for computation. The language was conceived by John McCarthy and is based on his paper “Recursive Functions of Symbolic Expressions and Their Computation by Machine” (McCarthy 1960).
+- The Lisp 1 Programmer’s Manual appeared in 1960, and the Lisp 1.5 Programmer’s Manual (McCarthy et al. 1965) was published in 1962. The early history of Lisp is described in McCarthy 1978.
+- A Lisp interpreter is a machine that carries out processes described in the Lisp language.
+- **Lisp, whose name is an acronym for LISt Processing**, was designed to provide symbol-manipulating capabilities for attacking programming problems such as the symbolic differentiation and integration of algebraic expressions. It included for this purpose new data objects known as atoms and lists, which most strikingly set it apart from all other languages of the period.
