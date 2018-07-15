@@ -1,5 +1,6 @@
 # Topics missing
-
+- Math or so
+    - Numerical differentiation, Symbolic differentiation, Automatic differentiation (https://stackoverflow.com/questions/43455320/difference-between-symbolic-differentiation-and-automatic-differentiation)
 - Computation theory / computability
     - The Annotated Turing (https://en.wikipedia.org/wiki/The_Annotated_Turing)
     - Stateful vs. stateless (e.g. https://whatis.techtarget.com/definition/stateless)
