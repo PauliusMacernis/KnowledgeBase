@@ -2,3 +2,14 @@
 - absence
 - J, for example: "Have a lovely weekendJ" in the email
 - revival
+- akin
+- nonidiosyncratic
+- discretionary
+- entrusted
+- plethora
+- induces
+- inhibits
+- peculiar
+- breed
+- coalesce
+- 
