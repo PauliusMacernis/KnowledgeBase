@@ -59,5 +59,15 @@ large software systems.
 - One kind of primitive expression you might type is a number. (More precisely, the expression that you type consists of the numerals that represent the number in base 10.)
 - science of numerical analysis
 - Expressions such as these (for example: `(+ 2.7 10)`, `(/ 10 5)`, `(* 5 99)`, `(- 1000 334)`, `(+ 137 349)`), formed by delimiting a list of expressions within parentheses in order to denote procedure application, are called **combinations** . The leftmost element in the list is called the **operator** , and the other elements are called **operands** . The value of a combination is obtained by **applying the procedure specified by the operator to the arguments that are the values of the operands**.
+- The convention of placing the operator to the left of the operands is known as prefix notation , and it may be somewhat confusing at first because it departs significantly from the customary mathematical convention. Prefix notation has several advantages, however. One of them is that it can accommodate procedures that may take an arbitrary number of arguments, as in the following examples: `(+ 21 35 12 7)`, `(* 25 4 12)`. No ambiguity can arise, because the operator is always the leftmost element and the entire combination is delimited by the parentheses.
+- A second advantage of prefix notation is that it extends in a straight forward way to allow combinations to be nested , that is, to have combinations whose elements are themselves combinations: `(+ (* 3 5) (- 10 6))`, `(+ (* 3 (+ (* 2 4) (+ 3 5))) (+ (- 10 7) 6))`, we can help ourselves by writing such an expression in the form:
+```
+(+ (* 3
+        (+ (* 2 4)
+            (+ 3 5)))
+    (+ (- 10 7)
+        6))
+```
+### 1.1.2 Naming and the Environment
 - 
 
