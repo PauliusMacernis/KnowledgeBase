@@ -12,4 +12,6 @@
 - peculiar
 - breed
 - coalesce
+- sorcerer
+- conjuring
 - 
