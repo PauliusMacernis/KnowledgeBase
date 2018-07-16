@@ -18,3 +18,8 @@ Check for migrations versions (current and last).
 Read more:  
 https://stackoverflow.com/questions/9632701/doctrine2-migrations-migrate-down-and-migrate-from-browser-and-not-command-line  
 
+- **Explain `bin/console doctrine:mapping:info`**  
+???  
+Read more:  
+???  
+
