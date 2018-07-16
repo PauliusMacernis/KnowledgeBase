@@ -92,9 +92,17 @@ To evaluate a combination, do the following:
   - the values of other names are the objects associated with those names in the environment.
 - We may regard the second rule as a special case of the third one by stipulating that symbols such as `+` and `*` are also included in the global environment, and are associated with the sequences of machine instructions that are their “values.” The key point to notice is the role of the environment in determining the meaning of the symbols in expressions. In an interactive language such as Lisp, **it is meaningless to speak of the value of an expression such as `(+ x 1)` without specifying any information about the environment that would provide a meaning for the symbol `x` (or even for the symbol `+` )**. The general
 notion of the environment as providing a context in which evaluation takes place will play an important role in our understanding of program execution.
-- Notice that the evaluation rule given above does not handle definitions. For instance, evaluating `(define x 3)` does not apply `define` to two arguments, one of which is the value of the symbol `x` and the other of which is `3`, since the purpose of the `define` is precisely to associate `x` with a value. (That is, **`(define x 3)` is not a combination.**). Such exceptions to the general evaluation rule are called **special forms**. `define` is the only example of a special form that we have seen so far.
-- 
+- Notice that the evaluation rule given above does not handle definitions. For instance, **evaluating `(define x 3)` does not apply `define` to two arguments**, one of which is the value of the symbol `x` and the other of which is `3`, since the purpose of the `define` is precisely to associate `x` with a value. (That is, **`(define x 3)` is not a combination.**). Such exceptions to the general evaluation rule are called **special forms**. `define` is the only example of a special form that we have seen so far. **Each special form has its own evaluation rule**. The various kinds of expressions (each with its associated evaluation rule) constitute the syntax of the programming language.
 
+### 1.1.4 Compound Procedures
+
+- Some of the **elements that must appear in any powerful programming language**:
+  - Numbers and arithmetic operations are primitive data and procedures.
+  - Nesting of combinations provides a means of combining operations.
+  - Definitions that associate names with values provide a limited means of abstraction.
+- Pocedure definitions - a much more powerful abstraction technique by which a compound operation can be given a name and then referred to as a unit.
+
+page 15/43
 
 
 
