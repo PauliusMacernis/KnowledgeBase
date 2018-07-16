@@ -14,4 +14,11 @@
 - coalesce
 - sorcerer
 - conjuring
+- obeys
+- quip
+- succinctly
+- percolate
+- upward
+- tree accumulation (quite technical term)
+- stipulating
 - 
