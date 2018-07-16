@@ -69,5 +69,33 @@ large software systems.
         6))
 ```
 ### 1.1.2 Naming and the Environment
+- A critical aspect of a programming language is the means it provides for using names to refer to computational objects. We say that the name identifies a variable whose value is the object. In the Scheme dialect of Lisp, we name things with `define`. Typing `(define size 2)` causes the interpreter to associate the value `2` with the name `size`. Once the name `size` has been associated with the number `2`, we can refer to the value `2` by name: `size`
+- **Lisp-Scheme has `define` while Clojure has `def`!!!***
+- Lisp systems typically provide features to aid the user in formatting expressions. Two especially useful features are:
+  - one that automatically indents to the proper pretty-print position whenever a new line is started and 
+  - one that highlights the matching left parenthesis whenever a right parenthesis is typed.
+- Lisp obeys the convention that every expression has a value. This convention, together with the old reputation of Lisp as an inefficient language, is the source of the quip by Alan Perlis (paraphrasing Oscar Wilde) that “Lisp programmers know the value of everything but the cost of nothing.”
+- `(* 5 size)`
+- `(define circumference (* 2 pi radius))`
+- It should be clear that the possibility of associating values with symbols and later retrieving them means that the interpreter must maintain some sort of memory that keeps track of the name-object pairs. **This memory is called the environment** (**more precisely the global environment** , since we will see later that a **computation may involve a number of different environments**).
+
+### 1.1.3 Evaluating Combinations
+- Let us consider that, in evaluating combinations, the interpreter is itself following a procedure.  
+To evaluate a combination, do the following:  
+  1. Evaluate the subexpressions of the combination.
+  2. Apply the procedure that is the value of the leftmost subexpression (the operator) to the arguments that are the values of the other subexpressions (the operands).
+- Even this simple rule illustrates some important points about processes in general. First, observe that the first step dictates that in order to accomplish the evaluation process for a combination we must first perform the evaluation process on each element of the combination. Thus, the evaluation rule is recursive in nature; that is, it includes, as one of its steps, the need to invoke the rule itself. **The example to consider**: `(*  (+ 2 (* 4 6))  (+ 3 5 7)  )` ,- requires that the evaluation rule be applied to four different combinations.
+- In fact, the “percolate values upward” form of the evaluation rule is an example of a general kind of process known as **tree accumulation**.
+- We take care of the primitive cases by stipulating that:
+  - the values of numerals are the numbers that they name,
+  - the values of built-in operators are the machine instruction sequences that carry out the corresponding operations, and
+  - the values of other names are the objects associated with those names in the environment.
+- We may regard the second rule as a special case of the third one by stipulating that symbols such as `+` and `*` are also included in the global environment, and are associated with the sequences of machine instructions that are their “values.” The key point to notice is the role of the environment in determining the meaning of the symbols in expressions. In an interactive language such as Lisp, **it is meaningless to speak of the value of an expression such as `(+ x 1)` without specifying any information about the environment that would provide a meaning for the symbol `x` (or even for the symbol `+` )**. The general
+notion of the environment as providing a context in which evaluation takes place will play an important role in our understanding of program execution.
+- Notice that the evaluation rule given above does not handle definitions. For instance, evaluating `(define x 3)` does not apply `define` to two arguments, one of which is the value of the symbol `x` and the other of which is `3`, since the purpose of the `define` is precisely to associate `x` with a value. (That is, **`(define x 3)` is not a combination.**). Such exceptions to the general evaluation rule are called **special forms**. `define` is the only example of a special form that we have seen so far.
 - 
+
+
+
+
 
