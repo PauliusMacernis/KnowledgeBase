@@ -377,6 +377,10 @@
 - Pingdom (https://www.pingdom.com/)
 - LastPass (https://www.lastpass.com/)
 - ***
+- Browsers:
+    - https://www.brow.sh/
+    - https://github.com/mps-youtube/mps-youtube
+    - ...
 - Issue tracking, system health analyzis+:
     - Rollbar (https://rollbar.com/)
     - Dynatrace (https://www.dynatrace.com/solutions/)
