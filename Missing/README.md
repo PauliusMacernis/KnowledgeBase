@@ -478,6 +478,12 @@
 - Public speaking: on conferences, teaching sessions, etc.
 - Initiative and willingness to learn new technologies and skills
 - ...
+- Mozilla shortcuts: 
+    - https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly
+    - https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/Keyboard_shortcuts
+- http://devtoolsecrets.com/
+- ...
+
 
 ## 4. Tools
 - [Enterprise Architect](http://sparxsystems.com/products/ea/)
