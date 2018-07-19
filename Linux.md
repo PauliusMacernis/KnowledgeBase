@@ -603,12 +603,15 @@ Read more:
 https://unix.stackexchange.com/questions/149203/why-is-the-if-1-1-branch-always-selected-even-if-1-is-not-1  
 
 - **Explain: `install -Dv /dev/null some/new/path/base-filename`**  
-TBD
+TBD  
 Read more:  
 https://stackoverflow.com/questions/24666330/bash-command-to-create-a-new-file-and-its-parent-directories-if-necessary  
 https://man.cx/install  
 
-
+- **Explain: `script.sh &`**
+To run a shell script (`script.sh`) in background (`&`).  
+Read more:  
+https://askubuntu.com/questions/88091/how-to-run-a-shell-script-in-background
 
 
 
