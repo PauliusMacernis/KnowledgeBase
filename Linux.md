@@ -617,5 +617,9 @@ https://askubuntu.com/questions/88091/how-to-run-a-shell-script-in-background
 Read more:  
 https://askubuntu.com/questions/46627/how-can-i-make-a-script-that-opens-terminal-windows-and-executes-commands-in-the  
 
+- **Explain: `alias rxvt='urxvt -fg '"'"'#111111'"'"' -bg '"'"'#111111'"'"`**  
+Read more:  
+https://stackoverflow.com/questions/1250079/how-to-escape-single-quotes-within-single-quoted-strings  
+
 
 
