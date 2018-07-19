@@ -608,10 +608,14 @@ Read more:
 https://stackoverflow.com/questions/24666330/bash-command-to-create-a-new-file-and-its-parent-directories-if-necessary  
 https://man.cx/install  
 
-- **Explain: `script.sh &`**
+- **Explain: `script.sh &`**  
 To run a shell script (`script.sh`) in background (`&`).  
 Read more:  
-https://askubuntu.com/questions/88091/how-to-run-a-shell-script-in-background
+https://askubuntu.com/questions/88091/how-to-run-a-shell-script-in-background  
+
+- **Explain: `x-terminal-emulator`**  
+Read more:  
+https://askubuntu.com/questions/46627/how-can-i-make-a-script-that-opens-terminal-windows-and-executes-commands-in-the  
 
 
 
