@@ -52,6 +52,10 @@ JScript 10.0 is a separate dialect, also known as JScript .NET, which adds sever
 Read more:  
 https://en.wikipedia.org/wiki/JScript  
 
+- **Can JScript be run on any browser (JavaScript engine)?**  
+Read me:  
+???  
+
 - **What is the difference between JavaScript and JS?**  
 JS is a common abbreviation of JavaScript. So it means the same while talking to someone. However, as a side note, recently (year of 2018) there was a discussion about renaming “ECMAScript” to “JS”, idea has a lot of support.  
 Read more:  
@@ -68,6 +72,33 @@ https://en.wikipedia.org/wiki/JavaScript#Vanilla_JavaScript
 Read more:  
 http://tsdr.uspto.gov/#caseNumber=75026640&caseType=SERIAL_NO&searchType=statusSearch  
 https://en.wikipedia.org/wiki/JavaScript  
+
+- **What is JavaScript engine?**  
+A JavaScript engine is a program or interpreter which executes JavaScript code. A JavaScript engine may be a traditional interpreter, or it may utilize just-in-time compilation to bytecode in some manner. Although there are several uses for a JavaScript engine, it is most commonly used in Web browsers.  
+Read more:  
+https://en.wikipedia.org/wiki/JavaScript_engine  
+
+- **What JavaScript-related engines (also termed JavaScript interpreters or JavaScript implementations) do you know?**  
+  - SpiderMonkey is the code name for the first JavaScript engine, written by Brendan Eich at Netscape Communications, later released as open source and currently maintained by the Mozilla Foundation. SpiderMonkey provides JavaScript support for **Mozilla Firefox** and various embeddings such as the GNOME 3 desktop. 
+  - Chakra (**JScript** engine) developed by Microsoft for its 32-bit version of the Internet Explorer 9 (IE9) web browser. The JScript engine is developed as closed source proprietary software. Microsoft has developed a different JavaScript engine based on the JScript, for the newer Microsoft Edge browser (also called Chakra).  
+  - Chakra (**JavaScript** engine) developed by Microsoft for its Microsoft Edge web browser. It is a fork of the JScript engine used in Internet Explorer. Like the Edge layout engine and unlike previous versions in Internet Explorer the declared intention is that it will reflect the "Living Web". On December 5 of 2015, it was announced that core components of Chakra will be open-sourced as ChakraCore. ChakraCore is essentially the same as the Chakra engine that powers the Microsoft Edge browser, but with platform-agnostic bindings, i.e. without the specific interfaces utilised within the Windows Universal App platform. On January 13, 2016, Microsoft released ChakraCore under the MIT license on GitHub as promised.  
+  - Chrome V8, or simply V8, is an open-source JavaScript engine developed by The Chromium Project for Google Chrome and Chromium web browsers. The project’s creator is Lars Bak. The first version of the V8 engine was released at the same time as the first version of Chrome: September 2, 2008. It has also been used in Couchbase, MongoDB and Node.js that are used server-side. V8 compiles JavaScript directly to native machine code before executing it, instead of more traditional techniques such as interpreting bytecode or compiling the whole program to machine code and executing it from a filesystem. The compiled code is additionally optimized (and re-optimized) dynamically at runtime, based on heuristics of the code's execution profile. Optimization techniques used include inlining, elision of expensive runtime properties, and inline caching. The garbage collector is a generational incremental collector. V8 can compile to x86, ARM or MIPS instruction set architectures in both their 32- and 64-bit editions; as well, it has been ported to PowerPC and IBM s390 for use in servers.  
+  - JavaScriptCore is a framework that provides a JavaScript engine for WebKit implementations, and provides this type of scripting in other contexts within macOS.  
+Read more:  
+https://en.wikipedia.org/wiki/JavaScript  
+https://en.wikipedia.org/wiki/JavaScript_engine  
+https://en.wikipedia.org/wiki/Chakra_(JScript_engine)  
+https://en.wikipedia.org/wiki/Chakra_(JavaScript_engine)  
+https://msdn.microsoft.com/en-us/library/dn903710(v=vs.94).aspx
+https://en.wikipedia.org/wiki/SpiderMonkey  
+https://en.wikipedia.org/wiki/Chrome_V8  
+https://en.wikipedia.org/wiki/WebKit#JavaScriptCore  
+https://en.wikipedia.org/wiki/List_of_ECMAScript_engines  
+http://kangax.github.io/compat-table/es6/  
+
+- **Is JScript engine different from JavaScript engines?**  
+Read more:  
+???  
 
 - **Explain the following. `null > 0` results to `false`, `null < 0` results to `false`, `null == 0` results to `false`. Why `null >= 0` results to `true`?**  
 Read more:  
