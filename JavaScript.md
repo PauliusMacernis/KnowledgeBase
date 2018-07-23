@@ -52,7 +52,11 @@ JScript 10.0 is a separate dialect, also known as JScript .NET, which adds sever
 Read more:  
 https://en.wikipedia.org/wiki/JScript  
 
-- **Can JScript be run on any browser (JavaScript engine)?**  
+- **How JScript engine is different from usual JavaScript engines?**  
+Read more:  
+???  
+
+- **Can JScript be run on any browser (JavaScript engine)? If yes then how does that happen without the use of the transpiler from JScript to JavaScript (ECMAScript)?**  
 Read me:  
 ???  
 
@@ -96,9 +100,21 @@ https://en.wikipedia.org/wiki/WebKit#JavaScriptCore
 https://en.wikipedia.org/wiki/List_of_ECMAScript_engines  
 http://kangax.github.io/compat-table/es6/  
 
-- **Is JScript engine different from JavaScript engines?**  
+- **What implementations of the ECMAScript standard do you know, except web browsers?**  
+  - ActionScript, the programming language used in Adobe Flash, is another implementation of the ECMAScript standard.
+  - Adobe AIR (Adobe Integrated Runtime) is a JavaScript runtime that allows developers to create desktop applications.
+  - Electron is an open-source framework developed by GitHub.
+  - Apache Cordova is a mobile application development framework.
+  - GNOME Shell, the shell for the GNOME 3 desktop environment, made JavaScript its default programming language in 2013.
+  - The Mozilla application framework (XPFE) platform, which underlies Firefox, Thunderbird, and some other Web browsers, uses JavaScript to implement the graphical user interface (GUI) of its various products.
+  - Ubuntu Touch provides a JavaScript API for its unified usability interface.
+  - WinJS provides a special Windows Library for JavaScript functionality in Windows 8 that enables the development of Modern style (formerly Metro style) applications in HTML5 and JavaScript.
+  - NativeScript is an open-source framework to develop apps on the Apple iOS and Android platforms.
+  - Weex is a framework for building Mobile cross-platform UI, created by China Tech giant Alibaba.
+  - XULRunner is packaged version of the Mozilla platform to enable standalone desktop application development.
+  - others
 Read more:  
-???  
+https://en.wikipedia.org/wiki/JavaScript#Application_platform  
 
 - **Explain the following. `null > 0` results to `false`, `null < 0` results to `false`, `null == 0` results to `false`. Why `null >= 0` results to `true`?**  
 Read more:  
