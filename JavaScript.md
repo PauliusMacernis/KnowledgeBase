@@ -666,6 +666,94 @@ Yes, there is.
 
 ## Control structures
 
+- **What control structures does JavaScript have?**  
+JavaScript has a similar set of control structures to other languages in the C family.  
+  - `if` and `else`:  
+  ```
+  var name = 'kittens';
+  if (name == 'puppies') {
+    name += ' woof';
+  } else if (name == 'kittens') {
+    name += ' meow';
+  } else {
+    name += '!';
+  }
+  name == 'kittens meow';
+  ```
+  - `while`:
+  ```
+  while (true) {
+    // an infinite loop!
+  }
+  ```
+  - `do-while`:
+  ```
+  var input;
+  do {
+    input = get_input();
+  } while (inputIsNotValid(input));
+  ```
+  - `for` loop:
+  ```
+  for (var i = 0; i < 5; i++) {
+    // Will execute 5 times
+  }
+  ```
+  - **`for`...`of`**:
+  ```
+  for (let value of array) {
+    // do something with value
+  }
+  ```
+  - **`for`...`in`**:
+  ```
+  for (let property in object) {
+    // do something with object property
+  }
+  ```
+  - `&&` - This is boolean operator (logical "and"). The `&&` operator uses short-circuit logic, which means whether it will execute their second operand is dependent on the first. This is **useful for checking for `null` objects before accessing their attributes**, for example: `var name = o && o.getName();`
+  - `||` - This is boolean operator (logical "or"). The `||` operator uses short-circuit logic, which means whether it will execute their second operand is dependent on the first. This is **useful for caching values** (when falsy values are invalid), for example: `var name = cachedName || (cachedName = getName());`
+  - Ternary operator for conditional expressions. For example: `var allowed = (age > 18) ? 'yes' : 'no';`  
+  - `switch`:
+  ```
+  switch (action) {
+    case 'draw':
+      drawIt();
+      break;
+    case 'eat':
+      eatIt();
+      break;
+    default:
+      doNothing();
+  }
+  
+  switch (a) {
+    case 1: // fallthrough
+    case 2:
+      eatIt();
+      break;
+    default:
+      doNothing();
+  }
+  
+  switch (1 + 3) {
+    case 2 + 2: // Will hit this, because (1 + 3) === (2 + 2)
+      yay();
+      break;
+    default:
+      neverhappens();
+  }
+  ```
+  
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
+  
+- **Which of equality checks (`==` or `===`) is being performed between `switch` and `case` statement?**  
+Comparisons take place between the two using the `===` operator.  
+Read more:  
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
+
+
 
 ## Etc.
 
