@@ -1,4 +1,6 @@
 # Topics missing
+- Clean Code
+    - Broken Windows Theory (https://medium.com/akeneo-labs/broken-windows-and-boy-scouts-3652feba0065)
 - Math or so
     - Numerical differentiation, Symbolic differentiation, Automatic differentiation (https://stackoverflow.com/questions/43455320/difference-between-symbolic-differentiation-and-automatic-differentiation)
 - Computation theory / computability
@@ -51,7 +53,8 @@
     - CSS
         - CSS naming
             - BEM
-            - SUIT CSS
+            - SuitCSS
+            - SystematicCSS
         - CSS Box Alignment (https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Alignment)
             - block layout
             - table layout
