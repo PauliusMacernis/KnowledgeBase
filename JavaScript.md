@@ -789,6 +789,7 @@ var obj = {
   }
 };
 ```
+Starting in ECMAScript 2015, object keys can be defined by the variable using bracket notation upon being created. `{[phoneType]: 12345}` is possible instead of just `var userPhone = {}; userPhone[phoneType] = 12345`.
 
 - **What are the ways to access attributes of the Object?**  
 Use one of two ways: "dot notation" or "brackets notation". For example:  
@@ -812,12 +813,14 @@ function Person(name, age) {
 var you = new Person('You', 24); 
 // We are creating a new person named "You" aged 24.
 ```
+In addition, the `class` keyword is introduced in ES2015, but is syntactical sugar, JavaScript remains prototype-based.  
+
 - **Explain the following usage of brackets notation and `prompt`:**  
 ```
 var user = prompt('what is your key?')
 obj[user] = prompt('what is its value?')
 ```
-The method has the advantage that the name of the property is provided as a string, which means it can be calculated at run-time. However, using this method prevents some JavaScript engine and minifier optimizations being applied.
+The method of usage has the advantage that the name of the property is provided as a string, which means it can be calculated at run-time. However, using this method prevents some JavaScript engine and minifier optimizations being applied.
 
 - **How can I set the value to property named `for` (or a value to other property with the name of JavaScript keyword) for my own object?**  
 Use barckets notation. For example:  
@@ -825,9 +828,78 @@ Use barckets notation. For example:
 obj.for = 'Simon'; // Syntax error, because 'for' is a reserved word
 obj['for'] = 'Simon'; // works fine
 ```
+However, starting in ECMAScript 5, reserved words may be used as object property names "in the buff". This means that they don't need to be "clothed" in quotes when defining object literals. So the following should work also:  
+```
+obj.for = 'Simon'; // works fine
+obj['for'] = 'Simon'; // works fine
+```
+- **Explain prototype chain in JavaScript. How does the inheritence work?**  
+When it comes to inheritance, JavaScript only has one construct: objects. Each object has a private property which holds a link to another object called its `prototype`. That prototype object has a prototype of its own, and so on until an object is reached with `null` as its prototype. By definition, `null` has no prototype, and acts as the final link in this prototype chain.  
+Nearly all objects in JavaScript are instances of `Object` which sits on the top of a prototype chain.  
+Read more:  
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain  
 
-  
-  
+
+## Arrays
+
+- **What is the relation between `Array` and `Object` data types in JavaScript?**  
+Arrays in JavaScript are actually a special type of object. They work very much like regular objects (numerical properties can naturally be accessed only using `[]` syntax) but they have one magic property called `length`. This is always **one more than the highest index** in the array. For example:  
+```
+var a = new Array();
+a[0] = 'dog';
+a[1] = 'cat';
+a[2] = 'hen';
+a.length; // 3
+
+// or
+
+var a = ['dog', 'cat', 'hen'];
+a.length; // 3
+
+// or
+
+var a = ['dog', 'cat', 'hen'];
+a[100] = 'fox';
+a.length; // 101 !!!!!!!!
+```
+
+- **How do I create array?**  
+`var fruits = ['Apple', 'Banana'];`  
+Read more:  
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array  
+
+- **How to access (index into) an Array item?**  
+???  
+
+- **What do I get back if I query a non-existent array index?**  
+The result will be `undefined`. For example: `typeof a[90]; // undefined`
+
+- **How do I interate over array elements?**  
+```
+for (var i = 0; i < a.length; i++) {
+  // Do something with a[i]
+}
+
+// ES2015 introduced the more concise for...of loop for iterable objects such as arrays:
+for (const currentValue of a) {
+  // Do something with currentValue
+}
+
+```
+
+- **How do I interate over array indexes?**  
+  - Iterate over an array using a `for`...`in` loop, however this does not iterate over the array elements, but the array indices. Furthermore, if someone added new properties to `Array.prototype`, they would also be iterated over by such a loop. Therefore this loop type is not recommended for arrays.  
+  - Another way of iterating over an array that was added with ECMAScript 5 is `forEach()`:
+```
+['dog', 'cat', 'hen'].forEach(function(currentValue, index, array) {
+  // Do something with currentValue or array[index]
+});
+```
+
+- **How do I append an item to an array?**  
+`a.push(item);`  
+
+- 
 
 
 
