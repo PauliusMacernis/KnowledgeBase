@@ -58,7 +58,9 @@
         - CSS Box Alignment (https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Alignment)
             - block layout
             - table layout
-            - flex layout
+            - flex layout:
+                - https://www.w3.org/TR/css-flexbox-1/
+                - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
             - grid layout
         - Bootstrap
             - Font Awesome
