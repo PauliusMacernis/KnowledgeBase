@@ -754,6 +754,83 @@ Read more:
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
 
 
+## Objects
+
+- **What kind of data structures implemented in other languages are the most similar to `Object` data structure in JavaScript?**  
+  - Dictionaries in Python.
+  - Hashes in Perl and Ruby.
+  - Hash tables in C and C++.
+  - HashMaps in Java.
+  - Associative arrays in PHP.
+  
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
+  
+- **What type of variable is used for Object property and what type of variable is used for Object property value? For example: `{name: value}`**  
+  - The "name" part is a JavaScript string
+  - The value can be any JavaScript value — including more objects.
+  
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
+  
+- **What are thay ways to create an empty object in JavaScript?**  
+  1. `var obj = new Object();`
+  2. `var obj = {};`  - Object literal syntax. This syntax is also the core of JSON format and should be preferred at all times.  
+  
+- **What is the way of initializing object with values?**  
+You just add `name: value` pairs, separate by `,`. For example:  
+```
+var obj = {
+  name: 'Carrot',
+  for: 'Max', // 'for' is a reserved word, use '_for' instead.
+  details: {
+    color: 'orange',
+    size: 12
+  }
+};
+```
+
+- **What are the ways to access attributes of the Object?**  
+Use one of two ways: "dot notation" or "brackets notation". For example:  
+```
+obj.details.color; // orange
+obj['details']['size']; // 12
+
+obj.name = 'Simon';
+var name = obj.name;
+```
+
+- **How can I create a class (like in PHP, Java, etc.) and object out of it (again, like in PHP, Java, etc.)?**  
+In JavaScript you create `Prototype` (aka. class, for example `Person`) and then `instance` of that prototype (aka. object, for example `you`). Which in code looks like this:  
+```
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+
+// Define an object
+var you = new Person('You', 24); 
+// We are creating a new person named "You" aged 24.
+```
+- **Explain the following usage of brackets notation and `prompt`:**  
+```
+var user = prompt('what is your key?')
+obj[user] = prompt('what is its value?')
+```
+The method has the advantage that the name of the property is provided as a string, which means it can be calculated at run-time. However, using this method prevents some JavaScript engine and minifier optimizations being applied.
+
+- **How can I set the value to property named `for` (or a value to other property with the name of JavaScript keyword) for my own object?**  
+Use barckets notation. For example:  
+```
+obj.for = 'Simon'; // Syntax error, because 'for' is a reserved word
+obj['for'] = 'Simon'; // works fine
+```
+
+  
+  
+
+
+
 
 ## Etc.
 
