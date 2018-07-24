@@ -50,15 +50,17 @@
     - XML
         - SVG
     - HTML
-    - CSS
+    - CSS ( https://www.w3.org/TR/CSS/ )
         - CSS naming
             - BEM
             - SuitCSS
             - SystematicCSS
         - CSS Box Alignment (https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Alignment)
-            - block layout
-            - table layout
-            - flex layout:
+            - block layout, designed for laying out documents
+            - inline layout, designed for laying out text
+            - table layout, designed for laying out 2D data in a tabular format
+            - positioned layout, designed for very explicit positioning without much regard for other elements in the document
+            - flex layout, designed for laying out more complex applications and webpages:
                 - https://www.w3.org/TR/css-flexbox-1/
                 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
             - grid layout
