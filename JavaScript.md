@@ -576,21 +576,24 @@ The result is:
 1 4         3         undefined
 1 5         3         4
 ```
-
-Read more:  
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
+  
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
 
 - **What does the "variable visibility scope" mean in JavaScript when talking about variables created by using `var`, `let` or `const` keywords?**  
 This means that each keyword encloses the related variable in a visibility scope.  
 **Values** of any (`var`, `let`, `const`) are not assigned until the assignment statement is reached in the script-flow - this works all the time.  
-However, **the variable itself** may be seen and be in use before the assignment scope, just the value of it will be treated as `undefined`. `var` - lets to see the variable in a global scope (the entire script), `let` - lets to see the variable in a block scope only, `const` - cannot see and use the variable (actually, constant) until it's assignment sentence is reached, error will be thrown otherwise.
+However, **the variable itself** may be seen and be in use before the assignment scope, just the value of it will be treated as `undefined`. `var` - lets to see the variable in a global scope (the entire script), `let` - lets to see the variable in a block scope only, `const` - cannot see and use the variable (actually, constant) until it's assignment sentence is reached, error will be thrown otherwise.  
+  
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
 
 - **What is the difference between "block scope" and "function scope" in JavaScript?**  
 In JavaScript, **blocks do not have scope**; only **functions have a scope**.  
 So if a variable is defined using `var` in a compound statement (for example inside an `if` control structure), it will be visible to the entire function.  
 However, starting with ECMAScript 2015, `let` and `const` declarations allow you to create block-scoped variables.  
-Read more:  
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
 
 
 ## Operators
@@ -613,13 +616,55 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_Jav
   - `=` - assignment of values
   - `+=` - compound assignment statement
   - `-=` - compound assignment statement
-
-Read more:  
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators
-
   
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators
 
+- **What happens to the numbers and/or other values if it is mixed with String type values and `+` operator?**  
+If you add a string to a number (or other value) everything is converted in to a string first. For example: 
+  - `'3' + 4 + 5;  // "345"` 
+  - `'3' + '4' + 5; // "345"`
+  - `3 + '4' + 5; // "345"`
+  - `3 + 4 + '5'; // "75"`
+  - `3 + 4 + true; // 8 // Number!` 
+  - `3 + 4 + false // 7 // Number!`
+  - `3 + "4" + true; // "34true"`
+  - `3 + 4 + '4' + true // "74true"`
+  - `3 + 4 + '4' + true + '4' + 4 + 3; // "74true443"`
+  - etc.
+  
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
+
+- **What are the ways to convert something into a String?**  
+  - Add an empty string to something
+  - ???
+  
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
+  
+- **What are the comparission operators in JavaScript?**  
+`<`, `>`, `<=`, `>=`, `==` (performs type coercion, for example: `123 == '123'; // true`, `1 == true; // true`), `===` (to avoid type coercion, for example: `123 === '123'; // false`, `1 === true;    // false`), `!=`, `!==`  
+  
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators  
+
+- **Are there any bitwise operators in JavaScript?**  
+Yes, there is.  
+  - Bitwise AND (`a & b`) Returns a 1 in each bit position for which the corresponding bits of both operands are 1's.
+  - Bitwise OR (`a | b`) Returns a 1 in each bit position for which the corresponding bits of either or both operands are 1's.
+  - Bitwise XOR (`a ^ b`) Returns a 1 in each bit position for which the corresponding bits of either but not both operands are 1's.
+  - Bitwise NOT (`~ a`) Inverts the bits of its operand.
+  - Left shift (`a << b`) Shifts a in binary representation b (< 32) bits to the left, shifting in 0's from the right.
+  - Sign-propagating right shift (`a >> b`) Shifts a in binary representation b (< 32) bits to the right, discarding bits shifted off.
+  - Zero-fill right shift (`a >>> b`) Shifts a in binary representation b (< 32) bits to the right, discarding bits shifted off, and shifting in 0's from the left.  
+  
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators  
+
+
+## Control structures
 
 
 ## Etc.
