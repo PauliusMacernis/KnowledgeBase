@@ -64,6 +64,8 @@
                 - https://www.w3.org/TR/css-flexbox-1/
                 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
             - grid layout
+                - https://css-tricks.com/snippets/css/complete-guide-grid/
+                - https://abookapart.com/products/get-ready-for-css-grid-layout
         - Bootstrap
             - Font Awesome
 - Versioning
