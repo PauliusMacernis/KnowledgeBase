@@ -24,6 +24,10 @@
         - NetBeans (https://netbeans.org/)
         - Visual Studio (https://visualstudio.microsoft.com/vs/)
         - ...
+    - Code snippets:
+        - PHPStorm
+            - Basic HTML5 layout template
+            - etc.
     - Cases
         - PascalCase
         - camelCase
