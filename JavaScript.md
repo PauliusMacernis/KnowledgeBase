@@ -844,66 +844,733 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prot
 
 - **What is the relation between `Array` and `Object` data types in JavaScript?**  
 Arrays in JavaScript are actually a special type of object. They work very much like regular objects (numerical properties can naturally be accessed only using `[]` syntax) but they have one magic property called `length`. This is always **one more than the highest index** in the array. For example:  
-```
-var a = new Array();
-a[0] = 'dog';
-a[1] = 'cat';
-a[2] = 'hen';
-a.length; // 3
-
-// or
-
-var a = ['dog', 'cat', 'hen'];
-a.length; // 3
-
-// or
-
-var a = ['dog', 'cat', 'hen'];
-a[100] = 'fox';
-a.length; // 101 !!!!!!!!
-```
+  ```
+  var a = new Array();
+  a[0] = 'dog';
+  a[1] = 'cat';
+  a[2] = 'hen';
+  a.length; // 3
+  
+  // or
+  
+  var a = ['dog', 'cat', 'hen'];
+  a.length; // 3
+  
+  // or
+  
+  var a = ['dog', 'cat', 'hen'];
+  a[100] = 'fox';
+  a.length; // 101 !!!!!!!!
+  ```
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
 
 - **How do I create array?**  
-`var fruits = ['Apple', 'Banana'];`  
+`[element0, element1, ..., elementN]`  
+`new Array(element0, element1[, ...[, elementN]])`  
+`new Array(arrayLength)`  
+The value of `arrayLength` must be between `0` and `(2^32) - 1` in order to create by using `new Array(arrayLength)` syntax, otherwise `RangeError` exception is thrown.    
+Note: `new Array(arrayLength)` syntax implies an array of `arrayLength` empty slots (`length` property), not slots with actual `undefined` values.  
 Read more:  
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array  
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
+
+- **Is the length of array fixed?**  
+The length of a JavaScript array is **not fixed**.  
+Since an array's length can change at any time, and data can be stored at non-contiguous locations in the array, JavaScript **arrays are not guaranteed to be dense**; this depends on how the programmer chooses to use them. In general, these are convenient characteristics; but if these features are not desirable for your particular use, you might consider using typed arrays.  
+Read more:  
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array  
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
+
+- **Are the types used in JavaScript array fixed? To paraphrase, is it possible to use String, Number and/or any other type of value mixed together into the same array?**    
+The types of Array elements are **not fixed**.  
+Read more:  
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array  
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
+
+- **Can strings be used as array indexes (like in associative arrays)?**  
+Arrays cannot use strings as element indexes (as in an associative array) but **must use integers**.  
+Read more:  
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array  
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript   
+
+- **What happens if I set or access array by using non-integers as index?**  
+Setting or accessing via non-integers using bracket notation (or dot notation) will not set or retrieve an element from the array list itself, but will set or access a variable associated with that array's object property collection.  
+The array's object properties and list of array elements are separate, and the array's traversal and mutation operations cannot be applied to these named properties.  
+
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
 
 - **How to access (index into) an Array item?**  
-???  
+  ```
+  var first = fruits[0];
+  // To access the first item of fruits array. JavaScript arrays are zero-indexed: the first element of an array is at index 0.
+  
+  var last = fruits[fruits.length - 1];
+  // To access the last item of fruits array. The last element is at the index equal to the value of the array's length property minus 1.
+  ```
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
 
 - **What do I get back if I query a non-existent array index?**  
-The result will be `undefined`. For example: `typeof a[90]; // undefined`
+The result will be `undefined`. For example: `typeof a[90]; // undefined`  
+Read more:  
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array  
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
 
-- **How do I interate over array elements?**  
-```
-for (var i = 0; i < a.length; i++) {
-  // Do something with a[i]
-}
+- **Explain `console.log(arr.0);`**  
+This will result to a syntax error because the property name is not valid.  
+JavaScript properties that begin with a digit cannot be referenced with dot notation; and must be accessed using bracket notation. For example, if you had an object with a property named `3d`, it can only be referenced using bracket notation.   
+  ```
+  var years = [1950, 1960, 1970, 1980, 1990, 2000, 2010];
+  console.log(years.0);   // a syntax error
+  console.log(years[0]);  // works properly
+  ```
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
 
-// ES2015 introduced the more concise for...of loop for iterable objects such as arrays:
-for (const currentValue of a) {
-  // Do something with currentValue
-}
+- **Which is the correct version of writing array indexes, `'quoted'` or `notquoted`? For example, `years['2']` or `years[2]`?**  
+It's possible to quote the JavaScript array indexes (e.g., `years['2']` instead of `years[2]`), although it's not necessary. The `2` in `years[2]` is coerced **into a string by the JavaScript engine through an implicit `toString` conversion**.  
+Read more:  
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array  
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
 
-```
+- **Explain the result of the following:**  
+  ```
+  var years = [1950, 1960, 1970, 1980, 1990, 2000, 2010];
+  console.log(years['2'], years['02'], years[2], years[02]);
+  ```
+  The result is `1970 undefined 1970 1970`, because JavaScript engine implicitly converts each of index values by using `toString`. So `'2'.toString() // "2"`, `'02'.toString() // "02"`, `2 converts to string as 2`, `02.toString() // "2"`. To conclude, there is index value of "2" in the array (the value `1970`) but there is no index value of "02" in the array.  
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array  
 
-- **How do I interate over array indexes?**  
+- **How do I iterate over array elements?**  
+  ```
+  for (var i = 0; i < a.length; i++) {
+    // Do something with a[i]
+  }
+  
+  // ES2015 introduced the more concise for...of loop for iterable objects such as arrays:
+  for (const currentValue of a) {
+    // Do something with currentValue
+  }
+  
+  ```
+  
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
+
+- **How do I iterate over array indexes?**  
   - Iterate over an array using a `for`...`in` loop, however this does not iterate over the array elements, but the array indices. Furthermore, if someone added new properties to `Array.prototype`, they would also be iterated over by such a loop. Therefore this loop type is not recommended for arrays.  
   - Another way of iterating over an array that was added with ECMAScript 5 is `forEach()`:
-```
-['dog', 'cat', 'hen'].forEach(function(currentValue, index, array) {
-  // Do something with currentValue or array[index]
-});
-```
+    ```
+    ['dog', 'cat', 'hen'].forEach(function(item, index, array) {
+      // Do something with item or array[index]
+    });
+    ```
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
 
-- **How do I append an item to an array?**  
-`a.push(item);`  
+- **How do I add the new item to the end of Array?**  
+`var newLength = fruits.push('Orange');`  
+Read more:  
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array  
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
 
-- 
+- **How do I remove one item from the end of an Array?**  
+`var last = fruits.pop();`  
+Read more:  
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array  
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
+
+- **How do I add the new item to the front of Array?**  
+  ```
+  var newLength = fruits.unshift('Strawberry') // add to the front
+  // ["Strawberry", "Banana"];
+  ```
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
+
+- **How do I remove one item from the front of an Array?**  
+`var first = fruits.shift(); // remove an item from the front`  
+Read more:  
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array  
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
+
+- **How to find the index of an item in the Array?**  
+  ```
+  fruits.push('Mango');
+  // ["Strawberry", "Banana", "Mango"]
+  
+  var pos = fruits.indexOf('Banana');
+  // 1
+  ```
+
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
+
+- **How to remove an item by index position?**  
+`var removedItem = fruits.splice(pos, 1); // this is how to remove an item`  
+or  
+  
+  ```
+  var vegetables = ['Cabbage', 'Turnip', 'Radish', 'Carrot'];
+  console.log(vegetables); 
+  // ["Cabbage", "Turnip", "Radish", "Carrot"]
+  
+  var pos = 1, n = 2;
+  
+  var removedItems = vegetables.splice(pos, n); 
+  // this is how to remove items, n defines the number of items to be removed,
+  // from that position(pos) onward to the end of array.
+  
+  console.log(vegetables); 
+  // ["Cabbage", "Carrot"] (the original array is changed)
+  
+  console.log(removedItems); 
+  // ["Turnip", "Radish"]
+  ```
+  
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
+
+- **How to copy an Array?**  
+`var shallowCopy = fruits.slice();`  
+Read more:  
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array  
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
 
 
+## Functions
 
+- **Explain the following:**  
+  ```
+  function add(x, y) {
+    var total = x + y;
+    return total;
+  }
+  ```
+  This demonstrates a basic function taking 2 parameters, declaring its own variable which is local to this function. The return statement terminates the function by returning the value of `total`.  
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
 
+- **What does the function return if no `return` statement is used (or an empty `return` with no value)?**  
+The function will return `undefined` then.  
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
+
+- **What happens with the function parameters if we call a function without any values passed in?**  
+Each of parameters will be assigned the value of `undefined`.  
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
+
+- **Let say we pass 3 arguments to the function declared with two parameters in its description. How to get the value of extra param(s)?**  
+Functions have access to an additional variable inside their body called `arguments`, which is an array-like object holding all of the values passed to the function. consider the following example:  
+  ```
+  function add() {
+    var sum = 0;
+    for (var i = 0, j = arguments.length; i < j; i++) {
+      sum += arguments[i];
+    }
+    return sum;
+  }
+  
+  add(2, 3, 4, 5); // 14
+  ```
+  or  
+  ```
+  function avg() {
+    var sum = 0;
+    for (var i = 0, j = arguments.length; i < j; i++) {
+      sum += arguments[i];
+    }
+    return sum / arguments.length;
+  }
+  
+  avg(2, 3, 4, 5); // 3.5
+  ```
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
+
+- **What is the spread operator (`...`) for in JavaScript?**  
+It spreads the values of the array. The array (e.g. `...myArray`) becomes its values - elements from `0` (inclusive) to `myArray.length` (exclusive). For example: 
+
+  ```
+  var dowhatever = ['have fun', 'have mmore fun', 'have even more fun'];
+  var life = ['born', 'learn to walk', 'learn js', ...dowhatever, 'go to heaven'];
+  console.log(life);
+  // Array(7) [ "born", "learn to walk", "learn js", "have fun", "have mmore fun", "have even more fun", "go to heaven" ]
+  ```
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters  
+  https://www.youtube.com/watch?v=kGl0B9tqrlg  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
+
+- **What does "rest parameters" mean in JavaScript?**  
+? Rest parameters are the bunch of parameters accepted inside the function by using spread operator (`...`) and one argument after the spread operator, for example:  
+  ```
+  function f(a, b, ...theArgs) {
+    // Use "theArgs" (array) in order to access c, and/or whatever other elements you have passed to f.
+  }
+  ``` 
+  As stated by developer.mozilla.org: `"rest arguments" — as the name implies, this contains the rest of the arguments.`
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
+
+- **What is the difference between "rest parameters" and the `arguments` object? They both collect many values into one basket.**  
+There are three main differences between "rest parameters" and the `arguments` object:
+    - rest parameters are only the ones that haven't been given a separate name (i.e. formally defined in function expression), while the `arguments` object contains all arguments passed to the function;
+    - the **`arguments` object is not a real array**, while **rest parameters are `Array` instances**, meaning methods like `sort`, `map`, `forEach` or `pop` can be applied on it directly;
+    - the `arguments` object has additional functionality specific to itself (like the `callee` property).
+    
+    Read more:  
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters  
+
+- **Explain the following:**  
+  ```
+  function f(a, b) {
+    var args = Array.prototype.slice.call(arguments, f.length);
+  
+    // …
+  }
+  ```
+  
+  It is to be equivalent of:
+  ```
+  function f(a, b, ...args) {
+    
+  }
+  ```
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters  
+  
+- **Explain the following:**
+  ```
+  function f(...[a, b, c]) {
+    return a + b + c;
+  }
+  
+  f(1)          // NaN (b and c are undefined)
+  f(1, 2, 3)    // 6
+  f(1, 2, 3, 4) // 6 (the fourth parameter is not destructured)
+  ```
+  Rest parameters can be destructured, that means that their data can be unpacked into distinct variables.  
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment    
+  
+- **Explain *the last line* of the following:**  
+  ```
+  function avg(...args) {
+    var sum = 0;
+    for (let value of args) {
+      sum += value;
+    }
+    return sum / args.length;
+  }
+  
+  avg(2, 3, 4, 5); // 3.5
+  avg.apply(null, [2, 3, 4, 5]); // 3.5
+  ```
+  The `apply()` method calls a function (user declared `avg`) with a given `this` (if the method is a function in non-strict mode code, **`null`** and `undefined` will be replaced with the global object, and primitive values will be boxed, otherwise the passed object will be treated as `this`) value, and arguments provided as an array (or an array-like object).  
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters  
+  
+- **Is a function also an object in JavaScript?**  
+Yes, a function is also an object in JavaScript.  
+JavaScript functions are themselves objects — like everything else in JavaScript — and you can add or change properties on them just like we've seen earlier in the Objects section.  
+
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters    
+
+- **What is anonymous function in JavaScript?**  
+Anonymous function is the function without name declared. It can be assigned to a variable or used right away. Consider the following examples:  
+  ```
+  var avg = function() {
+    var sum = 0;
+    for (var i = 0, j = arguments.length; i < j; i++) {
+      sum += arguments[i];
+    }
+    return sum / arguments.length;
+  };
+  ```  
+  or  
+  ```
+  // Lets hide some local variables - like block scope in C.
+  var a = 1;
+  var b = 2;
+  
+  (function() {
+    var b = 3;
+    a += b;
+  })();
+  
+  a; // 4
+  b; // 2
+  ```
+
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters  
+  
+- **Does JavaScript allow calling functions recursively?**  
+Yes, it does. For example:  
+  ```
+  function countChars(elm) {
+    if (elm.nodeType == 3) { // TEXT_NODE
+      return elm.nodeValue.length;
+    }
+    var count = 0;
+    for (var i = 0, child; child = elm.childNodes[i]; i++) {
+      count += countChars(child);
+    }
+    return count;
+  }
+  ```
+  
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
+
+- **How do you call the anonymous function recursively if it does not have a name?**  
+JavaScript lets you name function expressions for this. You can use named IIFEs (Immediately Invoked Function Expressions) as shown below:  
+  ```
+  var charsInBody = (function counter(elm) {
+    if (elm.nodeType == 3) { // TEXT_NODE
+      return elm.nodeValue.length;
+    }
+    var count = 0;
+    for (var i = 0, child; child = elm.childNodes[i]; i++) {
+      count += counter(child);
+    }
+    return count;
+  })(document.body);
+  ```  
+  The name provided to a function expression as above is only available to the function's own scope. This allows more optimizations to be done by the engine and results in more readable code. The name also shows up in the debugger and some stack traces, which can save you time when debugging.  
+  
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript    
+  
+- **What is IIFE (Immediately Invoked Function Expression) in JavaScript?**  
+An IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined. For example:  
+  ```
+  (function () {
+      statements
+  })();
+  ```  
+  It is a design pattern which is also known as a **Self-Executing Anonymous Function** and contains two major parts:  
+    - The anonymous function with lexical scope enclosed within the Grouping Operator `()`. This prevents accessing variables within the IIFE idiom as well as polluting the global scope.  
+    - The second part creates the immediately executing function expression `()` through which the JavaScript engine will directly interpret the function.  
+  
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
+  https://developer.mozilla.org/en-US/docs/Glossary/IIFE  
+  
+
+## Custom objects  
+
+- **What are the ways to create a "custom object" in JavaScript?**  
+    - First way is the simplest one - we simply use functions. However, it **pollutes the global namespace** with many new functions:  
+      ```
+      function makePerson(first, last) {
+        return {
+          first: first,
+          last: last
+        };
+      }
+      function personFullName(person) {
+        return person.first + ' ' + person.last;
+      }
+      function personFullNameReversed(person) {
+        return person.last + ', ' + person.first;
+      }
+      
+      s = makePerson('Simon', 'Willison');
+      personFullName(s); // "Simon Willison"
+      personFullNameReversed(s); // "Willison, Simon"
+      ```
+    - The second way is a bit more difficult - we attach a function to an object. This way **does not pollute the global namespace** with new functions:  
+      ```
+      function makePerson(first, last) {
+        return {
+          first: first,
+          last: last,
+          fullName: function() {
+            return this.first + ' ' + this.last;
+          },
+          fullNameReversed: function() {
+            return this.last + ', ' + this.first;
+          }
+        };
+      }
+      
+      s = makePerson('Simon', 'Willison');
+      s.fullName(); // "Simon Willison"
+      s.fullNameReversed(); // "Willison, Simon"
+      ```
+    - The third way is the improved second version, just by using `new` keyword`:  
+      ```
+      function Person(first, last) {
+        this.first = first;
+        this.last = last;
+        this.fullName = function() {
+          return this.first + ' ' + this.last;
+        };
+        this.fullNameReversed = function() {
+          return this.last + ', ' + this.first;
+        };
+      }
+      var s = new Person('Simon', 'Willison');
+      ```
+    - The forth way is about to "share the code" between instances. Which means we do not create new object every time, but we "share the code in some parts". This way we are creating the method functions only once, and assigning references to them inside the constructor.:  
+      ```
+      function personFullName() {
+        return this.first + ' ' + this.last;
+      }
+      function personFullNameReversed() {
+        return this.last + ', ' + this.first;
+      }
+      function Person(first, last) {
+        this.first = first;
+        this.last = last;
+        this.fullName = personFullName;
+        this.fullNameReversed = personFullNameReversed;
+      }
+      ```
+    - The fifth way is improved forth way. `Person.prototype` is an object shared by all instances of `Person`. It forms part of a lookup chain (that has a special name, "prototype chain"): any time you attempt to access a property of `Person` that isn't set, JavaScript will check `Person.prototype` to see if that property exists there instead. As a result, anything assigned to `Person.prototype` becomes available to all instances of that constructor via the this object.:  
+      ```
+      function Person(first, last) {
+        this.first = first;
+        this.last = last;
+      }
+      Person.prototype.fullName = function() {
+        return this.first + ' ' + this.last;
+      };
+      Person.prototype.fullNameReversed = function() {
+        return this.last + ', ' + this.first;
+      };
+      ```
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
+      
+       
+- **What does `this` keyword mean in JavaScript?**  
+ Used inside a function, `this` refers to the current object (function is actually an object in JavaScript). What that actually means is specified by the way in which you called that function. 
+    - If you called `this` using dot notation or bracket notation on an object, that object becomes `this`. 
+    - If dot notation wasn't used for the call of `this`, then `this` refers to the global object.  
+
+  For example:  
+  ```
+  function makePerson(first, last) {
+    return {
+      first: first,
+      last: last,
+      fullName: function() {
+        return this.first + ' ' + this.last;
+      },
+      fullNameReversed: function() {
+        return this.last + ', ' + this.first;
+      }
+    };
+  }
+  
+  s = makePerson('Simon', 'Willison');
+  s.fullName(); // "Simon Willison"
+  s.fullNameReversed(); // "Willison, Simon"
+  ```
+  or
+  ```
+  console.log(this);
+  // Window http://localhost:8080/#/enrich/product/5
+  ```
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
+
+- **What does `new` keyword mean in JavaScript?**  
+The `new` keyword is strongly related to `this`. The `new` creates a brand new empty object, and then calls the function specified, with `this` set to that new object.  
+The function specified with `this` does not return a value but merely modifies the `this` object. It's `new` that returns the `this` object to the calling site. Functions that are designed to be called by `new` are called **constructor functions**. Common practice is to capitalize these functions as a reminder to call them with `new`.  
+
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new  
+
+- **IMPORTANT: What does `prototype` mean when used in JavaScript object, for example: `AnyObjectName.prototype.anyMethod`?**  
+AnyObjectName`.prototype` is an object shared by all instances of AnyObjectName. **It forms part of a lookup chain (that has a special name, "prototype chain" - The root of that chain is `Object.prototype`)**: any time we attempt to access a property of AnyObjectName that isn't set, JavaScript will check AnyObjectName`.prototype` to see if that property exists there instead. As a result, anything assigned to AnyObjectName`.prototype` becomes available to all instances of that constructor via the `this` object.  
+This is an incredibly powerful tool. JavaScript lets us modify something's prototype at any time in our program, which means we can add extra methods to existing objects at runtime!  For example:  
+  ```
+  s = new Person('Simon', 'Willison');
+  s.firstNameCaps(); // TypeError on line 1: s.firstNameCaps is not a function
+  
+  Person.prototype.firstNameCaps = function() {
+    return this.first.toUpperCase();
+  };
+  s.firstNameCaps(); // "SIMON"
+  ```
+  
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
+  
+- **IMPORTANT: Can we add things to the prototype of built-in JavaScript objects? For example, adding a method to `String` that returns that string in reverse and even works on string literals like `'Can this string be reversed like this?'.reversed(); // ?siht ekil desrever eb gnirts siht naC`.**  
+  Yes, we can add things to the prototype of built-in JavaScript objects! This method works on string literals too. For example, adding a method to `String` that returns that string in reverse:  
+  ```
+  var s = 'Simon';
+  s.reversed(); // TypeError on line 1: s.reversed is not a function
+  
+  String.prototype.reversed = function() {
+    var r = '';
+    for (var i = this.length - 1; i >= 0; i--) {
+      r += this[i];
+    }
+    return r;
+  };
+  
+  s.reversed(); // nomiS
+  'This can now be reversed'.reversed(); // desrever eb won nac sihT
+  ```
+  
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
+
+- **Explain the last line (the result) of the following example:**  
+  ```
+  function makePerson(first, last) {
+    return {
+      first: first,
+      last: last,
+      fullName: function() {
+        return this.first + ' ' + this.last;
+      },
+      fullNameReversed: function() {
+        return this.last + ', ' + this.first;
+      }
+    };
+  }
+  
+  s = makePerson('Simon', 'Willison');
+  var fullName = s.fullName;
+  fullName(); // undefined undefined
+  ```
+  
+  The answer:  
+  When we call `fullName()` alone, without using `s.fullName()`, `this` is bound to the global object. Since there are no global variables called `first` or `last` we get `undefined` for each one.  
+  
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
+  
+- **Explain the following example, could it be used for debugging `Person` object?**  
+  ```
+  var s = new Person('Simon', 'Willison');
+  s.toString(); // [object Object]
+  
+  Person.prototype.toString = function() {
+    return '<Person: ' + this.fullName() + '>';
+  }
+  
+  s.toString(); // "<Person: Simon Willison>"
+  ```
+  The prototype forms part of a chain. The root of that chain is `Object.prototype`, whose methods include `toString()` — it is this method that is called when we try to represent an object as a string. **This is useful for debugging** our `Person` objects.  
+  
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
+  
+- **What is the difference between `apply()` and `call()` functions?**  
+`apply()` has a sister function named `call`, which again lets you set `this` but **takes an expanded argument list as opposed to an array**.  
+  ```
+  function lastNameCaps() {
+    return this.last.toUpperCase();
+  }
+  var s = new Person('Simon', 'Willison');
+  lastNameCaps.call(s);
+  // Is the same as:
+  s.lastNameCaps = lastNameCaps;
+  s.lastNameCaps(); // WILLISON
+  ```
+  
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
+
+## Inner functions
+
+- **Can nested functions access variables in their parent function's scope?**  
+Yes. Consider the example:  
+  ```
+  function parentFunc() {
+    var a = 1;
+    
+    console.log(b);          // #1 // b = undefined
+    var b = 2;
+    console.log(b);          // #2 // b = 2
+  
+    function nestedFunc() {
+      console.log(b);        // #4 // b = undefined
+      var b = 4;             //    // parentFunc can't use this
+      console.log(b);        // #5 // b = 4
+      return a + b; 
+    }
+    
+    console.log(b);          // #3 // b = 2
+    
+    return nestedFunc();     // #6 // 5
+  }
+  
+  parentFunc();
+  
+  // undefined
+  // 2
+  // 2
+  // undefined
+  // 4
+  // 5
+  ```
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
+  
+  
+## Closures  
+
+- **IMPORTANT: Explain the following example, what result should be given in the "?" places and why:**  
+  ```
+  function makeAdder(a) {
+    return function(b) {
+      return a + b;
+    };
+  }
+  var x = makeAdder(5);
+  var y = makeAdder(20);
+  x(6); // ?
+  y(7); // ?
+  x(6); // ?
+  ```
+  The name of the `makeAdder()` function should give it away: it creates new 'adder' functions, each of which, when called with one argument, adds it to the argument that it was created with.  
+  A function defined inside another function has access to the outer function's variables. The only difference here is that the outer function has returned, and hence **common sense would seem to dictate that its local variables no longer exist. But they do still exist** — otherwise, the adder functions would be unable to work. What's more, **there are two different "copies" of makeAdder()'s local variables** — one in which a is 5 and the other one where a is 20. So the result of that function calls is as follows:  
+  ```
+  x(6); // returns 11
+  y(7); // returns 27
+  x(6); // returns 11 again
+  y(7); // returns 27 again
+  ```
+  **Whenever JavaScript executes a function, a 'scope' object is created to hold the local variables created within that function**. It is initialized with any variables passed in as function parameters. This is similar to the global object that all global variables and functions live in, but with a couple of important differences: 
+  - firstly, **a brand new scope object is created every time a function starts executing**
+  - secondly, unlike the global object (which is accessible as `this` and in browsers as `window`) these **scope objects cannot be directly accessed from your JavaScript code. There is no mechanism for iterating over the properties of the current scope object, for example**.  
+  
+  So when `makeAdder()` is called, a scope object is created with one property: `a`, which is the argument passed to the `makeAdder()` function. `makeAdder()` then returns a newly created function. Normally JavaScript's garbage collector would clean up the scope object created for `makeAdder()` at this point, but the returned function maintains a reference back to that scope object. As a result, **the scope object will not be garbage-collected until there are no more references** to the function object that `makeAdder()` returned.  
+  
+  Scope objects form a chain called the scope chain, similar to the `prototype` chain used by JavaScript's object system.  
+  
+  **A closure is the combination of a function and the scope object in which it was created. Closures let you save state — as such, they can often be used in place of objects.**  
+  
+  Read more:  
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript  
+  https://stackoverflow.com/questions/111102/how-do-javascript-closures-work  
+  
 ## Etc.
 
 
