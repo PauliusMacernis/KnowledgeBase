@@ -55,5 +55,12 @@ We attach the dropdown to the modal itself with the dropdownParent setting. This
 $.fn.modal.Constructor.prototype.enforceFocus = function() {};
 ```
   
-- 
+- **Explain the following:**  
+```
+$('.js-example-basic-single').select2({
+  placeholder: 'Select an option'
+});
+```
+We configure custom options when initialize Select2. This is done by passing an object in the call to `.select2()`.  
+
 
