@@ -429,11 +429,23 @@
         - https://floobits.com/active    
 - Languages:
     - JavaScript
-        - Node JS
-        - Vue.js
-        - React
-        - React Native
-        - Redux
+        - Patterns
+            - https://addyosmani.com/resources/essentialjsdesignpatterns/book/
+        - JavaScript module systems ( https://auth0.com/blog/javascript-module-systems-showdown/ )
+            - CommonJS
+            - Asynchronous Module Definition (AMD)
+                - RequireJS (https://requirejs.org/)
+                - Dojo (https://dojotoolkit.org/)
+            - ES2015
+        - Libraries
+            - Select2 (https://select2.org)
+        - Frameworks
+            - Node JS
+            - Vue.js
+            - React
+            - React Native
+            - Redux
+            - Backbone.js
     - PHP
         - Twig
         - Silex
