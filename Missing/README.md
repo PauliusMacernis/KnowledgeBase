@@ -19,6 +19,8 @@
     - Text/Source code editor (https://en.wikipedia.org/wiki/Comparison_of_text_editors , https://en.wikipedia.org/wiki/Source_code_editor):
         - Notepad (https://en.wikipedia.org/wiki/Microsoft_Notepad)
         - Notepad++ (https://notepad-plus-plus.org/)
+    - Online dubuggers, etc.
+        - JS Bin (http://jsbin.com/)
     - IDE (https://en.wikipedia.org/wiki/Integrated_development_environment):
         - PHPStorm (https://www.jetbrains.com/phpstorm/)
         - NetBeans (https://netbeans.org/)
