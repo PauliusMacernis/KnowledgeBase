@@ -439,13 +439,14 @@
             - ES2015
         - Libraries
             - Select2 (https://select2.org)
+            - Underscore.js (https://underscorejs.org/)
         - Frameworks
             - Node JS
             - Vue.js
             - React
             - React Native
             - Redux
-            - Backbone.js
+            - Backbone.js (http://backbonejs.org)
     - PHP
         - Twig
         - Silex
