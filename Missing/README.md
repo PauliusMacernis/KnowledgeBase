@@ -430,6 +430,7 @@
     - Pair programming
         - https://floobits.com/active    
 - Languages:
+    - Scratch (https://scratch.mit.edu/)
     - JavaScript
         - Patterns
             - https://addyosmani.com/resources/essentialjsdesignpatterns/book/
