@@ -1,6 +1,7 @@
 # Topics missing
 - Clean Code
     - Broken Windows Theory (https://medium.com/akeneo-labs/broken-windows-and-boy-scouts-3652feba0065)
+    - Rubber duck debugging (https://en.wikipedia.org/wiki/Rubber_duck_debugging)
 - Math or so
     - Numerical differentiation, Symbolic differentiation, Automatic differentiation (https://stackoverflow.com/questions/43455320/difference-between-symbolic-differentiation-and-automatic-differentiation)
 - Computation theory / computability
