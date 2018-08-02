@@ -80,3 +80,13 @@ https://phpunit.readthedocs.io/en/7.1/writing-tests-for-phpunit.html
 Read more:  
 https://phpunit.readthedocs.io/en/7.1/writing-tests-for-phpunit.html  
 
+- **Does PHPUnit support the declaration of explicit dependencies between test methods?**  
+Yes, it does. 
+Read more:  
+https://phpunit.readthedocs.io/en/7.1/writing-tests-for-phpunit.html  
+
+- **What is the difference between implicit and explicit dependencies between test methods?**  
+???  
+Read more:  
+https://phpunit.readthedocs.io/en/7.1/writing-tests-for-phpunit.html  
+
