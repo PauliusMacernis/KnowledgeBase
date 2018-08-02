@@ -70,3 +70,13 @@ Because these:
 Read more:  
 https://phpunit.readthedocs.io/en/7.1/writing-tests-for-phpunit.html  
 
+- **May Unit tests have implicit dependencies between test methods?**  
+One unit test usually covers one specific path in one function or method. However a test method is not necessarily an encapsulated, independent entity. Often there are implicit dependencies between test methods, hidden in the implementation scenario of a test.  
+Read more:  
+https://phpunit.readthedocs.io/en/7.1/writing-tests-for-phpunit.html  
+
+- **Is it ok for Unit tests to have implicit dependencies between test methods?**  
+???  
+Read more:  
+https://phpunit.readthedocs.io/en/7.1/writing-tests-for-phpunit.html  
+
