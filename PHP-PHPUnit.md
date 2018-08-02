@@ -56,3 +56,10 @@ Read more:
 https://phpunit.readthedocs.io/en/7.1/writing-tests-for-phpunit.html  
 https://phpunit.readthedocs.io/en/7.1/assertions.html#appendixes-assertions  
 
+- **Why should we write tests instead of `print`, `print_r`, `echo`, `var_dump` statements and a debugger expressions instead?**  
+Because we are expecting some value to be dumped after the print (`print`, `print_r`, `echo`, `var_dump`, etc.) and it is better to have this kind of expectations to be saved as tests than just printing the value, checking if it matches the expectation, and removing just after.  
+Read more:  
+https://phpunit.readthedocs.io/en/7.1/writing-tests-for-phpunit.html  
+
+
+
