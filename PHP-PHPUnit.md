@@ -61,5 +61,12 @@ Because we are expecting some value to be dumped after the print (`print`, `prin
 Read more:  
 https://phpunit.readthedocs.io/en/7.1/writing-tests-for-phpunit.html  
 
-
+- **Why Unit Tests are treated as a good practice?**  
+Because these:
+    - helps to identify and fix bugs,
+    - helps to refactor code, 
+    - helps to serve as documentation for a unit of software under test,
+    - reduces the cost of the bug, profit loss because of the bug, etc. Finding a bug in a local develop environment is much cheeper in value loss than finding the same on production.
+Read more:  
+https://phpunit.readthedocs.io/en/7.1/writing-tests-for-phpunit.html  
 
