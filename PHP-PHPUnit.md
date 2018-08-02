@@ -90,3 +90,28 @@ https://phpunit.readthedocs.io/en/7.1/writing-tests-for-phpunit.html
 Read more:  
 https://phpunit.readthedocs.io/en/7.1/writing-tests-for-phpunit.html  
 
+- **Does explicit dependencies between test methods define the order in which the test methods are to be executed?**  
+Such dependencies **do not define the order** in which the test methods are to be executed.
+Read more:  
+https://phpunit.readthedocs.io/en/7.1/writing-tests-for-phpunit.html  
+
+- **What does explicit dependencies between test methods allow to return?**  
+Explicit dependencies between test methods **allow the returning of an instance of the test fixture**.  
+Read more:  
+https://phpunit.readthedocs.io/en/7.1/writing-tests-for-phpunit.html  
+
+- **Which part of the system produces a test fixture?**  
+A test fixture is produced by a producer. A producer is a test method that yields its unit under test as return value.  
+Read more:  
+https://phpunit.readthedocs.io/en/7.1/writing-tests-for-phpunit.html  
+
+- **Which part of the system consumes a test fixture?**  
+A test fixture is consumed by a consumer. A consumer is a test method that depends on one or more producers and their return values.  
+Read more:  
+https://phpunit.readthedocs.io/en/7.1/writing-tests-for-phpunit.html  
+
+- **What is the difference between a fixture and a mock?**  
+???  
+Read more:  
+https://phpunit.readthedocs.io/en/7.1/writing-tests-for-phpunit.html  
+
