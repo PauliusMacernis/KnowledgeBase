@@ -206,6 +206,9 @@
         - Problem Details for HTTP APIs (https://www.rfc-editor.org/info/rfc7807)
         - HATEOAS (https://en.wikipedia.org/wiki/HATEOAS)
         - OpenAPI
+        - Tools:
+            - https://beeceptor.com/ (alternative to requestb.in: https://github.com/Runscope/requestbin#readme)
+            - http://httpbin.org/headers
     - SSL
         - Secure Sockets Layer (SSL) (https://www.geotrust.com/au/resources/whitepapers/pdfs/SSL_101_guide.pdf, )
     - TLS
