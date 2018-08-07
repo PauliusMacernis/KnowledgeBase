@@ -625,5 +625,9 @@ https://stackoverflow.com/questions/1250079/how-to-escape-single-quotes-within-s
 Read more:  
 https://askubuntu.com/questions/564567/how-to-download-playlist-from-youtube-dl  
 
+- **Create the dir, cd into it, `pwd` shows the correct dir path, remove the dir with another tool (like Nautilus file manager), create the same dir (the same dir name) with the same tool (like Nautilus) again, get back to the previous terminal window and run `ls -al` - the dot files (`.` and `..`) are gone. What happened?**  
+??something related to inodes?  
+Read more:  
+???  
 
 
