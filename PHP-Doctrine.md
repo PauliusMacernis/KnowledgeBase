@@ -23,3 +23,8 @@ https://stackoverflow.com/questions/9632701/doctrine2-migrations-migrate-down-an
 Read more:  
 ???  
 
+- **What is the difference betwen `doctrine:schema:create` and `doctrine:schema:update --force --no-interaction`?**  
+???  
+Read more:  
+???  
+
