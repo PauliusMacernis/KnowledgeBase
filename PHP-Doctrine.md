@@ -24,7 +24,8 @@ Read more:
 ???  
 
 - **What is the difference betwen `doctrine:schema:create` and `doctrine:schema:update --force --no-interaction`?**  
-???  
+`doctrine:schema:create` - Executes (or dumps) the SQL needed to generate the database schema.  
+`doctrine:schema:update` - Executes (or dumps) the SQL needed to update the database schema to match the current mapping metadata.  
 Read more:  
 ???  
 
