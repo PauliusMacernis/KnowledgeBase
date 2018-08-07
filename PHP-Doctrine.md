@@ -26,6 +26,7 @@ Read more:
 - **What is the difference betwen `doctrine:schema:create` and `doctrine:schema:update --force --no-interaction`?**  
 `doctrine:schema:create` - Executes (or dumps) the SQL needed to generate the database schema.  
 `doctrine:schema:update` - Executes (or dumps) the SQL needed to update the database schema to match the current mapping metadata.  
+The updating of databases uses a Diff Algorithm for a given Database Schema.  
 Read more:  
-???  
+https://www.doctrine-project.org/projects/doctrine-orm/en/2.6/tutorials/getting-started.html  
 
