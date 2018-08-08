@@ -2,6 +2,15 @@
 - Clean Code
     - Broken Windows Theory (https://medium.com/akeneo-labs/broken-windows-and-boy-scouts-3652feba0065)
     - Rubber duck debugging (https://en.wikipedia.org/wiki/Rubber_duck_debugging)
+    - Premature optimisation (https://sahandsaba.com/nine-anti-patterns-every-programmer-should-be-aware-of-with-examples.html)
+    - Bikeshedding (https://sahandsaba.com/nine-anti-patterns-every-programmer-should-be-aware-of-with-examples.html)
+    - Analysis Paralysis (https://sahandsaba.com/nine-anti-patterns-every-programmer-should-be-aware-of-with-examples.html)
+    - God Class (https://sahandsaba.com/nine-anti-patterns-every-programmer-should-be-aware-of-with-examples.html)
+    - Fear of Adding Classes (https://sahandsaba.com/nine-anti-patterns-every-programmer-should-be-aware-of-with-examples.html)
+    - Inner-platform Effect (https://sahandsaba.com/nine-anti-patterns-every-programmer-should-be-aware-of-with-examples.html)
+    - Magic Numbers and Strings (https://sahandsaba.com/nine-anti-patterns-every-programmer-should-be-aware-of-with-examples.html)
+    - Management by Numbers (https://sahandsaba.com/nine-anti-patterns-every-programmer-should-be-aware-of-with-examples.html)
+    - Useless (Poltergeist) Classes (https://sahandsaba.com/nine-anti-patterns-every-programmer-should-be-aware-of-with-examples.html)
 - Math or so
     - Numerical differentiation, Symbolic differentiation, Automatic differentiation (https://stackoverflow.com/questions/43455320/difference-between-symbolic-differentiation-and-automatic-differentiation)
 - Computation theory / computability
