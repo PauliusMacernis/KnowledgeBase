@@ -621,7 +621,7 @@ https://askubuntu.com/questions/46627/how-can-i-make-a-script-that-opens-termina
 Read more:  
 https://stackoverflow.com/questions/1250079/how-to-escape-single-quotes-within-single-quoted-strings  
 
-- **Explain `youtube-dl --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" https://www.youtube.com/playlist?list=PLdYFKR1OyeXI9A91oVeFVg_H-yOPZfQVw`**  
+- **Explain `youtube-dl --ignore-errors --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s" https://www.youtube.com/playlist?list=PLdYFKR1OyeXI9A91oVeFVg_H-yOPZfQVw`**  
 Read more:  
 https://askubuntu.com/questions/564567/how-to-download-playlist-from-youtube-dl  
 
