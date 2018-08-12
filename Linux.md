@@ -630,4 +630,17 @@ https://askubuntu.com/questions/564567/how-to-download-playlist-from-youtube-dl
 Read more:  
 ???  
 
+- **What is "systemd journal" command for (e.g. on Ubuntu)?**  
+systemd-journald.service, systemd-journald.socket, systemd-journald-dev-log.socket, systemd-journald-audit.socket, systemd-journald — Journal service.  
+systemd-journald is a system service that collects and stores logging data. It creates and maintains structured, indexed journals based on logging information that is received from a variety of sources: 
+  - Kernel log messages, via kmsg
+  - Simple system log messages, via the libc syslog(3) call
+  - Structured system log messages via the native Journal API, see sd_journal_print(4)
+  - Standard output and standard error of service units.
+  - Audit records, originating from the kernel audit subsystem
+  
+  Read more:  
+  https://www.freedesktop.org/software/systemd/man/systemd-journald.service.html  
+  https://man.cx/journalctl  
+
 
