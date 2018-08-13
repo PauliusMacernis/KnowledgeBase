@@ -1,10 +1,10 @@
-- cumbersome
-- absence
-- J, for example: "Have a lovely weekendJ" in the email
-- revival
-- akin
-- nonidiosyncratic
-- discretionary
+- cumbersome - https://dictionary.cambridge.org/dictionary/english/cumbersome
+- absence - https://dictionary.cambridge.org/dictionary/english/absence
+- J, for example: "Have a lovely weekendJ" in the email - This is because the letter J represents a smiley face icon in the Wingdings font. Microsoft Outlook, a popular e-mail client, automatically converts the :) and :-) text emoticons into smiley face icons using the Wingdings font. Therefore, when Microsoft Outlook users type smiley faces in an e-mail message, they are sent as visual smiley face icons. 
+- revival - https://dictionary.cambridge.org/dictionary/english/revival
+- akin - https://dictionary.cambridge.org/dictionary/english/akin
+- nonidiosyncratic - the oposite to https://dictionary.cambridge.org/dictionary/english/idiosyncrasy?q=idiosyncratic
+- discretionary - https://dictionary.cambridge.org/dictionary/english/discretionary
 - entrusted
 - plethora
 - induces
@@ -22,4 +22,10 @@
 - tree accumulation (quite technical term)
 - stipulating
 - coerced
-- 
+- sundae - ice cream served with syrup poured over it, and often other toppings, as whipped cream, chopped nuts, or fruit.
+- weep - https://www.merriam-webster.com/dictionary/weep
+- bitterly - https://dictionary.cambridge.org/dictionary/english/bitterly
+- piper - https://www.urbandictionary.com/define.php?term=Piper
+- diatribe - https://dictionary.cambridge.org/dictionary/english/diatribe
+- penetration - https://dictionary.cambridge.org/dictionary/english/penetration
+- ...
