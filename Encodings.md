@@ -85,3 +85,10 @@ In punctuation, the full stop (British English) or period (Canadian and American
 <a href="#" title="
 http://pubs.opengroup.org/onlinepubs/7908799/xsh/iconv.html
 ">⌘</a>
+
+- **Why does some of emails contain "J", for example "RegardsJ"?**  
+If you have Wingdings installed on your computer, the following character will appear as a smiley face. Otherwise, it will be the letter "J": J  
+This is because the letter J represents a smiley face icon in the Wingdings font. Microsoft Outlook, a popular e-mail client, automatically converts the :) and :-) text emoticons into smiley face icons using the Wingdings font. Therefore, when Microsoft Outlook users type smiley faces in an e-mail message, they are sent as visual smiley face icons.  
+Read more:  
+https://pc.net/helpcenter/answers/letter_j_in_email_messages  
+
