@@ -92,3 +92,10 @@ This is because the letter J represents a smiley face icon in the Wingdings font
 Read more:  
 https://pc.net/helpcenter/answers/letter_j_in_email_messages  
 
+- **Lets say we have MySQL database that supports UTF-8 (utf8mb3 by default, utf8mb4 if modified). There is a type of data (a data container) for a text to be stored in - TINYTEXT. TINYTEXT is set to be 255 bytes in size. How many utf8mb3 and utf8mb4 characters can TINYTEXT store?**  
+???  
+`utf8mb3` - 255 bytes / 3 characters per byte -> 85 characters  
+`utf8mb4` - 255 bytes / 4 characters per byte -> 63 characters  
+Read more:  
+https://mathiasbynens.be/notes/mysql-utf8mb4  
+
