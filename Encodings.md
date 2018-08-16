@@ -94,6 +94,19 @@ https://pc.net/helpcenter/answers/letter_j_in_email_messages
 
 #### MySQL
 
+- **What is the difference between Collation and Character Set?**  
+Collation: A collation is a set of rules for comparing characters in a character set.  
+Character-Set: A character set is a set of symbols and encoding, mostly this information is derived from the type of collation.  
+Collation and Character-Set in MySQL are meant for strings.  
+Read more:  
+https://medium.com/@manish_demblani/breaking-out-from-the-mysql-character-set-hell-24c6a306e1e5  
+https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/  
+
+- **How many levels of basic collation and character set exists in MySQL? Just note if collation and character set may be set specifically for a database, a table, a column.**  
+MySQL defines a basic collation and a character-set for each of its databases; Furthermore, each table created can have its own collation and character-set which can be same as that of the database or different from it. Furthermore, to provide even more flexibility, a column in a table has a collation and character-set of its own, which can be same as the table or different from it. Although this gives a lot of flexibility but also increases the complexity of handling data.  
+Read more:  
+https://medium.com/@manish_demblani/breaking-out-from-the-mysql-character-set-hell-24c6a306e1e5  
+
 - **Lets say we have MySQL database that supports UTF-8 (utf8mb3 by default, utf8mb4 if modified). There is a type of data (a data container) for a text to be stored in - TINYTEXT. TINYTEXT is set to be 255 bytes in size. How many utf8mb3 and utf8mb4 characters can TINYTEXT store?**  
 ???  
 `utf8mb3` - 255 bytes / 3 characters per byte -> 85 characters  
