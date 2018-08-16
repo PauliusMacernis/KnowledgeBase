@@ -92,6 +92,8 @@ This is because the letter J represents a smiley face icon in the Wingdings font
 Read more:  
 https://pc.net/helpcenter/answers/letter_j_in_email_messages  
 
+#### MySQL
+
 - **Lets say we have MySQL database that supports UTF-8 (utf8mb3 by default, utf8mb4 if modified). There is a type of data (a data container) for a text to be stored in - TINYTEXT. TINYTEXT is set to be 255 bytes in size. How many utf8mb3 and utf8mb4 characters can TINYTEXT store?**  
 ???  
 `utf8mb3` - 255 bytes / 3 characters per byte -> 85 characters  
@@ -99,3 +101,16 @@ https://pc.net/helpcenter/answers/letter_j_in_email_messages
 Read more:  
 https://mathiasbynens.be/notes/mysql-utf8mb4  
 
+- **What is the difference between `utf8_unicode_ci` and `utf8_general_ci`?**  
+In general, `utf8_general_ci` is faster than `utf8_unicode_ci`, but less correct.   
+For any Unicode character set, operations performed using the `_general_ci` collation are faster than those for the `_unicode_ci` collation. For example, comparisons for the `utf8_general_ci` collation are faster, but slightly less correct, than comparisons for `utf8_unicode_ci`. The reason for this is that `utf8_unicode_ci` supports mappings such as expansions; that is, when one character compares as equal to combinations of other characters. For example, in German and some other languages `ß` is equal to `ss`. `utf8_unicode_ci` also supports contractions and ignorable characters. `utf8_general_ci` is a legacy collation that does not support expansions, contractions, or ignorable characters. It can make only one-to-one comparisons between characters.  
+Read more:  
+https://stackoverflow.com/questions/2344118/utf-8-general-bin-unicode/2344130#2344130  
+https://dev.mysql.com/doc/refman/8.0/en/charset-unicode-sets.html  
+
+
+- **What is the difference between `utf8_bin` and `utf8_general_ci`?**  
+`utf8_bin` compares the bits blindly. No case folding, no accent stripping.  
+`utf8_general_ci` compares one byte with one byte. It does case folding and accent stripping, but no 2-character comparisions: `ij` is not equal `ĳ` in this collation.  
+Read more:  
+https://stackoverflow.com/questions/2344118/utf-8-general-bin-unicode/2344130  
