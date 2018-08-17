@@ -541,6 +541,21 @@
 - ?SCRUM
 ...
 
+# Values to apply
+- Beauty / Grožis / Schönheit
+- Faith / Tikėjimas / Glaube
+- Fame / Šlovė / Ruhm
+- Family / Šeima
+- Freedom / Laisvė / Freiheit
+- Knowledge / Žinios / Wissen
+- Love / Meilė
+- Pleasure / Malonumas / Wollust
+- Power / Galia / Macht
+- Progress / Pažanga / Fortschritt
+- Time / Laikas
+- Wealth / Turtas / Reichtum
+- Youth / Jaunytsė / Jugend
+
 # Podcasts
 - http://www.se-radio.net
 - ("Soft skills", not technical, not sure if this should be here..) https://samharris.org/podcasts/127-freedom-known/
