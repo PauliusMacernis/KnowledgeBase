@@ -16,4 +16,4 @@
   - `composer require annotations`
   - `composer require sec-checker --dev`
     - `bin/console security:check`
-  
+  - `composer require twig`
