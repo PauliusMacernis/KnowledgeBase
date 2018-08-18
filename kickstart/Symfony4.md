@@ -1,3 +1,6 @@
+# Docs
+- https://symfony.sh/ (symfony/flex aliases)
+
 # Install Symfony4
 - `composer create-project symfony/skeleton myprojectnameasthenewdir`
 - `cd myprojectnameasthenewdir`
@@ -11,4 +14,5 @@
 # Build project under project dir
 - `docker-compose exec php-fpm bash`
   - `composer require annotations`
+  - `composer require sec-checker --dev`
   
