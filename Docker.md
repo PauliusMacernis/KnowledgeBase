@@ -806,6 +806,9 @@ https://docs.docker.com/engine/reference/builder/#cmd
 Read more:  
 ???
 
+- **Explain `docker exec --user=www-data -it mydocker_php7_1 bash -c "cd $PWD; php -v"`**  
+Read more:  
+???
 
 
 
