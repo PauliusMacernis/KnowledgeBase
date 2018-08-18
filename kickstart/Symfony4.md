@@ -21,6 +21,7 @@
     - `{{ say_something }}`
     - `{% do_something %}`
     - `{# comments #}`
+  - `composer require asset`
   - `composer require profiler --dev`
   - `composer require debug --dev`
     - `composer unpack debug` - unpacks the package = replaces the package with childron packages of the package
