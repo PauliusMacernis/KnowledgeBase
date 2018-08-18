@@ -21,3 +21,4 @@
     - `{% do_something %}`
     - `{# comments #}`
   - `composer require profiler --dev`
+  - `composer require debug --dev`
