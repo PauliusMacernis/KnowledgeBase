@@ -23,4 +23,6 @@
   - `composer require profiler --dev`
   - `composer require debug --dev`
     - `composer unpack debug` - unpacks the package = replaces the package with childron packages of the package
-    
+
+# Cleaning cache
+- `rm -rf var/cache/dev/*`
