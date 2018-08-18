@@ -20,3 +20,4 @@
     - `{{ say_something }}`
     - `{% do_something %}`
     - `{# comments #}`
+  - `composer require profiler --dev`
