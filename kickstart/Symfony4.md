@@ -25,6 +25,7 @@
   - `composer require profiler --dev`
   - `composer require debug --dev`
     - `./bin/console debug:router`
+    - `./bin/console debug:autowiring`
   - `composer unpack debug` - unpacks the package = replaces the package with childron packages of the package
 
 # Cleaning cache
