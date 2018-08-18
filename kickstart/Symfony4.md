@@ -1,0 +1,14 @@
+# Install Symfony4
+- `composer create-project symfony/skeleton myprojectnameasthenewdir`
+- `cd myprojectnameasthenewdir`
+- Push changes to git
+
+# Install Docker
+- Add docker support: https://github.com/joeymasip/docker-symfony4
+- `docker-compose up`
+- Push changes to git
+
+# Build project under project dir
+- `docker-compose exec php-fpm bash`
+  - `composer require annotations`
+  
