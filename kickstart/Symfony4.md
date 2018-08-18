@@ -1,5 +1,5 @@
 # Docs
-- https://symfony.sh/ (symfony/flex aliases)
+- https://symfony.sh/ (symfony/flex aliases, e.g. `symfony.lock` uses it)
 
 # Install Symfony4
 - `composer create-project symfony/skeleton myprojectnameasthenewdir`
