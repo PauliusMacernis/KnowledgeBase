@@ -17,3 +17,6 @@
   - `composer require sec-checker --dev`
     - `bin/console security:check`
   - `composer require twig`
+    - `{{ say_something }}`
+    - `{% do_something %}`
+    - `{# comments #}`
