@@ -1,4 +1,5 @@
 # Docs
+- https://github.com/sugalvojau/Installs/blob/master/list-of-software-to-install/my-linux-ubuntu.md 
 - https://symfony.sh/ (symfony/flex aliases, e.g. `symfony.lock` uses it)
 
 # Install Symfony4
