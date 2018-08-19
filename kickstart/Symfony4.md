@@ -23,6 +23,7 @@
     - `{# comments #}`
   - `composer require asset`
   - `composer require doctrine`
+    - `./bin/console doctrine:database:create`
   - `composer require profiler --dev`
   - `composer require debug --dev`
     - `./bin/console debug:router`
