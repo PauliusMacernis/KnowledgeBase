@@ -24,6 +24,8 @@
   - `composer require asset`
   - `composer require doctrine`
     - `./bin/console doctrine:database:create`
+    - `./bin/console doctrine:migrations:migrate`
+    - `./bin/console doctrine:migrations:status`
   - `composer require profiler --dev`
   - `composer require debug --dev`
     - `./bin/console debug:router`
@@ -36,6 +38,8 @@
   - `composer require maker --dev`
     - `./bin/console make:command` (name e.g.: `article:stats`)
       - `php bin/console article:stats arg1 arg2 --option1 --option2=example`
+    - `./bin/console make:entity`
+    - `./bin/console make:migration`
   - ...config
     - `./bin/console config:dump`
     - `./bin/console config:dump TwigBundle` - dumps available config
