@@ -40,5 +40,6 @@
 
 # Cleaning cache
 - `rm -rf var/cache/dev/*`
-- `./bin/console cache:clear` (has a bug until Symfony 4.0.5 - keeps the old cache if we copy the older file, like template file, on top of the newer file)
+- `./bin/console cache:clear` 
+(Symfony had a bug prior to v4.0.5 - it kept an old cache file after we copy the older file, like template file, on top of the existing one)
 - `./bin/console cache:warmup`
