@@ -24,6 +24,7 @@
   - `composer require asset`
   - `composer require profiler --dev`
   - `composer require debug --dev`
+  - `composer require maker --dev`
     - `./bin/console debug:router`
     - `./bin/console debug:autowiring`
     - `./bin/console debug:container --parameters` - list all parameters on the container
