@@ -77,7 +77,7 @@ In Symfony 4.1, the base AbstractController will have a `$this->getParameter()` 
 */
 public function ...
 ```
-Having `@required` for a service method makes the method being called after the constructor. This may be the way to "trigger" a trait (like stting variables, doing some action, etc.) for a specific service.
+Having `@required` for a service method makes the method being called after the constructor. This may be the way to "trigger" a trait (like stting variables, doing some action, etc.) for a specific service in case a method of a trait has `@required`.
 
 
 # Good practices
