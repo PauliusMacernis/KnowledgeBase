@@ -27,6 +27,7 @@
     - `./bin/console debug:router`
     - `./bin/console debug:autowiring`
     - `./bin/console debug:container --show-private`
+    - `./bin/console debug:config framework`
   - ...config
     - `./bin/console config:dump`
     - `./bin/console config:dump TwigBundle`
