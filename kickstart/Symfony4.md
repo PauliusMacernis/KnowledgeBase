@@ -32,6 +32,9 @@
     - `./bin/console config:dump`
     - `./bin/console config:dump TwigBundle` - dumps available config
   - `composer unpack debug` - unpacks the package = replaces the package with childron packages of the package
+  
+# Good practices
+- Service dependencies (other services) are being injected into constructor of the service, not other methods of the service. Other methods uses services injected to and set by constructor.
 
 # Cleaning cache
 - `rm -rf var/cache/dev/*`
