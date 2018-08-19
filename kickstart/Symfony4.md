@@ -27,10 +27,10 @@
     - `./bin/console debug:router`
     - `./bin/console debug:autowiring`
     - `./bin/console debug:container --show-private`
-    - `./bin/console debug:config framework`
+    - `./bin/console debug:config TwigBundle` - dumps current config
   - ...config
     - `./bin/console config:dump`
-    - `./bin/console config:dump TwigBundle`
+    - `./bin/console config:dump TwigBundle` - dumps available config
   - `composer unpack debug` - unpacks the package = replaces the package with childron packages of the package
 
 # Cleaning cache
