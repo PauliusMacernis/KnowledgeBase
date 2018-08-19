@@ -69,7 +69,16 @@ some_kind_of_service:
 For more info: https://symfony.com/blog/new-in-symfony-3-4-advanced-environment-variables
 
 Binding of params does not work in case of controller actions. However, binding to a constructor of the controller is ok - it works. This all params binding issue may be fixed soon. Binding of services, not params, works fine everywhere.  
-In Symfony 4.1, the base AbstractController will have a `$this->getParameter()` shortcut method.
+In Symfony 4.1, the base AbstractController will have a `$this->getParameter()` shortcut method.  
+
+```
+/**
+* @required
+*/
+public function ...
+```
+Having `@required` for a service method makes the method being called after the constructor. This may be the way to "trigger" a trait (like stting variables, doing some action, etc.) for a specific service.
+
 
 # Good practices
 - Service dependencies (other services) are being injected into constructor of the service, not other methods of the service. Other methods uses services injected to and set by constructor.
