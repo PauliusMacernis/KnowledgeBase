@@ -22,9 +22,9 @@
     - `{% do_something %}`
     - `{# comments #}`
   - `composer require asset`
+  - `composer require doctrine`
   - `composer require profiler --dev`
   - `composer require debug --dev`
-  - `composer require maker --dev`
     - `./bin/console debug:router`
     - `./bin/console debug:autowiring`
     - `./bin/console debug:container --parameters` - list all parameters on the container
@@ -32,6 +32,9 @@
     - `./bin/console debug:container --show-private log` - list all services on the container that contains "log"
     - `./bin/console debug:container monolog.logger` - info on the service
     - `./bin/console debug:config TwigBundle` - dumps current config
+  - `composer require maker --dev`
+    - `./bin/console make:command` (name e.g.: `article:stats`)
+      - `php bin/console article:stats arg1 arg2 --option1 --option2=example`
   - ...config
     - `./bin/console config:dump`
     - `./bin/console config:dump TwigBundle` - dumps available config
