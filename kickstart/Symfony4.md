@@ -36,3 +36,4 @@
 # Cleaning cache
 - `rm -rf var/cache/dev/*`
 - `./bin/console cache:clear`
+- `./bin/console cache:warmup`
