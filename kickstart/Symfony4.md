@@ -34,6 +34,8 @@
   - ...config
     - `./bin/console config:dump`
     - `./bin/console config:dump TwigBundle` - dumps available config
+  - ...about
+    - `./bin/console about` - lists system version and other info, including environment variables
   - `composer unpack debug` - unpacks the package = replaces the package with childron packages of the package
 
 # Config
@@ -58,6 +60,13 @@ services:
   # Configuration for services in all files. Affects all services under the system
   Namespace\And\My\Class: '@my.passable.third.service.id'
 ```
+
+Getting environment variable value:
+```
+some_kind_of_service:
+  some_kind_of_param: '%env(MY_ENVIRONMENT_VARIABLE)%'
+```
+
 Binding of params does not work in case of controller actions. However, binding to a constructor of the controller is ok - it works. This all params binding issue may be fixed soon. Binding of services, not params, works fine everywhere.  
 In Symfony 4.1, the base AbstractController will have a `$this->getParameter()` shortcut method.
 
