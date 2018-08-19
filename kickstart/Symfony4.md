@@ -37,14 +37,6 @@
   - `composer unpack debug` - unpacks the package = replaces the package with childron packages of the package
 
 # Config
-Auto Dependency injection:  
-```
-services:
-  _defaults:
-    bind:
-      $varNameToAcceptInAnotherServiceAsCommingParameter: '@my.passable.service.id'
-```
-
 Config variables:  
 ```
 parameters:
@@ -54,6 +46,15 @@ any_service_name:
   ...
   some_setting: '%my_custom_param%'
 ```
+
+Auto Dependency injection:  
+```
+services:
+  _defaults:
+    bind:
+      $varNameToAcceptInAnotherServiceAsCommingParameter: '@my.passable.service.id'
+```
+Binding of params (see bellow) does not work in case of controller actions. However, binding to a constructor of the controller is ok - it works. This all params binding issue may be fixed soon. Binding of services, not params, works fine everywhere.
 
 # Good practices
 - Service dependencies (other services) are being injected into constructor of the service, not other methods of the service. Other methods uses services injected to and set by constructor.
