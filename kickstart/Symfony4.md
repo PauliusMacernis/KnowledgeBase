@@ -64,14 +64,16 @@ services:
 Getting environment variable value:
 ```
 some_kind_of_service:
-  some_kind_of_param: '%env(MY_ENVIRONMENT_VARIABLE)%'
+  some_kind_of_param: '%env(string:MY_ENVIRONMENT_VARIABLE)%'
 ```
+For more info: https://symfony.com/blog/new-in-symfony-3-4-advanced-environment-variables
 
 Binding of params does not work in case of controller actions. However, binding to a constructor of the controller is ok - it works. This all params binding issue may be fixed soon. Binding of services, not params, works fine everywhere.  
 In Symfony 4.1, the base AbstractController will have a `$this->getParameter()` shortcut method.
 
 # Good practices
 - Service dependencies (other services) are being injected into constructor of the service, not other methods of the service. Other methods uses services injected to and set by constructor.
+- Remove `symfony/dotenv` if you do not plan to use `.env` feature. However, you may keep it for dev environment: `composer remove symfony/dotenv`, `composer require symfony/dotenv --dev`
 
 # Cleaning cache
 - `rm -rf var/cache/dev/*`
