@@ -26,6 +26,7 @@
   - `composer require debug --dev`
     - `./bin/console debug:router`
     - `./bin/console debug:autowiring`
+    - `./bin/console debug:container --show-private`
   - ...config
     - `./bin/console config:dump`
     - `./bin/console config:dump TwigBundle`
