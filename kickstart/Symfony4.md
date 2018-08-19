@@ -35,12 +35,23 @@
     - `./bin/console config:dump TwigBundle` - dumps available config
   - `composer unpack debug` - unpacks the package = replaces the package with childron packages of the package
 
-# Config bindings
+# Config
+Auto Dependency injection:  
 ```
 services:
   _defaults:
     bind:
       $varNameToAcceptInAnotherServiceAsCommingParameter: '@my.passable.service.id'
+```
+
+Config variables:  
+```
+parameters:
+  my_custom_param: 'a_value_of_my_custom_param'
+...
+any_service_name:
+  ...
+  some_setting: '%my_custom_param%'
 ```
 
 # Good practices
