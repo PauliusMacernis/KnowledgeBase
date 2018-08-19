@@ -53,6 +53,7 @@ services:
   _defaults:
     bind:
       $varNameToAcceptInAnotherServiceAsCommingParameter: '@my.passable.service.id'
+      Namespace\And\My\Class: '@my.passable.second.service.id'
 ```
 Binding of params does not work in case of controller actions. However, binding to a constructor of the controller is ok - it works. This all params binding issue may be fixed soon. Binding of services, not params, works fine everywhere.  
 In Symfony 4.1, the base AbstractController will have a `$this->getParameter()` shortcut method.
