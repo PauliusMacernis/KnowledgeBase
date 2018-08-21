@@ -440,6 +440,7 @@
     - Pattern Languages of Program Design 5 (PLOD 5) (http://www.amazon.com/gp/product/0321321944/)
     - SOLID
     - ...
+- Hierarchies / trees / nested sets ( https://en.wikipedia.org/wiki/Nested_set_model )
 - Agile
     - Pair programming
         - https://floobits.com/active    
