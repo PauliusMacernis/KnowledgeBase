@@ -477,6 +477,7 @@
                 - Doctrine (https://www.doctrine-project.org/)
                 - Eloquent (https://laravel.com/docs/5.6/eloquent)
         - MySQL 5.7
+    - Quorum ( https://quorumlanguage.com/tutorials/language/casting.html ). Programing language for blind people, EVIDENCE based general programing language.
     - ...
 - Social Media & Marketting
     - Facebook
