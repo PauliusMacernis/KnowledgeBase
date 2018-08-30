@@ -35,7 +35,7 @@
     - `./bin/console debug:container --show-private log` - list all services on the container that contains "log"
     - `./bin/console debug:container monolog.logger` - info on the service
     - `./bin/console debug:config TwigBundle` - dumps current config
-    - *(Symfony3. Symfony4?)* `./bin/console debug:event-dispatcher eventname`
+    - *(Symfony3. Symfony4?)* `./bin/console debug:event-dispatcher eventname` - list all configured event listeners (event subscribers) and their priorities.
   - `composer require maker --dev`
     - `./bin/console make:command` (name e.g.: `article:stats`)
       - `php bin/console article:stats arg1 arg2 --option1 --option2=example`
