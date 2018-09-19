@@ -24,6 +24,7 @@
     - ISO/IEC/IEEE 60559:2011 (https://www.iso.org/standard/57469.html)
 - Encodings, encoding/decoding:
     - https://www.w3.org/International/questions/qa-what-is-encoding
+    - http://kunststube.net/encoding/
 - Text-based formats:
     - TXT
     - Text/Source code editor (https://en.wikipedia.org/wiki/Comparison_of_text_editors , https://en.wikipedia.org/wiki/Source_code_editor):
