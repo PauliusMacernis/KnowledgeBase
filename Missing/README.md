@@ -108,6 +108,8 @@
      */
     ```
     - Sami, the API Documentation Generator. ( https://github.com/FriendsOfPHP/sami )
+- Translations:
+    - https://crowdin.com/
 - Wireshark (https://www.wireshark.org/download/docs/user-guide.pdf)
 - General terminology:
     - SaaS
