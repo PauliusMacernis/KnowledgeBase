@@ -229,6 +229,7 @@
         - Application-Layer Protocol Negotiation (ALPN) (https://en.wikipedia.org/wiki/Application-Layer_Protocol_Negotiation)
     - HTTPS
         - HTTP Strict Transport Security (HSTS) ( https://ma.ttias.be/chrome-force-dev-domains-https-via-preloaded-hsts/, https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security , https://tools.ietf.org/html/rfc6797 )
+    - X.509
     - OpenSSL???
     - Security in more details
         - SCS: KoanLogic's Secure Cookie Sessions for HTTP (http://www.rfc-editor.org/info/rfc6896)
