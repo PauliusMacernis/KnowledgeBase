@@ -23,7 +23,7 @@ What do I use it for?
 It is always worth to take some notes in a question-answer format! That's what I try to do from time to time :)
 
 Any mistakes?
-I know, it may happen. The project is made in a hurry. Simply fix the bug and push the change. ❤
+I know, it may happen. Simply fix the bug and push the change. ❤
 
 ## Licenses
 - It is free.
