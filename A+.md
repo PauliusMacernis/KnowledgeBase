@@ -1,6 +1,6 @@
 # A+
 
-- **What is called System Unit11?**  
+- **What is called System Unit?**  
 The main computer box providing processing and storage. Everything else - peripherals (input and output devices).
 
 
