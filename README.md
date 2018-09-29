@@ -7,7 +7,7 @@ Whoever you are, you may check your own level of ninjaness on any of many topics
 **Go and play it**: http://mokytis.veikt.com/
 - All sets are in a standard Markdown format, even kids may understand it:  
 https://guides.github.com/features/mastering-markdown/.
-- All sets are opensource, it is free to use, copy-paste, update, **extend (aha!)**, .. , for everyone, including ninjas.
+- All sets are open source, it is free to use, copy-paste, update, **extend (aha!)**, .. , for everyone, including ninjas.
 
 I was always wondering if there is a simple way to create tests on the fly, any topic.  
 This project is my 5 cents into the field.
@@ -29,8 +29,8 @@ We know, it may happen. Simply fix the bug and push the change. ❤
 - It is free.
 
 ## Examples of Question-Answer
-All questions are like that: dash + space + asterix + asterix + any text + asterix + asterix + space + space + new line  
-Answer follows.
+All questions are like that: dash + space + star + star + any text + star + star + space + space + new line  
+The answer follows.
 
 - **Simple question?**  
 Simple answer.  
