@@ -25,7 +25,7 @@ It is always worth to take some notes in a question-answer format! That's what I
 Any mistakes?
 I know, it may happen. Simply fix the bug and push the change. ❤
 
-## Question-Answer
+## Examples of Question-Answer
 All questions are like that: dash + space + asterix + asterix + any text + asterix + asterix + space + space + new line  
 Answer follows.
 
