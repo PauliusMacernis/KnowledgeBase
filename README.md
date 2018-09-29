@@ -1,6 +1,6 @@
 # Questions
 There are some questions that need to be answered well by senior-master-level ninjas.  
-Whoever you are, you may check your own level of ninjaness on any of many topics too. Pick a [topic](https://github.com/sugalvojau/Knowledge-base)!
+Whoever you are, you may check your own level of ninjaness on any of many topics too. [Pick any to read](https://github.com/sugalvojau/Knowledge-base)!
 
 - This repository contains question-answer sets, kind of tests.
 - Do not like reading?  
