@@ -25,6 +25,34 @@ It is always worth to take some notes in a question-answer format! That's what I
 Any mistakes?
 I know, it may happen. Simply fix the bug and push the change. ❤
 
+## Question-Answer
+All questions are like that: dash + space + asterix + asterix + any text + asterix + asterix + space + space + new line  
+Answer follows.
+
+- **Simple question?**  
+Simple answer.  
+
+- **Advanced question, note a semicolon at the end of this question:**  
+  ```
+  Some extra
+  info to the question.
+  Note a code block around.
+  ```  
+  Advanced ansswer.
+  Any  
+  *form*  
+  **of**  
+  - details
+  ```  
+  you
+  may
+  think of.
+  ``` 
+  
+- **A question, again, if you wish. Simple is the best?**  
+An answer, again, if you wish. Simple is the best.
+
+
 ## Licenses
 - It is free.
 
