@@ -31,6 +31,7 @@
     - `./bin/console debug:router`
     - `./bin/console debug:autowiring`
     - `./bin/console debug:container --parameters` - list all parameters on the container
+    - `./bin/console debug:container --parameters | grep kernel` - list all parameters on container that includes "kernel"
     - `./bin/console debug:container --show-private` - list all services on the container
     - `./bin/console debug:container --show-private log` - list all services on the container that contains "log"
     - `./bin/console debug:container monolog.logger` - info on the service
