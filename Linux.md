@@ -643,4 +643,8 @@ systemd-journald is a system service that collects and stores logging data. It c
   https://www.freedesktop.org/software/systemd/man/systemd-journald.service.html  
   https://man.cx/journalctl  
 
+- **What does the command `find  . -type d  -user root` do?**  
+It looks inside the current directory (`.`) and recursively (`-type d`) finds all files and directories owned by user root (`-user root`).  
+Read more:  
+https://man.cx/find  
 
