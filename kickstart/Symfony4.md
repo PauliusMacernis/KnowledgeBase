@@ -47,6 +47,8 @@
     - `./bin/console config:dump TwigBundle` - dumps available config
   - ...about
     - `./bin/console about` - lists system version and other info, including environment variables
+  - ...generate
+    - `./bin/console generate:bundle` - generates bundle (checked on Symfony3)
   - `composer unpack debug` - unpacks the package = replaces the package with childron packages of the package
 
 # Config
