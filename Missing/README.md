@@ -526,11 +526,13 @@
 - The ability to thrive under pressure
 - The ability to work to tight deadlines (time-cost-scope - project management triangle)
 - The ability to explain complicated processes in non-technical language
+- The ability to compose a general to-the-point question out of complex and specific business issue. This is later going to communication channels in order to ask for help.
 - Good team working abilities
 - A good understanding of customer care
 - Excellent communication skills, both written and verbal: English
 - Public speaking: on conferences, teaching sessions, etc.
 - Initiative and willingness to learn new technologies and skills
+- Proactiveness. Communicating improvements after a demo/mock/variant/concept of the improvement is already available.
 - ...
 - Mozilla shortcuts: 
     - https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly
