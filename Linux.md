@@ -648,3 +648,8 @@ It looks inside the current directory (`.`) and recursively finds all directorie
 Read more:  
 https://man.cx/find  
 
+- **Explain `nohup sudo -u www-data php -d memory_limit=7G /srv/www/bin/console systemx:import:images &`**  
+Read more:  
+https://man.cx/nohup  
+https://unix.stackexchange.com/questions/3886/difference-between-nohup-disown-and  
+http://php.net/manual/en/features.commandline.options.php  
