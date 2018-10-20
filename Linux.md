@@ -653,3 +653,19 @@ Read more:
 https://man.cx/nohup  
 https://unix.stackexchange.com/questions/3886/difference-between-nohup-disown-and  
 http://php.net/manual/en/features.commandline.options.php  
+
+- **Explain `curl -D- -u username:password <rest-of-request>`**  
+`-D`, `--dump-header` <file>
+ Write the protocol headers to the specified file. This  option is handy to use when you want to store the headers that a HTTP site sends to you. C  
+ After a `-D` you normally give the name of the file where you want to dump the headers. As with many utilities, `-` is recognized as an alias to stdout.  
+ (if you're not familiar with that concept: when you launch the command from a terminal without redirection, stdout is the "terminal screen")  
+ The `-D-` (without space) form is exactly the same as `-D -` (or on Linux at least, `-D /dev/stdout`).  
+ Read more:  
+ https://stackoverflow.com/questions/25017476/curl-d-option  
+ 
+- **Does " - " mean stdout in bash? For example: `wget -q -O - $line`**  
+It's just a convention of many UNIX command line utilities to accept `-` as a placeholder for `stdin` or `stdout` when put in place of an input or output file name on the command line.  
+Read more:  
+https://stackoverflow.com/questions/3797795/does-mean-stdout-in-bash  
+http://pubs.opengroup.org/onlinepubs/009695399/basedefs/xbd_chap12.html#tag_12_02  
+
