@@ -614,3 +614,6 @@
 - Oracle
     - MySQL
     - Java
+    
+# Books
+- https://itrevolution.com/book/accelerate/
