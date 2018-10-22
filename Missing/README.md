@@ -450,6 +450,8 @@
     - ...
 - Hierarchies / trees / nested sets ( https://en.wikipedia.org/wiki/Nested_set_model )
 - Agile
+    - General, 2018
+        - https://www.infoq.com/presentations/agile-2018
     - Pair programming
         - https://floobits.com/active    
 - Languages:
