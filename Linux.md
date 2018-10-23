@@ -669,3 +669,7 @@ Read more:
 https://stackoverflow.com/questions/3797795/does-mean-stdout-in-bash  
 http://pubs.opengroup.org/onlinepubs/009695399/basedefs/xbd_chap12.html#tag_12_02  
 
+- **Explain `sudo bash -c "sleep 1h; pm-suspend"`**  
+Suspend the machine after 1 hour.  
+Read more:  
+https://askubuntu.com/questions/1792/how-can-i-suspend-hibernate-from-command-line/131022#131022  
