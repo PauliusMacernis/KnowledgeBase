@@ -301,7 +301,10 @@
     - Code reviews
     - Acceptance tests:
         - https://codeception.com/
-- Big O notation (https://en.wikipedia.org/wiki/Big_O_notation)
+- Big O notation:
+    - (https://en.wikipedia.org/wiki/Big_O_notation)
+    - https://gist.github.com/brymck/8266276
+    - https://cathyatseneca.gitbooks.io/data-structures-and-algorithms/content/analysis/example1.html
 - WebAssembly (https://webassembly.org/)
 - ??? PHP productivity tools. Covert Code to Diagrams, Graphs, other type of documentation:
     - phUML
