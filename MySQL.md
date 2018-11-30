@@ -46,4 +46,9 @@ Source: High Performance MySQL, 3rd Edition (the book)
 - What are index prefixes?
 <a href="#" title="
 They are indexes build upon a prefix of the column's data. http://www.mysqldba.co.uk/articles/what-are-index-prefixes
-">⌘</a>
+">⌘</a>  
+
+- **How to reset MySQL root password?**  
+Read more: 
+https://linuxconfig.org/how-to-reset-root-mysql-password-on-ubuntu-18-04-bionic-beaver-linux   
+
