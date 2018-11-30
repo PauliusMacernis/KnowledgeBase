@@ -478,6 +478,8 @@
             - React Native
             - Redux
             - Backbone.js (http://backbonejs.org)
+        - Testing
+            - CasperJs (http://casperjs.org/)
     - PHP
         - Twig
         - Silex
