@@ -673,3 +673,12 @@ http://pubs.opengroup.org/onlinepubs/009695399/basedefs/xbd_chap12.html#tag_12_0
 Suspend the machine after 1 hour.  
 Read more:  
 https://askubuntu.com/questions/1792/how-can-i-suspend-hibernate-from-command-line/131022#131022  
+
+- **Explain: `setsid myscript.sh >/dev/null 2>&1 < /dev/null &`**  
+Read more:  
+https://stackoverflow.com/questions/19233529/run-bash-script-as-daemon  
+
+- **What is the fifference between `nm-applet &` and `nm-applet & exit`?**  
+Read more:  
+https://askubuntu.com/a/106910  
+
