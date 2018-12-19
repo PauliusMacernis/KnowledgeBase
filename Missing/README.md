@@ -289,6 +289,7 @@
         - https://docs.gitlab.com/ee/ci
         - https://gitlab.com/gitlab-org/gitlab-ci-yml/blob/master/Docker.gitlab-ci.yml
 - QA/Testing
+    - Zephyr - https://www.getzephyr.com/
     - PHPSpec (https://www.phpspec.net/) - Intuitive unit testing with mocking 
     - Behat - Functional testing
     - Jmeter (https://jmeter.apache.org) - for thorough testing. Main tool.
