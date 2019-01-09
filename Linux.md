@@ -682,3 +682,8 @@ https://stackoverflow.com/questions/19233529/run-bash-script-as-daemon
 Read more:  
 https://askubuntu.com/a/106910  
 
+- **What does `ssh-keygen -lf /path/to/ssh/key` do?**  
+Gets fingerprint of the file `/path/to/ssh/key`  
+Read more:  
+https://man.cx/ssh-keygen  
+https://stackoverflow.com/questions/9607295/how-do-i-find-my-rsa-key-fingerprint  
