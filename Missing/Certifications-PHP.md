@@ -49,3 +49,4 @@ Recognized industry leader in multiple domains. Ability to have insights outside
 Some of resources:  
 https://certification.comptia.org/docs/default-source/downloadablefiles/it-certification-roadmap.pdf  
 https://linuxacademy.com/library/index/index/type/module  
+https://coinify.com/news/8-professional-blockchain-certifications/  
