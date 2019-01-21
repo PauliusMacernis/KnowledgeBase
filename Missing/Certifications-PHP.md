@@ -41,8 +41,8 @@ Competent in your domain. Familiar with other areas of domain expertise in your 
     - Exam: [PK0-004](https://certification.comptia.org/certifications/project#examdetails), Price: 319 USD, Passing score: 710 of 900, 90 minutes, Recommended experience: At least 12 months of cumulative project management experience or equivalent education
   - [CompTIA Certified Technical Trainer (CTT+)](https://certification.comptia.org/certifications/ctt)
     - Exam: [CTT+ Essentials – TK0-201](https://certification.comptia.org/certifications/ctt#examdetails), Price: 319 USD, Passing score: 655 of 900, 90 minutes, Recommended experience: 6 to 12 months of trainer/instructor experience
-    - Exam(any): [CTT+ Classroom Performance Based Exam – TK0-202](https://certification.comptia.org/certifications/ctt#examdetails), Price: 339 USD, Passing score: 36 of 48, 17-22 minutes, Recommended experience: 6 to 12 months of trainer/instructor experience
-    - Exam(any): [CTT+ Virtual Classroom Performance Based Exam - TK0 -203](https://certification.comptia.org/certifications/ctt#examdetails), Price: 339 USD, Passing score: 36 of 48, 17-22 minutes, Recommended experience: 6 to 12 months of trainer/instructor experience
+    - Exam(any of two): [CTT+ Classroom Performance Based Exam – TK0-202](https://certification.comptia.org/certifications/ctt#examdetails), Price: 339 USD, Passing score: 36 of 48, 17-22 minutes, Recommended experience: 6 to 12 months of trainer/instructor experience
+    - Exam(any of two): [CTT+ Virtual Classroom Performance Based Exam - TK0 -203](https://certification.comptia.org/certifications/ctt#examdetails), Price: 339 USD, Passing score: 36 of 48, 17-22 minutes, Recommended experience: 6 to 12 months of trainer/instructor experience
 ...
 
 ## Senior Software Engineer (P3)
