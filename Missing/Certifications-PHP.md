@@ -83,3 +83,4 @@ Some of resources:
 https://certification.comptia.org/docs/default-source/downloadablefiles/it-certification-roadmap.pdf  
 https://linuxacademy.com/library/index/index/type/module  
 https://coinify.com/news/8-professional-blockchain-certifications/  
+https://www.cio.com/article/3209911/certifications/big-data-certifications-that-will-pay-off.html
