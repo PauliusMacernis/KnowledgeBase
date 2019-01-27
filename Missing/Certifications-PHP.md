@@ -11,6 +11,9 @@ Still learning your domain and industry best practices
   - [CompTIA A+](https://certification.comptia.org/certifications/a)
     - Exam: [220-1001](https://certification.comptia.org/certifications/a#examdetails) (Core 1), Price: 219 USD, Passing score: 675 of 900, 90 minutes, Recommended experience: 9 to 12 months hands-on experience in the lab or field
     - Exam: [220-1002](https://certification.comptia.org/certifications/a#examdetails) (Core 2), Price: 219 USD, Passing score: 700 of 900, 90 minutes, Recommended experience: 9 to 12 months hands-on experience in the lab or field
+- Microsoft [certificates](https://www.microsoft.com/en-us/learning/browse-all-certifications.aspx) and [exams](https://www.microsoft.com/en-us/learning/exam-list.aspx)
+  - [Microsoft Technology Associate (MTA)](https://www.microsoft.com/en-us/learning/mta-summary-certification.aspx)
+    - Exam [98-349](https://www.microsoft.com/en-us/learning/exam-98-349.aspx), Price: [.](https://wsr.pearsonvue.com/vouchers/pricelist/microsoft.asp)
 - Microsoft Technology Associate (many exams, one req.): https://www.microsoft.com/en-us/learning/mta-summary-certification.aspx
 - LPI Linux Essentials (110 USD): https://www.lpi.org/our-certifications/linux-essentials-overview
 - CompTIA Cloud Essentials (119 USD): https://certification.comptia.org/certifications/cloud-essentials
@@ -83,4 +86,6 @@ Some of resources:
 https://certification.comptia.org/docs/default-source/downloadablefiles/it-certification-roadmap.pdf  
 https://linuxacademy.com/library/index/index/type/module  
 https://coinify.com/news/8-professional-blockchain-certifications/  
-https://www.cio.com/article/3209911/certifications/big-data-certifications-that-will-pay-off.html
+https://www.cio.com/article/3209911/certifications/big-data-certifications-that-will-pay-off.html  
+https://home.pearsonvue.com/For-test-centers/Voucher-store/pricelist.aspx  
+
