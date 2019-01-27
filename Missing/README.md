@@ -506,6 +506,9 @@
     - Stack Overflow
     - Github
     - ...
+- Tests to practice:
+    - Fizz Buzz Test: http://wiki.c2.com/?FizzBuzzTest  
+    
 
 # Categorization
 ...
