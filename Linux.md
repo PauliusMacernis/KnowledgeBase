@@ -687,3 +687,9 @@ Gets fingerprint of the file `/path/to/ssh/key`
 Read more:  
 https://man.cx/ssh-keygen  
 https://stackoverflow.com/questions/9607295/how-do-i-find-my-rsa-key-fingerprint  
+
+- **Explain `getconf ARG_MAX`**  
+Get command argument limit in bytes.  
+Read more:  
+https://stackoverflow.com/questions/19354870/bash-command-line-and-input-limit  
+
