@@ -100,8 +100,13 @@ Advanced in your domain. Familiar in other areas of domain expertise in your tea
   - [MOS Master: Microsoft Office Specialist Master](https://www.microsoft.com/en-us/learning/microsoft-office-specialist-master-certification-2016.aspx)
     - Exam [77-730: Access 2016: Core Database Management, Manipulation, and Query Skills](https://www.microsoft.com/en-us/learning/exam-77-730.aspx), Price: [100? EUR], Passing score: [differs of 1000](https://www.microsoft.com/en-us/learning/certification-exam-policies.aspx#faqscoring-12), [50? minutes](https://certiport.pearsonvue.com/Educator-resources/Exam-details/Exam-lengths.aspx), Prerequisites: [77-726](https://www.microsoft.com/en-us/learning/exam-77-726.aspx), [77-728](https://www.microsoft.com/en-us/learning/exam-77-728.aspx), [77-729](https://www.microsoft.com/en-us/learning/exam-77-729.aspx).
     - Exam [77-731: Outlook 2016: Core Communication, Collaboration and Email Skills](https://www.microsoft.com/en-us/learning/exam-77-731.aspx), Price: [100? EUR], Passing score: [differs of 1000](https://www.microsoft.com/en-us/learning/certification-exam-policies.aspx#faqscoring-12), [50? minutes](https://certiport.pearsonvue.com/Educator-resources/Exam-details/Exam-lengths.aspx), Prerequisites: [77-726](https://www.microsoft.com/en-us/learning/exam-77-726.aspx), [77-728](https://www.microsoft.com/en-us/learning/exam-77-728.aspx), [77-729](https://www.microsoft.com/en-us/learning/exam-77-729.aspx).
- - ...
-...
+  - [Microsoft Certified Solutions Developer (MCSD): App Builder](https://www.microsoft.com/en-us/learning/mcsd-app-builder-certification.aspx)
+    - Exam [70-357: Developing Mobile Apps](https://www.microsoft.com/en-us/learning/exam-70-357.aspx)
+    - Exam [70-480: Programming in HTML5 with JavaScript and CSS3](https://www.microsoft.com/en-us/learning/exam-70-480.aspx)
+    - Exam [70-483: Programming in C#](https://www.microsoft.com/en-us/learning/exam-70-483.aspx)
+    - Exam [70-486: Developing ASP.NET MVC Web Applications](https://www.microsoft.com/en-us/learning/exam-70-486.aspx)
+    - Exam [70-487: Developing ASP.NET MVC Web Applications](https://www.microsoft.com/en-us/learning/exam-70-487.aspx)
+- ...
 
 ## Staff Software Engineer (P4)
 Expert in your domain of expertise. Starting to demonstrate architectural and systems thinking.
