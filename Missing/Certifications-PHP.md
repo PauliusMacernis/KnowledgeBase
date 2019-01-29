@@ -11,8 +11,8 @@ Still learning your domain and industry best practices
   - [CompTIA A+](https://certification.comptia.org/certifications/a)
     - Exam: [220-1001](https://certification.comptia.org/certifications/a#examdetails) (Core 1), Price: 219 USD, Passing score: 675 of 900, 90 minutes, Recommended experience: 9 to 12 months hands-on experience in the lab or field
     - Exam: [220-1002](https://certification.comptia.org/certifications/a#examdetails) (Core 2), Price: 219 USD, Passing score: 700 of 900, 90 minutes, Recommended experience: 9 to 12 months hands-on experience in the lab or field
-- Microsoft [certificates](https://www.microsoft.com/en-us/learning/browse-all-certifications.aspx) and [exams](https://www.microsoft.com/en-us/learning/exam-list.aspx)
-  - [Microsoft Office Specialist (MOS)](https://www.microsoft.com/en-us/learning/microsoft-office-specialist-certification-2016.aspx)
+- Microsoft [certificates](https://www.microsoft.com/en-us/learning/browse-all-certifications.aspx) and [exams](https://www.microsoft.com/en-us/learning/exam-list.aspx):
+  - [MOS: Microsoft Office Specialist](https://www.microsoft.com/en-us/learning/microsoft-office-specialist-certification-2016.aspx)
     - Exam [77-725: Word 2016: Core Document Creation, Collaboration, and Communication](https://www.microsoft.com/en-us/learning/exam-77-725.aspx), Price: [100? EUR], Passing score: [differs of 1000](https://www.microsoft.com/en-us/learning/certification-exam-policies.aspx#faqscoring-12), [50 minutes](https://certiport.pearsonvue.com/Educator-resources/Exam-details/Exam-lengths.aspx), Recommended experience: None
     - Exam [77-727: Excel 2016: Core Data Analysis, Manipulation, and Presentation](https://www.microsoft.com/en-us/learning/exam-77-727.aspx), Price: [100? EUR], Passing score: [differs of 1000](https://www.microsoft.com/en-us/learning/certification-exam-policies.aspx#faqscoring-12), [50 minutes](https://certiport.pearsonvue.com/Educator-resources/Exam-details/Exam-lengths.aspx), Recommended experience: None
     - Exam [77-729: Microsoft Office PowerPoint 2016](https://www.microsoft.com/en-us/learning/exam-77-729.aspx), Price: [100? EUR], Passing score: [differs of 1000](https://www.microsoft.com/en-us/learning/certification-exam-policies.aspx#faqscoring-12), [50 minutes](https://certiport.pearsonvue.com/Educator-resources/Exam-details/Exam-lengths.aspx), Recommended experience: None
@@ -65,9 +65,11 @@ Competent in your domain. Familiar with other areas of domain expertise in your 
     - Exam: [CTT+ Essentials – TK0-201](https://certification.comptia.org/certifications/ctt#examdetails), Price: 319 USD, Passing score: 655 of 900, 90 minutes, Recommended experience: 6 to 12 months of trainer/instructor experience
     - Exam(any of two): [CTT+ Classroom Performance Based Exam – TK0-202](https://certification.comptia.org/certifications/ctt#examdetails), Price: 339 USD, Passing score: 36 of 48, 17-22 minutes, Recommended experience: 6 to 12 months of trainer/instructor experience
     - Exam(any of two): [CTT+ Virtual Classroom Performance Based Exam - TK0 -203](https://certification.comptia.org/certifications/ctt#examdetails), Price: 339 USD, Passing score: 36 of 48, 17-22 minutes, Recommended experience: 6 to 12 months of trainer/instructor experience
-- [Microsoft Certified Solutions Associate (MCSA)](https://www.microsoft.com/en-us/learning/mcsa-summary-certification.aspx)
-  - ...
-...
+- Microsoft [certificates](https://www.microsoft.com/en-us/learning/browse-all-certifications.aspx) and [exams](https://www.microsoft.com/en-us/learning/exam-list.aspx):
+  - [MOS Expert: Microsoft Office Specialist Expert](https://www.microsoft.com/en-us/learning/microsoft-office-specialist-expert-certification-2016.aspx)
+    - Exam [77-726: Microsoft Word 2016 Expert: Creating Documents for Effective Communication](https://www.microsoft.com/en-us/learning/exam-77-726.aspx), Price: [100? EUR], Passing score: [differs of 1000](https://www.microsoft.com/en-us/learning/certification-exam-policies.aspx#faqscoring-12), [50? minutes](https://certiport.pearsonvue.com/Educator-resources/Exam-details/Exam-lengths.aspx), No prerequisite.
+    - Exam [77-728: Microsoft Excel 2016 Expert: Interpreting Data for Insights](https://www.microsoft.com/en-us/learning/exam-77-728.aspx), Price: [100? EUR], Passing score: [differs of 1000](https://www.microsoft.com/en-us/learning/certification-exam-policies.aspx#faqscoring-12), [50? minutes](https://certiport.pearsonvue.com/Educator-resources/Exam-details/Exam-lengths.aspx), No prerequisite.
+ - ...
 
 ## Senior Software Engineer (P3)
 Advanced in your domain. Familiar in other areas of domain expertise in your team.
@@ -76,7 +78,12 @@ Advanced in your domain. Familiar in other areas of domain expertise in your tea
     - Exam: [CS0-001](https://certification.comptia.org/certifications/cybersecurity-analyst#examdetails), Price: 349 USD, Passing score: 750 of 900, 165 minutes, Recommended experience: Network+, Security+ or equivalent knowledge. Minimum of 3-4 years of hands-on information security or related experience. While there is no required prerequisite, CySA+ is intended to follow CompTIA Security+ or equivalent experience and has a technical, hands-on focus.
   - [CompTIA PenTest+](https://certification.comptia.org/certifications/pentest)
     - Exam: [PT0-001](https://certification.comptia.org/certifications/pentest#examdetails), Price: 349 USD, Passing score: 750 of 900, 165 minutes, Recommended experience: Network+, Security+ or equivalent knowledge. Minimum of 3-4 years of hands-on information security or related experience. While there is no required prerequisite, PenTest+ is intended to follow CompTIA Security+ or equivalent experience and has a technical, hands-on focus.
-  
+
+- Microsoft [certificates](https://www.microsoft.com/en-us/learning/browse-all-certifications.aspx) and [exams](https://www.microsoft.com/en-us/learning/exam-list.aspx):
+  - [MOS Master: Microsoft Office Specialist Master](https://www.microsoft.com/en-us/learning/microsoft-office-specialist-master-certification-2016.aspx)
+    - Exam [77-730: Access 2016: Core Database Management, Manipulation, and Query Skills](https://www.microsoft.com/en-us/learning/exam-77-730.aspx), Price: [100? EUR], Passing score: [differs of 1000](https://www.microsoft.com/en-us/learning/certification-exam-policies.aspx#faqscoring-12), [50? minutes](https://certiport.pearsonvue.com/Educator-resources/Exam-details/Exam-lengths.aspx), Prerequisites: [77-726](https://www.microsoft.com/en-us/learning/exam-77-726.aspx), [77-728](https://www.microsoft.com/en-us/learning/exam-77-728.aspx), [77-729](https://www.microsoft.com/en-us/learning/exam-77-729.aspx).
+    - Exam [77-731: Outlook 2016: Core Communication, Collaboration and Email Skills](https://www.microsoft.com/en-us/learning/exam-77-731.aspx), Price: [100? EUR], Passing score: [differs of 1000](https://www.microsoft.com/en-us/learning/certification-exam-policies.aspx#faqscoring-12), [50? minutes](https://certiport.pearsonvue.com/Educator-resources/Exam-details/Exam-lengths.aspx), Prerequisites: [77-726](https://www.microsoft.com/en-us/learning/exam-77-726.aspx), [77-728](https://www.microsoft.com/en-us/learning/exam-77-728.aspx), [77-729](https://www.microsoft.com/en-us/learning/exam-77-729.aspx).
+ - ...
 ...
 
 ## Staff Software Engineer (P4)
