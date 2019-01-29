@@ -131,6 +131,21 @@ Expert in your domain of expertise. Starting to demonstrate architectural and sy
     - Exam [70-413: Designing and Implementing a Server Infrastructure](https://www.microsoft.com/en-us/learning/exam-70-413.aspx)
     - Exam [70-414: Implementing an Advanced Server Infrastructure](https://www.microsoft.com/en-us/learning/exam-70-414.aspx)
     - Exam [70-537: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack](https://www.microsoft.com/en-us/learning/exam-70-537.aspx)
+  - [MCSE: Data Management and Analytics](https://www.microsoft.com/en-us/learning/mcse-data-management-analytics.aspx)
+    - Exam [70-473: Designing and Implementing Cloud Data Platform Solutions](https://www.microsoft.com/en-us/learning/exam-70-473.aspx)
+    - Exam [70-475: Designing and Implementing Big Data Analytics Solutions](https://www.microsoft.com/en-us/learning/exam-70-475.aspx)
+    - Exam [70-464: Developing Microsoft SQL Server Databases](https://www.microsoft.com/en-us/learning/exam-70-464.aspx)
+    - Exam [70-465: Designing Database Solutions for Microsoft SQL Server](https://www.microsoft.com/en-us/learning/exam-70-465.aspx)
+    - Exam [70-466: Implementing Data Models and Reports with Microsoft SQL Server](https://www.microsoft.com/en-us/learning/exam-70-466.aspx)
+    - Exam [70-467: Designing Business Intelligence Solutions with Microsoft SQL Server](https://www.microsoft.com/en-us/learning/exam-70-467.aspx)
+    - Exam [70-762: Developing SQL Databases](https://www.microsoft.com/en-us/learning/exam-70-762.aspx)
+    - Exam [70-767: Implementing a Data Warehouse using SQL](https://www.microsoft.com/en-us/learning/exam-70-767.aspx)
+    - Exam [70-768: Developing SQL Data Models](https://www.microsoft.com/en-us/learning/exam-70-768.aspx)
+    - Exam [70-773: Analyzing Big Data with Microsoft R](https://www.microsoft.com/en-us/learning/exam-70-773.aspx)
+    - Exam [70-774: Perform Cloud Data Science with Azure Machine Learning](https://www.microsoft.com/en-us/learning/exam-70-774.aspx)
+    - Exam [70-775: Perform Data Engineering on Microsoft Azure HDInsight](https://www.microsoft.com/en-us/learning/exam-70-775.aspx)
+    - Exam [70-777: Implementing Microsoft Azure Cosmos DB Solutions](https://www.microsoft.com/en-us/learning/exam-70-777.aspx)
+    
     
 - ...
 
