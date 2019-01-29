@@ -113,7 +113,26 @@ Expert in your domain of expertise. Starting to demonstrate architectural and sy
 - CompTIA:
   - [CompTIA Advanced Security Practitioner (CASP+)](https://certification.comptia.org/certifications/comptia-advanced-security-practitioner)
     - Exam: [CAS-003](https://certification.comptia.org/certifications/comptia-advanced-security-practitioner#examdetails), Price: 439 USD, Passing score: Pass/Fail only. No scaled score., 165 minutes, Recommended experience: A minimum of ten years of experience in IT administration, including at least five years of hands-on technical security experience
-...
+- Microsoft [certificates](https://www.microsoft.com/en-us/learning/browse-all-certifications.aspx) and [exams](https://www.microsoft.com/en-us/learning/exam-list.aspx):
+  - [MCSE: Business Applications](https://www.microsoft.com/en-us/learning/mcse-business-applications.aspx)
+    - Exam [MB2-717: Microsoft Dynamics 365 for Sales](https://www.microsoft.com/en-us/learning/exam-mb2-717.aspx)
+    - Exam [MB2-718: Microsoft Dynamics 365 for Customer Service](https://www.microsoft.com/en-us/learning/exam-mb2-718.aspx)
+    - Exam [MB2-719: Microsoft Dynamics 365 for Marketing](https://www.microsoft.com/en-us/learning/exam-mb2-719.aspx)
+    - Exam [MB6-895: Financial Management in Microsoft Dynamics 365 for Finance and Operations](https://www.microsoft.com/en-us/learning/exam-mb6-895.aspx)
+    - Exam [MB6-896: Distribution and Trade in Microsoft Dynamics 365 for Finance and Operations](https://www.microsoft.com/en-us/learning/exam-mb6-896.aspx)
+    - Exam [MB6-897: Microsoft Dynamics 365 for Retail](https://www.microsoft.com/en-us/learning/exam-mb6-897.aspx)
+    - Exam [MB6-898: Microsoft Dynamics 365 for Talent](https://www.microsoft.com/en-us/learning/exam-mb6-898.aspx)
+    - Exam [MB2-877: Microsoft Dynamics 365 for Field Service](https://www.microsoft.com/en-us/learning/exam-mb2-877.aspx)
+  - [MCSE: Core Infrastructure](https://www.microsoft.com/en-us/learning/mcse-core-infrastructure.aspx)
+    - Exam [70-473: Designing and Implementing Cloud Data Platform Solutions](https://www.microsoft.com/en-us/learning/exam-70-473.aspx)
+    - Exam [70-475: Designing and Implementing Big Data Analytics Solutions](https://www.microsoft.com/en-us/learning/exam-70-475.aspx)
+    - Exam [70-744: Securing Windows Server 2016](https://www.microsoft.com/en-us/learning/exam-70-744.aspx)
+    - Exam [70-745: Implementing a Software-Defined Datacenter](https://www.microsoft.com/en-us/learning/exam-70-745.aspx)
+    - Exam [70-413: Designing and Implementing a Server Infrastructure](https://www.microsoft.com/en-us/learning/exam-70-413.aspx)
+    - Exam [70-414: Implementing an Advanced Server Infrastructure](https://www.microsoft.com/en-us/learning/exam-70-414.aspx)
+    - Exam [70-537: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack](https://www.microsoft.com/en-us/learning/exam-70-537.aspx)
+    
+- ...
 
 ## Senior Staff Software Engineer (P5)
 Company leader in your domain of expertise.
