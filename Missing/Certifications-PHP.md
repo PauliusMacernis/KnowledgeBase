@@ -1,4 +1,4 @@
-# The list of certifications meant to be achieved by a PHP web developer working on Akeneo-based project.
+# The list of certificates to be achieved by a web-software developer. Prices noted here are targeting Lithuania.
 
 
 ## Software Engineer 1 (P1) - Junior Software Engineer
@@ -13,7 +13,7 @@ Still learning your domain and industry best practices
     - Exam: [220-1002](https://certification.comptia.org/certifications/a#examdetails) (Core 2), Price: 219 USD, Passing score: 700 of 900, 90 minutes, Recommended experience: 9 to 12 months hands-on experience in the lab or field
 - Microsoft [certificates](https://www.microsoft.com/en-us/learning/browse-all-certifications.aspx) and [exams](https://www.microsoft.com/en-us/learning/exam-list.aspx)
   - [Microsoft Technology Associate (MTA)](https://www.microsoft.com/en-us/learning/mta-summary-certification.aspx)
-    - Exam [98-349: Windows Operating System Fundamentals](https://www.microsoft.com/en-us/learning/exam-98-349.aspx), Price: [.](https://wsr.pearsonvue.com/vouchers/pricelist/microsoft.asp)
+    - Exam [98-349: Windows Operating System Fundamentals](https://www.microsoft.com/en-us/learning/exam-98-349.aspx), Price: [77 EUR](https://wsr.pearsonvue.com/vouchers/pricelist/microsoft.asp), Passing score: [700 of 1000?](https://www.microsoft.com/en-us/learning/certification-exam-policies.aspx#faqscoring-12), [50 minutes](https://certiport.pearsonvue.com/Educator-resources/Exam-details/Exam-lengths.aspx), Recommended experience: [No prerequisite](https://www.microsoft.com/en-us/learning/mta-summary-certification.aspx).
 - Microsoft Technology Associate (many exams, one req.): https://www.microsoft.com/en-us/learning/mta-summary-certification.aspx
 - LPI Linux Essentials (110 USD): https://www.lpi.org/our-certifications/linux-essentials-overview
 - CompTIA Cloud Essentials (119 USD): https://certification.comptia.org/certifications/cloud-essentials
