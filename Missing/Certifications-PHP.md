@@ -145,8 +145,18 @@ Expert in your domain of expertise. Starting to demonstrate architectural and sy
     - Exam [70-774: Perform Cloud Data Science with Azure Machine Learning](https://www.microsoft.com/en-us/learning/exam-70-774.aspx)
     - Exam [70-775: Perform Data Engineering on Microsoft Azure HDInsight](https://www.microsoft.com/en-us/learning/exam-70-775.aspx)
     - Exam [70-777: Implementing Microsoft Azure Cosmos DB Solutions](https://www.microsoft.com/en-us/learning/exam-70-777.aspx)
-    
-    
+  - [MCSE: Mobility](https://www.microsoft.com/en-us/learning/mcse-mobility-certification.aspx) - This certification retires on March 31, 2019
+    - Exam [70-695: Deploying Windows Desktops and Enterprise Applications](https://www.microsoft.com/en-us/learning/exam-70-695.aspx)
+    - Exam [70-703: Administering Microsoft System Center Configuration Manager and Cloud Services Integration](https://www.microsoft.com/en-us/learning/exam-70-703.aspx)
+  - [MCSE Productivity Solutions Expert](https://www.microsoft.com/en-us/learning/mcse-productivity-certification.aspx)
+    - Exam [70-345: Designing and Deploying Microsoft Exchange Server 2016](https://www.microsoft.com/en-us/learning/exam-70-345.aspx)
+    - Exam [70-339: Managing Microsoft SharePoint Server 2016](https://www.microsoft.com/en-us/learning/exam-70-339.aspx)
+    - Exam [70-333: Deploying Enterprise Voice with Skype for Business 2015](https://www.microsoft.com/en-us/learning/exam-70-333.aspx)
+    - Exam [70-334: Core Solutions of Microsoft Skype for Business 2015](https://www.microsoft.com/en-us/learning/exam-70-334.aspx)
+    - Exam [70-331: Core Solutions of Microsoft SharePoint Server 2013](https://www.microsoft.com/en-us/learning/exam-70-331.aspx)
+    - Exam [70-332: Advanced Solutions of Microsoft SharePoint Server 2013](https://www.microsoft.com/en-us/learning/exam-70-332.aspx)
+    - Exam [70-341: Core Solutions of Microsoft Exchange Server 2013](https://www.microsoft.com/en-us/learning/exam-70-341.aspx)
+    - Exam [70-342: Advanced Solutions of Microsoft Exchange Server 2013](https://www.microsoft.com/en-us/learning/exam-70-342.aspx)
 - ...
 
 ## Senior Staff Software Engineer (P5)
