@@ -89,5 +89,18 @@ https://coinify.com/news/8-professional-blockchain-certifications/
 https://www.cio.com/article/3209911/certifications/big-data-certifications-that-will-pay-off.html  
 https://home.pearsonvue.com/For-test-centers/Voucher-store/pricelist.aspx  
 https://www.certificationcamps.com/microsoft-certifications-guide/  
+IC3 (IC3)  
+Business Fundamentals (BIZ)  
+Microsoft Office Specialist (MOS)  
+Microsoft Technology Associate (MTA)  
+Microsoft Certified Educator (MCE)  
+Adobe Certified Associate (ACA)  
+Adobe Certified Expert (ACE)  
+Intuit QuickBooks (QBC)  
+Autodesk Certified User (ACU)  
+Autodesk Certified Professional (ACP)  
+Toon Boom Certified Associate (TCA)  
+App Development with Swift Certification (APPLE)  
+EC-Council Associate (ECCA)  
 
 
