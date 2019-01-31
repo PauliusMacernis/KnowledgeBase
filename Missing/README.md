@@ -303,7 +303,7 @@
     - Acceptance tests:
         - https://codeception.com/
     - Methods/techniques/etc.:
-        - Requirements Traceability Matrix (RTM) / Simple traceability matrix (https://strongqa.com/qa-portal/testing-docs-templates/traceability-matrix)
+        - Requirements Traceability Matrix (RTM) / Simple traceability matrix (https://strongqa.com/qa-portal/testing-docs-templates/traceability-matrix , https://reqtest.com/requirements-blog/requirements-traceability-matrix/ , https://reqtest.com/requirements-blog/requirements-traceability-matrix/ )
 - Big O notation:
     - (https://en.wikipedia.org/wiki/Big_O_notation)
     - https://gist.github.com/brymck/8266276
