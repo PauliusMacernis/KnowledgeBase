@@ -693,3 +693,8 @@ Get command argument limit in bytes.
 Read more:  
 https://stackoverflow.com/questions/19354870/bash-command-line-and-input-limit  
 
+- **Explain `paste -s -d ',' input.csv > output.txt`**  
+Merges lines of `input.csv` file by injecting `,` in between of all merged lines. The result is sent to `output.txt`  
+Read more:  
+https://unix.stackexchange.com/questions/114244/replace-all-newlines-to-space-except-the-last  
+https://man.cx/paste  
