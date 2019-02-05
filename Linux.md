@@ -699,9 +699,14 @@ Read more:
 https://unix.stackexchange.com/questions/114244/replace-all-newlines-to-space-except-the-last  
 https://man.cx/paste  
 
-- **Explain `getfacl .`  
+- **Explain `getfacl .`**  
 ???  
 Read more:  
 https://linux.die.net/man/1/setfacl  
 https://linux.die.net/man/1/getfacl  
+
+- **Explain `truncate --size 0 logfile`**  
+Shrinks (or extends?) the size of a file to the specified size - 0 bytes.
+Read more:  
+https://man.cx/truncate  
 
