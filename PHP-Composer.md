@@ -35,4 +35,12 @@ http://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.checkout.html
 
  ```
  
+- **What is the difference between `--prefer-source` and `--prefer-dist` when doing `composer update`, `composer install`, or `composer require`?**
+`--prefer-source` - when you want to require a tag, but still be able to develop it on your local,  
+`--prefer-dist` - when you want to require a most new development branch, but you just want to get the new stuff and don't want to get engaged in its development.  
+Read more:  
+https://stackoverflow.com/questions/16205100/difference-between-composer-prefer-dist-and-prefer-source  
+https://getcomposer.org/doc/03-cli.md#install-i  
+
+
  
