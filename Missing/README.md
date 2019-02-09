@@ -406,6 +406,7 @@
 - InRiver (https://www.inriver.com/)
 - (Adobe XD)
 - (General Data Protection Regulation)
+- ORO https://oroinc.com/orocrm/doc/2.0/user-guide
 - ***
 - Databases
     - PostgreSQL
