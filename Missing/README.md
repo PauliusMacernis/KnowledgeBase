@@ -629,3 +629,6 @@
     
 # Books
 - https://itrevolution.com/book/accelerate/
+
+# Other sets of recommendations, instructions, etc.
+- http://hashphp.org/

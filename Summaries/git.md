@@ -114,4 +114,57 @@ Latest version: https://git-scm.com/book/en
     - `git clone git://git.kernel.org/pub/scm/git/git.git`
     
 ## First-Time Git Setup
-- ...
+- You should have to do some customization to git config of your machine. These things meant to be done only once on any given computer; they’ll stick around between upgrades. You can also change them at any time by running through the commands again.  
+- Linux:
+    - !!! `git config`, each level overrides values in the previous level:
+        - System: `/etc/gitconfig` <---> `git config --system`
+        - System (additional): `$XDG_CONFIG_HOME/git/config` <---> ???
+        - User/Global: `~/.gitconfig` or `~/.config/git/config` <---> `git config --global`
+        - Project: `.git/config` (in a project) <---> `git config --local` (or simply `git config`)   
+        Unsurprisingly, you need to be located somewhere in a Git repository for this (local) option to work properly.
+- Windows (need to confirm the order of loading?):
+    - System: config file of Git 2.x+ for Windows -- changeable with `git config -f <file>` only:
+        - Windows XP: `C:\Documents and Settings\All Users\Application Data\Git\config`.
+        - Windows Vista and newer: `C:\ProgramData\Git\config`
+    - System: `/etc/gitconfig`, although it’s relative to the MSys root, which is wherever you decide to install Git on your Windows system when you run the installer.
+    - User: Git looks for the `.gitconfig` file in the `$HOME` directory (`C:\Users\$USER` for most people)
+    - Project: `.git/config` (in a project) <---> `git config --local` (or simply `git config`)
+- !!! `git config --list` - check all settings. You may see keys more than once, because Git reads the same key from different files (`/etc/gitconfig` and `~/.gitconfig`, for example). In this case, *Git uses the last value for each unique key* it sees.
+- !!! `git config user.name` - check the list of all settings by the key.
+- !!!! `git config --show-origin rerere.autoUpdate` - query Git as to the origin for that X value, and it will tell you which configuration file had the final say in setting that X value.
+
+### !!!Your identity
+- `git config --global user.name "John Doe"`
+- `git config --global user.email johndoe@example.com`
+- If you need different details per system user or project then use `--global` (for user) or `--local` (default, for project).
+
+### Your Editor
+- !!! The default text editor will be used when Git needs you to type in a message. Use the system one or change it:
+    - Linux:
+        - `git config --global core.editor emacs` (or use any other you ike, e.g. Vim, Emacs, Notepad++, etc.)
+    - Windows:
+        - `git config --global core.editor emacs` (provide a full path to the executable file instead of `emacs`), few examples:
+            - `git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -nosession"`
+            - `git config --global core.editor "'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -nosession"`
+- If you don’t setup your editor like this, you may get into a really confusing state when Git attempts to launch an editor. An example on a Windows system may include a prematurely terminated Git operation during a Git initiated edit.
+
+## Getting help
+- `git help <verb>`
+    - For example, `git help config`
+- `man git-<verb>` 
+- Freenode IRC server: https://freenode.net/ (#git or #github)
+- `-h` or `--help option`, for example: `git config -h`
+
+# Git Basics
+
+## Getting a Git Repository
+- You can take a local directory that is currently not under version control, and turn it into a Git repository, or
+- You can clone an existing Git repository from elsewhere.
+
+--------
+THE REST OF THE CONTENT IS LINUX-ORIENTED
+--------
+
+### Initializing a Repository in an Existing Directory
+`git init`
+
