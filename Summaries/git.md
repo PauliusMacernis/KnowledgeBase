@@ -166,5 +166,156 @@ THE REST OF THE CONTENT IS LINUX-ORIENTED
 --------
 
 ### Initializing a Repository in an Existing Directory
-`git init`
+`git init`  
+!!! At this point, nothing in your project is tracked yet, the directory "is empty".
+
+`git add *.c` - Add all Working tree files matching pattern `*.c` to Staging area
+`git add LICENSE` - Add specific file named `LICENSE` to Staging area
+`git commit -m 'initial project version'` - !!! add changes of staging area to `.git` directory (locally), attach a message "initial project version" to the changes.
+
+`git clone` - !!! If you’re familiar with other VCS systems such as Subversion, you’ll notice that the command is "clone" and not "checkout". **This is an important distinction** — instead of getting just a working copy, Git receives a full copy of nearly all data that the server has. Every version of every file for the history of the project is pulled down by default when you run `git clone`.  For example, `git clone https://github.com/libgit2/libgit2`
+
+`git clone https://github.com/libgit2/libgit2`
+- creates a directory named `libgit2`
+- initializes a `.git` directory inside `libgit2` dir
+- pulls down all the data for `https://github.com/libgit2/libgit2` repository
+- checks out a working copy of the latest version
+
+If you want to clone the repository into a directory named something other than default repository name, you can specify the new directory name as an additional argument, e.g.:  
+`git clone https://github.com/libgit2/libgit2 mylibgit`  
+or  
+`git clone https://github.com/libgit2/libgit2 .` (note the dot at the end!)
+
+
+## Recording Changes to the Repository
+
+!!! Each file in your working directory can be in one of two states: **tracked** or **untracked**:  
+- **Tracked files** are files that **were in the last snapshot**; they can be *unmodified*, *modified*, or *staged*. In short, tracked files are files that Git knows about.
+- **Untracked files** are everything else — any files in your working directory that **were not in your last snapshot** and **are not in your staging area**.
+
+!!! Figure 8. The lifecycle of the status of your files.
+
+### Checking the Status of Your Files
+
+`git status` - which files are in which state, which branch we are on.
+
+*Untracked* basically means that Git sees a file you didn’t have in the previous snapshot (commit); Git won’t start including it in your commit snapshots until you explicitly tell it to do so.
+
+### Tracking New Files
+
+Add file `README` to Staging area:  
+`git add README`
+
+!!! If `README` would be a directory, the command `git add ..` would add all the files in that directory recursively.
+
+### Staging Modified Files
+
+**Changes not staged for commit** — which means that a file that is tracked has been modified in the working directory but not yet staged. To stage it, you run the `git add` command. `git add` is a multipurpose command — you use it to begin tracking new files, to stage files, and to do other things like marking merge-conflicted files as resolved.    
+!!! **It may be helpful to think** of it more as “add precisely this content to the next commit” rather than “add this file to the project”.  
+  
+### Short Status
+
+!!! `git status -s` or `git status --short`:  
+- `??` - new files that aren't tracked
+- `A` - new files that have been added to the staging area
+- `M` - modified files
+- ...
+
+Left side - Staging area  
+Right side - Working tree  
+
+### Ignoring Files
+
+You can create a file listing patterns to match the files you want to ignore, the files is -`.gitignore`  The example of file content:  
+```
+*.[oa]
+*~
+```
+
+!!! The rules for the patterns you can put in the .gitignore file are as follows:  
+- Blank lines or lines starting with `#` are ignored.
+- Standard glob patterns work, and will be applied **recursively** throughout the entire working tree.
+- !!!! You can start patterns with a forward slash (`/`) to **avoid recursivity**.
+- !!!! You can end patterns with a forward slash (`/`) to specify a **directory**.
+- You can **negate a pattern** by starting it with an exclamation point (`!`).
+
+
+!!!!! Glob patterns are like simplified regular expressions that shells use. An asterisk (`*`) matches zero or more characters; `[abc]` matches any character inside the brackets (in this case a, b, or c); a question mark (`?`) matches a single character; and brackets enclosing characters separated by a hyphen (`[0-9]`) matches any character between them (in this case 0 through 9). You can also use two asterisks to match nested directories; `a/**/z` would match a/z, a/b/z, a/b/c/z, and so on.  
+
+One more example of `.gitignore`:  
+```
+# ignore all .a files
+*.a
+
+# but do track lib.a, even though you're ignoring .a files above
+!lib.a
+
+# only ignore the TODO file in the current directory, not subdir/TODO
+/TODO
+
+# ignore all files in any directory named build
+build/
+
+# ignore doc/notes.txt, but not doc/server/arch.txt
+doc/*.txt
+
+# ignore all .pdf files in the doc/ directory and any of its subdirectories
+doc/**/*.pdf
+```
+
+This is a good repository for `.gitignore` kickstart for almost any project:  
+https://github.com/sugalvojau/gitignore
+
+It is also possible to have additional `.gitignore` files in subdirectories. The rules in these nested `.gitignore` files apply only to the files under the directory where they are located. (The Linux kernel source repository has 206 .gitignore files.)   
+
+
+Get help on gitignore: `man gitignore`
+
+
+### Viewing Your Staged and Unstaged Changes
+
+What have you changed but not yet staged? And what have you staged that you are about to commit?
+!!!! That command **compares what is in your working directory with what is in your staging area**. The result tells you the changes you’ve made that you haven’t yet staged.    
+So, to see what you’ve changed but not yet staged, type `git diff` with no other arguments:  
+`git diff` -- for working directory vs. staging diff
+
+
+!!!! If you want to see **what you’ve staged that will go into your next commit**. This command compares your staged changes to your last commit.  
+`git diff --staged`
+
+!!!!!! `--staged` and `--cached` are synonyms, for example `git --staged` is synonymous to `git --cached`
+!!!!!!!!! (...and I was using `git rm -r --cached .` without knowing it is the same as `git rm -r --staged .` . Unbelievable!!!!!!... )
+
+
+#### !!!! Git Diff in an External Tool
+`git difftool` - if you prefer a graphical or external diff viewing program instead of default `git diff`  
+`git difftool --tool-help` - see which of existing external programs may be used to see diffs instead of original `git diff`  
+
+For example, adding the following to `.gitconfig` would make `git difftool` command launching PHP Storm:  
+```
+[diff]
+	tool = pstorm
+[difftool]
+	prompt = false
+[difftool.pstorm]
+	cmd = /usr/local/bin/pstorm diff "$LOCAL" "$REMOTE"
+[merge]
+	tool = pstorm
+[mergetool.pstorm]
+	cmd = /usr/local/bin/pstorm merge "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
+```
+
+### Committing Your Changes
+
+`git commit` - doing so launches your editor of choice. This is set by your shell’s `EDITOR` environment variable.  
+The default commit message contains the *latest output of the git status command commented* out and one empty line on top.  
+When you exit the editor, Git creates your commit with that commit message (with the comments and diff stripped out).  
+
+Use `git config --global core.editor` in order to check which editor is in use.  
+
+`git commit -v` - puts the diff of your change in the editor so you can see exactly what changes you’re committing.    
+
+`git commit -m "Story 182: Fix benchmarks for speed"` - commit with the direct message, no need to open editor anymore.
+
+
 
