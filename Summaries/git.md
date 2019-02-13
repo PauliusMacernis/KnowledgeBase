@@ -318,4 +318,19 @@ Use `git config --global core.editor` in order to check which editor is in use.
 `git commit -m "Story 182: Fix benchmarks for speed"` - commit with the direct message, no need to open editor anymore.
 
 
+### Skipping the Staging Area
+
+!!! `git commit -a -m 'added new benchmarks'` - automatically stage every file that is already tracked before doing the commit, letting you skip the `git add` part.  
+`-a` flag includes all changed files. This is convenient, **but be careful**; sometimes this flag will cause you to include unwanted changes.
+
+### Removing Files
+  
+!!!! If you simply remove the file from your working directory, it shows up under the “Changes not staged for commit” (that is, **unstaged**) area of your git status output.  
+
+!!!!! `git rm` - remove the file from staging area **and working directory**. **This command stages the file’s removal**.
+
+ 
+
+
+
 
