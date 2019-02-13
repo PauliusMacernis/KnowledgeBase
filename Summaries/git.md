@@ -327,10 +327,89 @@ Use `git config --global core.editor` in order to check which editor is in use.
   
 !!!! If you simply remove the file from your working directory, it shows up under the “Changes not staged for commit” (that is, **unstaged**) area of your git status output.  
 
-!!!!! `git rm` - remove the file from staging area **and working directory**. **This command stages the file’s removal**.
+!!!!! `git rm` - remove the file from staging area **and working directory**. **This command stages the file’s removal**.  
+The next time you commit, the file will be gone and no longer tracked. If you modified the file or had already added it to the staging area, you must force the removal with the `-f` option.  
+
+!!!!!! `git rm --cached README` - keep the file in your working tree but remove it from your staging area.    
+!!! This is particularly useful if you forgot to add something to your `.gitignore` file and accidentally staged it, like a large log file or a bunch of `.a` compiled files.  
+
+You can pass files, directories, and file-glob patterns, for example:    
+`git rm log/\*.log`    
+!!!!!??? Note the backslash (`\`) in front of the `*`. This is necessary because Git does its own filename expansion in addition to your shell’s filename expansion. This command removes all files that have the `.log` extension in the `log/` directory.  
+
+
+### Moving Files
+
+!!! Unlike many other VCS systems, Git doesn’t explicitly track file movement. If you rename a file in Git, no metadata is stored in Git that tells it you renamed the file. However, Git is pretty smart about figuring that out after the fact.  
+
+`git mv file_from file_to` - to rename the file.  
+!!!! which is actually equivalent to this:  
+```
+mv README.md README
+git rm README.md
+git add README
+```
+
+!!!! **The only real difference is that `git mv` is one command instead of three** — it’s a convenience function. More importantly, you can use any tool you like to rename a file, and address the `add`/`rm` later, before you commit.  
+
+## Viewing the Commit History
+
+`git log` - history by date DESC  
+  
+`git log --patch` - shows the difference (the patch output) introduced in each commit. You may use `-p` instead of `--patch`.  
+  
+`git log -2` - shows two last history items, use any number.  
+  
+`git log --stat` - abbreviated stats for each commit. Prints below each commit entry a list of modified files, how many files were changed, and how many lines in those files were added and removed.  
+  
+!!!!! `git log --pretty=oneline` - changes the log output to formats other than the default. The `oneline` option prints each commit on a single line, which is useful if you’re looking at a lot of commits.
+`git log --pretty=short` - ...  
+`git log --pretty=full` - ...  
+`git log --pretty=fuller` - ...  
+
+!!!!! `git log --pretty=format:"%h - %an, %ar : %s"` - the `format` option allows to specify own format. **This is especially useful when you’re generating output for machine parsing** — because you specify the format explicitly, you know it won’t change with updates to Git.  
+This outputs lines like this:  
+`a16d814c - FirstName LastName, 7 days ago : Commit message is shown here`  
+
+See `git help log` for more information on formats available, etc.  
+
+!!!! **What is the difference between author and committer?**  
+The **author** is the person who originally wrote the work,  
+whereas the **committer** is the person who last applied the work.  
+So, if you send in a patch to a project and one of the core members applies the patch, both of you get credit — you as the author, and the core member as the committer.  
+
+!!! `git log --pretty=format:"%h %s" --graph` -- with `--graph` you see the tree of changes.  
+
+!!! `git log --since=2.weeks` - show log since some date, may be also "2008-01-15", "2 years 1 day 3 minutes ago", etc.  
+
+!!!! `git log --grep somekeywordsorso` - search for keywords in the commit messages.  
+
+You can specify more than one instance of both the `--author` and `--grep` search criteria, which will limit the commit output to commits that match any of the `--author` patterns and any of the `--grep` patterns; 
+however, adding the `--all-match` option further limits the output to just those commits that match all `--grep` patterns.  
+
+!!!! `git log -S function_name` (for example: `git log -S findById`) - if you wanted to find the last commit that added or removed a reference to a specific function.  
+It is (`-S` option) colloquially referred to as **Git’s “pickaxe” option**.    
+which takes a string and shows only those commits that changed the number of occurrences of that string.  
+
+!!!!! `git log fileordirname` - chows shanges of the directory or file.  
+
+Some useful options: `-<n>`, `--since`, `--after`, `--until`, `--before`, `--author`, `--committer`, `--grep`, `-S`  
+Fo example: `git log --pretty="%h - %s" --author='Name Surname' --since="2008-10-01" --before="2019-02-01" --no-merges -- var/`  
+
+
+## Undoing Things  
+
+`git commit --amend` - This command takes your staging area and uses it for the commit. 
+If you’ve made no changes since your last commit (for instance, you run this command immediately after your previous commit), 
+then your snapshot will look exactly the same, and all you’ll change is your commit message.  
+
+
+
+...
+
 
  
-
+    
 
 
 
