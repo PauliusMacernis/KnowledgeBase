@@ -397,11 +397,155 @@ Some useful options: `-<n>`, `--since`, `--after`, `--until`, `--before`, `--aut
 Fo example: `git log --pretty="%h - %s" --author='Name Surname' --since="2008-10-01" --before="2019-02-01" --no-merges -- var/`  
 
 
-## Undoing Things  
+## !!!!!! Undoing Things  
 
-`git commit --amend` - This command takes your staging area and uses it for the commit. 
+!!!!!! `git commit --amend` - Fix the last commit (fix commit message, files added). Which means - you will be modifying the last snapshot in `.git` directory.  (??)  
+This command takes your staging area and uses it for the commit. 
 If you’ve made no changes since your last commit (for instance, you run this command immediately after your previous commit), 
 then your snapshot will look exactly the same, and all you’ll change is your commit message.  
+
+!!!!! **It’s important to understand that when you’re amending your last commit, you’re not so much fixing it as replacing it entirely with a new, improved commit** that pushes the old commit out of the way and puts the new commit in its place.
+Effectively, it’s as if the previous commit never happened, and it won’t show up in your repository history.
+The obvious value to amending commits is to make minor improvements to your last commit, without cluttering your repository history with commit messages of the form, “Oops, forgot to add a file” or “Darn, fixing a typo in last commit”.  
+
+
+### Unstaging a Staged File
+
+!!!!! `git reset HEAD CONTRIBUTING.md` - to unstage the file. Physical file in the working directory is not touched.  
+
+!!!!! Physical file is not being touched with `git reset ...`. However, adding `--hard` flag would change the situation. Be careful!!!
+
+
+### Unmodifying a Modified File
+
+!!!! `git checkout -- CONTRIBUTING.md` - when we realize that we don’t want to keep our changes to the `CONTRIBUTING.md` file. This is how can we easily unmodify it — revert it back to what it looked like when we last committed (or initially cloned, or however we got it into our working directory).  
+!!!! It’s **important to understand** that `git checkout -- <file>` is a dangerous command. **Any changes you made to that file are gone** — Git just copied another file over it. Don’t ever use this command unless you absolutely know that you don’t want the file.  
+
+!!!!!!!! Remember, anything that is committed in Git can almost always be recovered. However, anything you lose that was never committed is likely never to be seen again.  
+
+## Working with Remotes  
+
+Remote repositories are versions of your project that are hosted on the Internet or network somewhere. You can have several of them, each of which generally is either read-only or read/write for you.  
+It is entirely possible that you can be working with a “remote” repository that is, in fact, on the same host you are. 
+The word “remote” does not necessarily imply that the repository is somewhere else on the network or Internet, only that it is elsewhere. Working with such a remote repository would still involve all the standard pushing, pulling and fetching operations as with any other remote.  
+
+### Showing Your Remotes  
+
+`git remote` - lists the shortnames of each remote handle you’ve specified. `origin` is default name Git gives to the server cloned from.  
+
+`git remote -v` - list remotes with URLs.  
+
+### Adding Remote Repositories
+
+`git remote add <shortname> <url>` - add a new remote repository, for example: `git remote add pb https://github.com/paulboone/ticgit`
+
+`git fetch remoterepositoryshortname` - fetch all the information that `repositoryshortname` has but that you don’t yet have in your repository.  
+!!!! The command goes out to that remote project and **pulls down all the data from that remote project** that you don’t have yet. 
+After you do this, you should have **references to all the branches from that remote, which you can merge in or inspect** at any time.  
+
+!!!! **It’s important to note that the git fetch command only downloads the data to your local repository — it doesn’t automatically merge it with any of your work or modify what you’re currently working on.** 
+You have to merge it manually into your work when you’re ready.  
+
+!!!!!!! **IF your current branch is set up to track a remote branch** THEN you **can use the git pull** command to **automatically fetch and then merge** that **remote branch into your current branch**.  
+
+!!!! **by default, the git clone command automatically sets up your local master branch to track the remote master branch (or whatever the default branch is called) on the server you cloned from.**  
+
+!!!! Running `git pull` generally **fetches data** from the server you originally cloned from and **automatically tries to merge it into the code you’re currently working on**.  
+
+### Pushing to Your Remotes
+
+!!! `git push <remote> <branch>` - push your `<branch>` (e.g. `master`) branch to your **`<remote>`** (e.g. `origin`) server.  
+This command works only if you cloned from a server to which you have write access and if nobody has pushed in the meantime.    
+If you and someone else clone at the same time and they push upstream and then you push upstream, your push will rightly be rejected.  
+You’ll have to fetch their work first and incorporate it into yours before you’ll be allowed to push.  
+
+### Inspecting a Remote
+
+!!! `git remote show <remote>` - lists the URL for the remote repository, tracking branch info, etc.
+
+
+### Renaming and Removing Remotes  
+
+`git remote rename <fromremotename> <toremotename>` - change a remote’s shortname from one (e.g. `meat`) to another (e.g. `visma`).  
+It’s worth mentioning that this changes all your remote-tracking branch names, too. What used to be referenced at `<fromremotename>/master` (e.g. `meat/master`) is now at `<toremotename>/master` (e.g. `visma/master`).
+
+`git remote remove <remotename>` or `git remote rm <remotename>` - remove a remote  
+!!! Once you delete the reference to a remote this way, **all remote-tracking branches and configuration settings** associated with that remote are also deleted.  
+
+
+## Tagging
+
+`git tag` or `git tag -l` or `git tag --list` - list all tags in alphabetical order; the order in which they appear has no real importance.  
+
+`git tag -l "v1.8.*"` - search for tags that match a particular pattern (e.g. for `v1.8.anything` tags)  
+
+**Listing tag wildcards requires `-l` or `--list` option.**    
+If you want just the entire list of tags, running the command `git tag` implicitly assumes you want a listing and provides one; the use of `-l` or `--list` in this case is optional.  
+
+### Creating Tags
+
+Git supports two types of tags:  
+- lightweight - a pointer to a specific commit.
+- annotated - stored as full objects in the Git database. They’re checksummed; contain the tagger name, email, and date; have a tagging message; and can be signed and verified with GNU Privacy Guard (GPG). It is recommended way of tagging most of the times. But not always, of course.  
+
+### Annotated Tags
+
+`git tag -a v1.4 -m "my version 1.4"` - creating  
+`-m` specifies a tagging message, which is stored with the tag.  
+
+`git show v1.4` - shows the tag data along with the commit that was tagged  
+
+### Lightweight Tags  
+
+`git tag v1.4` - creating (don’t supply any of the `-a`, `-s`, or `-m` options, just provide a tag name)  
+
+### Tagging Later  
+
+`git tag -a v1.2 9fceb02`
+
+### !!! Sharing Tags
+
+!!!! `git push origin <tagname>` - **By default, the git push command doesn’t transfer tags to remote servers** . 
+You will have to **explicitly push tags** to a shared server after you have created them. 
+This process is just like sharing remote branches — you can run `git push origin <tagname>`
+  
+!!!! `git push origin --tags` - **If you have a lot of tags that you want to push up at once**, you can also use the **`--tags`** option to the `git push` command. This will transfer all of your tags to the remote server that are not already there.  
+
+### Deleting Tags
+
+`git tag -d <tagname>` - this removes the tag from **local** repo.
+`git push <remote> :refs/tags/<tagname>` - this will push local tag update to **remote** repo.  
+
+### Checking out Tags
+
+`git checkout <tag>` (e.g. `git checkout 2.0.0`) - If you want to view the versions of files a tag is pointing to, you can do a git checkout, though this puts your repository in “**detached HEAD**” state, which has some ill side effects.  
+  In “detached HEAD” state, if you make changes and then create a commit, the tag will stay the same, but your new commit won’t belong to any branch and will be unreachable, except by the exact commit hash. 
+  Thus, if you need to make changes — say you’re fixing a bug on an older version, for instance — you will generally want to create a branch, e.g. `git checkout -b version2 v2.0.0`. If you do this and make a commit, 
+  your `version2` branch will be slightly different than your `v2.0.0` tag since it will move forward with your new changes, so **do be careful**.  
+  
+## Git Aliases
+  
+  !!!! Set up an alias for each command using `git config`, for example `git config --global alias ci commit`. This means that, for example, instead of typing `git commit`, you just need to type `git ci`.  
+  
+  !!! This technique can also be very useful in creating commands that you think should exist. For example, to correct the usability problem you encountered with unstaging a file, you can add your own unstage alias to Git:
+  `git config --global alias.unstage 'reset HEAD --'`
+  `git config --global alias.last 'log -1 HEAD'`
+  
+  !!!!!!! **Run an external command, rather than a Git subcommand. In that case, you start the command with a `!` character.**. For example:
+  `git config --global alias.visual '!gitk'`
+  
+  
+  
+  
+  
+  
+  
+
+
+  
+
+
+
 
 
 
