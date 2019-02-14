@@ -64,6 +64,8 @@
 - Regular expressions
 - Data serialization languages / markup languages:
     - CSV (all the quirks with this, especialy when importing/exporting, like escape chars, etc.)
+        - CSV is not a standard: https://chriswarrick.com/blog/2017/04/07/csv-is-not-a-standard/
+        - Common Format and MIME Type for Comma-Separated Values (CSV) Files: https://tools.ietf.org/html/rfc4180
     - YAML (.yaml, .yml) ( http://yaml.org/ )
     - XML
         - SVG
