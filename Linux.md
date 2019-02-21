@@ -710,3 +710,6 @@ Shrinks (or extends?) the size of a file to the specified size - 0 bytes.
 Read more:  
 https://man.cx/truncate  
 
+- **What is the difference between `sudo find . -name "*" -delete` and `rm -f *`?**  
+Read more:  
+https://stackoverflow.com/questions/11289551/argument-list-too-long-error-for-rm-cp-mv-commands  
