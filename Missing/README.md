@@ -69,6 +69,9 @@
     - YAML (.yaml, .yml) ( http://yaml.org/ )
     - XML
         - SVG
+    - Markdown: https://en.wikipedia.org/wiki/Markdown
+        - CommonMark: https://commonmark.org/
+        - GitHub Flavored Markdown (GFM): https://github.github.com/gfm/
     - HTML
     - CSS ( https://www.w3.org/TR/CSS/ )
         - CSS naming
