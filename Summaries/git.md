@@ -536,17 +536,318 @@ This process is just like sharing remote branches — you can run `git push orig
   
   
   
+# Git branching
+  
+  Branching means you diverge from the main line of development and continue to do work without messing with that main line.
+  
+## Branches in a Nutshell
+  
+  !!!! When you make a commit, *Git stores a commit object that contains*: 
+  - the author’s name 
+  - the author's email address, 
+  - the typed message, 
+  - a pointer to the snapshot of the staged content
+  - pointers to the commit or commits that directly came before this commit (its parent or parents): 
+    - *zero parents for the initial commit*, 
+    - *one parent for a normal commit*, and 
+    - *multiple parents for a commit that results from a merge* of two or more branches.
+  
+  !!!! Let’s assume that you have a directory containing three files, and you stage them all and commit. 
+  - When you stage the files (e.g. 3) then git:
+    - computes a checksum for each file (the SHA-1 hash), 
+    - stores that version of the file in the Git repository (Git refers to them as `blobs`), and 
+    - adds that checksum to the staging area
+  - When you create the commit by running `git commit`, 
+    - Git checksums each subdirectory (in this case, just the root project directory) and 
+    - stores those tree objects in the Git repository. 
+    - Git then creates a commit object that has the metadata and a pointer to the root project tree so it can re-create that snapshot when needed.
+  - At the end you have 5 objects in the git repository:
+    - 3x **blobs** (each representing the contents of one of the 3 files)
+    - 1x **tree** that lists the contents of the directory and specifies which file names are stored as which blobs
+    - 1x **commit with the pointer to that root tree** and all the commit metadata  (author name and email, message, pointer to the snapshot of the staged content, pointers to the commit or commits that directly came before this commit (its parent or parents)).
+
+  !!!!! Figure 9. A commit and it's tree  
+  !!!!! Figure 10. Commits and their parents  
+  
+  !!!!!! A **branch** in Git is simply a lightweight **movable pointer to one of these commits**. The default branch name in Git is master. As you start making commits, you’re given a `master` branch that points to the last commit you made.  
+  **Every time you commit, the `master` branch pointer moves forward automatically**.
+  
+  !!! The **`master` branch in Git is not a special branch**. It is exactly like any other branch. The only reason nearly every repository has one is that the `git init` command creates it by default and most people don’t bother to change it.  
+  
+  !!!!!! (COMMIT > SNAPSHOT > TREE > BLOB)  
+  See figures 9-12 for more ihfo.  
+  
+  
+### Creating a New Branch
+
+  !!! New branch = new pointer to move around (within snapshots?)  
+  
+  `git branch testing` , - this creates a new pointer (called `testing`) to the same commit you’re currently on. 
+  The `git branch` command** only created a new branch — it didn’t switch** to that branch.
+  
+  
+  !!!!!! **How does Git know what branch you’re currently on?**  
+  **It keeps a special pointer called `HEAD`.**  
+  In Git, this is a pointer to the **local branch you’re currently on**.  
+  
+  
+  !!!!!!! (HEAD > BRANCH > COMMIT > SNAPSHOT > TREE > BLOB)
+  
+  `git log` - shows where the branch pointers are pointing, where is the `HEAD` pointer pointing to. This option is called `--decorate`. For example:    
+  - `git log --decorate` or in a compact view:
+  - `git log --oneline --decorate`
+  
+### Switching Branches
+
+  !!!!!! `git checkout <branch>` 
+  1) moves `HEAD` to point to another branch (aka "switching to another branch"), and 
+  2) reverts the files in the working directory back to the snapshot that <branch> points to.
+  
+  !!! It’s **important to note** that when you switch branches in Git, files in your working directory will change.  
+  If you switch to an older branch, your working directory will be reverted to look like it did the last time you committed on that branch.  
+  Git adds, removes, and modifies files automatically to make sure your working copy is what the branch looked like on the last commit to it.  
+  **If Git cannot do it cleanly, it will not let you switch at all**.  
+  
+  `git log --oneline --decorate --graph --all` - check for the history, including divergent history.
+  (Divergent history - when the history is not in a one solid row, e.g. in a branches that are changed with the new features other branches don't know about yet)?
+  
+  A **branch in Git is actually a simple file that contains the 40 character** SHA-1 checksum of the commit it points to.  
+  Creating a new branch is as quick and simple as writing 41 bytes to a file (40 characters and a newline).  
+  
+  
+## Basic Branching and Merging
+
+
+### Basic Branching
+
+  `git checkout -b <branch>` - create a new branch and switch to it at the same time. This is shorthand for `git branch <branch>` and `git checkout <branch>`
+
+  Before you do switch branches, note that if your working directory or staging area has uncommitted changes that conflict with the branch you’re checking out, Git won’t let you switch branches. It’s best to have a clean working state when you switch branches.  
+  
+  Merging `<branch>` into `master` (or any other branch):  
+  `git checkout master`  
+  `git merge <branch>`  
+  
+  !!**"fast-forward merge"** - Git simply moves the pointer forward.   
+   To phrase that another way, when you try to merge one commit with a commit that can be reached by following the first commit’s history, Git simplifies things by moving the pointer forward because there is no divergent work to merge together — this is called a "fast-forward".  
+  
+  !!!! `git branch -d <branch>` - delete the branch. For example, because another branch (e.g. `master`) points to the same (or newer) snapshot. Or because the changes in the branch is irrelevantly old and you are sure the old branch is not needed anymore.
+  
+### Basic Merging
+
+  !!!!!!**"Merge made by the 'recursive' strategy."** - In this case, your development history has diverged from some older point.  
+  Because the commit on the branch you’re on isn’t a direct ancestor of the branch you’re merging in, Git has to do some work.  
+  In this case, Git does a simple **three-way merge, using the two snapshots pointed to by the branch tips and the common ancestor of the two**.  
+  (see figure 24)  
+  Instead of just moving the branch pointer forward, Git creates a new snapshot that results from this three-way merge and automatically creates a new commit that points to it.  
+  (see figure 25)  
+  __**This is referred to as a merge commit, and is special in that it has more than one parent.**__
+  
+### Basic Merge Conflicts
+  
+  If you changed the same part of the same file differently in the two branches you’re merging, Git won’t be able to merge them cleanly, you'll get a merge conflict.  
+  !!!!!! And git is not creating merge commit in the case of conflict. It has paused the process while you resolve the conflict.  
+  Use `git status` to find files failing to be merged (aka. "unmerged paths").  
+  Anything that has merge conflicts and hasn’t been resolved is listed as unmerged. Git adds standard conflict-resolution markers to the files that have conflicts, so you can open them manually and resolve those conflicts.  
+  **After you’ve resolved each of these sections in each conflicted file, run `git add` on each file to mark it as resolved. Staging the file marks it as resolved in Git.**  
+  
+  `git mergetool` - in case you prefer graphical tool to resolve conflicts. In this case, git setting `merge.tool` will matter, or you will have to pick the tool when using the command. After you exit the merge tool, Git asks you if the merge was successful. If you tell the script that it was, it stages the file to mark it as resolved for you. You can run `git status` again to verify that all conflicts have been resolved. If you’re happy with that, and you verify that everything that had conflicts has been staged, you can type `git commit` to finalize the merge commit. The default commit message will be generated in, but you may change it if you will.  
+  
+## Branch Management  
+
+  !!!!! `git branch` - list of current branches. `*` in the list marks the branch that `HEAD` points to.  
+  
+  !!! `git branch -v` - list of current branches, where `HEAD` points to, and **the last commit message**.
+  
+  !!!!!!!!! `git branch --merged` or `git branch --merged <branch>` - to see which branches are already merged into the branch you’re on.  
+  Branches on this list without the `*` in front of them are generally fine to delete with `git branch -d`; you’ve already incorporated their work into another branch, so you’re not going to lose anything.  
+  
+  !!!!!!!!! `git branch --no-merged` or `git branch --no-merged <branch>` - to see which branches are NOT MERGED into the branch you’re on.   
+  Deleting branches under this list will not work if you use `git branch -d <branch>`. You will get the error and be asked to use `git branch -D <branch>` instead.  
+  
+  
+## Branching Workflows
+
+### Long-Running Branches
+
+  Several branches that are always open and that you use for different stages of your development cycle; you can merge regularly from some of them into others. For example: `master`, `develop` or `next`, `proposed` etc. The idea is that your branches are at various levels of stability; when they reach a more stable level, they’re merged into the branch above them.    
+
+### Topic Branches  
+
+  !!!! A topic branch is a short-lived branch that you create and use for a single particular feature or related work. E.g. JIRA issue-based branches (e.g. `AP-123`), `hotfix`. You may even go beyond this by having **small branches out of another small branches (e.g. experimenting along on half of another branch or so?)**. This technique allows you to context-switch quickly and completely, it’s easier to see what has happened during code review and such. You can keep the changes there for minutes, days, or months, and merge them in when they’re ready, regardless of the order in which they were created or worked on. **(This seems to be a good technique for testing on a few key concepts at once when decision should be made by another part, e.g. user, another team, etc.)**  
+  
+  It’s **important to remember** when you’re doing all this that these branches are completely local.  
+  When you’re branching and merging, everything is being done only in your Git repository — there is no communication with the server.
+  
+### Remote Branches  
+
+  Remote references are references (pointers) in your remote repositories, including branches, tags, and so on.  
+  
+  `git ls-remote [remote]` or `git remote show [remote]` - a full list of remote references, remote branch as well as more information on it.  
+  
+  !!! Remote-tracking branches are references to the state of remote branches. **They’re local references that you can’t move**; Git moves them for you whenever you do any network communication, to make sure they accurately represent the state of the remote repository. Think of them as bookmarks, to remind you where the branches in your remote repositories were the last time you connected to them.  
+  
+  Remote-tracking branch names take the form `<remote>/<branch>`.  
+  
+  !! `origin` is not special. `origin` is the default name for a remote when you run `git clone`. If you run  
+  `git clone -o booyah` instead, then you will have `booyah/master` as your default remote branch.  
+  
+  `git fetch <remote>` - to synchronize your work with a given remote. This command looks up which server `origin` is (e.g, it’s git.ourcompany.com), fetches any data from it that you don’t yet have, and updates your local database, moving your `origin/master` pointer to its new, more up-to-date position.  
+  
+  `git remote add <name> <url>` - adds the a new remote reference to the project you’re currently working on.  
+  
+### Pushing
+  
+  `git push <remote> <branch>` - when you want to share a branch with the world, you need to push it up to a remote to which you have write access. Your local branches aren’t automatically synchronized to the remotes you write to — you have to explicitly push the branches you want to share.  
+  
+  !!! For example, `git push origin serverfix` - This is a bit of a shortcut. Git automatically expands the `serverfix` branchname out to `refs/heads/serverfix:refs/heads/serverfix`, which means, "Take my serverfix local branch and push it to update the remote’s serverfix branch."  
+  
+  `git push origin serverfix:awesomebranch` - push your local `serverfix` branch to the `awesomebranch` branch on the remote project.  
+  
+  `git config --global credential.helper cache` - set up a "credential cache", keep it in memory for a few minutes.  
+  
+  **It’s important to note** that when you do a fetch (`git fetch origin`) that brings down new remote-tracking branches, you don’t automatically have local, editable copies of them. In other words, in this case, you don’t have a new `serverfix` branch — you have only an `origin/serverfix` pointer that you can’t modify.  
+  
+  `git merge origin/serverfix` - to merge `origin/serverfix` branch into current working branch.
+  
+  `git checkout -b serverfix origin/serverfix` - create the local `serverfix` branch from the remote `origin/serverfix` one. Branch `serverfix` set up to track remote branch `serverfix` from `origin`. Switched to a new branch `serverfix`.  
+    
+### Tracking Branches
+  
+  Checking out a local branch from a remote-tracking branch automatically creates what is called a "tracking branch" (and the branch it tracks is called an "upstream branch"). Tracking branches are local branches that have a direct relationship to a remote branch. If you’re on a tracking branch and type `git pull`, Git automatically knows which server to fetch from and which branch to merge in.  
+  
+  When you clone a repository, it generally automatically creates a `master` branch that tracks `origin/master`.  
+  
+  `git checkout -b <branch> <remote>/<branch>`  
+  is the same as `git checkout --track <remote>/<branch>`  
+  is the same as `git checkout <branch>` (work only if the branch name you’re trying to checkout (a) doesn’t exist and (b) exactly matches a name on only one remote).  
+  It means branch `<branch>` set up to track remote branch `<branch>` from `<remote>`. Switched to a new branch `<branch>`.  
+  
+  `git branch -u <remote>/<branch>` - if you already have a local branch and want to set it to a remote branch, or want to change the upstream branch you’re tracking, you can use the `-u` or `--set-upstream-to` option to `git branch` to explicitly set it at any time.  
+  
+  !!!! When you have a tracking branch set up, you can reference its upstream branch with the `@{upstream}` or `@{u}` shorthand. For example, If you’re on the `master` branch and it’s tracking `origin/master`, you can say something like `git merge @{u}` instead of `git merge origin/master` if you wish. 
+  
+  !!! `git branch -vv` - to see what tracking branches you have set up. This will list out your local branches with more information including what each branch is tracking and if your local branch is ahead, behind or both. It’s important to note that these numbers are only since the last time you fetched from each server. This command does not reach out to the servers, it’s telling you about what it has cached from these servers locally. If you want totally up to date ahead and behind numbers, you’ll need to fetch from all your remotes right before running this. You could do that like this `git fetch --all; git branch -vv`  
+  
+### Pulling
+  
+  `git pull` - will look up what server and branch your current branch is tracking, `fetch` from that server and then try to `merge` in that remote branch. Generally it’s better to simply use the `fetch` and `merge` commands explicitly as the magic of `git pull` can often be confusing.  
+  
+### Deleting Remote Branches
+  
+  !!!! `git push <remote> --delete <branch>` - remove the pointer from the server. **The Git server will generally keep the data there for a while until a garbage collection runs, so if it was accidentally deleted, it’s often easy to recover** (how???).  
+  
+  
+## Rebasing
+  
+  `merge` and `rebase` - two main ways to integrate changes from one branch into another in Git.  
+  With the `rebase` command, you can take all the changes that were committed on one branch and replay them on a different branch.  
+  
+### The Basic Rebase  
+  
+  `git checkout <branch1>`  
+  `git rebase <branch2>`  
+  This operation works by:
+   - going to the common ancestor of the two branches (the one you’re on and the one you’re rebasing onto),  
+   - getting the diff introduced by each commit of the branch you’re on,
+   - saving those diffs to temporary files, 
+   - resetting the current branch to the same commit as the branch you are rebasing onto, and finally 
+   - applying each change in turn.  
+   
+  There is no difference in the end product of the integration, but **rebasing makes for a cleaner history**.  
+  If you examine the log of a rebased branch, it looks like a linear history: it appears that all the work happened in series, even when it originally happened in parallel.  
+  That way, the maintainer (let's say you are not one) doesn’t have to do any integration work — just a fast-forward or a clean apply.  
+  
+  !!!!! Note that the snapshot pointed to by the final commit you end up with, whether it’s the last of the rebased commits for a rebase or the final merge commit after a merge, **is the same snapshot — it’s only the history that is different**.  
+  **Rebasing replays changes from one line of work onto another in the order they were introduced, whereas merging takes the endpoints and merges them together**.
+  
+### More Interesting Rebases  
+
+  !!!! `git rebase --onto master server client` - Take the `client` branch, figure out the patches since it diverged from the `server` branch, and replay these patches in the `client` branch as if it was based directly off the `master` branch instead.  
+  
+  !!!! `it rebase <basebranch> <topicbranch>` - checks out the `topicbranch` for you and replays it onto the `basebranch` (e.g. master).  
+  
+### The Perils of Rebasing  
+  
+  !!!!! **Do not rebase commits that exist outside your repository and people may have based work on them.**  
+  
+  !!!!! **When you rebase stuff, you’re abandoning existing commits and creating new ones that are similar but different**.  
+  If you push commits somewhere and others pull them down and base work on them, and then you rewrite those commits with `git rebase` and push them up again, your collaborators will have to re-merge their work and things will get messy when you try to pull their work back into yours.  
+  
+  `git push --force` - Usually, the command refuses to update a remote ref that is not an ancestor of the local ref used to overwrite it. `--force` flag disables the check, and can cause the remote repository to lose commits; use it with care.  
+  
+### Rebase When You Rebase  
+  
+  !!!!! It turns out that in addition to the commit SHA-1 checksum, **Git also calculates a checksum that is based just on the patch introduced with the commit. This is called a “patch-id”**.  
+  If you pull down work that was rewritten and rebase it on top of the new commits from your partner, Git can often successfully figure out what is uniquely yours and apply them back on top of the new branch.  
+  
+  `git config --global pull.rebase true` - If you are using `git pull` and want to make `--rebase` the default, you can set the `pull.rebase` config value.  
+  
+  !!!!! If you only ever rebase commits that have never left your own computer, you’ll be just fine.  
+  If you rebase commits that have been pushed, but that no one else has based commits from, you’ll also be fine.   
+  **If you rebase commits that have already been pushed publicly, and people may have based work on those commits, then you may be not ok.**  
+  If you or a partner does find it necessary at some point, make sure everyone knows to run `git pull --rebase` to try to make the pain after it happens a little bit simpler.  
+  
+### Rebase vs. Merge
+  
+  Merging is more like:  One point of view on this is that your repository’s commit history is a **record of what actually happened**. It’s a historical document, valuable in its own right, and shouldn’t be tampered with.  
+  Rebasing is more like: The opposing point of view is that the commit history is the story of how your project was made. You wouldn’t publish the first draft of a book, and the manual for how to maintain your software deserves careful editing.
+    
+  !!!!! In general **the way to get the best of both worlds is to rebase local changes you’ve made but haven’t shared yet before you push them in order to clean up your story, but never rebase anything you’ve pushed somewhere**.  
+  
+  
+## Git on the Server
+  
+  A remote repository is generally a bare repository — a Git repository that has no working directory. Because the repository is only used as a collaboration point, there is no reason to have a snapshot checked out on disk; it’s just the Git data. In the simplest terms, a bare repository is the contents of your project’s .git directory and nothing else.  
+  
+### The Protocols
+  
+  Git can use four distinct protocols to transfer data:  
+  1. Local, 
+  2. HTTP, 
+  3. Secure Shell (SSH) and 
+  4. Git.
+    
+#### Local Protocol
+  
+  The remote repository is in another directory on the same host.  
+  This is often used if everyone on your team has access to a shared filesystem such as an NFS mount, or in the less likely case that everyone logs in to the same computer.  
+  For example: `git clone /srv/git/project.git` (with the path - Git tries to use hardlinks or directly copy the files it needs)  
+  Or: `git clone file:///srv/git/project.git` (with `file://` - Git fires up the processes that it normally uses to transfer data over a network, which is generally much less efficient.)  
+  
+  To add a local repository to an existing Git project, you can run something like this:  
+  `git remote add local_proj /srv/git/project.git`  
   
   
   
   
-
-
   
-
-
-
-
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
 
 ...
