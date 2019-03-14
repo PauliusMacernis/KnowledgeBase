@@ -219,6 +219,8 @@
             - The OAuth 2.0 Authorization Framework (https://oauth.net/2/)
             - https://www.rfc-editor.org/info/rfc6749
             - https://www.rfc-editor.org/info/rfc6750
+        - OpenID
+        - SAML
         - Hawk Authentication???
         - AWS Signature???
         - NTLM Authentication???
