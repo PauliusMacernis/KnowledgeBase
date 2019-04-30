@@ -308,6 +308,10 @@
     - Selenium
     - SonarQube (https://www.sonarqube.org/)
     - Code reviews
+        - Github: https://github.com/features/code-review/
+        - Bitbucket: https://www.atlassian.com/git/tutorials/learn-about-code-review-in-bitbucket-cloud
+        - SmartGit's Distributed Reviews: https://www.youtube.com/watch?v=8eSjN3B6lm0
+        - Upsource: https://www.jetbrains.com/upsource/
     - Acceptance tests:
         - https://codeception.com/
     - Methods/techniques/etc.:
