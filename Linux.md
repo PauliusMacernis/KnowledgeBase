@@ -713,3 +713,9 @@ https://man.cx/truncate
 - **What is the difference between `sudo find . -name "*" -delete` and `rm -f *`?**  
 Read more:  
 https://stackoverflow.com/questions/11289551/argument-list-too-long-error-for-rm-cp-mv-commands  
+
+- **Explain `grep -rnw '/path/to/somewhere/' -e 'pattern'`  
+Read more:  
+https://stackoverflow.com/questions/16956810/how-do-i-find-all-files-containing-specific-text-on-linux  
+  
+  
