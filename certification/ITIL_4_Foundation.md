@@ -210,13 +210,59 @@
 - **What is Service action?**  
   Actions performed to address a consumer's needs.  
   For example: an additional support on using a web platform.  
+  
     
 - **What is Service Relationship?**  
-  A cooperation between a Service provider and Service consumer including service provision, service consumption, and service relationship management.  
+  A cooperation between a Service provider and Service consumer including service provision, service consumption, and service relationship management.    
   
   
-
+- **What is Service provision?**  
+  The activities performed by an organization to provide the services.    
+  For example: managing service provider resources, configure them to deliver the services, providing access to the resources to the users, and fulfilling the agreed upon servuce actions, conducting service level management, performing continual improvement to the services, supplying good to the consumers, etc.    
   
+    
+- **Give at least one example of Account provisioning**    
+  When phone service provider activates your account (sim card, phone number, etc.) after you purchase it.    
+  
+  
+- **What is Service consumption?**  
+  The activities performed by an organization (which may also be a single person) to consume the services.      
+  Service consumption includes: management of consumer's resources that are needed to use the service (e.g. paying the bill regularly to make sure service stays working), all other actions that consumer performs to utilize the provider's resources (e.g. checking the email, making phone calls on the new phone), requesting new service actions to be fulfilled (e.g. request for data roaming), etc. When consumer is doing something - this is called service consumption.      
+  
+  
+- **Who provides Service provision?**  
+  Service provider.  
+  
+  
+- **Who provides Service consumption?**    
+  Service consumer.  
+  
+  
+- **Are there any activities in Service relationship management scope provided by both (Service provider and Service consumer)?**    
+  Yes, it is Service relationship management.  
+  
+  
+- **What is Service Relationship Management?**     
+  The activities that the service provider and the service consumer do together to enable value co-creation to occur based upon the service offerings.      
+  For example: Consumer pays bill on time so the Service provider has resources to continue providing the service.  
+  Another example: Service provider informs Consumer about upcoming service upgrades, shortages, etc.   
+  
+  
+- **What is Service Relationship Model?**  
+  !!!May be wrong!!! The model that considers every single service involved in Service relationship. A drawing (a model, a schema) contains every single relationship within the company and it's relationship to related service providers and consumers via Service offerings (Goods, Access to resources, Service actions).  
+  For example, the model (e.g. diagram) containing all the relationships:    
+  Google cloud provides services to a Video courses streaming platform,  
+  Video courses streaming platform provides services to Video courses making company,      
+  Video courses making company provides services to Subscribers,  
+  Google has employees that are Subscribers.  
+  
+  
+- **May organization be both a service provider and service consumer at the same time?**    
+  Yes, it can be both at the same time.  
+  It may be one at the time as well.  
+  
+    
+   
 
   
 
