@@ -391,18 +391,55 @@
   Requirement - ???  
   
   
-- **What is Utility?**    
-  Functionality offered by a product or service to meet a particular need.    
-  We may think about Utility in terms of "What the service does".  Or simply "Fit for purpose".    
+- **What is Utility?**  
+  Functionality offered by a product or service to meet a particular need.      
+  We may think about Utility in terms of "What the service does", "The way it performs", "Allows somebody to accomplish an outcome".  Or simply "Fit for purpose".      
+  For example, the web works - this functionality may be called warranty. A user may efficiently use the web for his/her purpose - this functionality may be called utility.  
   
   
 - **What is Warranty?**  
-  Assurance that a product or service will meet agreed requirements.    
-  We may think about Warranty in terms of "How the service performs". Or simply "Fit for use".  
+  Assurance that a product or service will meet agreed requirements.  
+  Warranty addresses areas such as availability, capacity, security levels, and continuity.  
+  We may think about Warranty in terms of "How the service performs". Or simply "Fit for use".    
+  For example, the web works - warranty. A user may efficiently use the web for his/her purpose - utility.  
   
   
-- **What is the difference between Utility and Warranty?**  
-  **???**
-
+- **What considerations warranty addresses? Give a few examples.**   
+  Warranty addresses areas such as availability, capacity, security levels, and continuity.  
+  
+  
+- **Is availability of a service or a product a subject of a warranty, or more of a utility?**    
+  Most of the time - a warranty.  
+  
+  
+- **Is capacity of a service or a product a subject of a warranty, or more of a utility?**    
+  Most of the time - a warranty.   
+  
+  
+- **Is security levels of a service or a product a subject of a warranty, or more of a utility?**    
+  Most of the time - a warranty.  
+  
+  
+- **Is continuity of a service or a product a subject of a warranty, or more of a utility?**    
+  Most of the time -  a warranty.  
+  
+  
+- **What is the difference between Utility and Warranty?**    
+  Warranty is "fit for use"/"how the service performs" (for example, the brand new car is very good to drive from point A to point B) while Utility is "fit for purpose"/"what the service does" (but, for example, the car may not have enough space for the bigger family so it is not utility for the family).    
+  For example, the server runs on elastic and powerful server - warranty,        
+  Another example, car may drive from point A to point B - utility, how many miles per liter, how long the engine stays up, how cold or warm it gets inside, etc. - warranty.  
+  
+  
+- **Which of two (utility, warranty) should a service have?**    
+  A service should have both utility and warranty.  
+  
+  
+- **What kind of conditions warranty requires?**  
+  Warranty requires that a service has defined and agreed-upon conditions that are met.    
+  Warranty requires a service supports the performance or removes constraints from consumers.    
+  
+  This suggests that a warranty is quite easy measurable. And this is why most of IT people like it.   
+  For example, the web works - this functionality may be called warranty. A user may efficiently use the web for his/her purpose - this functionality may be called utility. That's why the service cannot be run successfully without both waranty and utility.    
+  
   
   
