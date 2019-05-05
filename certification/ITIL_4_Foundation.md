@@ -1,6 +1,7 @@
 - **What are the sources of the following QA?**  
   https://www.udemy.com/itil4-foundation/   
   https://en.wikipedia.org/wiki/ITIL    
+  https://en.wikipedia.org/wiki/Full-time_equivalent  
   https://www.axelos.com/news/blogs/june-2018/itils-the-name-you-won%E2%80%99t-wear-it-out    
   https://www.peoplecert.org/exams-peoplecert-online-proctoring-windows  
 
@@ -260,10 +261,148 @@
 - **May organization be both a service provider and service consumer at the same time?**    
   Yes, it can be both at the same time.  
   It may be one at the time as well.  
+ 
   
-    
+- **What is Outcome?**  
+  A result for a stakeholder, enabled by one or more outputs.  
+  Outcomes achieve **results**.  
+
+
+- **What is Outcome focused on: Service provider' desired outcome or Consumer's desired outcome?**  
+  Consumer's desired outcome.  
+  
+  
+- **Which is better in terms of Value co-creation: Affected outcomes or Supported outcomes?**  
+  Supported outcomes.  
+  
+  
+- **Which is better in terms of Value co-creation: Costs introduced or Costs removed?**  
+  Costs removed.  
+  
+  
+- **Which is better in terms of Value co-creation: Risks removed or Risks introduced?**   
+  Risks removed.  
+  
+  
+- **What are the three main components adding increasing Value?**  
+  Supported outcomes, Costs removed, Risks removed.   
+  For example: Using "Uber" while traveling within big city VS. Renting a car when traveling to remote places. Both creates different value for the person depending on the situation. When the value proposition is **good**, a business agreement can be made. Value propositions **change** when the factors change.    
+  
+  
+- **What are the three main components decreasing Value?**    
+  Affected outcomes, Costs introduced, Risks introduced.  
+  For example: Using "Uber" while traveling within big city VS. Renting a car when traveling to remote places. Both creates different value for the person depending on the situation. When the value proposition is **good**, a business agreement can be made. Value propositions **change** when the factors change.    
+  
+  
+- **What is Output?**    
+  A tangible or intangible deliverable of an activity.    
+  For example: a report, a bill at the end of the month, email, etc.   
+  
+  
+- **What is the difference between Outcome and Output?**  
+  Services facilitate outcomes **through** one or more outputs.    
+  For example, video making company produces a video (output). The desired value video is targeted to achieve by the video is the outcome. So in this case, viewer passing the exam after watching the video may be the outcome here.  
+  By the way, outputs are quite easily measurable while the outcomes are not that easy.  
+  Outcomes achieve **results**.      
+  Output is part of the outcome.   
+  
+  
+- **Should you care more about the outcome or an the output?**    
+  You should care more about the **outcome** than the output.  
+  By the way, outputs are quite easily measurable while the outcomes are not that easy.    
+  Outcomes achieve **results**.  
+  
+  
+- **What metrics should be defined: of Outcome or of Output?**    
+  Both. Define metrics that measure outcomes and not just outputs.    
+  If you will focus on output-only metrics then you may achieve output-related target but you may fail on achieving outcomes. Which may result to the entire business going down.    
+  
+  
+- **What is Cost?**    
+  The amount of money spent on a specific activity or resource.   
+  Cost may be measured financially, also in man-hours, full-time equivalents (FTEs), etc.  
+  
+  
+- **What is FTE?**  
+  Full-time equivalent (FTE) or whole time equivalent (WTE) is a unit that indicates the workload of an employed person (or student) in a way that makes workloads or class loads comparable across various contexts. FTE is often used to measure a worker's or student's involvement in a project, or to track cost reductions in an organization. An FTE of 1.0 is equivalent to a full-time worker or student, while an FTE of 0.5 signals half of a full work or school load.    
+  One FTE equals 2000 hours of work per year.    
+  
+  
+- **What are aims of Service provider in regards of costs when providing a service for a consumer?**    
+  A service provider aims to **reduce or remove** costs for a consumer when providing a service.  
+  
+  
+- **What is Risk?**    
+  A possible event that could cause harm, loss, or make it more difficult to achieve objectives.    
+  
+  
+- **What is a service provider's goal in terms of risks when in relationship with a consumer (customer)?**    
+  A service provider's goal should be to **reduce** risks for the consumer.  
+  
+  
+- **Is risk potentially imposed on consumers by the service?**  
+  Yes. **Risk** is potentially imposed on consumers by the service.    
+  
+  
+- **Who should contribute to the reduction of risk potentially imposed by the service?**    
+  Both: Service provider and Consumer.  
+  For example, Uber. The service provider (in this case - Uber) has to be sure helpdesk is working well and the consumer should be sure the phone is charged, phone usage is possible, etc.  
+  Another example with Uber. If the service of Uber does not work in your location you may communicate with Uber in regards of this inconvenience for you. Uber may then consider the issue and may take actions (or not) in order to improve their service for users like you.  
+  It is up to a consumer to clearly communicate the needs to a service provider and clarify the outcomes he/she wants to achieve.  
+  
+  
+- **What are the main points in regards of Consumer's communication to Service provider?**  
+  1. Define the requirements of the service and clarify the required outcomes.  
+  2. Clearly communicate any constraints and the critical success factors.  
+  3. Consumers must ensure providers have access to the necessary resources.  
+  
+  
+- **How can we deal with a Risk?**  
+  Avoid  
+  Accept  
+  Transfer  
+  Mitigate  
+  
+  
+- **What is Risk avoidance?**  
+  Risk avoidance involves removing risks from the service.    
+  For example, ignoring GDPR regulation by not collecting any data mentioned in GDPR.  
+  
+  
+- **What is Risk acceptance?**    
+  Risk acceptance is used when the risk or cost is considered low.  
+  For example, if you are outside of Europe you may choose to ignore GDPR regulations based on your own assumption that GDPR sanctions are applied heavily to business entities within Europe only.    
+  
    
+- **What is Risk transfer?**  
+  Risk transfer is often used when you insure against a risk.    
+  For example, in case of GDPR you may want to hire someone else to collect, store and give the access to the data for you. This way the risk is transferred to another party.    
+  Another example, in case of GDPR you may decide to buy an insurance and be paid by insurance company in case you get sue. This way the risk is transferred to insurance company.     
+  
+  
+- **What is Risk mitigation?**    
+  Risk mitigation is used when you implement technology or processes to reduce the risk.    
+  For example, in case of GDPR introduce the new software, hardware, and/or other upgrades helping to meet the requirements introduced with GDPR.  
+  
+  
+- **What is the difference between an Outcome and a Requirement?**  
+  **(????? NOT COMPLETE !!!!!!)**  
+  Outcome - a tangible or intangible deliverable of an activity.  
+  Requirement - ???  
+  
+  
+- **What is Utility?**    
+  Functionality offered by a product or service to meet a particular need.    
+  We may think about Utility in terms of "What the service does".  Or simply "Fit for purpose".    
+  
+  
+- **What is Warranty?**  
+  Assurance that a product or service will meet agreed requirements.    
+  We may think about Warranty in terms of "How the service performs". Or simply "Fit for use".  
+  
+  
+- **What is the difference between Utility and Warranty?**  
+  **???**
 
   
-
   
