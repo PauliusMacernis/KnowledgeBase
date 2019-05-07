@@ -11,6 +11,8 @@
     - Magic Numbers and Strings (https://sahandsaba.com/nine-anti-patterns-every-programmer-should-be-aware-of-with-examples.html)
     - Management by Numbers (https://sahandsaba.com/nine-anti-patterns-every-programmer-should-be-aware-of-with-examples.html)
     - Useless (Poltergeist) Classes (https://sahandsaba.com/nine-anti-patterns-every-programmer-should-be-aware-of-with-examples.html)
+    - Occam's razor (https://michaellant.com/2010/08/10/occams-razor-and-the-art-of-software-design/)
+    - The Principle of Parsimony: "The use of the simplest or most frugal route of explanation available" (https://en.wikipedia.org/wiki/Parsimony)
 - Math or so
     - Math in plain text (e.g. https://pages.uoregon.edu/ncp/Courses/MathInPlainTextEmail.html )
     - Numerical differentiation, Symbolic differentiation, Automatic differentiation (https://stackoverflow.com/questions/43455320/difference-between-symbolic-differentiation-and-automatic-differentiation)
