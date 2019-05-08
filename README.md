@@ -24,6 +24,7 @@ It is always worth to take some notes in a question-answer format! That's what I
 
 Any mistakes?
 We know, it may happen. Simply fix the bug and push the change. ❤
+Here is the place where you make http://mokytis.veikt.com/ beautiful, functional, etc.
 
 ## Licenses
 - It is free.
