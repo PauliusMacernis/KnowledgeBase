@@ -1,4 +1,11 @@
-# Information on ports, sockets, compatability, pins, speeds, etc.
+# A+
+
+- **What is called System Unit?**  
+The main computer box providing processing and storage. Everything else - peripherals (input and output devices).
+
+
+- **What are differences between Zeta File System, OpenZFS, and ZFS?**  
+More info: https://en.wikipedia.org/wiki/ZFS
 
 - **Is there a difference between “Thunderbolt” and “Mini DisplayPort” cables?**  
 Yes, they are different. `Display Port` is a passive audio/video technology, `Thunderbolt*` is active generic data technology. The hardware inside the cable is necessary to get the full data throughput. A `Display Port` cable will only carry Video/Audio to an attached monitors*, while a `Thunderbolt` cable is able to carry all sorts of other data, which is required for your dock with multiple types of ports.  
