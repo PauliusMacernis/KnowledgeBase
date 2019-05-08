@@ -1,8 +1,10 @@
 - **What are the sources of the following QA?**  
   https://www.udemy.com/itil4-foundation/   
-  https://en.wikipedia.org/wiki/ITIL    
-  https://en.wikipedia.org/wiki/Full-time_equivalent  
-  https://www.axelos.com/news/blogs/june-2018/itils-the-name-you-won%E2%80%99t-wear-it-out    
+  https://www.udemy.com/itil4-foundation/learn/lecture/13618154#questions/6853342  
+  https://www.udemy.com/itil4-foundation/learn/lecture/13618154#questions/7031750  
+  https://en.wikipedia.org/wiki/ITIL  
+  https://en.wikipedia.org/wiki/Full-time_equivalent    
+  https://www.axelos.com/news/blogs/june-2018/itils-the-name-you-won%E2%80%99t-wear-it-out  
   https://www.peoplecert.org/exams-peoplecert-online-proctoring-windows  
 
 
@@ -187,15 +189,18 @@
   
   
 - **What is the difference between Service, Product and Service offering?**    
-  !!! THIS IS NOT PROVEN ANSWER!!!   
   Terms:   
   Service - a description of one or more services deigned to address the needs of a target consumer group.  
   Product - "a configuration of an organization’s resources designed to offer value for a consumer."    
   Service offering - "a description of one or more services, designed to address the needs of a target consumer group. A service offering may include goods, access to resources, and service actions."    
-  *My answer to that:*   
+  *My answer ("Close, but not quite right..."):*   
   Service - the smallest entity in the set of Service, Product, Service offering.    
   Product - a set of Services.   
   Service offering - a description of Service or Product.  
+  *Jason's answer (The right answer):*  
+  Service - think of it as something to provide for a need (like water service to your home). For example, internet service for your laptop.  
+  Product - think of this as a "Thing". Something tanigible that you can touch. Your laptop is a product.  
+  Service offering - a grouping of products and services offered to the customer (Maybe a laptop with a 4g cellular card and 2 years of free internet included, as an example).  
   
   
 - **What are Goods?**  
@@ -385,10 +390,15 @@
   For example, in case of GDPR introduce the new software, hardware, and/or other upgrades helping to meet the requirements introduced with GDPR.  
   
   
-- **What is the difference between an Outcome and a Requirement?**  
-  **(????? NOT COMPLETE !!!!!!)**  
-  Outcome - a tangible or intangible deliverable of an activity.  
-  Requirement - ???  
+- **What is the difference between a desired Outcome and a Requirement?**   
+  "Outcome - a result for a stakeholder enabled by one or more outputs.  
+  Requirement - a thing that is needed or wanted; a necessary condition.  
+  
+  So, these are closely tied together, but they are (not?) the exact same thing. Requirements are set by one side, as you said. For example, if I am hiring you to build a website for me, I get to set the requirements. I may say that the site must provide enough service to support 10k users. That is my requirement.  
+  Now, how you go about doing that (will you build it on a Linux or Windows server, what programming language, etc) is up to you as the service provider.  
+  We both want the same thing though: "A website that can handled up to 10k users at a time." But, that is really an output, not an outcome.  
+  The outcome would be that our end users are happy because the site is properly supporting their needs.  
+  When we think of requirements, they are usually tied to "warranty" of a given service. These can add to the outcome when they are met, but they aren't the outcome themselves."    
   
   
 - **What is Utility?**  
@@ -441,5 +451,23 @@
   This suggests that a warranty is quite easy measurable. And this is why most of IT people like it.   
   For example, the web works - this functionality may be called warranty. A user may efficiently use the web for his/her purpose - this functionality may be called utility. That's why the service cannot be run successfully without both waranty and utility.    
   
+- **Could "four dimensions of service management" be called "four perspectives of service management"?**  
+  Yes, it could.  
   
+- **What is in the center of four different dimensions of service management?**  
+  The value is in the center. It is the value we want to co-create by using different products and services deliverable by a service provider to a consumer/customer.  
+  
+- **What are the four different dimensions of service management?**  
+  - Organizations and people
+  - Information and technology
+  - Partners and suppliers  
+  - Value streams and processes
+  
+- **Name (at least six) external factors that impacts value co-creation.**  
+  - Political factors  
+  - Economical factors  
+  - Social factors  
+  - Technological factors  
+  - Legal factors  
+  - Environmental factors  
   
