@@ -9,7 +9,7 @@ https://standards.ieee.org/findstds/standard/1178-1990.html
 
 - Digital computer vs. mechanical vs. other?
 - Since large programs grow from small ones, it is crucial that we develop an arsenal of standard program structures of whose correctness we have become sure — we call them idioms — and learn to combine them into larger structures using organizational techniques of proven value.
-- Unlike programs, computers must obey the laws of physics. If they wish to perform rapidly — a few nanoseconds per state change — they must transmit electrons only small distances (at most 11 2 feet).
+- Unlike programs, computers must obey the laws of physics. If they wish to perform rapidly — a few nanoseconds per state change — they must transmit electrons only small distances (at most 1.5 feet).
 - Amongthe programs we write, some (but never enough) perform a precise mathematical function such as sorting or finding the maximum of a sequence of numbers, determining primality, or finding the square root. We call such programs algorithms, and a great deal is known of their optimal behavior, particularly with respect to the two important parameters of execution time and data storage requirements. A programmer should acquire good algorithms and idioms. Even though some programs resist precise specifications, it is the responsibility of the programmer to estimate, and always to attempt to improve, their performance.
 - The list, Lisp’s native data structure [...]
 - It is better to have 100 functions operate on one data structure than to have 10 functions operate on 10 data structures. As a
