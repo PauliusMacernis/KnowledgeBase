@@ -451,11 +451,14 @@
   This suggests that a warranty is quite easy measurable. And this is why most of IT people like it.   
   For example, the web works - this functionality may be called warranty. A user may efficiently use the web for his/her purpose - this functionality may be called utility. That's why the service cannot be run successfully without both waranty and utility.    
   
+  
 - **Could "four dimensions of service management" be called "four perspectives of service management"?**  
   Yes, it could.  
   
+  
 - **What is in the center of four different dimensions of service management?**  
   The value is in the center. It is the value we want to co-create by using different products and services deliverable by a service provider to a consumer/customer.  
+  
   
 - **What are the four different dimensions of service management?**  
   - Organizations and people
@@ -463,11 +466,60 @@
   - Partners and suppliers  
   - Value streams and processes
   
-- **Name (at least six) external factors that impacts value co-creation.**  
+  
+- **Name external factors (at least six of them) that impact value co-creation.**  
   - Political factors  
   - Economical factors  
   - Social factors  
   - Technological factors  
   - Legal factors  
   - Environmental factors  
+
+
+- **What tend to be the difference between horizontal (flat) and vertical organization hierarchies in terms of agility?**  
+  - Horizontal structures tend to be more agile  
+  - Vertical structures tend to be more process driven  
+  
+  
+- **Which of organizational structures (vertical or horizontal) tend to be more process driven?**  
+  - Horizontal structures tend to be more agile  
+  - Vertical structures tend to be more process driven  
+  
+  
+- **What is culture (e.g. of organization)?**  
+  Culture - shared values and attitudes of the organization.  
+    
+  
+- **Is culture starting at the top and funnels down throughout the company, or is it starting from the bottom?**  
+  Culture starts at the top and funnels down throughout the company.  
+  
+  
+- **Name couple of worries in regards of topics related to Organizations and People?**  
+  - How will we form our organizational structures to support the services and products we want to deliver?  
+  - How do we set an organization?  
+    For example:  
+      - Formal organization types: sole proprietorship, limited liability corporation, multi-level conglomerate, other?  
+      - Where it will be based: America, Europe, Asia, Australia, Africa? What country?     
+    
+  - How will it gonna function?  
+    For example:  
+      - Organizational hierarchies (vertical or horizontal/flat?)  
+      - How do we break up the company (departments, functions)  
+      - Finding right people (HR, then managers and leaders for departments, then more and more right people)  
+      - Continual training development of your workforce is important: skills, competences, etc.  
+      - Roles and responsibilities (single or multiple hats, etc.)  
+    
+  - What kind of culture it gonna have?  
+    For example:  
+      - Values, Mission, Vision  
+      - Communication (formal/informal, in person/by email, trust/transparency of the top leader plans, vision share/not, goals share/not, values/mission/vision advocates, etc.)  
+      - Individual people (leadership style, somehow different mission, vision. values, etc.)  
+  
+  - How to take care of people so the people can deliver products and services  
+    For example:  
+      - Communication with people inside and outside the organization, sharing of knowledge and specializations  
+      - How do we facilitate value creation?  
+      
+  - etc.
+  
   
