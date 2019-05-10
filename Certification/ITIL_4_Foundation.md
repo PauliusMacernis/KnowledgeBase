@@ -523,3 +523,47 @@
   - etc.
   
   
+- **What does Technology support?**  
+  - IT Service. For example, for Uber that may be the mobile app.  
+  - IT Service Management. Technology that supports IT Service Management ensures the business can function properly. For example, intranet.    
+  
+  Sometimes the technology may be used in both areas.  
+  
+  
+- **Give at least one example of service where information management is the primary means of enabling customer value.**  
+  For example, the newspaper that's online - delivering information.  
+  Another example, data analytics publishing their results.  
+  
+  
+- **Name at least 6 factors that the information is judged by**    
+  - Availability  
+  - Reliability  
+  - Accessibility  
+  - Timeliness  
+  - Accuracy  
+  - Relevance  
+  
+  
+- **Name at least two challenges information management has.**  
+  - Security  
+  - Regulatory compliance requirements  
+  
+  
+- **What are the considerations we should be thinking of when looking at Information and Technology?**  
+  - Is it compatible with the current **architecture**? Will it gonna work with the technology we are currently using?  
+  - Does it raise any regulatory, compliance, or information security control **issues**?  
+  - Will it continue to be **viable** in the foreseeable future?  
+  - Does it align with the service provider or service consumer **strategy**?  
+  - Does the organization have the right **skills** to support and maintain the technology?  
+  - Does it have enough **automation** capabilities to be developed, deployed, and operated?  
+  - Does it have additional **capabilities** that can be leveraged for other products or services?  
+  - Does it introduce new **risks** or **constraints** to the organization?  
+  
+  
+- **May organizational culture have an impact on a risk tolerance?**  
+  Yes.  
+  
+  
+  
+  
+  
