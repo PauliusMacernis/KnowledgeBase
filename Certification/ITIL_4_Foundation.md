@@ -607,3 +607,97 @@
 - **Is it so that EVERY organization relies on other partners and suppliers?**  
   Yes. **Every** organization relies on other partners and suppliers.  
     
+
+- **What Value Streams and Processes define?**  
+  Define the activities, workflows, controls and procedures needed to achieve the agreed upon objectives.  
+  More precisely this would be:  
+  - The activities undertaken  
+  - How activities are organized  
+  - How value creation is ensured  
+  
+  
+- **What is Value Stream?**  
+  A series of steps an organization undertakes to create and deliver products and services to service consumers.    
+  In every step we do there are value-adding activities and non value-adding activities (waste).  
+  In business we want to increase value adding activities and to get rid of non value-adding activities.  
+  
+  
+- **What Value Stream activities we want to automate?**  
+  We want to optimize value stream so we can minimize the amount of non value-adding activities while increasing value adding activities. We want to automate this process as much as possible afterwards.  
+  
+  
+- **What should be done first: optimization or automation?**  
+  Optimize then automate.  
+  
+  
+- **What is Process?**  
+  A set of interrelated or interacting activities that transforms inputs into outputs.  
+  Processes are designed to achieve a specific objective.  
+  A well-defined **process** can improve productivity, be optimized, and then become automated.  
+  
+  
+- **What is the point of questioning: What is the generic delivery model for the service and how does the service work?**  
+  This describes which processes do we put together so the value stream works.  
+  
+  
+- **What questions are worth to be asked/considered when defining Value Stream?**  
+  - What is the **generic delivery model** for the service and how does the service work?  
+  - What are the value streams involved in delivering the agreed **outputs** of the service?  
+  - **Who** or what will perform the required service **actions**?  
+  
+  
+- **What is PESTLE model?**  
+  Generic open-source model that stands for the acronym of PESTLE:  
+  - P - Political  
+  - E - Economic  
+  - S - Social  
+  - T - Technological  
+  - L - Legal  
+  - E - Environmental  
+  These are 6 external factors that you cannot control. They gonna happen to you.  
+  However, these are the external factors you have to take into account when designing your services and products.  
+  PESTLE model describes factors that constrain or influence how a service provider can operate.  
+  For example,  
+  UBER: Social (people should get used to the new taxi service model),  
+  Technological (willing to create a quantum-resistant encryption - quantum computers do not exist yet..),  
+  etc.  
+  
+  
+- **How many PESTLE factors may affect one of four different dimensions of service management?**  
+  Every dimension is affected by multiple factors.  
+  
+  
+- **Give an example applying four dimensions of service management?**  
+  Let's take Incident management as an example.  
+  - Organizations and People:  
+    - Will service desk handle it?  
+    - Or will there be Tier1, Tier2, Tier3 support?  
+    - Or will it be a flat organization?  
+    - How will we organize our communications? E.g. How Tier1 collected information will transfer to Tier2, and so on. How it all will be escalated to the next level?    
+    - How many people do we need for a particular service incident management? What competences do they need? Any certified people on-board? e.g. if we use AWS we may need AWS certified people. What about people qualifications?  
+    - How people will interact? Who/how we are going to motivate people?  
+    - How do we gonna hire the new people?  
+    - How do we keep the right people?  
+    - How do we pay people?  
+    - How will we make sure people are capable of doing incident management we want them to do?  
+    - etc.  
+  - Information and Technology  
+    - How will I register the incident? Writing down on the paper? Registering into internet portal? Any special software and hardware involved?  
+    - How between relationships between incidents? How do I know that one incident that happened today is related to the one that happened before? Any technology/software managing and tracking incident relationships? What about incidents and different items? What about incidents relationship to users affected?  
+    - What about incident management tools for incident management flow? How will we do the workflow? How will we use knowledge bases?  
+    - What about diagnostic tools?  
+    - How will we detect and process events for incident management?  
+    - How will we communicate with each other?  
+    - How will we organize and share data?  
+    - etc.  
+  - Partners and Suppliers  
+    - Maybe suppliers do not do a good job anymore because of some internal issues they experience and we need to consider a new contract?  
+    - If we outsource services, how will we gonna escalate incidents to them once something is broken?  
+    - Or maybe we manage minor issues and we escalate Tier2 or Tier3 issues to outsourced teams? How do we get information back when the issue is solved? Should other suppliers and partenrs be notified somehow?  
+  - Value Streams and Processes  
+    - Is the process optimized properly? Is there not too much waste in steps?  
+  - PESTLE  
+    - Maybe somebody hijacks the system because of values mismatch? For example, printer is always stuck because somebody things we should not print because we hurt environment.  
+
+
+  
