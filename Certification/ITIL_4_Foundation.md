@@ -564,6 +564,46 @@
   Yes.  
   
   
+- **Why "Organizations and people" is not the same as "Partners and suppliers" on four dimensions of service management?**  
+  "Organizations and people" - internal focus.  
+  "Partners and suppliers" - external focus.  
   
   
+- **Why "Partners" and "Suppliers" from "Partners and suppliers" on four dimensions of service management are not put into the one single merged term?**  
+  "Partners" and "Suppliers" are not the same.  
+  Therefore there are two different externally focused strategies: partner strategy, supplier strategy.  
+  Partner relationship is about the services that are more critical to the business. We want to be as much involved into partner's evolution-life as possible, we may want to share plans, road maps, etc. We will share common goals and risks with partners, we will collaborate to achieve desired outcomes, we want both brands to be valuable, employers to be happy, etc.  
+  Suppliers relationship is about the services that are not so critical. E.g. regular tools for office use. Suppliers relationship may be done through formal contracts, clear separation of roles and responsibilities ("I pay for this, you do this", "I ask you for this, you deliver this", etc.).  
   
+  Your organization's strategy (partners, suppliers, also integrators of all) is based upon its goals, culture, and business environment.  
+  
+  
+- **Is outsourced function considered to be a "Partner relationship" or more of "Suppliers relationship"?**  
+  Supplier, not a partnership.  
+  
+  
+- **What influences the supplier strategy, name a few topics we should care about when working on the supplier strategy getting ready?**  
+  - Price  
+  - Quality  
+  - Reliability  
+  - Track record  
+  - Shareability  
+  
+  
+- **What is a concept of Service integration?**  
+  Service integration are a few things tighten together in order to deliver the service.  
+  For example, video lectures delivering company may have: video service, store front, website, cloud hosting.  
+  
+  
+- **Who deals with Service integration?**  
+  - For example, where ony few partners and suppliers exists: Service integration and management might be kept **within** the organization.  
+  - Another example, with lots of partners and suppliers: Service integration and management may also be delegated to a **service integrator**.  
+  
+  
+- **What is Service Integration and Management about?**  
+  (These are processes) involving the use of specially established integrators to ensure that service relationships are properly coordinated.  
+  
+  
+- **Is it so that EVERY organization relies on other partners and suppliers?**  
+  Yes. **Every** organization relies on other partners and suppliers.  
+    
