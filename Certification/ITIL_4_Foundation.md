@@ -698,6 +698,79 @@
     - Is the process optimized properly? Is there not too much waste in steps?  
   - PESTLE  
     - Maybe somebody hijacks the system because of values mismatch? For example, printer is always stuck because somebody things we should not print because we hurt environment.  
+  
+  
+- **What is Service Value System (SVS)?**  
+  Describes how all the components and activities of the organization work together as a system to enable value co-creation.  
+  SVS may be configured and reconfigured in multiple combinations of organization resources.  
+  SVS require **integration** and **coordination** of activities, practices, teams, authorities, and responsibilities.  
+  
+  
+- **What is the purpose of Service Value System?**  
+  The purpose is to ensure that the organization continually co-creates value with all stakeholders through the use and management of products and services.  
+  
+  
+- **What are the three main basic blocks Service value system is made of?** 
+  - Opportunity and demand (that's input)
+  - Processes/activities (these are: Guiding principles, Governance, **Service value chain**, 34 Practices, Continual improvement)
+  - Value (that's output)
+  
 
-
+- **What do Opportunities represent?**  
+  Opportunities represent options or possibilities to add value for stakeholders or otherwise improve the organization.  
+  E.g. find new markets, new customers, create new products, etc.  
+  
+  
+- **What is Demand?**  
+  Demand is the need or desire for products and services among internal and external consumers.  
+  
+  
+- **What is the output of the Service Value System?**  
+  Value is the outcome.  
+  
+  
+- **What does System value system enable?**  
+  Enables the creation of many different types of **value** for a wide group of stakeholders.  
+  
+  
+- **Is ITIL 4 directive framework (you must follow) or best practices framework (you may follow)?**  
+  ITIL 4 is best practices, not directive framework.    
+  
+  
+- **What is Guiding Principle?**  
+  !!! A recommendation that guides an organization in **ALL** circumstances.  
+  !!! So this is also the reason why it all allows organizations to **integrate** them into an overall approach to service management.  
+  !!! Guiding principles are applied **universally** to any initiative, all relationships with different stakeholder groups.  
+  !!! Guiding principles support and encourage organizations in **continual improvement**.  
+  !!! You should consider which of the guiding principles are **relevant** to your situation. Not all the principles are critical to every situation.  
+  
+  
+- **What are 7 guiding principles in ITIL 4?**  
+  - Focus on value (value for consumer, customer, service provider, etc.  )  
+  - Start where you are  
+  - Progress iteratively with feedback  
+  - Collaborate and promote visibility  
+  - Think and work holistically  
+  - Keep it simple and practical  
+  - Optimize and automate  
+  
+  
+- **What does "Focus on value" guiding principle state?**  
+  Everything the organization does should link back, directly or indirectly, to value for itself, its customers, and other stakeholders.  
+  
+  
+- **How do we apply "Focus on value" (e.g. in four steps)?**  
+  1. Understand and identify the service consumer  
+  2. Understand the consumer's perspective of value  
+  3. Map value to intended outcomes which **change** over time  
+  4. Understand the customer experience or user experience  
+  
+  
+- **How do we apply "Focus on value" (e.g. mention key factors when looking at application)?**  
+  1. Know how your consumers and customers will use each service  
+  2. Encourage a focus on value among the entire staff
+  3. Focus on value during operational activity and during improvement activities
+  4. Include a focus on value in every step of any improvement initiative
+  
+  
   
