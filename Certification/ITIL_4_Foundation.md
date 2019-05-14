@@ -572,8 +572,8 @@
 - **Why "Partners" and "Suppliers" from "Partners and suppliers" on four dimensions of service management are not put into the one single merged term?**  
   "Partners" and "Suppliers" are not the same.  
   Therefore there are two different externally focused strategies: partner strategy, supplier strategy.  
-  Partner relationship is about the services that are more critical to the business. We want to be as much involved into partner's evolution-life as possible, we may want to share plans, road maps, etc. We will share common goals and risks with partners, we will collaborate to achieve desired outcomes, we want both brands to be valuable, employers to be happy, etc.  
-  Suppliers relationship is about the services that are not so critical. E.g. regular tools for office use. Suppliers relationship may be done through formal contracts, clear separation of roles and responsibilities ("I pay for this, you do this", "I ask you for this, you deliver this", etc.).  
+  Partner relationship is about the services that are more critical to the business. We want to be as much involved into partner's evolution-life as possible, we may want to share plans, road maps, etc. We will share common goals and risks with partners, we will collaborate to achieve desired outcomes, we want both brands to be valuable, employers to be happy, etc. Partners are used for critical business functions and in-depth relationships.    
+  Suppliers relationship is about the services that are not so critical. E.g. regular tools for office use. Suppliers relationship may be done through formal contracts, clear separation of roles and responsibilities ("I pay for this, you do this", "I ask you for this, you deliver this", etc.). Suppliers are used for commodities and from organizations you simply buy things from. (Another example is my Internet Service Provider. I buy my service from them, but they don't share with me their product development roadmap or integrate into my business, therefore they are a supplier.).    
   
   Your organization's strategy (partners, suppliers, also integrators of all) is based upon its goals, culture, and business environment.  
   
@@ -598,6 +598,9 @@
 - **Who deals with Service integration?**  
   - For example, where ony few partners and suppliers exists: Service integration and management might be kept **within** the organization.  
   - Another example, with lots of partners and suppliers: Service integration and management may also be delegated to a **service integrator**.  
+    Now, with an integrator, the integrator is a partner to you, but they are coordinating all the individual suppliers on your behalf. I need to share my plans with the integrators (partnership), but I don't care about who the underlying suppliers are that they choose to use necessarily.  
+    These integrators are kind of **a "strange" hybrid of a partner and a supplier**, but if I had to put them into one of those two categories, I would say they are more of a partner because they are deeply going to be embedded into your critical business functions.  
+    For the exam, when they talk about partners and suppliers, though, they won't go into the service integrators (because they don't fit cleanly into one of the two categories). This was an area we needed to cover for the course, though, to make sure students understood the functions of these critical players in large IT projects that you will experience in the real world.  
   
   
 - **What is Service Integration and Management about?**  
@@ -772,5 +775,29 @@
   3. Focus on value during operational activity and during improvement activities
   4. Include a focus on value in every step of any improvement initiative
   
+  
+- **What does "Start where you are" guiding principle say?**   
+  Don't start over without first considering what is already available to be leveraged.  
+  Decisions on how to proceed should be based on **accurate** information.  
+  Measurement should be used to **support** the analysis of what has been observed rather than to replace it.  
+  Measuring can affect the results. E.g. Drive through restaurants may put you aside "wait in there we will come back to you in few minutes" in case you caused the delay (most likely ~30 seconds) for any reason and the staff is being measured by the time per order. The staff will then most likely mark your order as complete and come back to you when busy moment will pass by.  
+  
+  
+- **What Goodhart's law states?**  
+  When a measure becomes a target, it ceases to be a good measure.  
+  The original formulation by Charles Goodhart was: "Any observed statistical regularity will tend to collapse once pressure is placed upon it for control purposes."  
+  Therefore, measure your outcomes, not your outputs.  (because: people will start to hack any system on the way to just meet the targeted measure-based goal, almost no matter what)  
+  
+  
+- **What should we measure: outputs or outcomes?**  
+  Outcomes, not outputs.  
+  (because: people will start to hack any system on the way to just meet the targeted measure-based goal, almost no matter what; learn more by browsing for Goodhart's law)  
+  
+  
+- **How do we apply "Start where you are" (e.g. in four steps)?**  
+  1. Look at what exists as objectively as possible  
+  2. Determine if successful practices or services can be replicated or expanded  
+  3. Apply your risk management in the decision making process  
+  4. Recognize that sometimes nothing from your current state can be reused  
   
   
