@@ -801,3 +801,483 @@
   4. Recognize that sometimes nothing from your current state can be reused  
   
   
+- **What does "Progress Iteratively with Feedback" principle say?**  
+  Working in a time-boxed and iterative manner with embedded feedback loops allows for greater flexibility, faster responses to needs, the ability to respond to failure earlier, and an overall improvement in quality.  
+  This is more about working on Agile principles.  
+  Organize work into smaller or more manageable **sections**.  
+  !!! Couple of benefits:  Sequential or simultaneous; Manageable and managed; Tangible results; Timely manner; **Build future improvements**;  
+  
+  
+- **Describe "Feedback loop, what is it?"**  
+  Occurs when part of the output of an activity is used as a new input.  
+  Each of the parts must be continually **reevaluated** to accurately reflect changes in the circumstances.  
+  !!! Utilize **feedback** before, throughout, and after each iteration.   
+  !!! **Understand** where work comes from, where outputs go, and how actions affect outcomes.  
+   
+  
+- **How do we apply "Progress Iteratively with Feedback" (e.g. in four steps)?**   
+  1. Comprehend the whole process and do something.   
+  2. Feedback is essential to a constantly changing ecosystem.   
+  3. Fast does not equate to incomplete.  
+  
+  
+- **What does "Collaborate and Promote Visibility" principle say?**  
+  Puts the right people in the correct roles, achieve better buy-in, have more relevance, and gain an increased likelihood of long-term success.  
+  Collaboration is about working together. For example, sharing information, building trust, building understanding, etc. For example, if our department builds something that will affect another department then we want to collaborate.  
+  Collaboration increases visibility: within the team, between teams, between service provider and consumer, etc.  
+  **Lack of collaboration might create an impression that the work is not a priority.**  Especially when, for example, improvement work is taking a lower priority over other tasks with daily urgency.  
+  A lack of visibility leads to **poor** decision making.  
+  
+  
+- **Does collaboration increase visibility?**  
+  Yes. Collaboration increases visibility.  
+  
+  
+- **Does a lack of visibility lead to poor decision making?**  
+  Yes. A lack of visibility leads to poor decision making.  
+  
+  
+- **How do we apply "Collaborate and Promote Visibility" (e.g. in four steps)?**  
+  - Understand the flow of work  
+  - Identify bottlenecks  
+  - Identify excess capacity  
+  - Uncover waste  
+  
+  To also keep in mind:  
+  - Collaboration does not necessarily mean consensus. Because at the end of the day there is often that somebody who drives the decision.    
+  - Communicate in the way the audience can hear. E.g. Do not use "bits and bytes" talk while communicating to marketing.  
+  - Decisions can only be made on visible data  
+  
+  
+- **What does "Think and Work Holistically" principle say?**  
+  A holistic approach to service management requires an understanding of how all the parts of an organization work together in an integrated way.  
+  When you have a **holistic** understanding, you know how something works from end to end.  
+  Therefore it is important to use all four dimensions of IT service management in order to have a good holistic overview of how the service works. In case the holistic view of the service becomes important, it is important to look at the input, service value chain (guiding principles / governance / service value chain / practices / continual improvement), desired outcome.  
+  
+  
+- **How do we apply "Think and Work Holistically"**  
+  - Recognize the complexity of the systems, including different inputs, outputs, exceptions, impact of/to other systems.  
+  - Collaboration is key to thinking and working holistically. How all of it is being achieved through the entire living cycle of the system itself, information that travels through, etc?  
+  - Look for patterns of interactions between system elements. For example, what systems is responsible for what functions? What functions systems cover? Are there any functions that repeat? Are there any functions lacking? Etc.  
+  - Automation can help you to work more holistically  
+  
+  
+- **What does "Keep it Simple and Practical" principle say?**   
+  Outcome-based thinking should be used to produce practical solutions which deliver valuable outcomes using minimum number of steps.   
+  In order to establish "Simple and Practical", we need to establish a **holistic** view of the organization's work.  
+  Start with an **uncomplicated** approach.  
+  **Do not** try to produce a solution for every exception.  
+  Be mindful of how we can complete the **objectives** - this is important reason of why do we need "Keep it Simple and Practical" as such.  
+  By doing few things we can do it very well and very fast.  
+  Doing less things leads to mastering these few skills, gaining professionalism.  
+  "Keep it Simple and Practical" is a good way to achieve quick wins.  
+  
+  
+- **How do we apply "Keep it Simple and Practical", where do we start from?**  
+  Start with an **uncomplicated** approach - the fewest amount of steps possible. This is because we want to minimize the risk of something breaking apart.  
+  
+  
+- **What do we do with exceptions in case we apply "Keep it Simple and Practical"?**  
+  **Do not** try to produce a solution for every exception. Common solutions - first.   
+  However, be mindful of how we can complete the **objectives** - it is important.  
+  By doing few things we can do it very well and very fast.  
+  
+  
+- **Which of the guiding principles will most likely to be be implemented the last one?**  
+  Optimize and Automate.  
+  
+  
+- **What does "Optimize" mean in "Optimize and Automate" guiding principle?**  
+  Make something as effective and useful as it makes sense to do.  
+  By optimizing things, we tend to pull in areas from all the other guiding principles.  
+  
+  
+- **What does "Automation" mean in "Optimize and Automate" guiding principle?**  
+  Using technology to perform a step or series of steps correctly and consistently with limited or no human intervention.  
+  Automate frequent and repetitive tasks.  
+  For example, automate the most frequent and already optimized well working problem solving tasks.  
+  Simplest form of automation involves standardizing and streamlining manual tasks.  
+  
+  
+- **How do we apply "Optimize and Automate" guiding principle in 3 steps?**  
+  1. Simplify and/or optimize before automating. We want to optimize few steps only, not thousands at once.  
+  2. Define your metrics  
+  3. Use the other guiding principles when applying this one  
+  
+  
+- **What is Service Value Chain made of?**  
+  - Plan  
+  - Engage - Design & transition / Obtain/build / Deliver & Support  -> Products & Services  
+  - Improve  
+  
+  
+- **What is the difference between Service Value Chain and Service Value System inner parts?**  
+  Service Value System is made of:  
+  - Opportunity and demand (that's input)  
+  - Processes/activities (these are: Guiding principles, Governance, **Service value chain**, 34 Practices, Continual improvement)  
+  - Value (that's output)  
+  While Service Value Chain is made of non-linear chain of events:  
+  - Plan  
+  - Engage - Design & transition / Obtain/build / Deliver & Support  -> Products & Services  
+  - Improve  
+  p.s. "Products & Services" is not an event, nor activity. The six activities within the service value chain are plan, improve, engage, design and transition, obtain/build, and deliver and support.  
+  p.p.s. Pay attention that activities outside of Service Value Chain scope (e.g. Opportunity and demand, Value, Governance, etc.) are not considered Service Value Chain Activities!   
+  Activities outside of Service Value Chain scope are inputs and outputs to Service Value Chain activities (e.g. Opportunity and demand may be an input/output for/of Improve)  
+  
+  
+- **What is called Central Activities inside Service Value Chain?**  
+  These are 3 activities that can interact with each other and other activities outside the scope in any order. These are Central Activities inside Service Value Chain:  
+  Design & transition / Obtain/build / Deliver & Support  
+  
+  
+- **What is the the difference between ITIL v3 and ITIL v4 Service Value Chains?**   
+  ITIL v3 Service Value Chain (originally called "Service Value Cycle") was linear: Service Strategy -> Service Design -> Service Transition -> Service Operation -> Continual Service Improvement -> and all goes again to Service Design -> etc.  
+  ITIL v4 Service Value Chain is non-linear sequence. We normaly start from Engage (but we don't have to). And then we touch Central activities inside the Service Value Chain: Design & transition / Obtain/build / Deliver & Support.  
+  
+  
+- **Does Service Value Chain use interactions between practices?**  
+  Yes, it does.  
+  
+  
+- **How does each activity contribute to the Service Value Chain?**  
+  Each activity contributes to the service value chain by transforming specific inputs into outputs.  
+  Service value chain activities use different **combinations** of the 34 ITIL practices.  
+  Each activity may use third party resources, different skills, competences, etc. from one of these 34 practices.  
+  All 34 practices don't have to be done individually, they may be combined together too.  
+  
+  
+- **How many ITIL 4 practices there are?**  
+  34  
+  
+  
+- **All incoming and outgoing interactions are performed through the X activity of Service Value Chain. Whhat is X?**  
+  Engage  
+  
+
+- **All new resources are obtained through the X activity of Service Value Chain. What is X?**  
+  Obtain/build  
+  
+  
+- **Planning at all levels is performed via X activity of Service Value Chain. What is X?**  
+  Plan  
+    
+  
+- **Improvements at all levels are initiated and managed through the X activity of Service Value Chain. What is X?**  
+  Improve  
+  
+  
+- **What is Plan activity of Service Value Chain is about?**  
+  (ITIL v3 had a "Strategy" that is kind of part of ITIL v4 "Plan" activity)   
+  Ensures a shared understanding of the vision, current status, and improvement direction for all four dimensions and all products and services across the organization.  
+  Inputs to the Plan activity are:  
+  - Policies, requirements, and constraints provided by the organization's **governance** body.  
+  - Consolidated demands and opportunities provided by **engage**.  
+  - Value chain performance information, improvement initiatives, plans, and status provided by **improve**  
+  - Information about new and changed products and services from **design & transition** and **obtain/build**.  
+  Outputs of the Plan activity:  
+  - **Creates** 3 types of plans: strategic (big, e.g. a roadmap for next 3 year - kind of vision), tactical (mid, e.g. in a next year we gonna do this and that), and operational (small, e.g. we will do that small part of tactical plan in these and these steps) plans.    
+  - Portfolio decisions, architecture, and policy are sent to **design & transition** (e.g., we are moving to cloud - we should stop building new server farm activities, and we should build cloud infrastructure, e.g. moving all to AWS).  
+  - Feedback on improvement opportunities to **improve**  
+  - Product and service portfolio, contract requirements, and agreement requirements to **engage** (e.g. we produce a roadmap of our services and we go to consumers and other providers to figure out how we can build it)  
+   
+  
+- **What is Improve activity of Service Value Chain is about?**  
+  Ensures continual improvement of products, services, and practices across all value chain activities (Plan - // Engage - Design & transition / Obtain/build / Deliver & Support  -> Products & Services // - Improve) and the four dimensions of service management (Organizations and people; Information and technology; Partners and suppliers; Value streams and processes).  
+  Inputs:  
+  - Product and service performance information from **deliver & support**  
+  - Stakeholders' (e.g. consumers, suppliers, etc.) feedback from **engage**  
+  - Performance information and improvement opportunities from **all value chain activities**  (Plan - // Engage - Design & transition / Obtain/build / Deliver & Support  -> Products & Services // - Improve)   
+  - Knowledge and information about new and changed products and services from **design & transition** and **obtain/build**  
+  - Knowledge and information about third-party components from **engage** (engage-related examples: partners, suppliers, etc. for example, they are moving from Amazon to Azure)  
+  Outputs:  
+  - Improvement initiatives and plans for **all value chain activities**  
+  - Value chain performance information from **plan** and the governing body  
+  - Improvement status reports for **all value chain activities**  
+  - Contract and agreement requirements for **engage**  
+  - Service performance information for **design & transition**  
+  
+  
+- **What is Engage activity of Service Value Chain is about?**  
+  Provides a good understanding of stakeholder needs, continual engagement, and transparency, and maintains good relationships with all stakeholders  
+  You may think about the engage as "going out ant talking to other people (internally, externally)", the basic question we ask ourselves here is "who needs to know ... ?"  
+  You may also think about engage as "the process that makes communication happen"  
+  Inputs:  
+  - Product and service portfolio from **plan**  
+  - High-level demand for services and products from your **customers**. For example, customers are asking for the specific extra service or change.  
+  - Requests and feedback from **customers**  
+  - Incidents, service requests, and feedback from **users**  
+  - Information on the completion of user support tasks from **deliver and support**  
+  - Market opportunities from **customers** and **users**  
+  - Cooperation opportunities and feedback from **partners** and **suppliers**  
+  - Contract and agreement requirements from **all value chain activities**  
+  - Knowledge and information about new and changed products and services from **design & transition** and **obtain/build**  
+  - Knowledge and information about third-party service components from **suppliers** and **partners**  
+  - Product and service performance information from **deliver & support**  
+  - Improvement initiatives and plans from **improve**  
+  - improvement status reports from **improve**  
+  Outputs:  
+  - Consolidated demands and opportunities for **plan**  
+  - Product and service requirements for **design & transition**  
+  - User support tasks for **deliver & support**  
+  - Improvement opportunities and stakeholders' feedback for **improve**  
+  - Change or project initiation requests for **obtain/build**  
+  - Contracts and agreements with external and internal suppliers and partners for **obtain/build** and **design & transition**  
+  - Knowledge and information about third-party service components for **all value chain activities**  
+  - Service performance reports for **customers**  . For example, "Our service availability is 99.999%, FYI :)"  
+  - ?The information is being shared with others as the effort to engage into value co-creation.  
+  
+  
+- **What is Design & Transition activity of Service Value Chain is about?**  
+  Ensures that products and services continually meet stakeholder expectations for quality, costs, and time to market.  
+  You may think about Design & Transition activity as "Taking some idea from plans, making it into what would be built in Obtain/build activity".  
+  Inputs:  
+  - Portfolio decision, architectures, and policies from **plan**  
+  - Product and service requirements from **engage**  
+  - Improvement initiatives and plans from **improve**  
+  - Service performance information from **delivery & support** and **improve**  
+  - Service components from **obtain/build**  
+  - Knowledge and information about third-party components from **engage**  
+  - Knowledge and information about products and services from **obtain/build**  
+  Outputs:  
+  - Requirements and specifications for **obtain/build**  
+  - Contract and agreements for **engage**  
+  - New and changed products and services to **deliver & support**  
+  - Knowledge and information about products and services to **all value chain activities**  
+  - Performance information and improvement opportunities for **improve**  
+  
+  
+- **What is Obtain/Build activity of Service Value Chain is about?**  
+  Ensures that service components are available when and where they are needed, and that they meet agreed-upon specifications.   
+  You may think about it like: "When you want to get or install something, you will connect to Obtain/Build for this to happen", for example coding, development, actual build process happens here.  
+  Inputs:  
+  - Architectures and policies from **plan**  
+  - Contracts and agreements with external and internal suppliers and partners from **engage**  
+  - Goods and services from external and internal **suppliers** and **partners**  
+  - Requirements and specifications from **design & transition**  
+  - Improvement initiatives and plans from **improve**  
+  - Improvement status reports from **improve**  
+  - Change or project initiation request from **engage**  
+  - Change requests from **deliver & support**  
+  - Knowledge and information about products and services from **design & transition**  
+  - Knowledge and information about third-party components from **engage**  
+  Outputs:  
+  - Service components for **delivery & support** and (sometimes) **design & transition**  
+  - Knowledge and information about service components to **all value chain activities**  (e.g. what is a functionality, the capabilities, how long it will last, when it needs to bee replaced or repaired, etc.)  
+  - Contract and agreement requirements for **engage**  
+  - Performance information and improvement opportunities for **improve**  
+   
+  
+- **What is the main difference between Engage and Obtain/Build activities of Service Value Chain?**  
+  ?Engage outputs interaction, information while Obtain/build outputs physical delivery of components, goods, services.  
+  
+  
+- **What is Deliver and Support activity of Service Value Chain is about?**  
+  Ensures that services are delivered and supported according to agreed specifications and stakeholders' expectations.  
+  You may think about it as "Service operation", "We want the end user to get service and support they need".  
+  Inputs:  
+  - New and changed products and services from **design & transition**  
+  - Contracts and agreements with external and internal suppliers and partners from **engage**  
+  - Service components from **obtain/build**  
+  - Improvement initiatives and plans from **improve**  
+  - Improvement status reports from **improve**  
+  - User support tasks from **engage**  
+  - Knowledge and information about service components and services from **design & transition** and **obtain/build**  
+  - Knowledge and information about third-party components from **engage**  
+  Outputs:  
+  - Services delivered to **customers** and **users**  
+  - Information on the completion of user support tasks for **engage**  
+  - Product and service performance information for **engage** and **improve**  
+  - Improvement opportunities for **improve**  
+  - Contract and agreement requirements for **engage**  
+  - Change requests for **obtain/build**  
+  - Service performance information for **design & transition**  
+  
+  
+- **What are Value streams?**  
+  Specific combinations of activities and practices, and each one is designed for a particular scenario.  
+  Each **value stream** is made up of a different combination of value chain activities.  
+  The service value chain's **strength** is the interrelationships throughout the process.  
+  
+  
+- **Why is continual improvement treated as a practice (one of 34) and Process/activity of Service Value System?**  
+  In general, continual improvement is a practice. Moreover, continual improvement is very important compared to all 34 practices therefore it is mentioned as a practice (within 34 practices) and as a process/activity (inside Service Value System). In everything we do, we should be trying to improve.    
+  
+  
+- **What is Continual improvement practice about?**  
+  This practice aligns the organization's practices and services with changing business needs through the ongoing identification and improvement of services, service components, practices, or any element involved in the efficient and effective management of products and services.  
+  
+  
+- **What is Continual improvement model?**  
+  It is a 7 step methodology that provides us a framework on how we should do improvement operations within our organizations. Those 7 steps are:  
+  - What is the vision? => Business vision, mission, goals and objectives  
+  - Where are we now? => Perform baseline assessments  
+  - Where do we want to be? => Define measurable targets  
+  - How do we get there? => Define the improvement plan  
+  - Take action. => Execute improvement actions  
+  - Did we get there? => Evaluate metrics and KPIs  
+  - How do we keep the momentum going? (and all starts again)  
+  
+  
+- **What is Continual improvement model step "What is the vision?" about?**  
+  **In short**, it is business vision, mission, goals and objectives.  
+  Vision focuses on 2 key areas:  
+  1. Translating the vision and objectives so that the context is understood.    
+  2. Create a high-level vision for the planned improvement.  
+  Vision is gonna come from C-seat, e.g. the CEO, the CFO, the CIO, or others.  
+  Each improvement initiative should **support** the organization's goals and objectives.  
+  Vision makes the following clearly understood:  
+  - Know the high-level direction  
+  - Describe planned improvement  
+  - Identify stakeholders and roles  
+  - Agree upon the expected value  
+  
+  
+- **What is Continual improvement model step "WWhere are we now?" about?**  
+  **In short**, perform baseline assessments.      
+  You need to know your **starting point** to properly plan out your journey.  
+  Conduct a **current state assessment** of the existing services by determining:  
+  - what the user's perception of the value is for our services  
+  - what existing skills and competencies our workforce has for our services  
+  - what processes and procedures are involve in delivering those services  
+  - what are our technical capabilities  
+  - what is our organization culture and the prevailing attitudes of the employees  
+  We will build a baseline (real numbers, data) for all of this and more to determine - to determine the "Where are we now" point.  
+  REMEMBER: It is difficult to track and measure any effectiveness of your improvement initiatives if you never determine where you started from.  
+  
+  
+- **What is Baseline (in context of "Where are we now" step of "Continual improvement" practice)?**  
+  Report or metric that serves as a starting point against which progress or change can be assessed.  
+  
+  
+- **What is Continual improvement model step "Where do we want to be?" about?**  
+  **In short**, define measurable targets.  
+  We are about to define where do we want to be in a long term and in a short one too - by using Gap Analysis.  
+  
+  
+- **What is Gap analysis (in context of "Where do we want to be?" step of "Continual improvement" practice)?**  
+  A method to evaluate the scope and nature of the distance to be travelled from the starting point to the achievement of the initiative's vision.  
+  In IT world, the Gap Analysis is based on **metrics** such as the KPIs (Key Performance Indicators) and CSFs (Critical Success Factors).  
+  It is important: the vision may be **aspirational** and never truly achieved but this is ok - the point is to move forward as fast and as close as possible. Therefore we may need to define smaller steps, introduce more/other sensitive metrics, etc.  
+  In short: Set our goals and agree to metrics such as KPIs and CSFs.  
+  
+  
+- **What is Continual improvement model step "How do we get there?" about?**  
+  **In short**, define the improvement plan.  
+  Create your plan.  
+  It is ok if you don't know the way to reach the objectives because sometimes extra experiments should be made on the way to answer which way to go further. Plan the experiments, draw the further path to "Where do we want to be".  
+  Check **progress** after each iteration of your plan.  
+  Important: "If you don't have a plan, you are planning to fail."  
+  
+  
+- **What is Continual improvement model step "Take Action" about?**  
+  **In short**, execute improvement actions.  
+  Use any methodology you want, e.g. Waterfall, Agile, DevOps. Lean, etc.  
+  - Measure progress towards the vision  
+  - Manage the risk during those changes    
+  - Ensure the visibility of the initiative is spread throughout the organization  
+  
+  
+- **What is Continual improvement model step "Did we get there?" about?**  
+  **In short**, evaluate metrics and KPIs.  
+  It involves checking our new "normal". Basically, comparing "Where are we today" with "Where are we now". This way we measure if we did a positive or a negative achievement.  
+  Just setting the plan how to get from point A to point B and taking the action is not enough therefore it is not a good idea to jump on another initiative start without monitoring the existing one for "Did we get there?".  
+  Success is **not** guaranteed.  Therefore it must be measured and must be validated.  
+  Conduct the **current state** assessment again.  
+  
+  
+- **What is Continual improvement model step "How do we keep the momentum going?" about?**  
+  Attempt to **continue** the improvement gains across the organization.  
+  This is our main goal - constant continual improvement. This model is cyclical in nature - going round and round, again and again, reaching more efficiencies, more effectiveness, more value, etc.  
+  
+  
+- **Do guiding principles apply to all steps of Continual improvement process?**  
+  Guiding principles applies to all levels, but some are more better suited for specific steps of Continual improvement steps.  
+  
+  
+- **Which of 7 guiding principles are better suited for Continual improvement model step "What is the vision?"?**  
+  - YES: Focus on value (value for consumer, customer, service provider, etc.  )  
+  - Start where you are  
+  - Progress iteratively with feedback  
+  - YES: Collaborate and promote visibility  
+  - YES: Think and work holistically  
+  - Keep it simple and practical  
+  - Optimize and automate  
+  
+  
+- **Which of 7 guiding principles are better suited for Continual improvement model step "Where are we now?"?**  
+  - Focus on value (value for consumer, customer, service provider, etc.  )  
+  - YES: Start where you are  
+  - Progress iteratively with feedback  
+  - YES: Collaborate and promote visibility  
+  - Think and work holistically  
+  - Keep it simple and practical  
+  - Optimize and automate  
+  
+  
+- **Which of 7 guiding principles are better suited for Continual improvement model step "Where do we want to be?"?**  
+  - Focus on value (value for consumer, customer, service provider, etc.  )  
+  - Start where you are  
+  - YES: Progress iteratively with feedback  
+  - Collaborate and promote visibility  
+  - YES: Think and work holistically  
+  - YES: Keep it simple and practical  
+  - YES: Optimize and automate  
+  
+  
+- **Which of 7 guiding principles are better suited for Continual improvement model step "How do we get there?"?**  
+  - Focus on value (value for consumer, customer, service provider, etc.  )  
+  - Start where you are  
+  - YES: Progress iteratively with feedback  
+  - YES: Collaborate and promote visibility  
+  - YES: Think and work holistically  
+  - YES: Keep it simple and practical  
+  - Optimize and automate  
+  
+  
+- **Which of 7 guiding principles are better suited for Continual improvement model step "Take action"?**  
+  - YES: Focus on value (value for consumer, customer, service provider, etc.  )  
+  - Start where you are  
+  - YES: Progress iteratively with feedback  
+  - YES: Collaborate and promote visibility  
+  - Think and work holistically  
+  - Keep it simple and practical  
+  - Optimize and automate  
+  
+  
+- **Which of 7 guiding principles are better suited for Continual improvement model step "Did we get there?"?**  
+  - YES: Focus on value (value for consumer, customer, service provider, etc.  )  
+  - Start where you are  
+  - Progress iteratively with feedback  
+  - YES: Collaborate and promote visibility  
+  - YES: Think and work holistically  
+  - Keep it simple and practical  
+  - Optimize and automate  
+  
+  
+- **Which of 7 guiding principles are better suited for Continual improvement model step "How do we keep the momentum going?"?**  
+  - YES: Focus on value (value for consumer, customer, service provider, etc.  )  
+  - Start where you are  
+  - Progress iteratively with feedback  
+  - YES: Collaborate and promote visibility  
+  - YES: Think and work holistically  
+  - Keep it simple and practical  
+  - YES: Optimize and automate  
+  
+  
+- **During which step of the continual improvement model is change management and release management usually performed?**  
+  Take action.  
+  The 'take action' step of the continual improvement model is focused on performing the actual work involved in order to reach the goals set forth in the 'where do we want to be' step. To do this, change management is used to implement a change in the environment and release management is used to make new and changed features available for use.  
+  
+  
+- **To which categories all 34 ITIL4 practices are divided?**  
+  - (14) General management  
+  - () Service management  
+  - () Technical management  
+  
+  
+- **What is Practice?**  
+  A set of organized resources designed for performing work or accomplishing an objective.  
+  Each practice supports multiple Service Value Chain activities and includes resources based on the 4 dimensions of IT service management.  
+  
+  
+  
