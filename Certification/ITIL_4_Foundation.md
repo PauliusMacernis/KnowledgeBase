@@ -1463,3 +1463,65 @@
   Explore Human Resources (HR) field for more info.  
   
   
+- **What is the purpose of service management practice called "Change control" (may also be known as "Change management")?**  
+  Maximizes the number of successful IT changes by ensuring that risks have been properly assessed, authorizing changes to proceed, and managing the change schedule.  
+  This is a balancing act with "Beneficial effects of changes" on one side and "Adverse effects of changes" on another one.  
+  Any time the change is introduced, the new risk is introduced.  
+  Each organization define the **scope** of its change control.  For example, by governance, procedures, etc.  
+  It all includes:  
+  - IT infrastructure  
+  - Applications  
+  - Documentation  
+  - Processes  
+  - Supplier relationships  
+  - anything else that may directly or indirectly affect the product or service we are about to change  
+  
+  
+- **What is a Change?**  
+  Addition, modification, or removal of anything that could have a direct or indirect effect on IT services.  
+  
+  
+- **How many types of changes are?**  
+  3 types:  
+  - Standard:  
+    Low-risk and well-understood. Something we do on our own all the time, e.g. service desk answering the call.  
+  - Normal:  
+    Requires some level of authorization via Change Authority. Planned and scheduled in advance, e.g. upgrading server OS.  
+  - Emergency:  
+    Have an expedited assessment and authorization process, may have different authority than Normal change authority. Example: server broke apart.  
+  
+  
+- **What is Change Authority?**  
+  A person or group responsible for authorizing a change.  
+  In some (usually smaller) organizations change authorities are decentralized (we may have many of them, e.g. developer confirming the change of another developer).  
+  In some (usually larger) organizations change authorities are centralized.  
+  
+  
+- **Where does the change go after Change authority approves the change?**  
+  The change goes to change schedule then.  
+  
+  
+- **What is "Change schedule" used for?**  
+  It is used to help plan changes, assist in communication, avoid conflicts, and assign resources.  
+  
+  
+- **What is an Emergency Change?**  
+  A change that must be introduced as soon as possible.  
+  
+  
+- **Is failure to plan an emergency change?**  
+  Failure to plan is **not** an emergency change.  
+  Just because somebody needs the change to be done today does not mean it is an emergency, maybe they just forgot to plan.  
+  
+  
+- **What Value Chain Activities does the "Change control" from Service Management Practices affect?**  
+  - Plan - changes to product and service portfolios, policies, and practices must be planned.  
+  - Engage - inform customers and users about the nature and schedule of the change.  
+  - Design & Transition - changes are designed, approved, and then passed to transition.  
+  - Obtain & Build - changes involve purchasing or building new hardware and software (this, when ready, will be the input to Change Control practice).  
+  - Deliver & Support - deliver and support is heavily impacted by a change.  
+  - Improve - most improvement initiatives require a change to the baseline configuration of your services.  
+  
+   
+  
+  
