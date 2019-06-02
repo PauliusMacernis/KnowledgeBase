@@ -1271,7 +1271,7 @@
   
 - **To which categories all 34 ITIL4 practices are divided?**  
   - (14) General management  
-  - () Service management  
+  - (17) Service management  
   - () Technical management  
   
   
@@ -1279,5 +1279,187 @@
   A set of organized resources designed for performing work or accomplishing an objective.  
   Each practice supports multiple Service Value Chain activities and includes resources based on the 4 dimensions of IT service management.  
   
+  
+- **What does "General management practices" mean?**  
+  General management practices - management practices that have been adopted and adapted for service management in more general business management domains.  
+  For example, project management and portfolio management is not something that occurs in IT projects only, it is spread across all business domains.  
+  
+  
+- **What Continual improvement practice is focusing on?**  
+  1. Encourage continual improvement across the organization.  
+  2. Secure time and budget for continual improvement.  
+  3. Identify and log improvement opportunities.  
+  4. Assess and prioritize improvement opportunities.  
+  5. Make a valid business case for improvement action.  
+  6. Plan, implement, measure, and evaluate the results.  
+  7. Coordinate improvement activities across the organization.  
+  
+  
+- **Would you be able to name what is inside "Continual improvement" practice toolbox (methods, models, techniques)?**  
+  - Lean methods - for reducing waste  
+  - Multi-phase projects - for organising the way we are going to do things and get incremental improvements  
+  - Maturity assessments - for figuring out how mature our organization is, and are we operating at the peak efficiency  
+  - DevOps (Development Ops) - for developing things quicker and getting them into market faster  
+  - Balanced Scorecard - for example, for looking at the improvement through the lens of 4 different dimensions of service management (Organizations and people, Information and technology, Partners and suppliers, Value streams and processes)  
+  - Agile - quick wins, etc.  
+  - SWOT Analysis - for listing out the Strengths, Weaknesses, Opportunities, Threats and figuring out how all of that applies to the given initiative  
+  - Continual Improvement Registry (CIR) - Database or structured document to track and manage improvement ideas from identification trough to final action.  
+  
+  
+- **What is Continual Improvement Registry (CRI)?**  
+  Database or structured document to track and manage improvement ideas from identification trough to final action.  
+  For example, Google sheets with three columns: Improvement idea, Result/Impact/Priority (e.g. High/Medium/Low), Plan of action (e.g. Q1, 2019).  
+  
+  
+- **How continual improvement works in regards of relationships involved**  
+  - Leaders - How do we embed continual improvement into the way people think and work by providing that proper vision.  
+  - Continual Improvement Team lead by Continual Improvement Manager - How do we lead the continual improvement efforts within the organization and advocate people for the continual improvement practices across the entire organization?  
+  - Everyone in the organization - How can we motivate people inside the organization to continually improve? Continual improvement is nota job of continual improvement manager only, it is a job of everyone within the organization.  
+  - Partners and Suppliers - How can we improve our relationships with partners and suppliers? E.g. contracts, measurements, reports, etc.  
+  
+  It closely relates to Continual improvement model and the model steps-related questions:  
+  - Leaders: "What is the vision?" (business vision, mission, goals and objectives)  
+  - Continual Improvement Team: "Where are we now?" (perform baseline assessments), "Where do we want to be?" (define measurable targets), "How do we get there?" (define the improvement plan)  
+  - Everyone in the organization: "Take action" (execute improvement actions)  
+  - Partners and Suppliers: "Take action" (execute improvement actions)  
+  Then:  
+  - "Did we get there?"  
+  - "How do we keep the momentum going?"  
+  
+  
+- **How does Continual Improvement practice integrates with Value Chain Activities?**  
+  - Plan - Apply the practice to all planning activities, methods, techniques.  
+  - Improve - This practice is key to this value chain activity.  
+  - All value chain activities (Engage - Design & transition / Obtain/build / Deliver & Support -> Products & Services, including Plan activity and Continual improvement activity itself) are subject to **continual improvement**.  
+  
+  
+- **What is the purpose of "Information Security Management" practice?**  
+  To protect the information needed by the organization to conduct its business.  
+  It is all about managing the risks of information systems to:  
+  - Confidentiality -- it is more and more about cybersecurity nowadays. E.g. encrypting data so nobody can read it except us   
+  - Integrity -- make sure data does not change in transit, in use, in storage. E.g. hashing  
+  - Availability -- making sure customer has access to the data when and where needed. E.g. redundant highly available systems, e.g. redundant internet connection lines, switches, etc.  
+  - Authentication -- making sure you are who you say you are when you are requesting access to the information. E.g. username+password, biometric fingerprint, one more biometric - face recognition, few factor authentication (e.g. username+password and code send to phone; which is "something you know" and "something you have" case)  
+  - Non-repudiation -- making sure you are who you say you are and you cannot say you didn't do what you did. E.g. digital signature of email.  
+  
+  
+- **What is the purpose of "Relationship Management" practice?**  
+  Establishes and nurtures the links between the organization and its stakeholders at strategic and tactical levels.  
+  We do this by identifying, analysing, monitoring, and doing continual improvement of those relationships between various stakeholders.  
+  The most common relationship: Service Provider co-create Value together with Service Consumer.  
+  Other examples of stakeholders: somebody who asks for a new product/service,  
+  
+  
+- **What is the purpose of "Supplier Management" practice?**  
+  Ensures the organization's suppliers and their performance are managed appropriately to support the provision of seamless and quality products, services, and components.  
+  We wish to uncover new values and reduce the risks of failure.  
+  Good relationships with **suppliers** can provide you with advanced warning.  
+  
+  
+- **What is the purpose of "Architecture Management" practice?**  
+  Provides an understanding of all the different elements that make up an organization and how those elements interrelate, enabling the organization to effectively achieve its current and future objectives.  
+  This provides organization with the principles, the standards, and the tools that enables us to manage complex changes in a more structured and agile way. There are 5 types of architectures inside a business:  
+  - Business  
+  - Service  
+  - Information Systems  
+  - Technology  
+  - Environmental  
+   
+   
+- **What is the purpose of "Architecture Management: Business Architecture"?**  
+  Allows the organization to look at its capabilities to determine how they align with the different activities that are required for the business to co-create value for its customers.  
+  
+  
+- **What is the purpose of "Architecture Management: Service Architecture"?**  
+  Gives the organization a view of its services and their interactions to be better understand how they all tie together.  
+  It is usually results to Service Model being created.  
+  
+  
+- **What is the purpose of "Architecture Management: Information Systems Architecture"?**  
+  Focused on the logical and physical data assets of the organization, and how they are managed and shared to benefit the organization.  
+  
+  
+- **What is the purpose of "Architecture Management: Technology Architecture"?**  
+  Defines the software and hardware infrastructure needed to support the portfolio of services and products that the organization offers.  
+  Foe example, self-hosting or cloud-hosting?  
+  
+  
+- **What is the purpose of "Architecture Management: Environmental Architecture"?**  
+  Used to describe the external factors affecting and impacting the organization.  
+  For example, factors of PESTLE (Political, Economic, Social, Technological, Legal, Environmental)  
+  
+  
+- **What is the purpose of "Knowledge Management" practice?**  
+  Practice of providing an understanding of all the different elements that make up an organization and how those elements relate to one another.  
+  There are 4 things we look at:  
+  - Data  
+  - Information ("How do we take data and turn it into information?")  
+  - Knowledge ("How do we take information and turn it into knowledge?")  
+  - Wisdom ("How do we take knowledge and turn it into wisdom?")  
+  For example:  
+  - 90  
+  - 90 degrees outside  
+  - I will put shorts today, it will be hot  
+  - Forward looking decision: There may be large amount of users skipping office desk and going to work remotely from the near-by-beach working environment therefore wifi network traffic in that area may increase.     
+  
+  
+- **What is the purpose of "Measurement and Reporting" practice?**  
+  Practice of supporting good decision-making and continual improvement by decreasing levels of uncertainty.  
+  Important measurements:  
+  - “What things are you measuring, is it a right things?”  
+  - Output vs. Outcome measurements. You should definitely and always measure outcomes, sometimes outputs  
+  - Key Performance Indicators  
+  - Critical Success Factors  
+  
+  
+- **What is the purpose of "Organizational Change Management" practice?**  
+  Ensures that changes in an organization are smoothly and successfully implemented, and that lasting benefits are achieved by managing the human aspects of change.  
+  E.g. changing a culture, acceptance of the culture within the organization, etc.  
+  
+  
+- **What is the purpose of "Portfolio Management" practice?**  
+  Ensuring that an organization has the right mix of programs, projects, products, and services to execute its strategy within its funding and resource constraints.  
+  
+  
+- **What is the purpose of "Project Management" practice?**  
+  Ensuring that all an organization's projects are successfully delivered.  
+  E.g. PRINCE2 (popular in Europe, Asia), PMP (popular in North America)  
+  
+  
+- **What is the purpose of "Risk Management" practice?**  
+  Ensuring that an organization understands and effectively handles risks.  
+  It is about identifying all the risks that exists under our products and services, projects we deploy.  
+  We can do 4 things with the known risks:  
+  - Avoid - eliminate the risk  
+  - Mitigate - lower the risk  
+  - Transfer - insure the risk  
+  - Accept - live with the risk  
+  
+  
+- **What is the purpose of "Service Financial Management" practice?**  
+  Supports the organization's strategies and plans for service management by ensuring that the organization's financial resources and investments are being used effectively.  
+  E.g. Return on Investment (ROI)  
+  
+  
+- **What is the purpose of "Strategy Management" practice?**  
+  Formulates the goals of an organization and adopts the courses of action and allocation of resources necessary for achieving those goals.  
+  Establishing organizations direction, focusing on effort, finding and clarifying organizational priorities, consistency and guidance to the environment following the same known vision.  
+  This will most likely come from C-type of seat, e.g. CEO, CTO, etc.  
+  It is being able to see what the future is and turning the organization before that future hits.  
+  
+  
+- **What is the purpose of "Workforce and Talent Management" practice?**  
+  Ensuring that an organization has the right people with the appropriate skills and knowledge and in the correct roles to support its business objectives.  
+  This covers:  
+  - Successfully engaging with organization employees  
+  - People-based resources / how to extract resources out of people  
+  - How to plan for people  
+  - How to recruit  
+  - How to onboard new people  
+  - Help people in learning and development  
+  - Ensuring the proper performance measurement of people  
+  - Succession planning  
+  - Etc.  
+  Explore Human Resources (HR) field for more info.  
   
   
