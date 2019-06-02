@@ -1523,5 +1523,55 @@
   - Improve - most improvement initiatives require a change to the baseline configuration of your services.  
   
    
+- **What is the purpose of service management practice called "Incident Management"?**  
+  Minimizes the negative impact of incidents by restoring normal service operation as quickly as possible.  
+  In short: "What are we going to do when something goes wrong?"  
+  
+  
+- **What Value Chain Activities does the "Incident Management" from Service Management Practices affect?**  
+  - Plan - ???  
+  - Engage - incidents are visible to your users and your customers.  
+  - Design & Transition - incident management is conducted even during design & transition activity.  
+  - Obtain & Build - incidents can also occur in development environments.  
+  - Deliver & Support - incident management is a key practice that occurs during support.  
+  - Improve - incident records are a key input into the improvement activities.  
+  
+  
+- **What is an Incident?**  
+  An unplanned interruption to a service, or reduction in the quality of service.  
+  
+  Every incident needs to be:  
+  - logged,  
+  - managed to the agreed-upon target resolution times,  
+  - prioritized.  
+  
+  We should have a tool-system we will use for the following:  
+  - Logging incidents  
+  - Managing incidents to the agreed-upon target resolution times  
+  - Prioritizing incidents, escalating "What makes an incident a priority?" answer  
+  - Identifying incidents  
+  - Categorizing, e.g. information security / management / operations / etc.  
+  - Classification, e.g. low/mid/high, or 1 to 5, or other.  
+  - Resolving procedure  
+  - Help and abilities on matching to other incidents, problems, or known errors  
+  - Escalation to higher level of support. E.g. Help desk > Tier2 support > Tier3 > etc.  
+  - Collect quality and timely updates from people working on the incident to share info with teams, partners, customers, etc.  
+  - Self-help tool for users  
+  - Contact service desk  
+  - Contact support team  
+  - Contact suppliers or partners  
+  - Management of temporary cross-functional teams to address a specific incident  
+  - Contact disaster recovery team  
+  
+  Incidents prioritization may be based on agreed classification. Everyone (customer, supplier, etc.) should know what that classification is, including answering the question "What makes an incident a priority?".  
+  
+  Make sure incidents with highest business impact are resolved first.  
+  
+  Solving incidents relies heavily on collaboration and information sharing.  
+  
+  
+- **What is Swarming?**  
+  Involves many different stakeholders working together initially, until it becomes very clear which of them is best placed to continue and who can mode on to other tasks.  
+  For example, this may be the case if a major incident, like a serious cyberattack, happened.  
   
   
