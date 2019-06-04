@@ -1575,3 +1575,51 @@
   For example, this may be the case if a major incident, like a serious cyberattack, happened.  
   
   
+- **What is the purpose of service management practice called "Problem Management"?**  
+  Reduces the likelihood and impact of incidents by identifying actual and potential causes of incidents, and managing workarounds and known errors.  
+  
+  Problem management heavily relies on other practices in form of outputs and inputs to other practices:  
+  - Incident Management  
+  - Risk Management  
+  - Change Control  
+  - Knowledge Management  
+  - Continual Improvement  
+  
+  Value chain activities are heavily affected as well:  
+  - Plan - ???  
+  - Engage - Problems are visible to your users and your customers  
+  - Design & Transition - Problem management provides information to help improve testing and knowledge transfer  
+  - Obtain & Build - Problem management can help identify and manage product defects  
+  - Deliver & Support - Problem management is a key practice that occurs during support  
+  - Improve - Provides an understanding of how to reduce incidents and their impacts  
+  
+  
+- **What is a Problem?**  
+  A cause, or potential cause, of one or more incidents.  
+  
+  
+- **How incident becomes a problem?**  
+  ?Incident becomes a problem when incident happens more than once.  
+  Sometimes a problem may be classified as an known error.  
+  
+  Incident - an unplanned interruption to a service, or reduction in the quality of service.  
+  Problem - a cause, or potential cause, of one or more incidents.  
+  Known error - a problem that has been analyzed and has not been resolved.  
+  
+  
+- **What is Known error?**  
+  A problem that has been analyzed and has not been resolved.  
+  
+  
+- **What is a Workaround?**  
+  A solution that reduces or eliminates the impact of an incident or problem for which a full resolution is not yet available.  
+  
+  Workarounds can be created at any stage. Workaround may be done before the problem analysis is fully completed, it is ok.  
+  
+  
+- **What are the 3 major steps inside of Problem management?**  
+  1. Problem Identification (examples: trend analysis, identifying what recurring incidents or major incidents have happened, we are looking at all the supplier and partner information, the software developers, testers, and projects that are going-on and identifying issues that may turn into problems for us.)  
+  2. Problem Control - prioritizing, managing based on the risks, analyze from the perspective of all four dimensions of service management (what can solve this problem? Organizations and people, Information and technology, Partners and suppliers, Value streams and processes ?).  
+  3. Error Control - identifying potential permanent solutions for the problem, reassessing status of known errors and workarounds, etc.  
+  
+  
