@@ -1623,3 +1623,75 @@
   3. Error Control - identifying potential permanent solutions for the problem, reassessing status of known errors and workarounds, etc.  
   
   
+- **What is the purpose of service management practice called "Service Desk"?**  
+  Capture demand for incident resolution and service requests.  
+  This is an entry point or single point contact for a service provider for all of its users.  
+  
+  
+- **What are the steps Service desk takes?**  
+  - Receive everything: an issue request, a change request, request for service, an incident, etc.  
+  - Acknowledge  
+  - Classify  
+  - Own  
+  - Act  
+  
+  Service desk was created as an entry point for technical support matters. However, it evolved to "we help you all with anything, including technical issues" during the time.  
+  Service desk has a major influence on user experience.  
+  Service desk is gates between service provider and users.  
+  Service desk focuses on excellent **customer service**, therefore soft skills are very important.  
+  Support and development teams need to work in close **collaboration** with the service desk. For example, user calls to service desk to know the status of the ticket, not directly to technicians.  
+  
+  That's how users access service desk, for example:  
+  - Phone calls  
+  - Service portals  
+  - Live chat (real person)  
+  - Chatbot (robots)  
+  - Email  
+  - Walk-in service  
+  - Text messages  
+  - Social media  
+  - Discussion boards  
+  - etc.  
+  
+  Some technologies used by service desk:  
+  - Intelligent telephony systems  
+  - Workflow systems  
+  - Workflow management  
+  - Resource planning systems  
+  - Knowledge base  
+  - Call recording and quality control  
+  - Remote access tools  
+  - Dashboard and monitoring tools  
+  - Configuration management systems  
+  - etc.  
+  
+  Couple of skills the new service desk employee should possess with:  
+  - Excellent customer service skills  
+  - Empathy  
+  - Emotional intelligence  
+  - Understand business priority  
+  - Incident analysis and prioritization  
+  - Effective communication  
+  - etc.  
+  
+  
+- **What are the types of Service Desks?**  
+  - Local - located within or close to the users that it serves (often very expensive, inefficient)  
+  - Centralized - single location to serve all users (quite efficient, cost effective, some problems cannot be fixed if user is not near by)  
+  - Virtual - allows agents to work from multiple, geographically-dispersed locations  
+  - Follow the sun - combination of service desk types (local/centralized/virtual) working in different time zones during daytime to allow 24x7 support  
+  
+  
+- **What is the purpose of Virtual Service Desk?**  
+  Allows agents to work from multiple, geographically-dispersed locations.  
+  
+  
+- **How Support Desk practice integrates with Service Value Chain activities?**  
+  - Plan - ???  
+  - Engage - main channel for engagement with users  
+  - Design & Transition - service desk provides a channel to communicate with users about new and changed services, service desk personal can participate in release planning, testing, early live support  
+  - Obtain & Build - service desk **acquires** service components to fulfill service requests and resolve incidents, e.g. maybe the hard drive crashed and then service desk personal orders it  
+  - Deliver & Support - service desk is the central coordination point  
+  - Improve - monitors and evaluates support for continual improvement  
+  
+  
