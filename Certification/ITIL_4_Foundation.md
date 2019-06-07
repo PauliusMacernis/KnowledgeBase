@@ -1272,7 +1272,7 @@
 - **To which categories all 34 ITIL4 practices are divided?**  
   - (14) General management  
   - (17) Service management  
-  - () Technical management  
+  - (3) Technical management  
   
   
 - **What is Practice?**  
@@ -1908,5 +1908,40 @@
   For example, if we run the website and introduce new service, we may running some beta testing in-house, with external testers, etc.  
   Before we transition services into live environment, we want them to be validated, tested.  
   When all is moved to a production web environment, we run the validation and testing once again to make sure all operates as designed.  
+  
+  
+- **What are practices in Technical Management Practices group about?**  
+  Adapted from technology management domains for service management purposes by expanding or shifting their focus from technology solutions to IT services.  
+  In ITIL4 there are only 3 technical management practices:  
+  - Deployment Management  
+  - Infrastructure and Platform Management  
+  - Software Development and Management  
+  
+  
+- **What is the purpose of Deployment Management practice of Technical management group of ITIL4 practices?**  
+  To move new or changed hardware, software, documentation, processes, or any other component to live environments.  
+  
+  It may also be involved with the components deploying to other environments for testing and staging.  
+  Basically, we used to have release and deployment as one processes but in ITIL4 it is separated practices:  
+  Release - focused on approval process  
+  Deployment - focused on moving the change over into the live environment.  
+  
+  When we build new feature, it will go through approval, release management process, and eventually it will be deployed through Deployment Management and move itself from Transition into Deliver and Support perspective.  
+  
+  
+- **What is the purpose of Infrastructure and Platform Management practice of Technical management group of ITIL4 practices?**  
+  Oversees the infrastructure and platforms used by an organization.  
+  
+  In other words, this is going to enable the monitoring of the technology solutions that are available, including solutions from third-parties.  
+  For example, the servers, the network, all of that.  
+  People monitoring all of it is part of infrastructure and platform management.  
+  This tend to be a very technical domain, and it is one that is covered by technical personnel who are responsible to make sure the systems are up-and-running at all times.  
+  Normally, these are people in the network operations center, security operations center.  
+  
+  
+- **What is the purpose of Software Development and Management practice of Technical management group of ITIL4 practices?**  
+  Ensures that applications meet internal and external stakeholder needs, in terms of functionality, reliability, maintainability, compliance, and auditability.  
+  
+  For example, if I want to install Windows Server 2019 the Software Development an Management assure that the application satisfies functionality, reliability, maintainability, compliance, and auditability requirements. Software Development an Management will not push the change into release (it's for Deployment management) but will track the information in order to assure it meets the requirements.  
   
   
