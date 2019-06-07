@@ -1811,7 +1811,7 @@
   - Services  
   - Business processes  
   - Information security events  
-  And the establishes the proper response to those events, including responding to the conditions that could lead to potential faults or incidents.  
+  And establishes the proper response to those events, including responding to the conditions that could lead to potential faults or incidents.  
   
   
 - **What is an Event?**  
@@ -1823,3 +1823,10 @@
   Some events will be **referred** to a problem or incident management.  
   
  
+- **What is the purpose of Release Management practice of Service management group of ITIL4 practices?**  
+  To make new and changed services and features available for use.  
+  
+  It is about managing:  
+  Release plan > (New or changed infrastructure / New or changed software / Training and documentation) > (Deploy and release / Deploy and release / Deploy and release | OR | Deploy and release ) > Review  
+  
+  
