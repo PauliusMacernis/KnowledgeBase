@@ -1741,3 +1741,48 @@
   - Improve - Service level management is a driving force for continual service improvement  
   
   
+- **What is the purpose of Service Request Management practice of Service management group of ITIL4 practices?**  
+  Supports the agreed quality of a service by handling all predefined, user-initiated service requests in an effective and user-friendly manner.  
+  For example: "lets create the new email distribution", "I need headset attached to my computer at work", "I want 27-inch monitor instead of what I have now", "I need more share drive space", "I need bigger email account", "I need another email address", "I need my account unlocked", etc.  
+  
+  Service Request Management works in 3 steps:  
+  - Initiate  
+  - Approve  
+  - Fulfill  
+  
+  Service requests are a **normal** part of service delivery, it is not an emergency management via incident management-alike practice.  
+  
+  
+- **What is Service Request?**  
+  A request from a user or user's authorized representative that initiates a service action that has been agreed as a normal part of service delivery.  
+  Service request management should use automation to the greatest degree possible when dealing with service requests.  
+  
+  These are requests for low risk and well understood changes, we should not waste human hours on it (lets focus on incident management instead!). For example a regular service request for:  
+  - Service delivery action (e.g. get a new computer for the new employee)  
+  - Information  
+  - Provision of a resource (e.g. give me 16 GB instead of 4 GB)  
+  - Access to a resource (e.g. I need access to the company's shared drive)  
+  - Feedback  
+  
+  Few other notes:  
+  - Seek out opportunities for improvement.    
+  - Create appropriate **policies** to limit, remove, and minimize the need for additional approvals  
+  - Deliver on your promise (e.g. do not state "Deliver in 5 minutes", rather use "deliver in 5 minutes if the item is in stock")  
+  - Redirect incidents and problems to the appropriate practices  
+  - Make sure the approval part is considered  
+  - Make a workflow for one or another type of requests  
+  - Optimize workflow **then** automate  
+  - Manage expectations  
+  - Use self-service wherever it is possible, e.g. "password reset", etc.  
+  - Leverage **existing** workflow models, you most often don't need to start from the scratch  
+  
+  
+- **How Service Request Management practice of Service management group of ITIL4 practices integrates with Service Value Chain activities?**  
+  - Plan - ???  
+  - Engage - provides regular communications to help set expectations, makes it clear for users to understand the requirements, the expectations, and the status  
+  - Design & Transition - **standard changes are** used to initiate and fulfill service requests  
+  - Obtain & Build - obtain/build fulfills service requests through the acquisition of pre-approved components  
+  - Deliver & Support - service request management makes a significant contribution to **normal** service delivery    
+  - Improve - provides users a channel for improvement initiatives, compliments, and complaints  
+  
+  
