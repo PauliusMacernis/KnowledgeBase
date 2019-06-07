@@ -1803,4 +1803,23 @@
   For example, mobile phones, servers, network gear, switches, laptops, monitors, etc.  
   
   
+- **What is the purpose of Monitoring and Event Management practice of Service management group of ITIL4 practices?**  
+  Systematically observes a service or service component, and record and report selected changes of state identified as events  
+  
+  This practice identifies and prioritizes:  
+  - Infrastructure  
+  - Services  
+  - Business processes  
+  - Information security events  
+  And the establishes the proper response to those events, including responding to the conditions that could lead to potential faults or incidents.  
+  
+  
+- **What is an Event?**  
+  Any **change of state that has significance** for the management of a configuration item (CI) or IT service.  
+  
+  For example, you login successfully, failed to login successfully, bandwidth exceeded, free space on the server got below a certain threshold, etc.  
+  We want to be sure we take some action on these events. It may be jus an informational event (e.g. user logged in, we know it, its ok, nothing to do), but it also may be a warning (e.g. login failure that happened 3 times, we may want to know why), an alert (e.g. free space on production server is less than 10 GB), or other.  
+  
+  Some events will be **referred** to a problem or incident management.  
+  
  
