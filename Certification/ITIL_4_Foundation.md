@@ -1695,3 +1695,49 @@
   - Improve - monitors and evaluates support for continual improvement  
   
   
+- **What is the purpose of Service Level Management practice of Service management group of ITIL4 practices?**  
+  Sets clear business-based targets for service performance so that the delivery of a service can be properly assessed, monitored, and managed against these targets.  
+  
+  Provides end-to-end visibility of services by establishing a shared view of service and a target service levels with the customers so both the customers and we know what to expect.  
+  Is responsible for collecting, storing, reporting relevant metrics to ensure that we are meeting the service levels.  
+  Performing service level reviews to ensure the current services meets the needs of organization and the customer.  
+  Captures and reports on service issues including performance against defined service levels. For example, if we declare to customers we have 99.99 % availability then service level management will measure if meet this criteria.  
+   
+  
+- **What is Service Level Agreement (SLA)?**  
+  Documented agreement between a service provider and a customer that identifies services required and the expected level of service.  
+  SLA - tool that is being used to measure the performance from the **customer's** point of view.  
+  
+  Successful SLA:  
+  - Related to a defined service (e.g. Not "customer is happy". The outcome should be measurable, e.g. "customer should have the email in 5 seconds" or "..in 5 minutes", - what is "happy"? what is "fast"? etc.)  
+  - Agreement is between the service provider and service consumer, they both understand and have a common baseline on the topics like "fast enough", "happy enough", etc.  
+  - Must be simply written and easy to understand by all parties, may not be in "legal jargon"  
+  
+  When we write SLA, we focus on:  
+  - Relationship management  
+  - Supplier management  
+  - Skills and competences  
+  - Business liaison  
+  - Business analyst  
+  This will contain who is responsible for what, and at what level  
+  
+  Sources:  
+  - SLA (customer engagement and agreement we have)  
+  - Initial listing  
+  - Discovery and information capture  
+  - Measurement and ongoing process discussions  
+  - Asking simple open-ended questions  
+  - Customer feedback! (survey, business related measurements and metrics)  
+  - Operational metrics (server uptime, capacity, etc.)  
+  - Business metrics (monthly recurring revenue, lifetime value of a customer, Average Revenue Per Account, Months to Recover CAC, Churn, etc.)  
+  
+  
+- **How Service Level Management practice of Service management group of ITIL4 practices integrates with Service Value Chain activities?**  
+  - Plan - supports planning of product and service portfolio and service offerings  
+  - Engage - ensures ongoing engagement with customers and users through feedback  
+  - Design & Transition - Service Level Management provides an input into the design of new and changed services (e.g. "email should be sent in 5 seconds")   
+  - Obtain & Build - obtain and build activity receives objectives for components and service performance  
+  - Deliver & Support - communicates service performance objectives to the operations and support teams  
+  - Improve - Service level management is a driving force for continual service improvement  
+  
+  

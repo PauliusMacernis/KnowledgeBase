@@ -28,4 +28,5 @@
 - piper - https://www.urbandictionary.com/define.php?term=Piper
 - diatribe - https://dictionary.cambridge.org/dictionary/english/diatribe
 - penetration - https://dictionary.cambridge.org/dictionary/english/penetration
+- liaison - https://en.oxforddictionaries.com/definition/liaison
 - ...
