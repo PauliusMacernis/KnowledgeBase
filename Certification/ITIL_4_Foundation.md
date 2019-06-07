@@ -1786,3 +1786,21 @@
   - Improve - provides users a channel for improvement initiatives, compliments, and complaints  
   
   
+- **What is the purpose of IT Asset Management practice of Service management group of ITIL4 practices?**  
+  To plan and manage the full lifecycle of all IT assets, to help the organization:  
+  1. Maximize value  
+  2. Control costs  
+  3. Manage risks  
+  4. Support decision-making about purchase, re-use, and retirement of assets  
+  5. Meet regulatory and contractual requirements  
+  
+  It is basically about the inventory: what we know about it, tracking the lifecycle of it, budgeting and replacing on time, etc.  
+  IT Asset Management helps on all steps: purchase, use, retirement, replacement.  
+  
+  
+- **What is IT asset?**  
+  Any valuable component that can contribute to the delivery of an IT product or service.  
+  For example, mobile phones, servers, network gear, switches, laptops, monitors, etc.  
+  
+  
+ 
