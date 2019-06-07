@@ -1830,3 +1830,83 @@
   Release plan > (New or changed infrastructure / New or changed software / Training and documentation) > (Deploy and release / Deploy and release / Deploy and release | OR | Deploy and release ) > Review  
   
   
+- **What is the purpose of Service Configuration Management practice of Service management group of ITIL4 practices?**  
+  Ensures that accurate and reliable information about the configuration of services, and configuration items that support them, is available when and where it is needed.  
+  
+  
+- **What is Configuration Item?**  
+  Any component that needs to be managed in order to deliver an IT service.  
+  For example, a server, as switch, a laptop, etc.  
+  
+  
+- **What is the purpose of Availability Management practice of Service management group of ITIL4 practices?**  
+  Ensures services deliver agreed levels of availability to meet the needs of customers and users.  
+  
+  Availability here means ability of an IT service or other configuration item to perform its agreed-upon function when it's required.  
+  For example: when we follow a web address, we want the web to come up, e.g. we agree it will come up 99.999% (entire year minus 5 minutes) of the times.  
+  
+  
+- **What is the purpose of Business Analysis practice of Service management group of ITIL4 practices?**  
+  Analyzing a business, or some element of that business, to define its needs and recommend solutions to address those needs, or to solve a business problem.  
+  
+  When we think about business analysis, we think about it outside of IT world. Normally, we are thinking about "dollars and cents" here, IT world falls into lower domain here.  
+  For example: "How can I solve some sort of business problem with anything I have (IT, marketing, etc.)"  
+  
+  
+- **What is the purpose of Capacity and Performance Management practice of Service management group of ITIL4 practices?**  
+  Ensures services achieve agreed-upon and expected performance, satisfying current and future demand in a cost-effective way.  
+  
+  
+- **What is Performance?**  
+  Measure of what is achieved by delivering a system, person, team, practice, or service.  
+  
+  Service performance - associated with the number of service actions performed in a timeframe, and and the time required to fulfill a service action at a given level of demand.   
+  For example, "When you have the item ordered via e-store, the digital item arrives to your mailbox in 5 minutes"  
+  
+  
+- **What is Service Capacity?**  
+  Maximum throughput that configuration item or service can deliver.  
+  For example, capacity of the hard rive - how much data we can store on it in GB? capacity of a network connection - how fast it may be in Mbps?, etc.  
+  
+  A lot of metrics come into play here, just remember to measure the outcomes, not just outputs!  
+  
+  
+- **What is the purpose of Service Catalog Management practice of Service management group of ITIL4 practices?**  
+  Provides a single source of consistent information on all services and service offerings, and ensures that it is available to the relevant audience.  
+  
+  The main point here is to tell people what services are coming, what is being taken away, and what is currently available.  
+  
+  For example, some web-based businesses list all the services and offerings they have to their home page.  
+  Another example, IT company may have different service components for mobile, desktop, etc.  
+  
+  
+- **What is the purpose of Service Continuity Management practice of Service management group of ITIL4 practices?**  
+  Ensures that the availability and performance of a service is maintained at a sufficient level in the event of a disaster.  
+  
+  
+- **What is Disaster?**  
+  Sudden, unplanned event that causes great damage or serious loss to an organization.  
+  For example, natural disaster like hurricane, or technology-based like hacker or a data breach.  
+  
+  This practice will provide with the framework for building organization's resiliency and ensure that you have the capability of producing the effective responses needed to safeguard the interests of your key stakeholders and your organization's reputation, your brand and your value creating activities.  
+  For example, multiple copies of the server backups online and offline, redundant servers, load balancer, etc.  
+  
+  
+- **What is the purpose of Service Design practice of Service management group of ITIL4 practices?**  
+  Practice of designing products and services that are fit for purpose, fit for use, and that can be delivered by the organization and its ecosystem.  
+  
+  "Fit for purpose" = Utility  
+  "Fit for use" =  Warranty  
+  "Delivered by the organization and its ecosystem" = Capabilities  
+  
+  For example, if we develop services on a cloud, we don't want to limit our services by the means of stand-alone servers, we design services around different means here.  
+  
+  
+- **What is the purpose of Service Validation and Testing practice of Service management group of ITIL4 practices?**  
+  Ensures that new or changed products and services meet defined requirements.  
+  
+  For example, if we run the website and introduce new service, we may running some beta testing in-house, with external testers, etc.  
+  Before we transition services into live environment, we want them to be validated, tested.  
+  When all is moved to a production web environment, we run the validation and testing once again to make sure all operates as designed.  
+  
+  

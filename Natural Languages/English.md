@@ -29,4 +29,5 @@
 - diatribe - https://dictionary.cambridge.org/dictionary/english/diatribe
 - penetration - https://dictionary.cambridge.org/dictionary/english/penetration
 - liaison - https://en.oxforddictionaries.com/definition/liaison
+- resiliency - https://en.oxforddictionaries.com/definition/resilience
 - ...
