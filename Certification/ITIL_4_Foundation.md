@@ -178,7 +178,7 @@
   
   
 - **What is Service Offering**  
-  A description of one or more services deigned to address the needs of a target consumer group.  
+  A description of one or more services designed to address the needs of a target consumer group.  
   
   
 - **What can include Service offerings?**  
@@ -190,7 +190,7 @@
   
 - **What is the difference between Service, Product and Service offering?**    
   Terms:   
-  Service - a description of one or more services deigned to address the needs of a target consumer group.  
+  Service - a description of one or more services designed to address the needs of a target consumer group.  
   Product - "a configuration of an organization’s resources designed to offer value for a consumer."    
   Service offering - "a description of one or more services, designed to address the needs of a target consumer group. A service offering may include goods, access to resources, and service actions."    
   *My answer ("Close, but not quite right..."):*   
@@ -1307,7 +1307,7 @@
   
   
 - **What is Continual Improvement Registry (CRI)?**  
-  Database or structured document to track and manage improvement ideas from identification trough to final action.  
+  Database or structured document to track and manage improvement ideas from identification through to final action.  
   For example, Google sheets with three columns: Improvement idea, Result/Impact/Priority (e.g. High/Medium/Low), Plan of action (e.g. Q1, 2019).  
   
   
@@ -1572,7 +1572,7 @@
   
 - **What is Swarming?**  
   Involves many different stakeholders working together initially, until it becomes very clear which of them is best placed to continue and who can mode on to other tasks.  
-  For example, this may be the case if a major incident, like a serious cyberattack, happened.  
+  For example, this may be the case if a major incident, like a serious cyber attack, happened.  
   
   
 - **What is the purpose of service management practice called "Problem Management"?**  
