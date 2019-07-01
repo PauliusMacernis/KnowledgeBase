@@ -178,6 +178,11 @@ Read more:
 https://en.wikipedia.org/wiki/Server_Application_Programming_Interface  
 https://httpd.apache.org/docs/current/programs/apxs.html  
 
+- **What is the result of `var_dump(1 <= 0 == 0);`?**  
+true  
+Read more:  
+https://www.php.net/manual/en/language.operators.precedence.php  
+
 - **What are Name resolution rules in PHP?**  
 Read more:  
 http://php.net/manual/en/language.namespaces.rules.php  
