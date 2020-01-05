@@ -718,4 +718,8 @@ https://stackoverflow.com/questions/11289551/argument-list-too-long-error-for-rm
 Read more:  
 https://stackoverflow.com/questions/16956810/how-do-i-find-all-files-containing-specific-text-on-linux  
   
-  
+- **Explain `=~` used in bash test, for example: `if [[ $save =~ e ]]`**  
+Read more:  
+https://unix.stackexchange.com/questions/340440/bash-test-what-does-do/340485  
+http://mywiki.wooledge.org/BashGuide/TestsAndConditionals#Conditional_Blocks_.28if.2C_test_and_.5B.5B.29  
+
