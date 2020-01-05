@@ -722,4 +722,9 @@ https://stackoverflow.com/questions/16956810/how-do-i-find-all-files-containing-
 Read more:  
 https://unix.stackexchange.com/questions/340440/bash-test-what-does-do/340485  
 http://mywiki.wooledge.org/BashGuide/TestsAndConditionals#Conditional_Blocks_.28if.2C_test_and_.5B.5B.29  
-
+  
+- **Explain `echo $-` used in bash script**  
+Prints the values of the shell's flags. You can set and unset such flags with `set`, e.g. `set -e` (will exit the script if error) or `set +e` (will NOT exit the script if error).  
+Read more:  
+https://unix.stackexchange.com/questions/315829/how-to-understand-the-output-of-echo  
+https://pubs.opengroup.org/onlinepubs/009695399/utilities/xcu_chap02.html#tag_02_05_02  
