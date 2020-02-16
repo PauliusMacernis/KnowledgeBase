@@ -17,3 +17,12 @@ Working at the assembly language level and performing some low-level input/outpu
 
 Ubuntu docs: https://help.ubuntu.com/community/CommunityHelpWiki  
 
+Bash docs: http://linuxcommand.org/index.php  
+
+Architecture references:  
+
+- https://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-software-developer-vol-1-manual.pdf  
+- https://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-software-developer-instruction-set-reference-manual-325383.pdf  
+- https://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-software-developer-system-programming-manual-325384.pdf  
+
+
