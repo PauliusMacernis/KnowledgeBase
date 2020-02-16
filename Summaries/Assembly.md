@@ -25,4 +25,8 @@ Architecture references:
 - https://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-software-developer-instruction-set-reference-manual-325383.pdf  
 - https://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-software-developer-system-programming-manual-325384.pdf  
 
+Yasm:  
+
+- http://yasm.tortall.net/  
+- http://yasm.tortall.net/Guide.html  
 
