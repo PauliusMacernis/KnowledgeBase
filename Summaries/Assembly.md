@@ -122,5 +122,6 @@ When the lower 8-bit al portion of the 64-bit rax register is set, the upper 56-
 
 For 32-bit register operations, the upper 32-bits is cleared (set to zero). Generally, this is not an issue since operations on 32-bit registers do not use the upper 32-bits of the register. For unsigned values, this can be useful to convert from 32-bits to 64-bits. However, this will not work for signed conversions from 32-bit to 64-bit values. Specifically, it will potentially provide incorrect results for negative values.  
 
-(The following image that relates to the same topic is taken from https://youtu.be/BWRR3Hecjao?t=188 )
-![https://youtu.be/BWRR3Hecjao?t=188]https://github.com/sugalvojau/Knowledge-base/blob/master/Summaries/Assembly/Screenshot%20from%202020-02-17%2000-04-57.png?raw=true
+(The following image that relates to the same topic is taken from https://youtu.be/BWRR3Hecjao?t=188 )  
+
+![img_cpu_registers]:(https://github.com/sugalvojau/Knowledge-base/blob/master/Summaries/Assembly/Screenshot%20from%202020-02-17%2000-04-57.png?raw=true "https://youtu.be/BWRR3Hecjao?t=188")  
