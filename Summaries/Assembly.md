@@ -74,3 +74,51 @@ For more information, refer to:
 - http://en.wikipedia.org/wiki/Processor_register
 - http://en.wikipedia.org/wiki/Cache_(computing)
 
+There are sixteen, 64-bit General Purpose Registers (GPRs). The GPRs are described in
+the following table. A GPR register can be accessed with all 64-bits or some portion or
+subset accessed.  
+
+| 64-bit register | Lowest 32-bits | Lowest 16-bits | Lowest 8-bits |
+|-----------------|----------------|----------------|---------------|
+| rax             | eax            | ax             | al            |
+| rbx             | ebx            | bx             | bl            |
+| rcx             | ecx            | cx             | cl            |
+| rdx             | edx            | dx             | dl            |
+| rsi             | esi            | si             | sil           |
+| rdi             | edi            | di             | dil           |
+| rbp             | ebp            | bp             | bpl           |
+| rsp             | esp            | sp             | spl           |
+| r8              | r8d            | r8w            | r8b           |
+| r9              | r9d            | r9w            | r9b           |
+| r10             | r10d           | r10w           | r10b          |
+| r11             | r11d           | r11w           | r11b          |
+| r12             | r12d           | r12w           | r12b          |
+| r13             | r13d           | r13w           | r13b          |
+| r14             | r14d           | r14w           | r14b          |
+| r15             | r15d           | r15w           | r15b          |
+
+Additionally, some of the GPR registers are used for dedicated purposes as described in the later sections.  
+
+When using data element sizes less than 64-bits (i.e., 32-bit, 16-bit, or 8-bit), the lower portion of the register can be accessed by using a different register name as shown in the table.  
+
+The first four registers, rax, rbx, rcx, and rdx also allow the bits 8-15 to be accessed with the ah, bh, ch, and dh register names. With the exception of ah, these are provided for legacy support and will not be used in this text.  
+
+The ability to access portions of the register means that, if the quadword rax register is set to 50,000,000,000 (fifty billion, 10-based system), the rax register would contain the following value in hex.  
+
+`rax = 0000 000B A43B 7400`  
+
+If a subsequent operation sets the word ax register to 50,000 (fifty thousand, 10-based system, which is C35016), the rax register would contain the following value in hex  
+
+`rax = 0000 000B A43B C350`  
+
+In this case, when the lower 16-bit ax portion of the 64-bit rax register is set, the upper 48-bits are unaffected.  
+
+If a subsequent operation sets the byte sized al register to 50 (fifty, 10-based system, which is 32 in HEX), the
+rax register would contain the following value in hex.  
+
+`rax = 0000 000B A43B C332`  
+
+When the lower 8-bit al portion of the 64-bit rax register is set, the upper 56-bits are unaffected.  
+
+For 32-bit register operations, the upper 32-bits is cleared (set to zero). Generally, this is not an issue since operations on 32-bit registers do not use the upper 32-bits of the register. For unsigned values, this can be useful to convert from 32-bits to 64-bits. However, this will not work for signed conversions from 32-bit to 64-bit values. Specifically, it will potentially provide incorrect results for negative values.  
+
