@@ -66,3 +66,11 @@ For example, C/C++ declarations are mapped as follows:
 an integer. Other high-level languages typically have similar mappings.*  
 *Note, the 'long' type declaration is compiler dependent. Type shown is for gcc and g++ compilers.*  
 
+For more information, refer to:  
+
+- http://en.wikipedia.org/wiki/Central_processing_unit
+- http://en.wikipedia.org/wiki/Die_(integrated_circuit)
+- http://en.wikipedia.org/wiki/Arithmetic_logic_unit
+- http://en.wikipedia.org/wiki/Processor_register
+- http://en.wikipedia.org/wiki/Cache_(computing)
+
