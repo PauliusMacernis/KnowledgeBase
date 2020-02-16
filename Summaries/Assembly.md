@@ -157,6 +157,15 @@ For example:
 
 ![cpu_registers_video_system_calls_example](https://github.com/sugalvojau/Knowledge-base/blob/master/Summaries/Assembly/cpu_registers_video_system_calls_example.png?raw=true "https://youtu.be/BWRR3Hecjao?t=330")  
 
+![cpu_registers_video_system_calls_example_extended](https://github.com/sugalvojau/Knowledge-base/blob/master/Summaries/Assembly/cpu_registers_video_system_calls_example_extended.png?raw=true "https://youtu.be/BWRR3Hecjao?t=419")  
+
+![cpu_registers_video_system_calls_example_extended_code1](https://github.com/sugalvojau/Knowledge-base/blob/master/Summaries/Assembly/cpu_registers_video_system_calls_example_extended_code1.png?raw=true "https://youtu.be/BWRR3Hecjao?t=497")  
+
+![cpu_registers_video_system_calls_example_extended_code2](https://github.com/sugalvojau/Knowledge-base/blob/master/Summaries/Assembly/cpu_registers_video_system_calls_example_extended_code2.png?raw=true "https://youtu.be/BWRR3Hecjao?t=549")  
+
+
+
+
 
 
 
