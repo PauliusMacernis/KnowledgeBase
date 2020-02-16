@@ -7,3 +7,5 @@ The reasons for learning assembly language are more about understanding how a co
 
 Since assembly language is machine specific, the lack of portability is very limiting for programming projects.  
 
+In the long run, learning the underlying principles, including assembly language, is what makes the difference between a coding technician unable to cope with changing languages and a computer scientist who is able to adapt to the ever-changing technologies.  
+
