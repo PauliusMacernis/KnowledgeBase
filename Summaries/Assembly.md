@@ -1,5 +1,8 @@
-x86-64 Assembly Language Programming with Ubuntu by Ed Jorgensen, Ph.D. ; Version 1.1.40; January 2020  
+# x86-64 Assembly Language Programming with Ubuntu by Ed Jorgensen, Ph.D. ; Version 1.1.40; January 2020
+
 http://www.egr.unlv.edu/~ed/assembly64.pdf
+
+## Chapter 1
 
 Assembly language is as close to the processor as you can get as a programmer. Programs written in a high-level language are translated into assembly language in order for the processor to execute the program. The highlevel language is an abstraction between the language and the actual processor instructions. As such, the idea that “assembly is dead” is nonsense.  
 
@@ -25,8 +28,15 @@ Architecture references:
 - https://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-software-developer-instruction-set-reference-manual-325383.pdf  
 - https://www.intel.com/content/dam/www/public/us/en/documents/manuals/64-ia-32-architectures-software-developer-system-programming-manual-325384.pdf  
 
-Yasm:  
+YASM References:  
 
-- http://yasm.tortall.net/  
-- http://yasm.tortall.net/Guide.html  
+- Website: http://yasm.tortall.net/  
+- Documentation: http://yasm.tortall.net/Guide.html  
+
+DDD Debugger References:  
+
+- Website: http://www.gnu.org/software/ddd/  
+- Documentaton: http://www.gnu.org/software/ddd/manual/  
+
+## Chapter 2
 
