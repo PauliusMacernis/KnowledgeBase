@@ -147,7 +147,7 @@ register is updated by the CPU after each instruction and not directly accessibl
 | Direction | DF     | 10  | Used to specify the direction (increment or decrement) for some string operations. |
 | Overflow  | OF     | 11  | Used to indicate if the previous operation resulted in an overflow. |
 
-(I found the following 3 images related to the same topic. The images are taken from https://youtu.be/BWRR3Hecjao?t=252 . Seems like the entire list of calls may be found here: https://syscalls.kernelgrok.com/ )  
+(I found the following 10 images related to the same topic. The images are taken from https://youtu.be/BWRR3Hecjao?t=252 . Seems like the entire list of calls may be found here: https://syscalls.kernelgrok.com/ )  
 
 ![cpu_registers_video_system_calls_definition](https://github.com/sugalvojau/Knowledge-base/blob/master/Summaries/Assembly/cpu_registers_video_system_calls_definition.png?raw=true "https://youtu.be/BWRR3Hecjao?t=252")  
 
@@ -163,8 +163,13 @@ For example:
 
 ![cpu_registers_video_system_calls_example_extended_code2](https://github.com/sugalvojau/Knowledge-base/blob/master/Summaries/Assembly/cpu_registers_video_system_calls_example_extended_code2.png?raw=true "https://youtu.be/BWRR3Hecjao?t=549")  
 
+![cpu_registers_video_system_calls_example_extended_code_sections](https://github.com/sugalvojau/Knowledge-base/blob/master/Summaries/Assembly/cpu_registers_video_system_calls_example_extended_code_sections.png?raw=true "https://youtu.be/BWRR3Hecjao?t=657")  
 
+![cpu_registers_video_system_calls_example_extended_code_labels](https://github.com/sugalvojau/Knowledge-base/blob/master/Summaries/Assembly/cpu_registers_video_system_calls_example_extended_code_labels.png?raw=true "https://youtu.be/BWRR3Hecjao?t=673")  
 
+![cpu_registers_video_system_calls_example_extended_code_start](https://github.com/sugalvojau/Knowledge-base/blob/master/Summaries/Assembly/cpu_registers_video_system_calls_example_extended_code_start.png?raw=true "https://youtu.be/BWRR3Hecjao?t=719")  
+
+![cpu_registers_video_system_calls_example_extended_code_global](https://github.com/sugalvojau/Knowledge-base/blob/master/Summaries/Assembly/cpu_registers_video_system_calls_example_extended_code_global.png?raw=true "https://youtu.be/BWRR3Hecjao?t=748")  
 
 
 
