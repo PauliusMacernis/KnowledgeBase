@@ -60,3 +60,7 @@ Primary storage or main memory is also referred to as **volatile memory** since 
 | float             | Double-word | 32-bits     | 4 bytes      |
 | double            | Quadword    | 64-bits     | 8 bytes      |
 
+*The asterisk indicates an address variable. For example, int * means the address of
+an integer. Other high-level languages typically have similar mappings.*  
+*Note, the 'long' type declaration is compiler dependent. Type shown is for gcc and g++ compilers.*  
+
