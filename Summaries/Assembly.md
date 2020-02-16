@@ -9,3 +9,11 @@ Since assembly language is machine specific, the lack of portability is very lim
 
 In the long run, learning the underlying principles, including assembly language, is what makes the difference between a coding technician unable to cope with changing languages and a computer scientist who is able to adapt to the ever-changing technologies.  
 
+...knowing the capabilities of assembly language provides useful insights into what is possible, what is easy, and what might be more difficult or slower.  
+
+Additionally, use of the stack and the associated call frame is the basis for recursion and understanding the fairly straightforward implementation of recursive functions.  
+
+Working at the assembly language level and performing some low-level input/output operations provides a more detailed understanding of how input/output and buffering really works. This includes the differences between interactive input/output, file input/output, and the associated operating system services.  
+
+Ubuntu docs: https://help.ubuntu.com/community/CommunityHelpWiki  
+
