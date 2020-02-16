@@ -126,5 +126,5 @@ For 32-bit register operations, the upper 32-bits is cleared (set to zero). Gene
 
 (The following image that relates to the same topic is taken from https://youtu.be/BWRR3Hecjao?t=188 )  
 
-![img_cpu_registers_video](https://github.com/sugalvojau/Knowledge-base/blob/master/Summaries/Assembly/Screenshot%20from%202020-02-17%2000-04-57.png?raw=true "https://youtu.be/BWRR3Hecjao?t=188")  
+![img_cpu_registers_video](https://github.com/sugalvojau/Knowledge-base/blob/master/Summaries/Assembly/cpu_registers_video.png?raw=true "https://youtu.be/BWRR3Hecjao?t=188")  
 
