@@ -147,3 +147,6 @@ register is updated by the CPU after each instruction and not directly accessibl
 | Direction | DF     | 10  | Used to specify the direction (increment or decrement) for some string operations. |
 | Overflow  | OF     | 11  | Used to indicate if the previous operation resulted in an overflow. |
 
+
+( See some extra info on System calls https://syscalls.kernelgrok.com/ mentioned under https://youtu.be/BWRR3Hecjao?t=252 )  
+
