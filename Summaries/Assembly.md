@@ -128,3 +128,22 @@ For 32-bit register operations, the upper 32-bits is cleared (set to zero). Gene
 
 ![img_cpu_registers_video](https://github.com/sugalvojau/Knowledge-base/blob/master/Summaries/Assembly/cpu_registers_video.png?raw=true "https://youtu.be/BWRR3Hecjao?t=188")  
 
+**Stack Pointer Register (RSP)** - used to point to the current top of the stack. The **rsp** register should not be used for data or other uses.  
+
+**Base Pointer Register (RBP)** - used as a base pointer during function calls. The **rbp** register should not be used for data or other uses.  
+
+**Instruction Pointer Register (RIP)** - In addition to the GPRs, there is a special register, rip, which is used by the CPU to point to the next instruction to be executed. Specifically, since the rip points to the next instruction, that means the instruction being pointed to by rip, and shown in the debugger, has not yet been executed. This is an important distinction which can be confusing when reviewing code in a debugger.  
+
+**Flag Register (rFlags)** - The flag register, rFlags, is used for status and CPU control information. The rFlag
+register is updated by the CPU after each instruction and not directly accessible by programs. This register stores status information about the instruction that was just executed. Of the 64-bits in the rFlag register, many are reserved for future use.  
+
+| Name      | Symbol | Bit | Use |
+|-----------|--------|-----|-----|
+| Carry     | CF     | 0   | Used to indicate if the previous operation resulted in a carry. |
+| Parity    | PF     | 2   | Used to indicate if the last byte has an even number of 1's (i.e., even parity). |
+| Adjust    | AF     | 4   | Used to support Binary Coded Decimal operations. |
+| Zero      | ZF     | 6   | Used to indicate if the previous operation resulted in a zero result. |
+| Sign      | SF     | 7   | Used to indicate if the result of the previous operation resulted in a 1 in the most significant bit (indicating negative in the context of signed data). |
+| Direction | DF     | 10  | Used to specify the direction (increment or decrement) for some string operations. |
+| Overflow  | OF     | 11  | Used to indicate if the previous operation resulted in an overflow. |
+
