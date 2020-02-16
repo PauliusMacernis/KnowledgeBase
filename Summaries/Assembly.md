@@ -101,6 +101,8 @@ Additionally, some of the GPR registers are used for dedicated purposes as descr
 
 When using data element sizes less than 64-bits (i.e., 32-bit, 16-bit, or 8-bit), the lower portion of the register can be accessed by using a different register name as shown in the table.  
 
+![img_cpu_registers_book](https://github.com/sugalvojau/Knowledge-base/blob/master/Summaries/Assembly/cpu_registers_book.png?raw=true "CPU registers as found in the book")
+
 The first four registers, rax, rbx, rcx, and rdx also allow the bits 8-15 to be accessed with the ah, bh, ch, and dh register names. With the exception of ah, these are provided for legacy support and will not be used in this text.  
 
 The ability to access portions of the register means that, if the quadword rax register is set to 50,000,000,000 (fifty billion, 10-based system), the rax register would contain the following value in hex.  
@@ -124,4 +126,5 @@ For 32-bit register operations, the upper 32-bits is cleared (set to zero). Gene
 
 (The following image that relates to the same topic is taken from https://youtu.be/BWRR3Hecjao?t=188 )  
 
-![img_cpu_registers]:(https://github.com/sugalvojau/Knowledge-base/blob/master/Summaries/Assembly/Screenshot%20from%202020-02-17%2000-04-57.png?raw=true "https://youtu.be/BWRR3Hecjao?t=188")  
+![img_cpu_registers_video](https://github.com/sugalvojau/Knowledge-base/blob/master/Summaries/Assembly/Screenshot%20from%202020-02-17%2000-04-57.png?raw=true "https://youtu.be/BWRR3Hecjao?t=188")  
+
