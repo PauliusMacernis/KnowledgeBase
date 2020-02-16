@@ -47,6 +47,8 @@ The CPU executes the program from primary storage or RAM.
 
 Primary storage or main memory is also referred to as **volatile memory** since when power is removed, the information is not retained and thus lost. Secondary storage is referred to as **non-volatile memory** since the information is retained when powered off.  
 
+For example, C/C++ declarations are mapped as follows:  
+
 | C/C++ Declaration | Storage     | Size (bits) | Size (bytes) |
 |-------------------|-------------|-------------|--------------|
 | char              | Byte        | 8-bits      | 1 byte       |
