@@ -40,3 +40,23 @@ DDD Debugger References:
 
 ## Chapter 2
 
+The basic components of a computer include a Central Processing Unit (CPU), Primary Storage or Random Access Memory (RAM), Secondary Storage, Input/Output devices (e.g., screen, keyboard, mouse), and an interconnection referred to as the Bus.  
+The architecture is typically referred to as the Von Neumann Architecture, or the Princeton architecture.  
+
+The CPU executes the program from primary storage or RAM.  
+
+Primary storage or main memory is also referred to as **volatile memory** since when power is removed, the information is not retained and thus lost. Secondary storage is referred to as **non-volatile memory** since the information is retained when powered off.  
+
+| C/C++ Declaration | Storage     | Size (bits) | Size (bytes) |
+|-------------------|-------------|-------------|--------------|
+| char              | Byte        | 8-bits      | 1 byte       |
+| short             | Word        | 16-bits     | 2 bytes      |
+| int               | Double-word | 32-bits     | 4 bytes      |
+| unsigned int      | Double-word | 32-bits     | 4 bytes      |
+| long              | Quadword    | 64-bits     | 8 bytes      |
+| long long         | Quadword    | 64-bits     | 8 bytes      |
+| char *            | Quadword    | 64-bits     | 8 bytes      |
+| int *             | Quadword    | 64-bits     | 8 bytes      |
+| float             | Double-word | 32-bits     | 4 bytes      |
+| double            | Quadword    | 64-bits     | 8 bytes      |
+
