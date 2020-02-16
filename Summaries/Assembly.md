@@ -147,8 +147,15 @@ register is updated by the CPU after each instruction and not directly accessibl
 | Direction | DF     | 10  | Used to specify the direction (increment or decrement) for some string operations. |
 | Overflow  | OF     | 11  | Used to indicate if the previous operation resulted in an overflow. |
 
-(I found the following image related to the same topic. The image is taken from https://youtu.be/BWRR3Hecjao?t=252 . Seems like the entire list of calls may be found here: https://syscalls.kernelgrok.com/ )
-![cpu_registers_video_system_calls](https://github.com/sugalvojau/Knowledge-base/blob/master/Summaries/Assembly/cpu_registers_video_system_calls.png?raw=true "https://youtu.be/BWRR3Hecjao?t=252")  
+(I found the following 3 images related to the same topic. The images are taken from https://youtu.be/BWRR3Hecjao?t=252 . Seems like the entire list of calls may be found here: https://syscalls.kernelgrok.com/ )  
+
+![cpu_registers_video_system_calls_definition](https://github.com/sugalvojau/Knowledge-base/blob/master/Summaries/Assembly/cpu_registers_video_system_calls_definition.png?raw=true "https://youtu.be/BWRR3Hecjao?t=252")  
+
+![cpu_registers_video_system_calls](https://github.com/sugalvojau/Knowledge-base/blob/master/Summaries/Assembly/cpu_registers_video_system_calls.png?raw=true "https://youtu.be/BWRR3Hecjao?t=260")  
+
+For example:  
+
+![cpu_registers_video_system_calls_example](https://github.com/sugalvojau/Knowledge-base/blob/master/Summaries/Assembly/cpu_registers_video_system_calls_example.png?raw=true "https://youtu.be/BWRR3Hecjao?t=330")  
 
 
 
