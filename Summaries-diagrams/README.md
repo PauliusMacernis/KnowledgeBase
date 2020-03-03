@@ -13,8 +13,9 @@ Also, it is hard to keep going with the "drawing of the day" while the day conta
 - Q: How do I deploy Docker containers with Kubernetes via CircleCI to AWS or other type of hosting platform?
 - A: docker-compose basics first.. including software life cycle: dev > test (> prod), theory on CI place in the cycle.
 
-Take-away:
+Take-away:  
 It seems I am not really solving the problem here.. It feels like I am on the course teaching basics which I known already in about 70-80%. However, it is a good course and it is worth to continue because the rest of 20-30% I don't know or already forgod is a very important part in a long-term view. However, again, I do not think the main question of the day is solved in the way I would be excited about it. There are lots of things on this topic to know and consolidated knowledge looks a bit better than just "a problem is solved" because a solved consolidated problem gives the solution for many cases in the future while "the problem is solved" may not, may be just a tip of the iceberg, lots of gaps, etc. Maybe not. Still a bit confusing. One side of me wants to get through the entire cource/topic so I will be able to be creative on this topic in the long-term, another part of me says solving the problem, and so probably not really knowing the details underneath it, is enough.
+I have minimized the scope of the day. However, still too big.  
 
 
 # Day #3: Docker > Travis CI > AWS
@@ -22,8 +23,9 @@ It seems I am not really solving the problem here.. It feels like I am on the co
 - Q: How do I deploy Docker containers with Kubernetes via Travis CI to AWS or other type of hosting platform?
 - A: Deploying basic app first, including gitflow (features, pull requests) taken into account. Docker > Travis CI > AWS.
 
-Take-away:
-???
+Take-away:  
+Finally, something much more of the new things and finally learning something more on the topic of the day. Feels like the course is back. However, the scope I took for today is still a bit too big.  
+
 
 # Day #4: A simple but multi-container app example
 
