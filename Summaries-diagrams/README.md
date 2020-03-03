@@ -37,4 +37,6 @@ Today was a busy day and I had a choice to make:
 1) Do a little move further with the same course on deployments topic or  
 2) Do a huge diagram on another concepts touched through the day (which is not really a deployment topic).  
 I took the 1st one, which is probably not the best thing for now because other concepts of today are left without drawings. 
-However, I still do think that each morning should be started with the question and end with the diagram of the answer.
+However, I still do think that each morning should be started with the question and end with the diagram of the answer.  
+Should I do diagrams for both and don't worry if I do not have a time for a second one (if the day has finished before I have started to work on the 2nd one)?   
+
