@@ -40,3 +40,14 @@ I took the 1st one, which is probably not the best thing for now because other c
 However, I still do think that each morning should be started with the question and end with the diagram of the answer.  
 Should I do diagrams for both and don't worry if I do not have a time for a second one (if the day has finished before I have started to work on the 2nd one)?   
 
+
+# Day #5: Hands-on experience
+
+- Q: How do I deploy Docker containers with Kubernetes via Travis CI to AWS or other type of hosting platform?
+- A: Practice what's learned again in order to consolidate the topic as much as possible.
+
+Take away:  
+Today was a busy day again.. However, I have decided to practice on TravisCI-AWS steps a bit and so I did it. Not much of it, but did it.  
+To take a break out of the theory with examples and get yourself into some creativity / hands-on experience is necessary. It is also necessary to get at least one incident so learning further would make more sense - would become beneficial for whatever the project is about.  
+
+
