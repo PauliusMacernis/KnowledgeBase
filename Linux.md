@@ -728,3 +728,18 @@ Prints the values of the shell's flags. You can set and unset such flags with `s
 Read more:  
 https://unix.stackexchange.com/questions/315829/how-to-understand-the-output-of-echo  
 https://pubs.opengroup.org/onlinepubs/009695399/utilities/xcu_chap02.html#tag_02_05_02  
+
+- **Explain `df -Ph .`**  
+Shows current directory info, including the usead and available space, space usage in percents, where the directory is mounted on, etc.  
+`df` - report file system disk space usage  
+`-P, --portability` - use the POSIX output format  
+`-h, --human-readable` - print sizes in powers of 1024 (e.g., 1023M)  
+Outouts something like this on one line:  
+`Filesystem      Size  Used Avail Use% Mounted on`  
+And this on the next one:  
+`/dev/nvme0n1p2  234G  172G   50G  78% /`   
+Read more:  
+https://unix.stackexchange.com/questions/6008/get-the-free-space-available-in-current-directory-in-bash  
+
+
+
