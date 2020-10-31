@@ -742,7 +742,7 @@ Read more:
 https://unix.stackexchange.com/questions/6008/get-the-free-space-available-in-current-directory-in-bash  
 
 
-- **Explain `diff -qr old/ new/**  
+- **Explain `diff -qr old/ new/`**  
 TBD  
 
 
