@@ -762,5 +762,8 @@ https://ss64.com/bash/sticky.html
 https://en.wikipedia.org/wiki/Setuid
 https://en.wikipedia.org/wiki/Sticky_bit  
 
-
+- **Explain `du -cha --max-depth=1 / | grep -E "M|G"`**  
+TBD  
+  
+  
 
