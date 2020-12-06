@@ -751,7 +751,6 @@ However, the leading `0`in `chmod` case is a bit of a different story. `chmod` w
 As you understand, this part is important in the case: *The first digit selects the set user ID  (4)  and set group ID (2) and restricted deletion or sticky (1) attributes.* Therefore the value seems to may be a value of `0` to `7` meaning the combination of values added (1, 2, or/and 4) and so the appropriate meaning assigned. For example, a value of `7` as the first one would mean a sticky bit applied on user ID and group ID (**AM I RIGHT IN THIS SENTENCE??**). Another example, e.g. `3` would mean a sticky bit applied to group ID (**AM I RIGHT IN THIS SENTENCE??**). A directory whose 'sticky bit' is set becomes an append-only directory, or, more accurately, a directory in which the deletion of files is restricted. A file in a sticky directory may only be removed or renamed by a user if the user has write permission for the directory and the user is the owner of the file, the owner of the directory, or the super-user. This feature is usefully applied to directories such as /tmp which must be publicly writable but should deny users the license to arbitrarily delete or rename each others' files. Any user may create a sticky directory. Sticky bit is ignored for regular files.  
 To conclude, the meaning of `0` in front of the 3 octals in chmod (e.g. `chmod 0777`) works for directories only, for files - it is ignored. The `0` itself means a specific permission assigned to the directory - a directory in which the deletion of files is NOT restricted.  
 **WARNING: THIS ANSSWER MAY NOT BE 100% CORRECT WHILE INFORMATION IN https://en.wikipedia.org/wiki/Setuid , https://unix.stackexchange.com/questions/103413/is-there-any-difference-between-mode-value-0777-and-777 , and https://superuser.com/questions/592309/whats-the-difference-between-chmod-777-and-chmod-7777 IS NOT WELL REVIEWED AND CONNECTED TO THE CONTEXT.**
-
   
 Read more:  
 https://www.php.net/manual/en/language.types.integer.php  
@@ -762,8 +761,13 @@ https://ss64.com/bash/sticky.html
 https://en.wikipedia.org/wiki/Setuid
 https://en.wikipedia.org/wiki/Sticky_bit  
 
+
 - **Explain `du -cha --max-depth=1 / | grep -E "M|G"`**  
 TBD  
+
+- **Explain `sudo find / -size +10G -ls`**  
+TBD  
+  
   
   
 
