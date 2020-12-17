@@ -769,14 +769,14 @@ TBD
 TBD  
   
 - **Explain `scp -o ProxyJump=paulius@bastion.example.com mytestfile.txt paulius@10.140.16.201:~`**  
-Sends file `mytestfile.txt` from the current working dirrectory to `10.140.16.201` server via the middle server `bastion.example.com`.
+Sends file `mytestfile.txt` from the current working dirrectory to `10.140.16.201` server (as seen from bastion server) via the middle server `bastion.example.com`.
 TBD  
   
 - **Explain `scp -o ProxyJump=paulius@bastion.example.com.com paulius@10.140.16.201:/srv/www/example.com/logs/dev.log /home/paulius/dev/scp-tests/backup_logs/dev.log`**  
-Copy file `/srv/www/example.com/logs/dev.log` of `10.140.16.201` server to local `/home/paulius/dev/scp-tests/backup_logs/dev.log` via the middle server `bastion.example.com`  
+Copy file `/srv/www/example.com/logs/dev.log` of `10.140.16.201` server (as seen from bastion server) to local `/home/paulius/dev/scp-tests/backup_logs/dev.log` via the middle server `bastion.example.com`  
 TBD  
   
 - **Explain `scp -r -o ProxyJump=paulius@bastion.example.com paulius@10.140.16.201:/srv/www/example.com/logs /home/paulius/dev/scp-tests`**  
-Copy directory `/srv/www/example.com/logs` and it's content of `10.140.16.201` server to local `/home/paulius/dev/scp-tests/logs` directory via the middle server `bastion.example.com`  
+Copy directory `/srv/www/example.com/logs` and it's content of `10.140.16.201` server (as seen from bastion server) to local `/home/paulius/dev/scp-tests/logs` directory via the middle server `bastion.example.com`  
 TBD   
 
