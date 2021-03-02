@@ -788,3 +788,6 @@ Read more: https://linuxize.com/post/how-get-size-of-file-directory-linux/
 What if you want to display the disk usage of the first-level subdirectories? You have two options. The first one is to use the asterisk symbol (`*`) as shown above, which means "match everything that doesn’t start with a period (`.`)". The `-c` option tells `du` to print a grand total of all sizes. For the rest, the following applies: The command starts with `sudo` because most of the files and directories inside the `/var` directory are owned by the root user and are not readable by the regular users. If you omit `sudo` the `du` command will print "du: cannot read directory". `s` - Display only the total size of the specified directory, do not display file size totals for subdirectories. `h` - Print sizes in a human-readable format (`h`). `/var` - The path to the directory you want to get the size.  
 Read more: https://linuxize.com/post/how-get-size-of-file-directory-linux/  
   
+- **Explain `sort amasivefileafraidofduplicates.json | uniq --count | sort -rn`  
+Count line occurences in the file and order all from the most occuring line to the least occuring line. This wai you may find duplicates, etc.  
+Read more: https://stackoverflow.com/questions/6712437/find-duplicate-lines-in-a-file-and-count-how-many-time-each-line-was-duplicated  
