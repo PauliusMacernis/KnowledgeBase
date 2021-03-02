@@ -780,3 +780,11 @@ TBD
 Copy directory `/srv/www/example.com/logs` and it's content of `10.140.16.201` server (as seen from bastion server) to local `/home/paulius/dev/scp-tests/logs` directory via the middle server `bastion.example.com`  
 TBD   
 
+- **Explain `sudo du -sh /var`**  
+Typically, you would want to display the space occupied by the directory in a human-readable format. For example, to get the total size of the `/var` directory, you would run the mentioned command. The command starts with `sudo` because most of the files and directories inside the `/var` directory are owned by the root user and are not readable by the regular users. If you omit `sudo` the `du` command will print "du: cannot read directory". `s` - Display only the total size of the specified directory, do not display file size totals for subdirectories. `h` - Print sizes in a human-readable format (`h`). `/var` - The path to the directory you want to get the size.  
+Read more: https://linuxize.com/post/how-get-size-of-file-directory-linux/  
+  
+- **Explain `sudo du -shc /var/*`**  
+What if you want to display the disk usage of the first-level subdirectories? You have two options. The first one is to use the asterisk symbol (`*`) as shown above, which means "match everything that doesn’t start with a period (`.`)". The `-c` option tells `du` to print a grand total of all sizes. For the rest, the following applies: The command starts with `sudo` because most of the files and directories inside the `/var` directory are owned by the root user and are not readable by the regular users. If you omit `sudo` the `du` command will print "du: cannot read directory". `s` - Display only the total size of the specified directory, do not display file size totals for subdirectories. `h` - Print sizes in a human-readable format (`h`). `/var` - The path to the directory you want to get the size.  
+Read more: https://linuxize.com/post/how-get-size-of-file-directory-linux/  
+  
