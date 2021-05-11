@@ -799,6 +799,6 @@ Read more: https://stackoverflow.com/questions/369758/how-to-trim-whitespace-fro
 - **Explain `sudo apt-mark showmanual`**  
 Lists manually installed packages.  
 
-- **Explain ``apt-mark hold`**  
+- **Explain `apt-mark hold`**  
 To protect a package from being upgraded with `apt upgrade`  
 
