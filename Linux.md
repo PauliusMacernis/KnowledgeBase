@@ -796,3 +796,9 @@ Read more: https://stackoverflow.com/questions/6712437/find-duplicate-lines-in-a
 Xargs will do the trimming. It's one command/program, no parameters, returns the trimmed string, easy as that! Note: this doesn't remove all internal spaces so "foo bar" stays the same; it does NOT become "foobar". However, multiple spaces will be condensed to single spaces, so "foo    bar" will become "foo bar". In addition it doesn't remove end of lines characters.  
 Read more: https://stackoverflow.com/questions/369758/how-to-trim-whitespace-from-a-bash-variable  
 
+- **Explain `sudo apt-mark showmanual`**  
+Lists manually installed packages.  
+
+- **Explain ``apt-mark hold`**  
+To protect a package from being upgraded with `apt upgrade`  
+
