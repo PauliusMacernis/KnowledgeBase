@@ -802,3 +802,15 @@ Lists manually installed packages.
 - **Explain `apt-mark hold`**  
 To protect a package from being upgraded with `apt upgrade`  
 
+- **How to stop a process on Ubuntu which is using port X (e.g. `8080`) and is based on the Docker (the finding on the way)**  
+ 
+```
+ sudo netstat -tulpn | grep :8080
+> tcp        0      0 0.0.0.0:8080            0.0.0.0:*               LISTEN      3083/docker-proxy
+ps -aux | egrep 3083
+> root        3083  0.0  0.0 695692  2780 ?        Sl   10:17   0:00 /usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8080 -container-ip 192.168.112.3 -container-port 8080
+docker ps | egrep ":8080"
+> a3f4f9c9ba29   adminer                                                   "entrypoint.sh docke…"   4 months ago         Up 2 hours                        0.0.0.0:8080->8080/tcp                    github_adminer_1
+docker stop a3f4f9c9ba29
+> a3f4f9c9ba29
+```
