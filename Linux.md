@@ -823,6 +823,8 @@ docker stop a3f4f9c9ba29
 - **Explain `readarray -td '' a < <(awk '{ gsub(/, /,"\0"); print; }' <<<"$DB_IDS, "); unset 'a[-1]'; declare -p a;`**  
   
 ```
+!!! THIS IS INCOMPLETE ANSSWER AND MAY EVEN BE WRONG. !!!
+                                                                           
 See:
 # https://stackoverflow.com/a/45201229/2026314
   
