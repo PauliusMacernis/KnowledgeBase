@@ -834,7 +834,7 @@ Main commands ant flags:
 # -t                                   Remove any trailing newline from a line read, before it is assigned to an array element.
 # -d                                   Defining the separator
 # a                                    Variable name
-# < <                                  https://askubuntu.com/questions/983369/spaces-in-commands-with-redirection , https://stackoverflow.com/questions/2811319/difference-between-and
+# < <                                  https://askubuntu.com/questions/983369/spaces-in-commands-with-redirection , https://stackoverflow.com/questions/2811319/difference-between-and , "In Bash, you can use the command1 <( command0 ) redirection syntax, which redirects command0's stdout and passes it to a command1 that takes a filename as a command-line argument. This is called process substitution." , - https://unix.stackexchange.com/questions/63923/pseudo-files-for-temporary-data
 # gsub(regexp, replacement [, target]) gsub stands for global substitution. It replaces every occurrence of regex with the given string (sub). The third parameter is optional. If it is omitted, then $0 is used. https://www.tutorialspoint.com/awk/awk_string_functions.htm
 # \0                                   Null character
 # unset 'a[-1]'                        The problem here is that readarray preserved the trailing field (e.g. "[1]=$'\n'"), since the <<< redirection operator appended the LF to the input string, and therefore the trailing field was not empty (otherwise it would've been dropped). We can take care of this by explicitly unsetting the final array element after-the-fact:
