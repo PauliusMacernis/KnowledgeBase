@@ -814,3 +814,30 @@ docker ps | egrep ":8080"
 docker stop a3f4f9c9ba29
 > a3f4f9c9ba29
 ```
+
+- **What is the difference between `man` and `help` in bash?**  
+`help` - displays information about builtin bash commands. Does not include system-wide reference manuals.    
+`man` - an interface to the system reference manuals. Does not include bash built ins.  
+
+ 
+- **Explain `readarray -td '' a < <(awk '{ gsub(/, /,"\0"); print; }' <<<"$DB_IDS, "); unset 'a[-1]'; declare -p a;`**  
+  
+```
+See:
+# https://stackoverflow.com/a/45201229/2026314
+  
+Main commands ant flags:
+  
+# readarray                            A synonym for mapfile. Parses a bytestream into an array variable in one shot; no messing with loops, conditionals, substitutions, or anything else. And it doesn't surreptitiously strip any whitespace from the input string.
+# -t                                   Remove any trailing newline from a line read, before it is assigned to an array element.
+# -d                                   Defining the separator
+# a                                    Variable name
+# < <                                  https://askubuntu.com/questions/983369/spaces-in-commands-with-redirection , https://stackoverflow.com/questions/2811319/difference-between-and
+# gsub(regexp, replacement [, target]) gsub stands for global substitution. It replaces every occurrence of regex with the given string (sub). The third parameter is optional. If it is omitted, then $0 is used. https://www.tutorialspoint.com/awk/awk_string_functions.htm
+# \0                                   Null character
+# unset 'a[-1]'                        The problem here is that readarray preserved the trailing field (e.g. "[1]=$'\n'"), since the <<< redirection operator appended the LF to the input string, and therefore the trailing field was not empty (otherwise it would've been dropped). We can take care of this by explicitly unsetting the final array element after-the-fact:
+# declare                              Set variable values and attributes. Declare variables and give them attributes. If no NAMEs are given, display the attributes and values of all variables.
+# -p                                   display the attributes and value of each NAME
+# -a                                   to make NAMEs indexed arrays (if supported)
+```
+
