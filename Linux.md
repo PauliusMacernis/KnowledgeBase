@@ -868,3 +868,7 @@ Setting reserved block percentage to 1%. By default, Linux reserves 5% of the dr
 More info: https://youtu.be/B6kg2zeJ9do?t=2210  
 
  
+- **Explain `sudo e4defrag -c /`**  
+Attempts to defragment the target.  
+target is a regular file, a directory, or a device that is  mounted  as ext4 filesystem.  If target is a directory, e4defrag reduces fragmentation of all files in it. If target is a device, e4defrag gets the mount point of it and reduces fragmentation of all files in this mount point.  
+`e4defrag` - online defragmenter for ext4 filesystem.  
