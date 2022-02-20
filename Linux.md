@@ -843,3 +843,7 @@ Main commands ant flags:
 # -a                                   to make NAMEs indexed arrays (if supported)
 ```
 
+- **Explain `sudo dumpe2fs /dev/sda1 | head -n 30`**  
+`dumpe2fs` prints the super block and blocks group information for the filesystem present on device. We take 30 first lines of the information by using `head -n 30`.  
+More info: https://linux.die.net/man/8/dumpe2fs , https://youtu.be/B6kg2zeJ9do?t=1268  
+ 
