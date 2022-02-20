@@ -852,3 +852,19 @@ Gets inode information of the file named `myfilename.ext`
 To see the inode number of the file, you may use `ls -li myfilename.ext`  
 More info: https://linux.die.net/man/1/stat  
  
+- **Explain `lsblk`**  
+The command prints all block devices (except RAM disks) in a  tree-like format  by  default.  
+ 
+- **Explain `sync`**  
+Synchronize cached writes to persistent storage.  
+  
+- **Explain `sudo fsck /dev/sdb1`**  
+Checks and repairs a Linux filesystem `/dev/sdb1`.  
+ 
+**Explain `sudo tune2fs -m 1 /dev/sdb1`**  
+Setting reserved block percentage to 1%. Linux reserves 5% of the drive for the core operations (e.g. in case the drive is full, this space is in use for commands to operate on).  
+`tune2fs`  -  adjust  tunable  filesystem  parameters  on  ext2/ext3/ext4 filesystems.  
+`-m`   reserved-blocks-percentage Set the percentage of the filesystem which may only be allocated by  privileged  processes.   Reserving some number of filesystem blocks for use by privileged processes is done to avoid filesystem  fragmentation,  and  to  allow system daemons, such as syslogd(8), to continue to function correctly after  non-privileged processes  are  prevented  from writing to the filesystem.  Normally, the default percentage of reserved blocks is 5%.  
+More info: https://youtu.be/B6kg2zeJ9do?t=2210  
+
+ 
