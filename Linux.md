@@ -847,3 +847,8 @@ Main commands ant flags:
 `dumpe2fs` prints the super block and blocks group information for the filesystem present on device. We take 30 first lines of the information by using `head -n 30`.  
 More info: https://linux.die.net/man/8/dumpe2fs , https://youtu.be/B6kg2zeJ9do?t=1268  
  
+- **Explain `stat myfilename.ext`**  
+Gets inode information of the file named `myfilename.ext`  
+To see the inode number of the file, you may use `ls -li myfilename.ext`  
+More info: https://linux.die.net/man/1/stat  
+ 
