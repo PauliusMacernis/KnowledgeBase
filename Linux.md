@@ -875,7 +875,8 @@ target is a regular file, a directory, or a device that is  mounted  as ext4 fil
 `-c` Get  a  current  fragmentation  count and an ideal fragmentation count, and calculate fragmentation score based on them. By  seeing this score, we can determine whether we should execute e4defrag to target.  
 Omit `-c`, in case you want the defragmentation process to actually run.  
  
-- Explain `dmesg` (it usually is `sudo dmesg`)  
+- Explain `dmesg` (it usually is `sudo dmesg -w`)  
 The dmesg command lets you peer into the hidden world of the Linux startup processes. Review and monitor hardware device and driver messages from the kernel’s own ring buffer with “the fault finder’s friend.”  
+ `-w` - follows messages real time
 More info: https://en.wikipedia.org/wiki/Dmesg  
  
