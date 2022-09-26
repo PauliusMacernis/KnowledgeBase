@@ -880,3 +880,7 @@ The dmesg command lets you peer into the hidden world of the Linux startup proce
  `-w` - follows messages real time
 More info: https://en.wikipedia.org/wiki/Dmesg  
  
+- Explain `tcpdump port 9001 -A | strings`  
+ TBD  
+ 
+ 
