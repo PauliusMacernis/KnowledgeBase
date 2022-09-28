@@ -883,4 +883,11 @@ More info: https://en.wikipedia.org/wiki/Dmesg
 - Explain `tcpdump port 9001 -A | strings`  
  TBD  
  
+- Explain `type alias`  
+ If you're not sure whether the given command is an alias, shell built-in, file, function, or keyword, use type command to find out.  
+ More info: https://ostechnix.com/how-to-install-missing-man-pages-of-commands-on-ubuntu/  
  
+- Explain `sudo apt install manpages-posix`  
+ Builtins are part of the shell. Each shell has its own set of builtins. They are not independent commands and they don't have separate man pages. Luckily, the man pages of shell builtins are available in POSIX Programmer's Manual. You need to install it to access those man pages.  
+ 
+- 
