@@ -49,3 +49,8 @@ A PDC is a Primary Domain Controller, and a BDC is a Backup Domain Controller. Y
 <a href="#" title="
 https://en.wikipedia.org/wiki/Stunnel , https://www.stunnel.org/index.html
 ">⌘</a>
+
+- What is the difference between a forward and reverse proxy?  
+The difference between a forward and reverse proxy is subtle but important. A simplified way to sum it up would be to say that a forward proxy sits in front of a client and ensures that no origin server ever communicates directly with that specific client. On the other hand, a reverse proxy sits in front of an origin server and ensures that no client ever communicates directly with that origin server.  
+More info: https://www.cloudflare.com/learning/cdn/glossary/reverse-proxy/  
+
