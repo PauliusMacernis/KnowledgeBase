@@ -126,5 +126,7 @@ Notebooks are a form of literate programming proposed by Donald Knuth in 1984. S
 
 List of available kernels for Jupyter: https://github.com/jupyter/jupyter/wiki/Jupyter-kernels  
 
+`jupyter notebook` - run it  
+
 
 
