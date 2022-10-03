@@ -8,6 +8,11 @@ Anaconda comes with a bunch of data science packages. Over 160 scientific packag
 
 If you are using Anaconda, you are in the `base(root)` environment by-default.  
 
+Steps:
+
+1. Download: https://www.anaconda.com/products/distribution
+2. Install: https://docs.anaconda.com/anaconda/install/
+
 
 ## Anaconda Navigator
 
