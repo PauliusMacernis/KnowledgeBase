@@ -131,6 +131,12 @@ List of available kernels for Jupyter: https://github.com/jupyter/jupyter/wiki/J
 `jupyter notebook` - run it. If the default port 8888 is taken then the server will run on the next free port (incremented by 1), e.g. http://localhost:8888/ , then http://localhost:8889/ , then http://localhost:8890/ , etc.  
 
 
+Useful shortcuts:  
+
+- `ctrl` + `enter`
+- `shift` + `enter`
+- `shift` + `tab`
+- `shift` + `tab` (twice)
 
 
 
