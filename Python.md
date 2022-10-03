@@ -117,3 +117,14 @@ comprises a particular version of:
 - The utility scripts, e.g. pip
 
 
+# Jupyter Notebooks
+
+The notebook is a web application that allows you to combine explanatory text, math equations, code, and visualizations all in one easily sharable document. **Notebooks are also rendered automatically on GitHub.**, e.g. https://github.com/mcleonard/blog_posts/blob/master/body_fat_percentage.ipynb  
+
+Notebooks are a form of literate programming proposed by Donald Knuth in 1984. See http://www.literateprogramming.com/  
+**Just a small aside: recently, this idea of literate programming has been extended to a whole programming language, Eve.** See http://witheve.com/  
+
+List of available kernels for Jupyter: https://github.com/jupyter/jupyter/wiki/Jupyter-kernels  
+
+
+
