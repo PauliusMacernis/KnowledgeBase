@@ -31,15 +31,27 @@ See https://docs.conda.io/en/latest/
 
 `conda upgrade conda` and `conda upgrade --all` - update all the packages in the default environment
 
+`conda update --all` - update all packages in an environment.
+
 `conda create -n tea_facts python=3` - to create Python 3 environment with Conda.  
   
 `source activate tea_facts` - to activate the environment.  
   
 `conda list` - list the packages installed.  
   
-`conda install numpy pandas matplotlib` - install 3 libraries (numpy and pandas - to work with the data, matplotlib - for making visualizations).  
+`conda install numpy pandas matplotlib` - install 3 libraries (numpy and pandas - to work with the data, matplotlib - for making visualizations). Conda also automatically installs dependencies.  
 
 `conda install jupyter notebook` - install 2 more libraries to develop the code with
+
+`conda install numpy=1.10` - specify which version of a package you want by adding the version number, if needed.
+
+`conda remove PACKAGE_NAME` - remove a package.
+
+`conda update package_name` - update a package.  
+
+`conda search *SEARCH_TERM*` - search for a package to install, e.g. `conda search '*whateveryousearch*'` (note: shell may expand the wildcard `*` before running the conda command, use single or double quotes to fix this).  
+
+
 
 
 # Miniconda
