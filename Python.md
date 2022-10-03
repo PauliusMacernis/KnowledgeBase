@@ -84,7 +84,7 @@ The available packages available from the Anaconda distribution in conda focus o
 
 Pip can install both Python and non-Python packages. Pip can install any package listed on the Python Package Index (PyPI). See https://pypi.org/  
 
-Pip has similar functionality with `pip freeze > requirements.txt` - export the list of packages in an environment to a file, to include that file with your code. This way it's possible to easily load all the dependencies for the code.  
+Pip has similar functionality with `pip freeze > requirements.txt` - export the list of packages in an environment to a file, to include that file with your code. This way it's possible to easily load all the dependencies for the code. You may then install it back with `python -m pip install -r requirements.txt`, see https://docs.python.org/3/tutorial/venv.html    
 
 `pip --version` - check which pip version is installed.  
 
