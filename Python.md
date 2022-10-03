@@ -18,6 +18,8 @@ Steps:
 
 It is a graphical user interface that helps open up any installed applications, such as Jupyter notebook or VS code editor. See https://anaconda.org/anaconda/anaconda-navigator  
 
+`anaconda-navigator` - to Open Anaconda Navigator GUI.  
+
 
 ## Conda
 
