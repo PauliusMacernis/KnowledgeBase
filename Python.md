@@ -39,7 +39,7 @@ See https://docs.conda.io/en/latest/
   
 `conda list` - list the packages installed.  
   
-`conda install numpy pandas matplotlib` - install 3 libraries (numpy and pandas - to work with the data, matplotlib - for making visualizations). Conda also automatically installs dependencies.  
+`conda install numpy pandas matplotlib` - install 3 libraries (numpy and pandas - to work with the data, matplotlib - for making visualizations). Conda also automatically installs dependencies. Note: Installing pandas by itself will also install numpy since numpy is a dependency of pandas.  
 
 `conda install jupyter notebook` - install 2 more libraries to develop the code with
 
