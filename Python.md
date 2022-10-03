@@ -51,7 +51,7 @@ See https://docs.conda.io/en/latest/
 
 `conda search *SEARCH_TERM*` - search for a package to install, e.g. `conda search '*whateveryousearch*'` (note: shell may expand the wildcard `*` before running the conda command, use single or double quotes to fix this).  
 
-
+More commands: https://conda.io/projects/conda/en/latest/commands.html
 
 
 # Miniconda
