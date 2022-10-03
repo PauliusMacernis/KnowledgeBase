@@ -126,7 +126,9 @@ Notebooks are a form of literate programming proposed by Donald Knuth in 1984. S
 
 List of available kernels for Jupyter: https://github.com/jupyter/jupyter/wiki/Jupyter-kernels  
 
-`jupyter notebook` - run it  
+`jupyter notebook` - run it. If the default port 8888 is taken then the server will run on the next free port (incremented by 1), e.g. http://localhost:8888/ , then http://localhost:8889/ , then http://localhost:8890/ , etc.  
+
+
 
 
 
