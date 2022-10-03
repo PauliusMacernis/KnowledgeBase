@@ -29,7 +29,7 @@ See https://docs.conda.io/en/latest/
 
 `conda --version` - find which version of Conda is in use.
 
-`conda upgrade conda & conda upgrade --all` - update all the packages in the default environment
+`conda upgrade conda` and `conda upgrade --all` - update all the packages in the default environment
 
 `conda create -n tea_facts python=3` - to create Python 3 environment with Conda.  
   
