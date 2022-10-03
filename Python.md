@@ -34,6 +34,8 @@ See https://docs.conda.io/en/latest/
 
 `conda update --all` - update all packages in an environment.
 
+`conda env list` or `conda info --envs` - list all environments
+
 `conda create -n tea_facts python=3` - to create Python 3 environment with Conda.  
 
 `conda create -n env_name [python=X.X] [LIST_OF_PACKAGES]` - for example, `conda create -n my_env python=3.7 numpy Keras`  
@@ -41,7 +43,9 @@ See https://docs.conda.io/en/latest/
 `conda activate tea_facts` - to activate the environment for conda >=4.6.  
  `source activate tea_facts` - to activate the environment for conda <4.6.  
   
-`conda list` - list the packages installed.  
+`conda list` or `conda list -n env_name` - list the packages installed. It's also possible to check if a specific package is installed, e.g. `conda list -n env_name scipy`
+
+`conda env export` - see all the package-names, including the Python version present in the current environment. It's possible to output the result for sharing (e.g. git): `conda env export > environment.yaml` .To load the environment in, use `conda env create -f environment.yaml`
   
 `conda install numpy pandas matplotlib` - install 3 libraries (numpy and pandas - to work with the data, matplotlib - for making visualizations). Conda also automatically installs dependencies. Note: Installing pandas by itself will also install numpy since numpy is a dependency of pandas.  
 
@@ -64,6 +68,10 @@ Deactivate the environment:
 
 - `conda deactivate` - for conda >=4.6
 - `source deactivate` - for conda <4.6
+
+Remove the environment:  
+
+`conda env remove -n env_name`
 
 More commands: https://conda.io/projects/conda/en/latest/commands.html
 
