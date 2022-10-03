@@ -105,6 +105,8 @@ Pip has similar functionality with `pip freeze > requirements.txt` - export the 
 
 - `pip freeze > requirements.txt` and then `python -m pip install -r requirements.txt`  
 
+- pip vs. conda: https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/  
+
 
 # A Python environment
 
