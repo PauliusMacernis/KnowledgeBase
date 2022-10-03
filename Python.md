@@ -146,3 +146,5 @@ $$
 y = \frac{a}{b+c}
 $$
 
+for more info: https://latex-tutorial.com/  
+
