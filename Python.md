@@ -60,6 +60,10 @@ Pip can install both Python and non-Python packages. Pip can install any package
 
 Pip has similar functionality with `pip freeze > requirements.txt` - export the list of packages in an environment to a file, to include that file with your code. This way it's possible to easily load all the dependencies for the code.  
 
+`pip --version` - check which pip version is installed.  
+
+
+
 
 # A Python environment
 
