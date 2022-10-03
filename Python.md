@@ -4,7 +4,9 @@ All the bellow applies to Linux (have been using Ubuntu 22.04), it will most lik
 
 Anaconda is a distribution of packages built for data science. It comes with conda, a package and environment manager. See https://anaconda.org/  
 Anaconda is a program to manage (install, upgrade, or uninstall) packages and environments to use with Python.  
-Anaconda comes with a bunch of data science packages. Over 160 scientific packages and their dependencies are also installed. If we install Anaconda, then a basic few packages are installed by default. However, you can install any more packages, if needed.
+Anaconda comes with a bunch of data science packages. Over 160 scientific packages and their dependencies are also installed. If we install Anaconda, then a basic few packages are installed by default. However, you can install any more packages, if needed.  
+
+If you are using Anaconda, you are in the `base(root)` environment by-default.  
 
 
 ## Anaconda Navigator
@@ -14,7 +16,9 @@ It is a graphical user interface that helps open up any installed applications, 
 
 ## Conda
 
-Package, dependency and environment management for any language—Python, R, Ruby, Lua, Scala, Java, JavaScript, C/ C++, Fortran, and more. See https://docs.conda.io/en/latest/
+Package, dependency and environment management for any language—Python, R, Ruby, Lua, Scala, Java, JavaScript, C/ C++, Fortran, and more.  
+Along with managing packages, Conda is also a virtual environment manager. It's similar to virtualenv and pyenv, other popular environment managers.  
+See https://docs.conda.io/en/latest/
 
 `conda --version` - find which version of Conda is in use.
 
@@ -32,5 +36,28 @@ Package, dependency and environment management for any language—Python, R, Rub
 # Miniconda
 
 It's a smaller version of Anaconda. It includes Conda and Python, no preinstalled packages. Install new packages with `conda install PACKAGENAME`. Upgrade from Miniconda to Anaconda with `conda install anaconda`. See https://docs.conda.io/en/latest/miniconda.html  
+
+
+# pip
+
+The conda and pip both are the Python package managers.  
+In the newer version of Anaconda/Miniconda, both pip and conda package managers are included by default.
+
+pip comes preinstalled with the Python 2 >=2.7.9 or Python 3 >=3.4.  
+
+The available packages available from the Anaconda distribution in conda focus on data science, whereas pip is for general use.  
+
+Pip can install both Python and non-Python packages. Pip can install any package listed on the Python Package Index (PyPI). See https://pypi.org/  
+
+Pip has similar functionality with `pip freeze > requirements.txt` - export the list of packages in an environment to a file, to include that file with your code. This way it's possible to easily load all the dependencies for the code.  
+
+
+# A Python environment
+
+comprises a particular version of:  
+
+- Python interpreter,
+- Python-packages
+- The utility scripts, e.g. pip
 
 
