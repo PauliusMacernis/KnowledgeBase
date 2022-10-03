@@ -25,6 +25,7 @@ It is a graphical user interface that helps open up any installed applications, 
 
 Package, dependency and environment management for any language—Python, R, Ruby, Lua, Scala, Java, JavaScript, C/ C++, Fortran, and more.  
 Along with managing packages, Conda is also a virtual environment manager. It's similar to virtualenv and pyenv, other popular environment managers.  
+Installing conda will also install Python, if not already present.  
 See https://docs.conda.io/en/latest/
 
 `conda --version` - find which version of Conda is in use.
@@ -34,8 +35,11 @@ See https://docs.conda.io/en/latest/
 `conda update --all` - update all packages in an environment.
 
 `conda create -n tea_facts python=3` - to create Python 3 environment with Conda.  
-  
-`source activate tea_facts` - to activate the environment.  
+
+`conda create -n env_name [python=X.X] [LIST_OF_PACKAGES]` - for example, `conda create -n my_env python=3.7 numpy Keras`  
+ 
+`conda activate tea_facts` - to activate the environment for conda >=4.6.  
+ `source activate tea_facts` - to activate the environment for conda <4.6.  
   
 `conda list` - list the packages installed.  
   
@@ -50,6 +54,16 @@ See https://docs.conda.io/en/latest/
 `conda update package_name` - update a package.  
 
 `conda search *SEARCH_TERM*` - search for a package to install, e.g. `conda search '*whateveryousearch*'` (note: shell may expand the wildcard `*` before running the conda command, use single or double quotes to fix this).  
+
+*Quite usefull:*  
+
+- `conda create -n py3_env python=3` - create Python3 general environment, e.g. not tied to any specific project
+- `conda create -n py2_env python=2` - create Python2 general environment, e.g. not tied to any specific project
+
+Deactivate the environment:  
+
+- `conda deactivate` - for conda >=4.6
+- `source deactivate` - for conda <4.6
 
 More commands: https://conda.io/projects/conda/en/latest/commands.html
 
