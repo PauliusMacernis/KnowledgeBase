@@ -59,6 +59,8 @@ See https://docs.conda.io/en/latest/
 
 `conda search *SEARCH_TERM*` - search for a package to install, e.g. `conda search '*whateveryousearch*'` (note: shell may expand the wildcard `*` before running the conda command, use single or double quotes to fix this).  
 
+`conda install nb_conda` - installs Notebook Conda package to help manage environments in Jupyter Notebooks.
+
 *Quite usefull:*  
 
 - `conda create -n py3_env python=3` - create Python3 general environment, e.g. not tied to any specific project
