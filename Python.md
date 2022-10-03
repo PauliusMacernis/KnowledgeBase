@@ -71,7 +71,12 @@ Deactivate the environment:
 
 Remove the environment:  
 
-`conda env remove -n env_name`
+`conda env remove -n env_name`  
+
+**In case of git usage, e.g. sharing the code to public**:  
+
+- `conda env export > environment.yaml` and then `conda env create -f environment.yaml`  
+
 
 More commands: https://conda.io/projects/conda/en/latest/commands.html
 
@@ -96,7 +101,9 @@ Pip has similar functionality with `pip freeze > requirements.txt` - export the 
 
 `pip --version` - check which pip version is installed.  
 
+**In case of git usage, e.g. sharing the code to public**:  
 
+- `pip freeze > requirements.txt` and then `python -m pip install -r requirements.txt`  
 
 
 # A Python environment
