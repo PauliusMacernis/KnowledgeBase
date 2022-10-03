@@ -138,5 +138,11 @@ Useful shortcuts:
 - `shift` + `tab`
 - `shift` + `tab` (twice)
 
+Off-topic (on markdown + math):  
 
+$y = mx + b$
+
+$$
+y = \frac{a}{b+c}
+$$
 
