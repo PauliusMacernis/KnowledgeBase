@@ -186,6 +186,8 @@ ndarrays can hold strings as well. https://docs.scipy.org/doc/numpy-1.13.0/refer
 
 # Python (and extra)
 
+**Python is case sensitive.**
+
 ## NumPy's ndarrays / Python's lists
 
 More info: https://numpy.org/devdocs/user/basics.creation.html#array-creation  
