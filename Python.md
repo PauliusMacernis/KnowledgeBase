@@ -130,6 +130,10 @@ List of available kernels for Jupyter: https://github.com/jupyter/jupyter/wiki/J
 
 `jupyter notebook` - run it. If the default port 8888 is taken then the server will run on the next free port (incremented by 1), e.g. http://localhost:8888/ , then http://localhost:8889/ , then http://localhost:8890/ , etc.  
 
+`jupyter nbconvert --to FORMAT mynotebook.ipynb` - convert notebook file from JSON (native ipynb format) to something else, e.g.: HTML, LaTeX, PDF, WebPDF, Reveal.js HTML slideshow, Markdown, Ascii, reStructuredText, executable script, notebook.  For example, `pip install nbconvert` + `jupyter nbconvert --to html mynotebook.ipynb`. p.s. If you wish to install any package in conda that is not available in Anaconda distribution, such as the Airbase package, use `pip install ...` instead of `conda install ...`. More info on nbconvert: https://nbconvert.readthedocs.io/en/latest/usage.html   
+
+.nbconvert may convert to slideshows too. Slides are full slides that you move through left to right. Sub-slides show up in the slideshow by pressing up or down. Fragments are hidden at first, then appear with a button press. You can skip cells in the slideshow with Skip and Notes leaves the cell as speaker notes. Test it: `jupyter nbconvert notebook.ipynb --to slides --post serve`
+
 
 Useful shortcuts:  
 
