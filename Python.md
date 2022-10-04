@@ -287,12 +287,14 @@ stop = 25
 step = 10
 np.linspace(start, stop, step) 
 print(x) // prints: [ 0.    6.25 12.5  18.75 25.  ]
+// https://numpy.org/doc/stable/reference/generated/numpy.linspace.html
 
 start = 0
 stop = 25
 step = 5
 x = np.linspace(start, stop, step, endpoint=False)
 print(x) // prints: [ 0.  5. 10. 15. 20.]
+// https://numpy.org/doc/stable/reference/generated/numpy.linspace.html
 
 x = np.arange(10)
 print(x) // [0 1 2 3 4 5 6 7 8 9]
@@ -304,6 +306,7 @@ print(x)
 
 
 x = np.linspace(0, 50, 10, endpoint=False).reshape(2, 5) // chaining is possible
+// https://numpy.org/doc/stable/reference/generated/numpy.linspace.html
 print(x)
 // [[ 0.  5. 10. 15. 20.]
 // [25. 30. 35. 40. 45.]]
