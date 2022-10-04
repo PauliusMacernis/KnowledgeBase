@@ -300,6 +300,7 @@ x = np.arange(10)
 print(x) // [0 1 2 3 4 5 6 7 8 9]
 
 x = np.reshape(x, (2, 5))
+// https://numpy.org/doc/stable/reference/generated/numpy.reshape.html#numpy.reshape
 print(x)
 // [[0 1 2 3 4]
 // [5 6 7 8 9]]
@@ -362,6 +363,7 @@ min:  -0.4993062728634641
 
 Note: **np.arange is inclusive-exclusive while np.linspace is inclusive-inclusive**  
 Note: **np.linspace - default step is 50 elements**  
+Note: **np.linspace is about getting n amount of elements that fits within start and stop range where start is inclusive and stop may be inclusive/exclusive (depends on the flag passed)**  
 
 
 
