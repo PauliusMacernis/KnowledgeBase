@@ -371,7 +371,12 @@ Note: **np.linspace - default step is 50 elements**
 Note: **np.linspace is about getting n amount of elements that fits within start and stop range where start is inclusive and stop may be inclusive/exclusive (depends on the flag passed)**  
 
 
+Create a one-dimensional array with 16 elements where values are well ordered from 2 to 32 (both inclusive) and then make this one-dimensional array be 4x4 array (aka. matrix)
 
+```
+X = np.linspace(2, 32, 4*4).reshape(4,4)
+print(X)
+```
 
 
 
