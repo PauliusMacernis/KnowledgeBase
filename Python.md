@@ -186,6 +186,10 @@ ndarrays can hold strings as well. https://docs.scipy.org/doc/numpy-1.13.0/refer
 
 # Python (and extra)
 
+## NumPy's ndarrays / Python's lists
+
+More info: https://numpy.org/devdocs/user/basics.creation.html#array-creation  
+
 ```
 import numpy as np
 x = np.array([1, 2, 3, 4, 5], [6, 7, 8, 9, 10])  // https://numpy.org/devdocs/user/absolute_beginners.html#how-to-create-a-basic-array
@@ -313,6 +317,7 @@ print(x)
 // [25. 30. 35. 40. 45.]]
 
 x = np.random.random((2,3))
+// create an ndarray of the given shape with random floats in the half-open interval [0.0, 1.0)
 print(x)
 // [[0.09452831 0.70780988 0.20044412]
 // [0.35266417 0.19310732 0.405911  ]]
