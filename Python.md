@@ -178,7 +178,7 @@ for more info: https://latex-tutorial.com/
 
 # NumPy
 
-NumPy stands for Numerical Python and it's a fundamental package for scientific computing in Python. NumPy provides Python with an extensive math library capable of performing numerical computations. More info: https://numpy.org/doc/stable/ ,also http://scipy-lectures.org/intro/numpy/index.html  , and https://hal.inria.fr/inria-00564007/document, and the official user guide is here: https://numpy.org/devdocs/user/index.html
+NumPy stands for Numerical Python and it's a fundamental package for scientific computing in Python. NumPy provides Python with an extensive math library capable of performing numerical computations. At the core of NumPy is the ndarray, where nd stands for n-dimensional. An ndarray is a multidimensional array of elements **all of the same type**. More info: https://numpy.org/doc/stable/ ,also http://scipy-lectures.org/intro/numpy/index.html  , and https://hal.inria.fr/inria-00564007/document, and the official user guide is here: https://numpy.org/devdocs/user/index.html
 
 
 # Python (and extra)
