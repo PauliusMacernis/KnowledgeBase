@@ -176,3 +176,13 @@ $$
 
 for more info: https://latex-tutorial.com/  
 
+# NumPy
+
+NumPy stands for Numerical Python and it's a fundamental package for scientific computing in Python. NumPy provides Python with an extensive math library capable of performing numerical computations. More info: https://numpy.org/doc/stable/ ,also http://scipy-lectures.org/intro/numpy/index.html  
+
+
+
+
+
+
+
