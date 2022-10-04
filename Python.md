@@ -147,6 +147,17 @@ Useful shortcuts:
 - `Shift` + `Ctrl` + `P` - bring the shortcuts menu (do not work on Firefix and Edge)
 - `S` - see the shortcuts  
 
+Magic:  
+
+- `%` (line magics) and `%%` (cell magics) - magic commands are preceded with one or two percent signs. For example, set up matplotlib to work interactively in the notebook with %matplotlib. For example:
+  - `%timeit` - how long it takes to execute the line
+  - `%%timeit` - how long it takes to execute the entire cell
+  - `%matplotlib inline` - to render figures (aka. visualizations) directly in the notebook, e.g. tweak config afterwards `%config InlineBackend.figure_format = 'retina'` 
+  - `%pdb` - turn on the interactive debugger (Python kernel only), when you cause an error, you'll be able to inspect the variables in the current namespace. More info https://docs.python.org/3/library/pdb.html  
+
+More info on magic: https://ipython.readthedocs.io/en/stable/interactive/magics.html  
+
+
 Off-topic (on markdown + math):  
 
 $y = mx + b$
