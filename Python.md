@@ -132,10 +132,14 @@ List of available kernels for Jupyter: https://github.com/jupyter/jupyter/wiki/J
 
 `jupyter nbconvert --to FORMAT mynotebook.ipynb` - convert notebook file from JSON (native ipynb format) to something else, e.g.: HTML, LaTeX, PDF, WebPDF, Reveal.js HTML slideshow, Markdown, Ascii, reStructuredText, executable script, notebook.  For example, `pip install nbconvert` + `jupyter nbconvert --to html mynotebook.ipynb`. p.s. If you wish to install any package in conda that is not available in Anaconda distribution, such as the Airbase package, use `pip install ...` instead of `conda install ...`. More info on nbconvert: https://nbconvert.readthedocs.io/en/latest/usage.html   
 
+## Slideshow
+
 .nbconvert may convert to slideshows too. Slides are full slides that you move through left to right. Sub-slides show up in the slideshow by pressing up or down. Fragments are hidden at first, then appear with a button press. You can skip cells in the slideshow with Skip and Notes leaves the cell as speaker notes. Test it: `jupyter nbconvert notebook.ipynb --to slides --post serve`
 
+Don't forget to adjust each element of the notebook in order to have slides at all. In the menu bar, click View > Cell Toolbar > Slideshow to bring up the slide cell menu on each cell.
 
-Useful shortcuts:  
+
+## Useful shortcuts:  
 
 - `ctrl` + `enter`
 - `shift` + `enter`
@@ -151,7 +155,7 @@ Useful shortcuts:
 - `Shift` + `Ctrl` + `P` - bring the shortcuts menu (do not work on Firefix and Edge)
 - `S` - see the shortcuts  
 
-Magic:  
+## Magic:  
 
 - `%` (line magics) and `%%` (cell magics) - magic commands are preceded with one or two percent signs. For example, set up matplotlib to work interactively in the notebook with %matplotlib. For example:
   - `%timeit` - how long it takes to execute the line
@@ -162,7 +166,7 @@ Magic:
 More info on magic: https://ipython.readthedocs.io/en/stable/interactive/magics.html  
 
 
-Off-topic (on markdown + math):  
+# Off-topic (on markdown + math):  
 
 $y = mx + b$
 
