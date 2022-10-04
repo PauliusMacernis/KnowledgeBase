@@ -166,7 +166,7 @@ Don't forget to adjust each element of the notebook in order to have slides at a
 More info on magic: https://ipython.readthedocs.io/en/stable/interactive/magics.html  
 
 
-# Off-topic (on markdown + math):  
+# LaTeX / Markdown
 
 $y = mx + b$
 
@@ -175,6 +175,9 @@ y = \frac{a}{b+c}
 $$
 
 for more info: https://latex-tutorial.com/  
+even more info: https://www.authorea.com/users/77723/articles/110898-how-to-write-mathematical-equations-expressions-and-symbols-with-latex-a-cheatsheet  
+also: http://www.personal.ceu.hu/tex/cookbook.html#inline  
+
 
 # NumPy
 
