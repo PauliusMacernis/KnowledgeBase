@@ -213,10 +213,29 @@ my_list = [1, 2, 3]
 np.array(my_list)
 
 x = np.zeros((3,4))
+// Result:
+[[0. 0. 0. 0.]
+ [0. 0. 0. 0.]
+ [0. 0. 0. 0.]]
+
 x = np.zeros((3,4), dtype=int) // default is float64
+// Result:
+[[0 0 0 0]
+ [0 0 0 0]
+ [0 0 0 0]]
 
 x = np.ones((3,4))
+// Result:
+[[1. 1. 1. 1.]
+ [1. 1. 1. 1.]
+ [1. 1. 1. 1.]]
+
+
 x = np.full((3,4), 5) // creates 3x4 matrix and fills it with 5 while datatype matches the input number (5 is int64, in the example); use dtype=.. if otherwise is needed
+// Result:
+[[5 5 5 5]
+ [5 5 5 5]
+ [5 5 5 5]]
 
 
 ```
@@ -224,13 +243,24 @@ x = np.full((3,4), 5) // creates 3x4 matrix and fills it with 5 while datatype m
 Identity matrix - matrix with "1" on the main diagonal and "0"s everywhere else.
 
 ```
-np.eye(5) // creates 5x5 identity matrix
+x = np.eye(5) // creates 5x5 identity matrix
+// Result:
+[[1. 0. 0. 0. 0.]
+ [0. 1. 0. 0. 0.]
+ [0. 0. 1. 0. 0.]
+ [0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 1.]]
 ```
 
 Diagonal matrix - matrix with any numbers (e.g. 10, 20, 30, 50) on the main diagonal and "0"s everywhere else.
 
 ```
-np.diag([10, 20, 30, 50])
+x = np.diag([10, 20, 30, 50])
+// Result:
+[[10  0  0  0]
+ [ 0 20  0  0]
+ [ 0  0 30  0]
+ [ 0  0  0 50]]
 ```
 
 ```
@@ -323,3 +353,5 @@ min:  -0.4993062728634641
 # negative:  500135
 
 ```
+
+
