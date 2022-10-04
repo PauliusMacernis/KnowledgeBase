@@ -178,32 +178,148 @@ for more info: https://latex-tutorial.com/
 
 # NumPy
 
-NumPy stands for Numerical Python and it's a fundamental package for scientific computing in Python. NumPy provides Python with an extensive math library capable of performing numerical computations. At the core of NumPy is the ndarray, where nd stands for n-dimensional. An ndarray is a multidimensional array of elements **all of the same type**. More info: https://numpy.org/doc/stable/ ,also http://scipy-lectures.org/intro/numpy/index.html  , and https://hal.inria.fr/inria-00564007/document, and the official user guide is here: https://numpy.org/devdocs/user/index.html
+NumPy stands for Numerical Python and it's a fundamental package for scientific computing in Python. NumPy provides Python with an extensive math library capable of performing numerical computations. At the core of NumPy is the ndarray, where nd stands for n-dimensional. An ndarray is a multidimensional array of elements **all of the same type**. **Remember, a NumPy array is homogeneous, meaning all elements will have the same data-type**. More info: https://numpy.org/doc/stable/ ,also http://scipy-lectures.org/intro/numpy/index.html  , and https://hal.inria.fr/inria-00564007/document, and the official user guide is here: https://numpy.org/devdocs/user/index.html  
+
+NumPy handles more data types comparing to Python: https://docs.scipy.org/doc/numpy-1.13.0/user/basics.types.html  
+ndarrays can hold strings as well. https://docs.scipy.org/doc/numpy-1.13.0/reference/arrays.dtypes.html#arrays-dtypes  
 
 
 # Python (and extra)
 
 ```
 import numpy as np
-x = np.array([1, 2, 3, 4, 5], [6, 7, 8, 9, 10])
+x = np.array([1, 2, 3, 4, 5], [6, 7, 8, 9, 10])  // https://numpy.org/devdocs/user/absolute_beginners.html#how-to-create-a-basic-array
 y = np.array([1.5, 2.2, 3.7], dtype=np.int64)
 print(x)
-print(type(x))
-x.dtype
-x.shape
-x.size
+print(type(x))              // returns a tuple representing the array dimensions. https://numpy.org/doc/stable/reference/generated/numpy.ndarray.shape.html#numpy-ndarray-shape
+print('x has dimensions:', x.shape)
+print('x is an object of type:', type(x))
+print('The elements in x are of type:', x.dtype)
+x.size                      // returns the number of elements in the array
 
 print(y)
 y.dtype
 
-np.save('my_array', x)      // save array to my_array.npy
+np.save('my_array', x)      // save array to my_array.npy in the current directory
 z = np.load('my_array.npy)  // load array from my_array.npy
 print(z)
+
+a = np.zeros((2, 3, 4))     // The tuple (2, 3, 4) passed represents the shape of the ndarray
+a.ndim
 ```
 
+```
+my_list = [1, 2, 3]
+np.array(my_list)
+
+x = np.zeros((3,4))
+x = np.zeros((3,4), dtype=int) // default is float64
+
+x = np.ones((3,4))
+x = np.full((3,4), 5) // creates 3x4 matrix and fills it with 5 while datatype matches the input number (5 is int64, in the example); use dtype=.. if otherwise is needed
 
 
+```
+
+Identity matrix - matrix with "1" on the main diagonal and "0"s everywhere else.
+
+```
+np.eye(5) // creates 5x5 identity matrix
+```
+
+Diagonal matrix - matrix with any numbers (e.g. 10, 20, 30, 50) on the main diagonal and "0"s everywhere else.
+
+```
+np.diag([10, 20, 30, 50])
+```
+
+```
+import numpy as np
+
+stop = 10
+np.arange(stop) // generates array with integer elements from 0 to (stop-1).
+
+start = 4
+stop = 10
+np.arange(start, stop) // generate array with integer numbers in the range of [4 - 10)
 
 
+start = 1
+stop = 14
+step = 3
+np.arange(start, stop, step) // generates [1, 4, 7, 10, 13]
+
+start = 0
+stop = 25
+step = 10
+np.linspace(start, stop, step) 
+print(x) // prints: [ 0.    6.25 12.5  18.75 25.  ]
+
+start = 0
+stop = 25
+step = 5
+x = np.linspace(start, stop, step, endpoint=False)
+print(x) // prints: [ 0.  5. 10. 15. 20.]
+
+x = np.arange(10)
+print(x) // [0 1 2 3 4 5 6 7 8 9]
+
+x = np.reshape(x, (2, 5))
+print(x)
+// [[0 1 2 3 4]
+// [5 6 7 8 9]]
 
 
+x = np.linspace(0, 50, 10, endpoint=False).reshape(2, 5) // chaining is possible
+print(x)
+// [[ 0.  5. 10. 15. 20.]
+// [25. 30. 35. 40. 45.]]
+
+x = np.random.random((2,3))
+print(x)
+// [[0.09452831 0.70780988 0.20044412]
+// [0.35266417 0.19310732 0.405911  ]]
+
+x = np.random.randint(4, 15, (2,3))   // [from4 to15) in shape2x3 
+print(x)
+// [[ 7  9 10]
+// [ 6 14  8]]
+
+```
+
+Random numbers in 1000x1000 array with average(mean) of 0 and standard deviation of 0.1:
+(aka. "bell curve"? For more info: https://numpy.org/doc/stable/reference/random/generated/numpy.random.normal.html )
+
+```
+x = np.random.normal(0, 0.1, size=(1000, 1000))   
+print(x)
+print('mean: ', x.mean())
+print('std: ', x.std())
+print('max: ', x.max())
+print('min: ', x.min())
+print('# positive: ', (x > 0).sum())
+print('# negative: ', (x < 0).sum())
+
+
+Output:
+[[ 0.22211229 -0.09417173  0.09590868 ...  0.08748733 -0.02216375
+  -0.15646638]
+ [-0.12373573  0.00762135  0.07135402 ...  0.11676525 -0.00262865
+   0.05450677]
+ [ 0.01612174 -0.01643322  0.00555448 ...  0.1450942   0.20641469
+  -0.1510508 ]
+ ...
+ [ 0.0624178   0.03178409  0.12476258 ... -0.0579193   0.00641994
+  -0.12065955]
+ [-0.03009055 -0.01285134 -0.03614395 ...  0.00230765  0.06574115
+   0.0248936 ]
+ [-0.13395959 -0.00560614  0.05915297 ...  0.04710092 -0.16712507
+   0.11446455]]
+mean:  -5.935283900474698e-06
+std:  0.09999118165037012
+max:  0.4744202231255593
+min:  -0.4993062728634641
+# positive:  499865
+# negative:  500135
+
+```
