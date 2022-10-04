@@ -267,17 +267,20 @@ x = np.diag([10, 20, 30, 50])
 import numpy as np
 
 stop = 10
-np.arange(stop) // generates array with integer elements from 0 to (stop-1).
+np.arange(stop) // generates array with integer elements from 0 to (stop-1). 
+// https://numpy.org/doc/stable/reference/generated/numpy.arange.html
 
 start = 4
 stop = 10
 np.arange(start, stop) // generate array with integer numbers in the range of [4 - 10)
+// https://numpy.org/doc/stable/reference/generated/numpy.arange.html
 
 
 start = 1
 stop = 14
 step = 3
 np.arange(start, stop, step) // generates [1, 4, 7, 10, 13]
+// https://numpy.org/doc/stable/reference/generated/numpy.arange.html
 
 start = 0
 stop = 25
