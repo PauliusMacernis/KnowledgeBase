@@ -361,6 +361,9 @@ min:  -0.4993062728634641
 ```
 
 Note: **np.arange is inclusive-exclusive while np.linspace is inclusive-inclusive**  
+Note: **np.linspace - default step is 50 elements**  
+
+
 
 
 
