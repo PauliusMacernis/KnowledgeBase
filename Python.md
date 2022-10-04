@@ -178,7 +178,28 @@ for more info: https://latex-tutorial.com/
 
 # NumPy
 
-NumPy stands for Numerical Python and it's a fundamental package for scientific computing in Python. NumPy provides Python with an extensive math library capable of performing numerical computations. More info: https://numpy.org/doc/stable/ ,also http://scipy-lectures.org/intro/numpy/index.html  
+NumPy stands for Numerical Python and it's a fundamental package for scientific computing in Python. NumPy provides Python with an extensive math library capable of performing numerical computations. More info: https://numpy.org/doc/stable/ ,also http://scipy-lectures.org/intro/numpy/index.html  , and https://hal.inria.fr/inria-00564007/document, and the official user guide is here: https://numpy.org/devdocs/user/index.html
+
+
+# Python (and extra)
+
+```
+import numpy as np
+x = np.array([1, 2, 3, 4, 5], [6, 7, 8, 9, 10])
+y = np.array([1.5, 2.2, 3.7], dtype=np.int64)
+print(x)
+print(type(x))
+x.dtype
+x.shape
+x.size
+
+print(y)
+y.dtype
+
+np.save('my_array', x)      // save array to my_array.npy
+z = np.load('my_array.npy)  // load array from my_array.npy
+print(z)
+```
 
 
 
