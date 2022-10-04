@@ -137,6 +137,15 @@ Useful shortcuts:
 - `shift` + `enter`
 - `shift` + `tab`
 - `shift` + `tab` (twice)
+- `A` (while in a command mode) - create a cell above the current cell
+- `B` - create a cell below the currently selected cell
+- `Y` - change from Markdown to a code cell
+- `M` - switch from code to Markdown
+- `L` - turn on line numbers
+- `D` + `D` (aka. click `D` twice) - delete the cell
+- `S` - save the book
+- `Shift` + `Ctrl` + `P` - bring the shortcuts menu (do not work on Firefix and Edge)
+- `S` - see the shortcuts  
 
 Off-topic (on markdown + math):  
 
