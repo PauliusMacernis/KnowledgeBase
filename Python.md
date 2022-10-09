@@ -501,10 +501,12 @@ False
 >>> my_lst[0] = 'one'
 >>> print(my_lst)
 ['one', 2, 3, 4, 5]
+# lists are mutable
 ```
 
 ```
 >>> greeting = "Hello there"
 >>> greeting[0] = 'M'
 ERROR!!!
+# strings are immutable
 ```
