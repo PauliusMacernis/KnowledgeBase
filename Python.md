@@ -623,6 +623,30 @@ grapefruit
 
 When you pop an element from a set a **random** element is removed (remember that sets, unlike lists, are unordered so **there is no "last element"**).
 
+## Dictionaries
 
+Mutable  
+
+Stores mappings of unique keys to values.  
+
+Dictionaries are mutable, but their keys need to be any immutable type, like strings, integers, or tuples. Every key in a dictionary may have different type, e.g. `random_dict = {"abc": 1, 5: "hello"}`   
+
+```
+elements = {"hydrogen": 1, "helium": 2, "carbon": 6}
+print(elements["helium"]) # 2
+elements["lithium"] = 3 
+print(elements)
+# {'hydrogen': 1, 'carbon': 6, 'helium': 2, 'lithium': 3}
+
+print("carbon" in elements) # True
+
+elements["whatever"] # ERROR!!!!!
+print(elements.get("whatever"))  # None
+
+n = elements.get("dilithium")
+print(n is None) # True
+print(n is not None) # False
+
+```
 
 
