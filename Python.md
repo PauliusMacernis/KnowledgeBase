@@ -621,4 +621,8 @@ grapefruit
 {'orange', 'watermelon', 'banana', 'apple'}
 ```
 
+When you pop an element from a set a **random** element is removed (remember that sets, unlike lists, are unordered so **there is no "last element"**).
+
+
+
 
