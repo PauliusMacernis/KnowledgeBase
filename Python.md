@@ -408,3 +408,9 @@ False
 - Linter: https://atom.io/packages/linter-python-pep8  
 - Why is 80 characters the 'standard' limit for code width? https://softwareengineering.stackexchange.com/questions/148677/why-is-80-characters-the-standard-limit-for-code-width  
 
+## Python error handling
+
+- An Exception is a problem that occurs when the code is running, but a 'Syntax Error' is a problem detected when Python checks the code before it runs it. For more information, see the Python tutorial page on Errors and Exceptions: https://docs.python.org/3/tutorial/errors.html  
+
+
+
