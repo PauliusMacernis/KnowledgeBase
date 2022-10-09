@@ -518,3 +518,46 @@ Lists are assigned "by reference", which means having two list variables made/as
 `min()` returns the smallest element in a list. min is the opposite of max, which returns the largest element in a list.  
 `sorted()` returns **a copy of a list** in order from smallest to largest, leaving the list unchanged. Note again that for string objects, sorted smallest to largest means sorting in alphabetical order.  
 
+### join
+
+```
+new_str = "\n".join(["fore", "aft", "starboard", "port"])
+print(new_str)
+Output:
+
+fore
+aft
+starboard
+port
+```
+
+```
+new_str = "\n".join(["fore", 1, "starboard", "port"])
+print(new_str)
+Output:
+
+ERROR, we can't join integer value
+```
+
+```
+new_str = "\n".join(["fore", str(1), "starboard", "port"])
+print(new_str)
+Output:
+
+fore
+1
+starboard
+port
+```
+
+### append
+
+```
+letters = ['a', 'b', 'c', 'd']
+letters.append('z')
+print(letters)
+Output:
+
+['a', 'b', 'c', 'd', 'z']
+```
+
