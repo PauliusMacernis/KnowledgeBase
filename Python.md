@@ -419,4 +419,18 @@ How George Boole’s zeroes and ones changed the world:
 https://www.irishtimes.com/news/science/how-george-boole-s-zeroes-and-ones-changed-the-world-1.2014673  
 
 
+# Strings
+
+You can define a string with either double quotes " or single quotes '  
+
+```
+>>> print(first_word * 5)
+
+HelloHelloHelloHelloHello
+
+>>> print(len(first_word))
+
+5
+```
+
 
