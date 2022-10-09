@@ -629,7 +629,7 @@ Mutable
 
 Stores mappings of unique keys to values.  
 
-Dictionaries are mutable, but their keys need to be any immutable type, like strings, integers, or tuples. Every key in a dictionary may have different type, e.g. `random_dict = {"abc": 1, 5: "hello"}`   
+Dictionaries are mutable, but their **keys must be of immutable type**, like strings, integers, or tuples. Lists or alike would not work! Every key in a dictionary may have different type, e.g. `random_dict = {"abc": 1, 5: "hello"}`   
 
 ```
 elements = {"hydrogen": 1, "helium": 2, "carbon": 6}
