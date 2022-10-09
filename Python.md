@@ -388,3 +388,10 @@ print(X)
 
 https://docs.python.org/3/reference/lexical_analysis.html#keywords  
 
+## Data types
+
+```
+x = int(4.7)   # x is now an integer 4
+y = float(4)   # y is now a float of 4.0
+```
+
