@@ -441,4 +441,8 @@ H
 e
 ```
 
+`len` only works on a "sequence (such as a string, bytes, tuple, list, or range) or a collection (such as a dictionary, set, or frozen set),", more info: https://docs.python.org/2/library/functions.html#len  
+
+
+
 
