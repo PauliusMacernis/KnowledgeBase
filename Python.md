@@ -638,6 +638,10 @@ Stores mappings of unique keys to values.
 
 Dictionaries are mutable, but their **keys must be of immutable type**, like strings, integers, or tuples. Lists or alike would not work! Every key in a dictionary may have different type, e.g. `random_dict = {"abc": 1, 5: "hello"}`   
 
+Each item in a dictionary contains two parts (a key and a value), the items in a dictionary are not ordered, dictionaries may be nested.  
+
+Because dictionaries are not ordered, they are not sortable.  
+
 ```
 elements = {"hydrogen": 1, "helium": 2, "carbon": 6}
 print(elements["helium"]) # 2
