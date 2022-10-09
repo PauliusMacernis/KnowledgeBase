@@ -595,7 +595,12 @@ print(tuple_a[1])
 
 ## Sets
 
-Mutable & Unordered
+Mutable & Unordered  
+
+A set is a mutable data structure - you can modify the elements in a set with methods like add and pop. A set is an unordered data structure, so you can't index and slice elements like a list; there is no sequence of positions to index with!  
+  
+One of the key properties of a set is that it only contains unique elements. So even if you create a new set with a list of elements that contains duplicates, Python will remove the duplicates when creating the set automatically.  
+
 
 ```
 numbers = [1, 2, 6, 3, 1, 1, 6]
