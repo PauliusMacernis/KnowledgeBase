@@ -716,4 +716,28 @@ Dictionary	    No	     No**	   { } or dict()	  {'Jun': 75, 'Jul': 89}
 * You can use curly braces to define a set like this: {1, 2, 3}. However, if you leave the curly braces empty like this: {} Python will instead create an empty **dictionary**. So to create an empty set, use set().  
 ** A dictionary itself is mutable, but each of its individual keys must be immutable.  
 
+# If, Elif, Else
+
+```
+if season == 'spring':
+    print('plant the garden!')
+elif season == 'summer':
+    print('water the garden!')
+elif season == 'fall':
+    print('harvest the garden!')
+elif season == 'winter':
+    print('stay indoors!')
+else:
+    print('unrecognized season')
+```
+
+**Indentation - 4 spaces!!!**
+
+
+Here are most of the built-in objects that are considered False in Python:  
+
+- constants defined to be false: None and False
+- zero of any numeric type: 0, 0.0, 0j, Decimal(0), Fraction(0, 1)
+- empty sequences and collections: '"", (), [], {}, set(), range(0)
+
 
