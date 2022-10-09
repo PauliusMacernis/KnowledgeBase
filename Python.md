@@ -683,3 +683,13 @@ print(a is c)
 # False
 ```
 
+## Lists vs. Dictionaries
+
+A set is defined with curly braces, {}, but it isn't the only data structure that does; dictionaries do as well! However, the difference is that a set is defined as a sequence of elements separated by commas:  
+`set_example = {element1, element2, element3}`  
+while a dictionary is defined as a sequence of key, value pairs marked with colons, separated by commas:  
+`dict_example = {key1: value1, key2: value2, key3: value3}`  
+
+Note: if you define a variable with an empty set of curly braces like this: a = {}, Python will assign an empty dictionary to that variable. You can always use set() and dict() to define empty sets and dictionaries as well.  
+
+
