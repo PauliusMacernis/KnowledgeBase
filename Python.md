@@ -395,7 +395,7 @@ x = int(4.7)   # x is now an integer 4
 y = float(4)   # y is now a float of 4.0
 ```
 
-**Because the float, or approximation, for 0.1 is actually slightly more than 0.1, when we add several of them together we can see the difference between the mathematically correct answer and the one that Python creates.**  
+**Because the float, or approximation, for 0.1 is actually slightly more than 0.1, when we add several of them together we can see the difference between the mathematically correct answer and the one that Python creates.** More info: https://docs.python.org/3/tutorial/floatingpoint.html  
 
 ```
 >>> print(.1 + .1 + .1 == .3)
