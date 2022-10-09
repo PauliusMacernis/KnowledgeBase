@@ -649,4 +649,12 @@ print(n is not None) # False
 
 ```
 
+```
+>>> elements.get('dilithium')
+None
+>>> elements['dilithium']
+KeyError: 'dilithium'
+>>> elements.get('kryptonite', 'There\'s no such element!')
+"There's no such element!"
+```
 
