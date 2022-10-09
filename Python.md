@@ -413,4 +413,10 @@ False
 - An Exception is a problem that occurs when the code is running, but a 'Syntax Error' is a problem detected when Python checks the code before it runs it. For more information, see the Python tutorial page on Errors and Exceptions: https://docs.python.org/3/tutorial/errors.html  
 
 
+## True / False  
+
+How George Boole’s zeroes and ones changed the world:  
+https://www.irishtimes.com/news/science/how-george-boole-s-zeroes-and-ones-changed-the-world-1.2014673  
+
+
 
