@@ -402,3 +402,9 @@ y = float(4)   # y is now a float of 4.0
 False
 ```
 
+## Python style  
+
+- Style guide: https://peps.python.org/pep-0008/
+- Linter: https://atom.io/packages/linter-python-pep8  
+
+
