@@ -567,6 +567,8 @@ Output:
 
 Immutable & Ordered
 
+A tuple is an immutable, ordered data structure that can be indexed and sliced like a list. Tuples are defined by listing a sequence of elements separated by commas, optionally contained within parentheses: ().  
+
 ```
 location = (13.4125, 103.866667)
 print("Latitude:", location[0])
