@@ -466,7 +466,7 @@ True
 a string
 ```
 
-The lower index of a slice is inclusive and the upper index is exclusive. And leaving out the lower index starts the slice at 0, while leaving out the upper index ends the slice at the end of the list.   
+### The lower index of a slice is inclusive and the upper index is exclusive. And leaving out the lower index starts the slice at 0, while leaving out the upper index ends the slice at the end of the list.   
 
 
 ```
