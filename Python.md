@@ -687,6 +687,12 @@ print(a is c)
 # False
 ```
 
+```
+# create and sort a list of the dictionary's keys
+sorted_keys = sorted(verse_dict.keys())
+```
+
+
 ## Lists vs. Dictionaries
 
 A set is defined with curly braces, {}, but it isn't the only data structure that does; dictionaries do as well! However, the difference is that a set is defined as a sequence of elements separated by commas:  
