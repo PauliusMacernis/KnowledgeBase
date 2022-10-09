@@ -384,4 +384,7 @@ print(X)
 ```
 
 
+# Reserved words in Python
+
+https://docs.python.org/3/reference/lexical_analysis.html#keywords  
 
