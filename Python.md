@@ -451,10 +451,48 @@ e
 
 `len` only works on a "sequence (such as a string, bytes, tuple, list, or range) or a collection (such as a dictionary, set, or frozen set),", more info: https://docs.python.org/2/library/functions.html#len  
 
-## Metods available:
+## Methods available:
 
 https://docs.python.org/3/library/stdtypes.html#string-methods
 
+## Lists
+
+```
+>>> list_of_random_things = [1, 3.4, 'a string', True]
+
+>>> list_of_random_things[-1] 
+True
+>>> list_of_random_things[-2] 
+a string
+```
 
 
+```
+>>> list_of_random_things = [1, 3.4, 'a string', True]
+>>> list_of_random_things[1:2]
+[3.4]
+```
+
+```
+>>> list_of_random_things[:2]
+[1, 3.4]
+```
+
+```
+>>> list_of_random_things[1:]
+[3.4, 'a string', True]
+```
+
+```
+>>> 'this' in 'this is a string'
+True
+>>> 'in' in 'this is a string'
+True
+>>> 'isa' in 'this is a string'
+False
+>>> 5 not in [1, 2, 3, 4, 6]
+True
+>>> 5 in [1, 2, 3, 4, 6]
+False
+```
 
