@@ -431,6 +431,14 @@ HelloHelloHelloHelloHello
 >>> print(len(first_word))
 
 5
+
+>>> first_word[0]
+
+H
+
+>>> first_word[1]
+
+e
 ```
 
 
