@@ -929,3 +929,15 @@ def readable_timedelta(days):
 print(readable_timedelta(10))
 ```
 
+Scopes seems to be just local (e.g. defined inside functions stays inside functions) or global (defined in a global level are reached inside functions too). The global part seems to be a bit different comparing to PHP (the latest PHP versions would not receive the value of the global just like that..).
+
+```
+# This works fine
+word = "hello"
+
+def some_function():
+    print(word)
+
+some_function()
+```
+
