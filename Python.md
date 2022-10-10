@@ -831,3 +831,17 @@ print(cast)
 ## ??? What are the differences and similarities between the usage of `range` and `enumerate` when the wish is to iterate over the data ???
 
 
+## ??? explain each line (these are not related): ???
+
+```
+for point in zip(labels, x_coord, y_coord, z_coord):
+
+points.append("{}: {}, {}, {}".format(*point))
+
+cast = dict(zip(cast_names, cast_heights))
+
+names, heights = zip(*cast)
+
+data_transpose = tuple(zip(*data))
+```
+
