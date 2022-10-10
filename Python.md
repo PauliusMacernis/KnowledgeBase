@@ -890,3 +890,12 @@ scores = {
 passed = [ name for name, score in scores.items() if score >= 65 ] # write your list comprehension here
 print(passed)
 ```
+
+```
+win_count_dict = {}
+for year, winnerlist in winners.items():
+    for winner in winnerlist:
+        win_count_dict[winner] = win_count_dict.get(winner, 0) + 1
+```
+
+
