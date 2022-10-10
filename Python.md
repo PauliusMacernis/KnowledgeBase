@@ -814,6 +814,6 @@ for i, letter in enumerate(letters):
     print(i, letter)
 ```
 
-## ??? What are the differences and similarities between `range` and `enumerate` ???
+## ??? What are the differences and similarities between the usage of `range` and `enumerate` when the wish is to iterate over the data ???
 
 
