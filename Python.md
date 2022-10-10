@@ -415,6 +415,7 @@ False
 - Style guide: https://peps.python.org/pep-0008/
 - Linter: https://atom.io/packages/linter-python-pep8  
 - Why is 80 characters the 'standard' limit for code width? https://softwareengineering.stackexchange.com/questions/148677/why-is-80-characters-the-standard-limit-for-code-width  
+- function names follow the same naming conventions as variables. snake_case
 
 ## Python error handling
 
@@ -904,4 +905,6 @@ highest_count = max(win_count_dict.values())
 
 most_win_director = [key for key, value in win_count_dict.items() if value == highest_count]
 ```
+
+# Functions
 
