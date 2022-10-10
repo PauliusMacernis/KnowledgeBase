@@ -899,3 +899,9 @@ for year, winnerlist in winners.items():
 ```
 
 
+```
+highest_count = max(win_count_dict.values())
+
+most_win_director = [key for key, value in win_count_dict.items() if value == highest_count]
+```
+
