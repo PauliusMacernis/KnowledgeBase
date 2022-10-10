@@ -772,3 +772,17 @@ for word in book_title:
     word_counter[word] = word_counter.get(word, 0) + 1
 ```
 
+
+`items` is an awesome method that returns tuples of key, value pairs, which you can use to iterate over dictionaries in for loops:  
+
+```
+cast = {
+           "Jerry Seinfeld": "Jerry Seinfeld",
+           "Julia Louis-Dreyfus": "Elaine Benes",
+           "Jason Alexander": "George Costanza",
+           "Michael Richards": "Cosmo Kramer"
+       }
+for key, value in cast.items():
+    print("Actor: {}    Role: {}".format(key, value))
+```
+
