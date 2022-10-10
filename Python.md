@@ -767,3 +767,8 @@ for index in range(len(cities)):
     cities[index] = cities[index].title()
 ```
 
+```
+for word in book_title:
+    word_counter[word] = word_counter.get(word, 0) + 1
+```
+
