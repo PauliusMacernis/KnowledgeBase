@@ -786,3 +786,31 @@ for key, value in cast.items():
     print("Actor: {}    Role: {}".format(key, value))
 ```
 
+# Zip and Enumerate
+
+zip returns an iterator that combines multiple iterables into one sequence of tuples. Each tuple contains the elements in that position from all the iterables. For example:
+
+`list(zip(['a', 'b', 'c'], [1, 2, 3]))` outputs `[('a', 1), ('b', 2), ('c', 3)]`   
+
+
+```
+letters = ['a', 'b', 'c']
+nums = [1, 2, 3]
+
+for letter, num in zip(letters, nums):
+    print("{}: {}".format(letter, num))
+```
+
+```
+some_list = [('a', 1), ('b', 2), ('c', 3)]
+letters, nums = zip(*some_list)
+```
+
+enumerate is a built in function that returns an iterator of tuples containing indices and values of a list.  
+
+```
+letters = ['a', 'b', 'c', 'd', 'e']
+for i, letter in enumerate(letters):
+    print(i, letter)
+```
+
