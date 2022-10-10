@@ -814,3 +814,6 @@ for i, letter in enumerate(letters):
     print(i, letter)
 ```
 
+## ??? What are the differences and similarities between `range` and `enumerate` ???
+
+
