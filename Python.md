@@ -814,6 +814,20 @@ for i, letter in enumerate(letters):
     print(i, letter)
 ```
 
+```
+cast = ["Barney Stinson", "Robin Scherbatsky", "Ted Mosby", "Lily Aldrin", "Marshall Eriksen"]
+heights = [72, 68, 72, 66, 76]
+
+# write your for loop here
+for i, name in enumerate(cast):
+    cast[i] = name + " " + str(heights[i])
+
+print(cast)
+
+# Prints:
+# ['Barney Stinson 72', 'Robin Scherbatsky 68', 'Ted Mosby 72', 'Lily Aldrin 66', 'Marshall Eriksen 76']
+```
+
 ## ??? What are the differences and similarities between the usage of `range` and `enumerate` when the wish is to iterate over the data ???
 
 
