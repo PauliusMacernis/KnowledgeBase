@@ -931,6 +931,8 @@ print(readable_timedelta(10))
 
 Scopes seems to be just local (e.g. defined inside functions stays inside functions) or global (defined in a global level are reached inside functions too). The global part seems to be a bit different comparing to PHP (the latest PHP versions would not receive the value of the global just like that..). However, JavaScrip seems to be quite similar.
 
+Python: However, the value of a global variable can not be modified inside the function. If you want to modify that variable's value inside this function, it should be passed in as an argument. Good practice: It is best to define variables in the smallest scope they will be needed in. While functions can refer to variables defined in a larger scope, this is very rarely a good idea since you may not know what variables you have defined if your program has a lot of variables.  
+
 ```
 # This works fine
 word = "hello"
