@@ -997,3 +997,47 @@ print(egg_count)
 # 112
 ```
 
+```
+str1 = 'Functions are important programming concepts.'
+
+def print_fn():
+    str1 = 'Variable scope is an important concept.'
+    print(str1)
+
+print_fn()
+
+# Output:
+# Variable scope is an important concept.
+```
+
+```
+str1 = 'Functions are important programming concepts.'
+
+def print_fn():
+    #str1 = 'Variable scope is an important concept.'
+    print(str1)
+
+print_fn()
+# Output:
+# Functions are important programming concepts.
+```
+
+**This may summarize the scope of Python variables quite well**  
+
+```
+str1 = 'One'
+
+def print_fn(str1):
+    print(str1)
+    str1 = 'Two'
+    print(str1)
+
+print_fn(str1)
+print(str1)
+
+Prints:
+One
+Two
+One
+```
+
