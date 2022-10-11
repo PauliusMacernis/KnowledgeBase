@@ -965,3 +965,35 @@ function helloWorld() {
 helloWorld();
 // prints: hello world
 ```
+
+**Python doesn't allow functions to modify variables that aren't in the function's scope.**  
+
+```
+egg_count = 0
+
+def buy_eggs(egg_count):
+    egg_count += 100
+    return egg_count + 12  # purchase a dozen eggs
+
+buy_eggs(egg_count)
+
+print(egg_count) # prints 0
+```
+
+```
+egg_count = 0
+
+def buy_eggs(count):
+    count += 100
+    print(egg_count)
+    return count + 12  # purchase a dozen eggs
+
+egg_count = buy_eggs(egg_count)
+
+print(egg_count)
+
+# Prints:
+# 0
+# 112
+```
+
