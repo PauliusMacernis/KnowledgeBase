@@ -1242,3 +1242,6 @@ except Exception as e:
     print("Exception occurred: {}".format(e))
 ```
 
+
+# Reading and Writing Files
+
