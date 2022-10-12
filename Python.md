@@ -1216,4 +1216,20 @@ divide(3, 0)
 ```
 
 
+```
+try:
+    # some code
+except (ValueError, KeyboardInterrupt):
+    # some code
+```
+
+
+```
+try:
+    # some code
+except ValueError:
+    # some code
+except KeyboardInterrupt:
+    # some code
+```
 
