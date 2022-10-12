@@ -1203,6 +1203,9 @@ def divide(x, y):
         result = x // y
     except ZeroDivisionError:
         print("Sorry ! You are dividing by zero ")
+    #except Exception as e:
+    #    # some code
+    #    print("Exception occurred: {}".format(e))
     else:
         print("Yeah ! Your answer is :", result)
     finally: 
@@ -1221,6 +1224,9 @@ try:
     # some code
 except (ValueError, KeyboardInterrupt):
     # some code
+except Exception as e:
+    # some code
+    print("Exception occurred: {}".format(e))
 ```
 
 
@@ -1231,5 +1237,8 @@ except ValueError:
     # some code
 except KeyboardInterrupt:
     # some code
+except Exception as e:
+    # some code
+    print("Exception occurred: {}".format(e))
 ```
 
