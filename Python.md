@@ -1175,3 +1175,20 @@ short_cities = list(filter(lambda x: len(x) < 10, cities))
 print(short_cities)
 ```
 
+# Scripting
+
+## User input
+
+```
+num = int(input("Enter an integer"))
+print("hello" * num)
+```
+
+## User input for the execution (probably not the best practice)
+
+```
+result = eval(input("Enter an expression: "))
+print(result)
+```
+
+
