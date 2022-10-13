@@ -1243,5 +1243,11 @@ except Exception as e:
 ```
 
 
-# Reading and Writing Files
+# IPython - an alternative to python command line tool
+
+- tab completion
+- `?` for details about an object
+- `!` to execute system shell commands
+- syntax highlighting!
+- more info: https://ipython.org/ipython-doc/3/interactive/tutorial.html
 
