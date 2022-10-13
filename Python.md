@@ -1076,6 +1076,8 @@ def population_density(population, land_area):
     return population / land_area
 ```
 
+Make sure to indent your docstrings correctly or the code will not run. A docstring should be indented one indentation underneath the class or method being described. You don't have to define self in your method docstrings. It's understood that any method will have self as the first method input.  
+
 More info: https://peps.python.org/pep-0257/   
 Or: https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html  
 
