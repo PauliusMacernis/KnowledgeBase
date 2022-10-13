@@ -1292,3 +1292,48 @@ def run_tests(shirt_one, shirt_two, total_cost, total_discount):
     assert round(total_discount) == 18, 'total_discount should be 18.0'
 ```
 
+## Public / Private / Get / Set (no protected, private!!!, just some "conventions"...)
+
+Accessing attributes directly would be frowned upon in many other languages, but **not in Python**. Instead, the general object-oriented programming convention is to use methods to access attributes or change attribute values. These methods are called set and get methods or setter and getter methods.  
+In the class definition, the underscore in front of price is a somewhat controversial Python convention. In other languages like C++ or Java, price could be *explicitly labeled as a private variable*. This would prohibit an object from accessing the price attribute directly like shirt_one._price = 15. **Unlike other languages, Python does not distinguish between private and public variables**. Therefore, there is some controversy about using the underscore convention as well as get and set methods in Python.  
+
+Following the Python **convention, the underscore in front of property is to let a programmer know that the property should only be accessed with get and set methods rather than accessing it directly with my_object._my_property**. However, a programmer could still access _price directly because there is nothing in the Python language to prevent direct access.  
+
+More info: https://python-course.eu/oop/properties-vs-getters-and-setters.php  
+
+```
+class Shirt:
+
+    def __init__(self, shirt_color, shirt_size, shirt_style, shirt_price):
+        self._price = shirt_price
+
+    def get_price(self):
+      return self._price
+
+    def set_price(self, new_price):
+      self._price = new_price
+
+
+shirt_one = Shirt('yellow', 'M', 'long-sleeve', 15)
+print(shirt_one.get_price())
+shirt_one.set_price(10)
+
+
+class Pants:
+    
+    def __init__(self, color, waist_size, length, price):
+        self.color = str(color)
+        self.waist_size = int(waist_size)
+        self.length = int(length)
+        self.price = float(price)
+        
+    def change_price(self, price):
+        self.price = float(price)
+        
+    def discount(self, discount):
+        return self.price * (1 - discount)
+
+
+
+```
+
