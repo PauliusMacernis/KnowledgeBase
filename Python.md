@@ -1328,6 +1328,9 @@ def change_price(self, new_price):
 
 ## Override default behaviour (add +, subtract -, etc.)
 
+More info: https://docs.python.org/3/reference/datamodel.html#emulating-numeric-types  
+
+
 ```
     def __add__(self, other):
 
