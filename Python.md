@@ -149,7 +149,7 @@ if you create the conda environment and install pip simultaneously, you'll find 
 
 `conda create --name environmentname pip`  
 
-pip and venv tend to be used for generic software development projects including web development. conda is very helpful for data science projects, but conda can make generic Python software development a bit more confusing.   
+pip and venv tend to be used for generic software development projects including web development. conda is very helpful for data science projects, but conda can make generic Python software development a bit more confusing.    
 
 
 ## pip packages
@@ -181,6 +181,7 @@ comprises a particular version of:
 - Python-packages
 - The utility scripts, e.g. pip
 
+
 # venv
 
 The venv module supports creating lightweight “virtual environments”, each with their own independent set of Python packages installed in their site directories. A virtual environment is created on top of an existing Python installation, known as the virtual environment’s “base” Python, and may optionally be isolated from the packages in the base environment, so only those explicitly installed in the virtual environment are available.  
@@ -194,6 +195,8 @@ source venv name/bin/activate
 pip install .
 # in case you want to removethe environment, remove the environment installation files
 ```
+
+Creating a virtual environment actually creates a new folder containing a Python installation. Deleting this folder removes the virtual environment.  
 
 
 # Jupyter Notebooks
