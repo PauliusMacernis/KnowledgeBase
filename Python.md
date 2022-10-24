@@ -182,7 +182,7 @@ from .Generaldistribution import Distribution # Note the dot in front of "Genera
 To install the package on local machine, use: `pip install .` from the directory under which `./setup.py` file exists.  
 To know where the package (e.g. `distributions`) installed, type the following: `distributions.__file__` (use it only after `import distributions`)  
 
-
+In case we edit the localy installed package, we may reinstall it with `pip install --upgrade .`  
 
 
 # A Python environment
