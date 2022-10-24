@@ -52,7 +52,9 @@ It is a graphical user interface that helps open up any installed applications, 
 Package, dependency and environment management for any language—Python, R, Ruby, Lua, Scala, Java, JavaScript, C/ C++, Fortran, and more.  
 Along with managing packages, Conda is also a virtual environment manager. It's similar to virtualenv and pyenv, other popular environment managers.  
 Installing conda will also install Python, if not already present.  
-See https://docs.conda.io/en/latest/
+See https://docs.conda.io/en/latest/  
+
+In fact, conda was invented because pip could not handle data science packages that depended on libraries outside of Python. If you look at the history of conda, you'll find that the software engineers behind conda needed a way to manage data science packages (such as NumPy and Matplotlib) that relied on libraries outside of Python. Check for https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/#Myth-#5:-conda-doesn't-work-with-virtualenv,-so-it's-useless-for-my-workflow  
 
 `conda --version` - find which version of Conda is in use.
 
