@@ -3,7 +3,7 @@
 Key differences in relation to PHP:  
 
 - No protected/private, just public visibility; therefore it's possible to access any method or property of the object (OOP).
-- Multiple inheritence allowed (explore more: "Python mixin")
+- Multiple inheritence allowed (explore more: "Python multiple inheritance", "Python mixin" (aka. PHP traits))
 
 
 # Online Resources
