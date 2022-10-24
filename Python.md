@@ -145,6 +145,13 @@ source environmentname/bin/activate
 pip install numpy
 ```
 
+if you create the conda environment and install pip simultaneously, you'll find that pip behaves as expected when installing packages into your local environment:  
+
+`conda create --name environmentname pip`  
+
+pip and venv tend to be used for generic software development projects including web development. conda is very helpful for data science projects, but conda can make generic Python software development a bit more confusing.   
+
+
 ## pip packages
 
 Needs `./distributions/__init__.py` file with the specific content (notice the dot in front of the name), e.g.:  
