@@ -1,3 +1,11 @@
+# Python
+
+Key differences in relation to PHP:  
+
+- No protected/private, just public visibility; therefore it's possible to access any method or property of the object (OOP).
+- Multiple inheritence allowed (explore more: "Python mixin")
+
+
 # Online Resources
 
 - The Python Tutorial ( https://docs.python.org/3/tutorial/ ) - This section of the official documentation surveys Python's syntax and standard library. It uses examples, and is written using less technical language than the main documentation. Make sure you're reading the Python 3 version of the docs!
