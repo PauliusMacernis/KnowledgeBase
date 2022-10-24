@@ -159,9 +159,9 @@ Needs `./distributions/__init__.py` file with the specific content (notice the d
 ```
 from .GausianDistribution import Gaussian
 ```
-(in case of example, GausianDistribution.py file has a line on `from .GeneralDistribution import Distribution`)   
+(in case of example, GausianDistribution.py file has a line on `from .GeneralDistribution import Distribution`, the file __init__.py is kind of autoload for the package)   
 
-Also, there is a need for `./setup.py` file which contains a similar content:  
+Also, there is a need for `./setup.py` file which contains the content like this one, this is the meta information about the package itself:  
 
 ```
 from setuptools import setup
@@ -171,6 +171,12 @@ setup(name="distributions",
       description="Gaussian distributions",
       packages=["distributions"],
       zip_safe=False)
+```
+
+You may also need imports like these in several ".py" files:  
+
+```
+from .Generaldistribution import Distribution # Note the dot in front of "Generaldistribution"
 ```
 
 To install the package on local machine, use: `pip install .` from the directory under which `./setup.py` file exists.  
