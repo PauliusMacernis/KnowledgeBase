@@ -181,6 +181,20 @@ comprises a particular version of:
 - Python-packages
 - The utility scripts, e.g. pip
 
+# venv
+
+The venv module supports creating lightweight “virtual environments”, each with their own independent set of Python packages installed in their site directories. A virtual environment is created on top of an existing Python installation, known as the virtual environment’s “base” Python, and may optionally be isolated from the packages in the base environment, so only those explicitly installed in the virtual environment are available.  
+
+For more info: https://docs.python.org/3/library/venv.html  
+
+```
+conda update python # in case we use conda, update Python to the latest
+python3 -m venv /path/to/new/virtual/environment # or python3 -m venv venv_name
+source venv name/bin/activate
+pip install .
+# in case you want to removethe environment, remove the environment installation files
+```
+
 
 # Jupyter Notebooks
 
