@@ -1318,6 +1318,14 @@ except Exception as e:
 
 # OOP
 
+More info:  
+
+- https://realpython.com/instance-class-and-static-methods-demystified/
+- https://python-course.eu/oop/class-instance-attributes.php
+- https://easyaspython.com/mixins-for-fun-and-profit-cb9962760556
+- https://realpython.com/primer-on-python-decorators/
+
+
 The word `self` is just a convention within a class. You could actually use any other name as long as you are consistent, but you should use `self` to avoid confusing people.
 
 ```
