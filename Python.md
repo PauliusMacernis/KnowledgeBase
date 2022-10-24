@@ -136,6 +136,25 @@ Pip has similar functionality with `pip freeze > requirements.txt` - export the 
 - pip vs. conda: https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/  
 
 
+## pip packages
+
+Needs `./distributions/__init__.py` file with the specific content (notice the dot in front of the name), e.g.:  
+
+```
+from .GausianDistribution import Gaussian
+```
+(in case of example, GausianDistribution.py file has a line on `from .GeneralDistribution import Distribution`)   
+
+Also, there is a need for `./setup.py` file which contains a similar content:  
+
+```
+TBD
+```
+
+To install the package on local machine, use: `pip install .` from the directory under which `./setup.py` file exists.  
+To know where the package (e.g. `distributions`) installed, type the following: `distributions.__file__` (use it only after `import distributions`)
+
+
 # A Python environment
 
 comprises a particular version of:  
