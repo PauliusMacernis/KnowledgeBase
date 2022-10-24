@@ -164,7 +164,13 @@ from .GausianDistribution import Gaussian
 Also, there is a need for `./setup.py` file which contains a similar content:  
 
 ```
-TBD
+from setuptools import setup
+
+setup(name="distributions",
+      version="0.1",
+      description="Gaussian distributions",
+      packages=["distributions"],
+      zip_safe=False)
 ```
 
 To install the package on local machine, use: `pip install .` from the directory under which `./setup.py` file exists.  
