@@ -119,7 +119,7 @@ It's a smaller version of Anaconda. It includes Conda and Python, no preinstalle
 # pip
 
 The conda and pip both are the Python package managers.  
-In the newer version of Anaconda/Miniconda, both pip and conda package managers are included by default.
+In the newer version of Anaconda/Miniconda, both pip and conda package managers are included by default.  
 
 pip comes preinstalled with the Python 2 >=2.7.9 or Python 3 >=3.4.  
 
@@ -137,6 +137,13 @@ Pip has similar functionality with `pip freeze > requirements.txt` - export the 
 
 - pip vs. conda: https://jakevdp.github.io/blog/2016/08/25/conda-myths-and-misconceptions/  
 
+To use venv (for environment management) and pip (for package management), the commands look something like the following:
+
+```
+python3 -m venv environmentname
+source environmentname/bin/activate
+pip install numpy
+```
 
 ## pip packages
 
