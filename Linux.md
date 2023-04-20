@@ -890,4 +890,12 @@ More info: https://en.wikipedia.org/wiki/Dmesg
 - Explain `sudo apt install manpages-posix`  
  Builtins are part of the shell. Each shell has its own set of builtins. They are not independent commands and they don't have separate man pages. Luckily, the man pages of shell builtins are available in POSIX Programmer's Manual. You need to install it to access those man pages.  
  
-- 
+- Explain `pushd "$(dirname "$0")" > /dev/null || exit 1`. 
+ Here's a breakdown of the command:
+	1	pushd is a command that adds the current directory to a stack and changes the current working directory to the directory specified in the argument.
+	2	"$(dirname "$0")" is a parameter expansion that expands to the directory name of the currently executing script. The $0 variable holds the name of the script, and the dirname command extracts the directory name.
+	3	> /dev/null is a redirection that discards any output from the command. It sends the output to the null device, which discards it.
+	4	|| exit 1 is a logical OR operator that checks the exit status of the previous command. If the exit status is non-zero (indicating an error), the exit 1 command will be executed, which will terminate the script with an exit status of 1.
+So, the entire command will change the current working directory to the directory containing the script and suppress any output. If there is an error, the script will terminate with an exit status of 1. This is a common practice in scripts to ensure that the script can continue running as intended and handle errors gracefully.
+ 
+ - ???
